@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class forms | Joostina CMS</title>
+	<title>Class forms | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-forms.html" title="Summary of forms"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,13 +149,9 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li class="active"><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
@@ -123,15 +159,9 @@
 				<li><a href="class-JJevix.html">JJevix</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
+				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
-				<li><a href="class-joosLogging.html">joosLogging</a></li>
-				<li><a href="class-joosLoggingAutoloader.html">joosLoggingAutoloader</a></li>
-				<li><a href="class-joosLoggingHandler.html">joosLoggingHandler</a></li>
-				<li><a href="class-joosLoggingHandlerFirephp.html">joosLoggingHandlerFirephp</a></li>
-				<li><a href="class-joosLoggingHandlerMail.html">joosLoggingHandlerMail</a></li>
-				<li><a href="class-joosLoggingHandlerStream.html">joosLoggingHandlerStream</a></li>
-				<li><a href="class-joosLoggingLevels.html">joosLoggingLevels</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
@@ -174,40 +204,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-None.html" title="Summary of None"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class forms</h1>
-
 
 	<div class="description">
 	
@@ -226,9 +225,7 @@
 
 
 
-
-	<div class="info">
-		
+	<div class="alert alert-info">
 		
 		
 		
@@ -239,909 +236,924 @@
 				<a href="http://kohanaphp.com/license.html">http://kohanaphp.com/license.html</a><br />
 				<b>Author:</b>
 				Kohana Team<br />
-		<b>Located at</b> <a href="source-class-forms.html#3" title="Go to source code">app/vendors/forms/forms.php</a><br />
+		<b>Located at:</b> <a href="source-class-forms.html#3" title="Go to source code">app/vendors/forms/forms.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="open" id="_open">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="open" id="_open">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_open">#</a>
-		<code><a href="source-class-forms.html#15" title="Go to source code">open</a>( <span>string <var>$action</var> = <span class="php-keyword1">NULL</span> </span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span> () </span>, <span>array <var>$hidden</var> = <span class="php-keyword1">NULL</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_open">#</a>
+			<code><a href="source-class-forms.html#15" title="Go to source code">open</a>( <span>string <var>$action</var> = <span class="php-keyword1">NULL</span> </span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span> () </span>, <span>array <var>$hidden</var> = <span class="php-keyword1">NULL</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates an opening HTML form tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates an opening HTML form tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$action</var></dt>
-					<dd><code>string</code><br>form action attribute</dd>
-					<dt><var>$attr</var></dt>
-					<dd><code>array</code><br>extra attributes</dd>
-					<dt><var>$hidden</var></dt>
-					<dd><code>array</code><br>hidden fields to be created immediately after the form tag</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>form action attribute</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>extra attributes</dd>
+						<dt><var>$hidden</var></dt>
+						<dd><code>array</code><br>hidden fields to be created immediately after the form tag</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="open_multipart" id="_open_multipart">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="open_multipart" id="_open_multipart">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_open_multipart">#</a>
-		<code><a href="source-class-forms.html#46" title="Go to source code">open_multipart</a>( <span>string <var>$action</var> = <span class="php-keyword1">NULL</span> </span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span> () </span>, <span>array <var>$hidden</var> = <span class="php-keyword1">array</span> () </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_open_multipart">#</a>
+			<code><a href="source-class-forms.html#46" title="Go to source code">open_multipart</a>( <span>string <var>$action</var> = <span class="php-keyword1">NULL</span> </span>, <span>array <var>$attr</var> = <span class="php-keyword1">array</span> () </span>, <span>array <var>$hidden</var> = <span class="php-keyword1">array</span> () </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates an opening HTML form tag that can be used for uploading files.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates an opening HTML form tag that can be used for uploading files.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$action</var></dt>
-					<dd><code>string</code><br>form action attribute</dd>
-					<dt><var>$attr</var></dt>
-					<dd><code>array</code><br>extra attributes</dd>
-					<dt><var>$hidden</var></dt>
-					<dd><code>array</code><br>hidden fields to be created immediately after the form tag</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$action</var></dt>
+						<dd><code>string</code><br>form action attribute</dd>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>extra attributes</dd>
+						<dt><var>$hidden</var></dt>
+						<dd><code>array</code><br>hidden fields to be created immediately after the form tag</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="open_fieldset" id="_open_fieldset">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="open_fieldset" id="_open_fieldset">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_open_fieldset">#</a>
-		<code><a href="source-class-forms.html#62" title="Go to source code">open_fieldset</a>( <span>array <var>$data</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_open_fieldset">#</a>
+			<code><a href="source-class-forms.html#62" title="Go to source code">open_fieldset</a>( <span>array <var>$data</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates a fieldset opening tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates a fieldset opening tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>array</code><br>html attributes</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>html attributes</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="close_fieldset" id="_close_fieldset">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="close_fieldset" id="_close_fieldset">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_close_fieldset">#</a>
-		<code><a href="source-class-forms.html#74" title="Go to source code">close_fieldset</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_close_fieldset">#</a>
+			<code><a href="source-class-forms.html#74" title="Go to source code">close_fieldset</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates a fieldset closing tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates a fieldset closing tag.</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="legend" id="_legend">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="legend" id="_legend">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_legend">#</a>
-		<code><a href="source-class-forms.html#83" title="Go to source code">legend</a>( <span>string <var>$text</var> = <span class="php-quote">''</span> </span>, <span>array <var>$data</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_legend">#</a>
+			<code><a href="source-class-forms.html#83" title="Go to source code">legend</a>( <span>string <var>$text</var> = <span class="php-quote">''</span> </span>, <span>array <var>$data</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates a legend tag for use with a fieldset.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates a legend tag for use with a fieldset.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code><br>legend text</dd>
-					<dt><var>$data</var></dt>
-					<dd><code>array</code><br>HTML attributes</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br>legend text</dd>
+						<dt><var>$data</var></dt>
+						<dd><code>array</code><br>HTML attributes</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="hidden" id="_hidden">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="hidden" id="_hidden">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_hidden">#</a>
-		<code><a href="source-class-forms.html#96" title="Go to source code">hidden</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_hidden">#</a>
+			<code><a href="source-class-forms.html#96" title="Go to source code">hidden</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Generates hidden form fields. You can pass a simple key/value string or an
 associative array with multiple values.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Generates hidden form fields. You can pass a simple key/value string or an
 associative array with multiple values.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name (string) or key/value pairs (array)</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, if using an input name</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name (string) or key/value pairs (array)</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, if using an input name</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="input" id="_input">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="input" id="_input">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_input">#</a>
-		<code><a href="source-class-forms.html#122" title="Go to source code">input</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_input">#</a>
+			<code><a href="source-class-forms.html#122" title="Go to source code">input</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form input tag. Defaults to a text type.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form input tag. Defaults to a text type.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="password" id="_password">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="password" id="_password">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_password">#</a>
-		<code><a href="source-class-forms.html#143" title="Go to source code">password</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_password">#</a>
+			<code><a href="source-class-forms.html#143" title="Go to source code">password</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates a HTML form password input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates a HTML form password input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="upload" id="_upload">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="upload" id="_upload">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_upload">#</a>
-		<code><a href="source-class-forms.html#162" title="Go to source code">upload</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_upload">#</a>
+			<code><a href="source-class-forms.html#162" title="Go to source code">upload</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form upload input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form upload input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="textarea" id="_textarea">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="textarea" id="_textarea">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_textarea">#</a>
-		<code><a href="source-class-forms.html#181" title="Go to source code">textarea</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$double_encode</var> = <span class="php-keyword1">TRUE</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_textarea">#</a>
+			<code><a href="source-class-forms.html#181" title="Go to source code">textarea</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$double_encode</var> = <span class="php-keyword1">TRUE</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form textarea tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form textarea tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-					<dt><var>$double_encode</var></dt>
-					<dd><code>boolean</code><br>encode existing entities</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+						<dt><var>$double_encode</var></dt>
+						<dd><code>boolean</code><br>encode existing entities</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="dropdown" id="_dropdown">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dropdown" id="_dropdown">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_dropdown">#</a>
-		<code><a href="source-class-forms.html#205" title="Go to source code">dropdown</a>( <span>string|array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">NULL</span> </span>, <span>string|array <var>$selected</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_dropdown">#</a>
+			<code><a href="source-class-forms.html#205" title="Go to source code">dropdown</a>( <span>string|array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">NULL</span> </span>, <span>string|array <var>$selected</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form select tag, or "dropdown menu".</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
-<p>Creates an HTML form select tag, or "dropdown menu".</p>
-
-
-
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br>select options, when using a name</dd>
-					<dt><var>$selected</var></dt>
-					<dd><code>string|array</code><br>option key(s) that should be selected by default</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
-
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="dropdown_simple" id="_dropdown_simple">
-
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_dropdown_simple">#</a>
-		<code><a href="source-class-forms.html#263" title="Go to source code">dropdown_simple</a>( <span>string|array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">NULL</span> </span>, <span>string|array <var>$selected</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span>, <span> <var>$null_first</var> = <span class="php-keyword1">null</span> </span> )</code>
-
-		<div class="description short">
-			
-<p>Creates an HTML form select tag, or "dropdown menu".</p>
-
-		</div>
-
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form select tag, or "dropdown menu".</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$options</var></dt>
-					<dd><code>array</code><br>select options, when using a name</dd>
-					<dt><var>$selected</var></dt>
-					<dd><code>string|array</code><br>option key(s) that should be selected by default</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-					<dt><var>$null_first</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>select options, when using a name</dd>
+						<dt><var>$selected</var></dt>
+						<dd><code>string|array</code><br>option key(s) that should be selected by default</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="genderSelectList" id="_genderSelectList">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dropdown_simple" id="_dropdown_simple">
 
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_genderSelectList">#</a>
-		<code><a href="source-class-forms.html#311" title="Go to source code">genderSelectList</a>( <span> <var>$name</var></span>, <span> <var>$selected</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_dropdown_simple">#</a>
+			<code><a href="source-class-forms.html#263" title="Go to source code">dropdown_simple</a>( <span>string|array <var>$data</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">NULL</span> </span>, <span>string|array <var>$selected</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span>, <span> <var>$null_first</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+<p>Creates an HTML form select tag, or "dropdown menu".</p>
 
-		<div class="description detailed hidden">
-			
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Creates an HTML form select tag, or "dropdown menu".</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$options</var></dt>
+						<dd><code>array</code><br>select options, when using a name</dd>
+						<dt><var>$selected</var></dt>
+						<dd><code>string|array</code><br>option key(s) that should be selected by default</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+						<dt><var>$null_first</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="genderSelectList" id="_genderSelectList">
+
+			<td class="attributes"><code>
+				
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_genderSelectList">#</a>
+			<code><a href="source-class-forms.html#311" title="Go to source code">genderSelectList</a>( <span> <var>$name</var></span>, <span> <var>$selected</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="checkbox" id="_checkbox">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkbox" id="_checkbox">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_checkbox">#</a>
-		<code><a href="source-class-forms.html#317" title="Go to source code">checkbox</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">FALSE</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_checkbox">#</a>
+			<code><a href="source-class-forms.html#317" title="Go to source code">checkbox</a>( <span>string|array <var>$data</var></span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">FALSE</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form checkbox input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form checkbox input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$checked</var></dt>
-					<dd><code>boolean</code><br>make the checkbox checked by default</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$checked</var></dt>
+						<dd><code>boolean</code><br>make the checkbox checked by default</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="radio" id="_radio">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="radio" id="_radio">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_radio">#</a>
-		<code><a href="source-class-forms.html#343" title="Go to source code">radio</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">FALSE</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_radio">#</a>
+			<code><a href="source-class-forms.html#343" title="Go to source code">radio</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>boolean <var>$checked</var> = <span class="php-keyword1">FALSE</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form radio input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form radio input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$checked</var></dt>
-					<dd><code>boolean</code><br>make the radio selected by default</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$checked</var></dt>
+						<dd><code>boolean</code><br>make the radio selected by default</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="submit" id="_submit">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="submit" id="_submit">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_submit">#</a>
-		<code><a href="source-class-forms.html#369" title="Go to source code">submit</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_submit">#</a>
+			<code><a href="source-class-forms.html#369" title="Go to source code">submit</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form submit input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form submit input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="button" id="_button">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="button" id="_button">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_button">#</a>
-		<code><a href="source-class-forms.html#393" title="Go to source code">button</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_button">#</a>
+			<code><a href="source-class-forms.html#393" title="Go to source code">button</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$value</var> = <span class="php-quote">''</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form button input tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form button input tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br>input value, when using a name</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>input name or an array of HTML attributes</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br>input value, when using a name</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="close" id="_close">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="close" id="_close">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_close">#</a>
-		<code><a href="source-class-forms.html#420" title="Go to source code">close</a>( <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_close">#</a>
+			<code><a href="source-class-forms.html#420" title="Go to source code">close</a>( <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Closes an open form tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Closes an open form tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>string to be attached after the closing tag</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>string to be attached after the closing tag</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="label" id="_label">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="label" id="_label">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_label">#</a>
-		<code><a href="source-class-forms.html#431" title="Go to source code">label</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$text</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_label">#</a>
+			<code><a href="source-class-forms.html#431" title="Go to source code">label</a>( <span>string|array <var>$data</var> = <span class="php-quote">''</span> </span>, <span>string <var>$text</var> = <span class="php-keyword1">NULL</span> </span>, <span>string <var>$extra</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Creates an HTML form label tag.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Creates an HTML form label tag.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$data</var></dt>
-					<dd><code>string|array</code><br>label "for" name or an array of HTML attributes</dd>
-					<dt><var>$text</var></dt>
-					<dd><code>string</code><br>label text or HTML</dd>
-					<dt><var>$extra</var></dt>
-					<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$data</var></dt>
+						<dd><code>string|array</code><br>label "for" name or an array of HTML attributes</dd>
+						<dt><var>$text</var></dt>
+						<dd><code>string</code><br>label text or HTML</dd>
+						<dt><var>$extra</var></dt>
+						<dd><code>string</code><br>a string to be attached to the end of the attributes</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="attributes" id="_attributes">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="attributes" id="_attributes">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_attributes">#</a>
-		<code><a href="source-class-forms.html#454" title="Go to source code">attributes</a>( <span>array <var>$attr</var></span>, <span> <var>$type</var> = <span class="php-keyword1">NULL</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_attributes">#</a>
+			<code><a href="source-class-forms.html#454" title="Go to source code">attributes</a>( <span>array <var>$attr</var></span>, <span> <var>$type</var> = <span class="php-keyword1">NULL</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Sorts a key/value array of HTML attributes, putting form attributes first,
 and returns an attribute string.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Sorts a key/value array of HTML attributes, putting form attributes first,
 and returns an attribute string.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$attr</var></dt>
-					<dd><code>array</code><br>HTML attributes array</dd>
-					<dt><var>$type</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$attr</var></dt>
+						<dd><code>array</code><br>HTML attributes array</dd>
+						<dt><var>$type</var></dt>
+						<dd></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
 
 
 
-
-
-
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

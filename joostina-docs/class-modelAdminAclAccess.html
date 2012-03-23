@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class modelAdminAclAccess | Joostina CMS</title>
+	<title>Class modelAdminAclAccess | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Models.Acls.html" title="Summary of Models\Acls"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-modelAdminAclAccess.html" title="Summary of modelAdminAclAccess"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -136,40 +173,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Models.Acls.html" title="Summary of Models\Acls"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class modelAdminAclAccess</h1>
-
 
 	<div class="description">
 	
@@ -177,23 +183,23 @@
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
-			<a href="class-joosModel.html"><span>joosModel</span></a>
+			<a href="class-joosModel.html">joosModel</a>
 			
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-			<a href="class-modelAclAccess.html"><span>modelAclAccess</span></a>
+			<a href="class-modelAclAccess.html">modelAclAccess</a>
 			
 			
 			
 		</dd>
 		<dd style="padding-left:60px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>modelAdminAclAccess</span></b>			
+<b>modelAdminAclAccess</b>			
 			
 			
 		</dd>
@@ -205,12 +211,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Models.html">Models</a>\<a href="package-Models.Acls.html">Acls</a><br />
 
 				<b>Copyright:</b>
 				(C) 2007-2012 Joostina Team<br />
@@ -224,109 +228,112 @@
 				2011-12-07 14:23:55 Информация об авторах и
 лицензиях стороннего кода в составе Joostina CMS:
 docs/copyrights<br />
-		<b>Located at</b> <a href="source-class-modelAdminAclAccess.html#226" title="Go to source code">app/components/acls/models/model.admin.acls.php</a><br />
+		<b>Located at:</b> <a href="source-class-modelAdminAclAccess.html#226" title="Go to source code">app/components/acls/models/model.admin.acls.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="get_fieldinfo" id="_get_fieldinfo">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="get_fieldinfo" id="_get_fieldinfo">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_fieldinfo">#</a>
-		<code><a href="source-class-modelAdminAclAccess.html#228" title="Go to source code">get_fieldinfo</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_fieldinfo">#</a>
+			<code><a href="source-class-modelAdminAclAccess.html#228" title="Go to source code">get_fieldinfo</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Заглушка получения информации о полях</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Заглушка получения информации о полях</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_tableinfo" id="_get_tableinfo">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_tableinfo" id="_get_tableinfo">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_tableinfo">#</a>
-		<code><a href="source-class-modelAdminAclAccess.html#278" title="Go to source code">get_tableinfo</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_tableinfo">#</a>
+			<code><a href="source-class-modelAdminAclAccess.html#278" title="Go to source code">get_tableinfo</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Заглушка получения информации о таблице
 модели</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Заглушка получения информации о таблице
 модели</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_extrainfo" id="_get_extrainfo">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_extrainfo" id="_get_extrainfo">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_extrainfo">#</a>
-		<code><a href="source-class-modelAdminAclAccess.html#286" title="Go to source code">get_extrainfo</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_extrainfo">#</a>
+			<code><a href="source-class-modelAdminAclAccess.html#286" title="Go to source code">get_extrainfo</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Загрушка для функции получения данных о
 расширенных возможностях управления
 данными</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Загрушка для функции получения данных о
 расширенных возможностях управления
 данными</p>
@@ -334,119 +341,117 @@ docs/copyrights<br />
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-modelAclAccess.html#methods">modelAclAccess</a></caption>
-	<tr>
+		<h3>Methods inherited from <a href="class-modelAclAccess.html#methods">modelAclAccess</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-modelAclAccess.html#___construct">__construct()</a>, 
-			<a href="class-modelAclAccess.html#_check">check()</a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-joosModel.html#methods">joosModel</a></caption>
-	<tr>
+<a href="class-modelAclAccess.html#___construct">__construct()</a>, 
+<a href="class-modelAclAccess.html#_check">check()</a>
+			</code></td>
+		</tr>
+		</table>
+		<h3>Methods inherited from <a href="class-joosModel.html#methods">joosModel</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosModel.html#___set_state">__set_state()</a>, 
-			<a href="class-joosModel.html#_after_delete">after_delete()</a>, 
-			<a href="class-joosModel.html#_after_insert">after_insert()</a>, 
-			<a href="class-joosModel.html#_after_store">after_store()</a>, 
-			<a href="class-joosModel.html#_after_update">after_update()</a>, 
-			<a href="class-joosModel.html#_before_delete">before_delete()</a>, 
-			<a href="class-joosModel.html#_before_insert">before_insert()</a>, 
-			<a href="class-joosModel.html#_before_store">before_store()</a>, 
-			<a href="class-joosModel.html#_before_update">before_update()</a>, 
-			<a href="class-joosModel.html#_bind">bind()</a>, 
-			<a href="class-joosModel.html#_change_state">change_state()</a>, 
-			<a href="class-joosModel.html#_classname">classname()</a>, 
-			<a href="class-joosModel.html#_copy_array">copy_array()</a>, 
-			<a href="class-joosModel.html#_count">count()</a>, 
-			<a href="class-joosModel.html#_delete">delete()</a>, 
-			<a href="class-joosModel.html#_delete_array">delete_array()</a>, 
-			<a href="class-joosModel.html#_delete_list">delete_list()</a>, 
-			<a href="class-joosModel.html#_filter">filter()</a>, 
-			<a href="class-joosModel.html#_find">find()</a>, 
-			<a href="class-joosModel.html#_find_all">find_all()</a>, 
-			<a href="class-joosModel.html#_get">get()</a>, 
-			<a href="class-joosModel.html#_get_error">get_error()</a>, 
-			<a href="class-joosModel.html#_get_key_field">get_key_field()</a>, 
-			<a href="class-joosModel.html#_get_list">get_list()</a>, 
-			<a href="class-joosModel.html#_get_max_by_field">get_max_by_field()</a>, 
-			<a href="class-joosModel.html#_get_one_to_many_selectors">get_one_to_many_selectors()</a>, 
-			<a href="class-joosModel.html#_get_public_properties">get_public_properties()</a>, 
-			<a href="class-joosModel.html#_get_select_one_to_many">get_select_one_to_many()</a>, 
-			<a href="class-joosModel.html#_get_selector">get_selector()</a>, 
-			<a href="class-joosModel.html#_get_tabsinfo">get_tabsinfo()</a>, 
-			<a href="class-joosModel.html#_get_validate_rules">get_validate_rules()</a>, 
-			<a href="class-joosModel.html#_get_validation_error_messages">get_validation_error_messages()</a>, 
-			<a href="class-joosModel.html#_insert_array">insert_array()</a>, 
-			<a href="class-joosModel.html#_load">load()</a>, 
-			<a href="class-joosModel.html#_load_by_field">load_by_field()</a>, 
-			<a href="class-joosModel.html#_publish">publish()</a>, 
-			<a href="class-joosModel.html#_reset">reset()</a>, 
-			<a href="class-joosModel.html#_save">save()</a>, 
-			<a href="class-joosModel.html#_save_one_to_many">save_one_to_many()</a>, 
-			<a href="class-joosModel.html#_set">set()</a>, 
-			<a href="class-joosModel.html#_store">store()</a>, 
-			<a href="class-joosModel.html#_sum">sum()</a>, 
-			<a href="class-joosModel.html#_to_cache">to_cache()</a>, 
-			<a href="class-joosModel.html#_validate">validate()</a>
-		</code></td>
-	</tr>
-	</table>
+<a href="class-joosModel.html#___set_state">__set_state()</a>, 
+<a href="class-joosModel.html#_after_delete">after_delete()</a>, 
+<a href="class-joosModel.html#_after_insert">after_insert()</a>, 
+<a href="class-joosModel.html#_after_store">after_store()</a>, 
+<a href="class-joosModel.html#_after_update">after_update()</a>, 
+<a href="class-joosModel.html#_before_delete">before_delete()</a>, 
+<a href="class-joosModel.html#_before_insert">before_insert()</a>, 
+<a href="class-joosModel.html#_before_store">before_store()</a>, 
+<a href="class-joosModel.html#_before_update">before_update()</a>, 
+<a href="class-joosModel.html#_bind">bind()</a>, 
+<a href="class-joosModel.html#_change_state">change_state()</a>, 
+<a href="class-joosModel.html#_classname">classname()</a>, 
+<a href="class-joosModel.html#_copy_array">copy_array()</a>, 
+<a href="class-joosModel.html#_count">count()</a>, 
+<a href="class-joosModel.html#_delete">delete()</a>, 
+<a href="class-joosModel.html#_delete_array">delete_array()</a>, 
+<a href="class-joosModel.html#_delete_list">delete_list()</a>, 
+<a href="class-joosModel.html#_filter">filter()</a>, 
+<a href="class-joosModel.html#_find">find()</a>, 
+<a href="class-joosModel.html#_find_all">find_all()</a>, 
+<a href="class-joosModel.html#_get">get()</a>, 
+<a href="class-joosModel.html#_get_error">get_error()</a>, 
+<a href="class-joosModel.html#_get_key_field">get_key_field()</a>, 
+<a href="class-joosModel.html#_get_list">get_list()</a>, 
+<a href="class-joosModel.html#_get_max_by_field">get_max_by_field()</a>, 
+<a href="class-joosModel.html#_get_one_to_many_selectors">get_one_to_many_selectors()</a>, 
+<a href="class-joosModel.html#_get_public_properties">get_public_properties()</a>, 
+<a href="class-joosModel.html#_get_select_one_to_many">get_select_one_to_many()</a>, 
+<a href="class-joosModel.html#_get_selector">get_selector()</a>, 
+<a href="class-joosModel.html#_get_tabsinfo">get_tabsinfo()</a>, 
+<a href="class-joosModel.html#_get_validate_rules">get_validate_rules()</a>, 
+<a href="class-joosModel.html#_get_validation_error_messages">get_validation_error_messages()</a>, 
+<a href="class-joosModel.html#_insert_array">insert_array()</a>, 
+<a href="class-joosModel.html#_load">load()</a>, 
+<a href="class-joosModel.html#_load_by_field">load_by_field()</a>, 
+<a href="class-joosModel.html#_publish">publish()</a>, 
+<a href="class-joosModel.html#_reset">reset()</a>, 
+<a href="class-joosModel.html#_save">save()</a>, 
+<a href="class-joosModel.html#_save_one_to_many">save_one_to_many()</a>, 
+<a href="class-joosModel.html#_set">set()</a>, 
+<a href="class-joosModel.html#_store">store()</a>, 
+<a href="class-joosModel.html#_sum">sum()</a>, 
+<a href="class-joosModel.html#_to_cache">to_cache()</a>, 
+<a href="class-joosModel.html#_validate">validate()</a>
+			</code></td>
+		</tr>
+		</table>
 
 
 
+		<h2>Properties summary</h2>
 
-
-
-
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-modelAclAccess.html#properties">modelAclAccess</a></caption>
-	<tr>
+		<h3>Properties inherited from <a href="class-modelAclAccess.html#properties">modelAclAccess</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-modelAclAccess.html#$created_at"><var>$created_at</var></a>, 
-			<a href="class-modelAclAccess.html#$group_id"><var>$group_id</var></a>, 
-			<a href="class-modelAclAccess.html#$id"><var>$id</var></a>, 
-			<a href="class-modelAclAccess.html#$modified_at"><var>$modified_at</var></a>, 
-			<a href="class-modelAclAccess.html#$task_id"><var>$task_id</var></a>
-		</code></td>
-	</tr>
-	</table>
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-joosModel.html#properties">joosModel</a></caption>
-	<tr>
+<a href="class-modelAclAccess.html#$created_at"><var>$created_at</var></a>, 
+<a href="class-modelAclAccess.html#$group_id"><var>$group_id</var></a>, 
+<a href="class-modelAclAccess.html#$id"><var>$id</var></a>, 
+<a href="class-modelAclAccess.html#$modified_at"><var>$modified_at</var></a>, 
+<a href="class-modelAclAccess.html#$task_id"><var>$task_id</var></a>
+			</code></td>
+		</tr>
+		</table>
+		<h3>Properties inherited from <a href="class-joosModel.html#properties">joosModel</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosModel.html#$__obj_name"><var>$__obj_name</var></a>, 
-			<a href="class-joosModel.html#$_db"><var>$_db</var></a>, 
-			<a href="class-joosModel.html#$_error"><var>$_error</var></a>, 
-			<a href="class-joosModel.html#$_soft_delete"><var>$_soft_delete</var></a>, 
-			<a href="class-joosModel.html#$_tbl"><var>$_tbl</var></a>, 
-			<a href="class-joosModel.html#$_tbl_key"><var>$_tbl_key</var></a>, 
-			<a href="class-joosModel.html#$_validation_error_messages"><var>$_validation_error_messages</var></a>
-		</code></td>
-	</tr>
-	</table>
-
+<a href="class-joosModel.html#$__obj_name"><var>$__obj_name</var></a>, 
+<a href="class-joosModel.html#$_db"><var>$_db</var></a>, 
+<a href="class-joosModel.html#$_error"><var>$_error</var></a>, 
+<a href="class-joosModel.html#$_soft_delete"><var>$_soft_delete</var></a>, 
+<a href="class-joosModel.html#$_tbl"><var>$_tbl</var></a>, 
+<a href="class-joosModel.html#$_tbl_key"><var>$_tbl_key</var></a>, 
+<a href="class-joosModel.html#$_validation_error_messages"><var>$_validation_error_messages</var></a>
+			</code></td>
+		</tr>
+		</table>
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

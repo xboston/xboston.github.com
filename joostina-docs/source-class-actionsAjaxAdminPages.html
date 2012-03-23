@@ -5,24 +5,64 @@
 	<meta name="generator" content="ApiGen 2.6.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File app/components/pages/controller.admin.pages.ajax.php | Joostina CMS</title>
+	<title>File app/components/pages/controller.admin.pages.ajax.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Joostina.Contlroller.html" title="Summary of Joostina\Contlroller"><span>Package</span></a>
+						</li>
+						<li>
+							<a href="class-actionsAjaxAdminPages.html" title="Summary of actionsAjaxAdminPages"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
 			<h3>Packages</h3>
 			<ul>
-				<li class="active"><a href="package-Controllers.html">Controllers<span></span></a>
+				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
 						</li>
@@ -40,7 +80,7 @@
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
-				<li class="active"><a href="package-Controllers.Pages.html">Pages</a>
+				<li><a href="package-Controllers.Pages.html">Pages</a>
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
@@ -58,9 +98,9 @@
 				<li><a href="package-Helpers.Modules.html">Modules</a>
 						</li>
 							</ul></li>
-				<li><a href="package-Joostina.html">Joostina<span></span></a>
+				<li class="active"><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
-				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
+				<li class="active"><a href="package-Joostina.Contlroller.html">Contlroller</a>
 						</li>
 				<li><a href="package-Joostina.Core.html">Core</a>
 						</li>
@@ -110,15 +150,19 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-actionsAdminPages.html">actionsAdminPages</a></li>
+				<li><a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a></li>
+				<li><a href="class-actionsAjaxAdminContent.html">actionsAjaxAdminContent</a></li>
+				<li><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a></li>
 				<li class="active"><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a></li>
-				<li><a href="class-actionsPages.html">actionsPages</a></li>
+				<li><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a></li>
+				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
+				<li><a href="class-joosAdminController.html">joosAdminController</a></li>
+				<li><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></li>
+				<li><a href="class-joosController.html">joosController</a></li>
+				<li><a href="class-joosControllerAjax.html">joosControllerAjax</a></li>
 			</ul>
 
 
@@ -132,42 +176,11 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Controllers.Pages.html" title="Summary of Controllers\Pages"><span>Package</span></a>
-			</li>
-			<li>
-				<a href="class-actionsAjaxAdminPages.html" title="Summary of actionsAjaxAdminPages"><span>Class</span></a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
 <a href="#2" id="2" class="l"> 2: </a>
 <a href="#3" id="3" class="l"> 3: </a><span class="php-comment">/**
-</span><a href="#4" id="4" class="l"> 4: </a><span class="php-comment"> * modelPages - компонент независимых страниц
+</span><a href="#4" id="4" class="l"> 4: </a><span class="php-comment"> * Компонент независимых страниц
 </span><a href="#5" id="5" class="l"> 5: </a><span class="php-comment"> * Аякс-контроллер
 </span><a href="#6" id="6" class="l"> 6: </a><span class="php-comment"> *
 </span><a href="#7" id="7" class="l"> 7: </a><span class="php-comment"> * @version    1.0
@@ -181,7 +194,7 @@
 <a href="#15" id="15" class="l">15: </a><span class="php-comment">// запрет прямого доступа</span>
 <a href="#16" id="16" class="l">16: </a><span class="php-keyword2">defined</span>(<span class="php-quote">'_JOOS_CORE'</span>) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
 <a href="#17" id="17" class="l">17: </a>
-<a href="#18" id="18" class="l">18: </a><span class="php-keyword1">class</span> actionsAjaxAdminPages {
+<a href="#18" id="18" class="l">18: </a><span class="php-keyword1">class</span> actionsAjaxAdminPages <span class="php-keyword1">extends</span> joosAdminControllerAjax {
 <a href="#19" id="19" class="l">19: </a>
 <a href="#20" id="20" class="l">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> status_change() {
 <a href="#21" id="21" class="l">21: </a>        <span class="php-keyword1">return</span> joosAutoadmin::autoajax();
@@ -204,11 +217,12 @@
 <a href="#38" id="38" class="l">38: </a>    }
 <a href="#39" id="39" class="l">39: </a>
 <a href="#40" id="40" class="l">40: </a>}</code></pre>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

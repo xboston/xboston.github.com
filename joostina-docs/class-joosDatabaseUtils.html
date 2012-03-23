@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class joosDatabaseUtils | Joostina CMS</title>
+	<title>Class joosDatabaseUtils | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-joosDatabaseUtils.html" title="Summary of joosDatabaseUtils"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -172,40 +209,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class joosDatabaseUtils</h1>
-
 
 	<div class="description">
 	
@@ -215,16 +221,16 @@
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
-			<a href="class-joosDatabase.html"><span>joosDatabase</span></a>
+			<a href="class-joosDatabase.html">joosDatabase</a>
 			
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>joosDatabaseUtils</span></b>			
+<b>joosDatabaseUtils</b>			
 			
 			
 		</dd>
@@ -236,12 +242,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Libraries.html">Libraries</a><br />
 
 				<b>Copyright:</b>
 				(C) 2007-2012 Joostina Team<br />
@@ -253,295 +257,302 @@
 href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 				<b>Version:</b>
 				1.0<br />
-		<b>Located at</b> <a href="source-class-joosDatabaseUtils.html#752" title="Go to source code">core/libraries/database.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosDatabaseUtils.html#767" title="Go to source code">core/libraries/database.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#774" title="Go to source code">__construct</a>( <span><code><a href="class-joosDatabase.html">joosDatabase</a></code> <var>$db</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#789" title="Go to source code">__construct</a>( <span><a href="class-joosDatabase.html">joosDatabase</a> <var>$db</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Объект работы с базой данных</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Объект работы с базой данных</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$db</var></dt>
-					<dd><code><code><a href="class-joosDatabase.html">joosDatabase</a></code></code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$db</var></dt>
+						<dd><code><code><a href="class-joosDatabase.html">joosDatabase</a></code></code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_version" id="_get_version">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_version" id="_get_version">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_version">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#791" title="Go to source code">get_version</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_version">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#806" title="Go to source code">get_version</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает строку, представляющую номер
 версии сервера</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает строку, представляющую номер
 версии сервера</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>строка версии сервера<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>строка версии сервера<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_table_list" id="_get_table_list">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_table_list" id="_get_table_list">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_table_list">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#799" title="Go to source code">get_table_list</a>( <span>boolean <var>$only_joostina</var> = <span class="php-keyword1">true</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_table_list">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#814" title="Go to source code">get_table_list</a>( <span>boolean <var>$only_joostina</var> = <span class="php-keyword1">true</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает список таблиц активной базы</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает список таблиц активной базы</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$only_joostina</var></dt>
-					<dd><code>boolean</code><br> флаг позволяющий оставить в
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$only_joostina</var></dt>
+						<dd><code>boolean</code><br> флаг позволяющий оставить в
 результирующем наборе только таблицы
 текущего сайта</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>массив таблиц текущей базы данных<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>массив таблиц текущей базы данных<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_table_create" id="_get_table_create">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_table_create" id="_get_table_create">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_table_create">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#811" title="Go to source code">get_table_create</a>( <span>array <var>$tables</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_table_create">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#826" title="Go to source code">get_table_create</a>( <span>array <var>$tables</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает ассоциативный массив структур
 таблиц</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает ассоциативный массив структур
 таблиц</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tables</var></dt>
-					<dd><code>array</code><br> массив таблиц структуру которых
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tables</var></dt>
+						<dd><code>array</code><br> массив таблиц структуру которых
 необходимо получить</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>ассоциативный массив, ключами
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>ассоциативный массив, ключами
 которогоявляются названия таблиц, а
 значениями - самаструктура этихтаблиц<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get_table_fields" id="_get_table_fields">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_table_fields" id="_get_table_fields">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get_table_fields">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#831" title="Go to source code">get_table_fields</a>( <span>string <var>$tables</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get_table_fields">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#846" title="Go to source code">get_table_fields</a>( <span>string <var>$tables</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает ассоциативный массив свойств
 столбцов таблицы</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает ассоциативный массив свойств
 столбцов таблицы</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tables</var></dt>
-					<dd><code>string</code><br> название таблицы</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tables</var></dt>
+						<dd><code>string</code><br> название таблицы</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>ассоциативный массив, ключами которого
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>ассоциативный массив, ключами которого
 являются названия полей, а значения -
 свойства полей<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="query_batch" id="_query_batch">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="query_batch" id="_query_batch">
 
-		<td class="attributes"><code>
-			 public 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_query_batch">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#849" title="Go to source code">query_batch</a>( <span>boolean <var>$abort_on_error</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$transaction_safe</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_query_batch">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#864" title="Go to source code">query_batch</a>( <span>boolean <var>$abort_on_error</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$transaction_safe</var> = <span class="php-keyword1">false</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Прямое выполнения множества SQL запросов
 за один раз. Запросы должн ыбыть разделены
 знаком точки с запятой - ;</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Прямое выполнения множества SQL запросов
 за один раз. Запросы должн ыбыть разделены
 знаком точки с запятой - ;</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$abort_on_error</var></dt>
-					<dd><code>boolean</code><br> флаг указывающий что при ошибки водном из
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$abort_on_error</var></dt>
+						<dd><code>boolean</code><br> флаг указывающий что при ошибки водном из
 запросов дальнейшую работу необходимо
 прекратить</dd>
-					<dt><var>$transaction_safe</var></dt>
-					<dd><code>boolean</code><br> флаг использования транзакций для
+						<dt><var>$transaction_safe</var></dt>
+						<dd><code>boolean</code><br> флаг использования транзакций для
 выполнения запросов</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>флаг выполнения работы, истина в случае
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>флаг выполнения работы, истина в случае
 успешного выполнения всех запросов,<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="explain" id="_explain">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="explain" id="_explain">
 
-		<td class="attributes"><code>
-			 public 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_explain">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#887" title="Go to source code">explain</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_explain">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#902" title="Go to source code">explain</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает сформированную HTML таблицу с
 информации о каждой из использованных в
 запросе SELECT таблиц</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает сформированную HTML таблицу с
 информации о каждой из использованных в
 запросе SELECT таблиц</p>
@@ -549,131 +560,130 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>результирующий HTML код<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>результирующий HTML код<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="show_db_error" id="_show_db_error">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="show_db_error" id="_show_db_error">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_show_db_error">#</a>
-		<code><a href="source-class-joosDatabaseUtils.html#925" title="Go to source code">show_db_error</a>( <span>string <var>$message</var></span>, <span>string <var>$sql</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_show_db_error">#</a>
+			<code><a href="source-class-joosDatabaseUtils.html#940" title="Go to source code">show_db_error</a>( <span>string <var>$message</var></span>, <span>string <var>$sql</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Выводит расширенно есообзения о ошибке
 выполнения запроса</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Выводит расширенно есообзения о ошибке
 выполнения запроса</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$message</var></dt>
-					<dd><code>string</code><br> текст сообщения - ошибки</dd>
-					<dt><var>$sql</var></dt>
-					<dd><code>string</code><br> sql код запрос вызвавшего ошибку</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd><code>string</code><br> текст сообщения - ошибки</dd>
+						<dt><var>$sql</var></dt>
+						<dd><code>string</code><br> sql код запрос вызвавшего ошибку</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-joosDatabase.html#methods">joosDatabase</a></caption>
-	<tr>
+		<h3>Methods inherited from <a href="class-joosDatabase.html#methods">joosDatabase</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosDatabase.html#___clone">__clone()</a>, 
-			<a href="class-joosDatabase.html#___destruct">__destruct()</a>, 
-			<a href="class-joosDatabase.html#_bind_array_to_object">bind_array_to_object()</a>, 
-			<a href="class-joosDatabase.html#_debug">debug()</a>, 
-			<a href="class-joosDatabase.html#_get_affected_rows">get_affected_rows()</a>, 
-			<a href="class-joosDatabase.html#_get_error_msg">get_error_msg()</a>, 
-			<a href="class-joosDatabase.html#_get_error_num">get_error_num()</a>, 
-			<a href="class-joosDatabase.html#_get_escaped">get_escaped()</a>, 
-			<a href="class-joosDatabase.html#_get_null_date">get_null_date()</a>, 
-			<a href="class-joosDatabase.html#_get_num_rows">get_num_rows()</a>, 
-			<a href="class-joosDatabase.html#_get_prefix">get_prefix()</a>, 
-			<a href="class-joosDatabase.html#_get_query">get_query()</a>, 
-			<a href="class-joosDatabase.html#_get_utils">get_utils()</a>, 
-			<a href="class-joosDatabase.html#_insert_array">insert_array()</a>, 
-			<a href="class-joosDatabase.html#_insert_id">insert_id()</a>, 
-			<a href="class-joosDatabase.html#_insert_object">insert_object()</a>, 
-			<a href="class-joosDatabase.html#_instance">instance()</a>, 
-			<a href="class-joosDatabase.html#_load_assoc_list">load_assoc_list()</a>, 
-			<a href="class-joosDatabase.html#_load_assoc_row">load_assoc_row()</a>, 
-			<a href="class-joosDatabase.html#_load_object">load_object()</a>, 
-			<a href="class-joosDatabase.html#_load_object_list">load_object_list()</a>, 
-			<a href="class-joosDatabase.html#_load_result">load_result()</a>, 
-			<a href="class-joosDatabase.html#_load_result_array">load_result_array()</a>, 
-			<a href="class-joosDatabase.html#_load_row">load_row()</a>, 
-			<a href="class-joosDatabase.html#_load_row_array">load_row_array()</a>, 
-			<a href="class-joosDatabase.html#_load_row_list">load_row_list()</a>, 
-			<a href="class-joosDatabase.html#_models">models()</a>, 
-			<a href="class-joosDatabase.html#_name_quote">name_quote()</a>, 
-			<a href="class-joosDatabase.html#_query">query()</a>, 
-			<a href="class-joosDatabase.html#_quote">quote()</a>, 
-			<a href="class-joosDatabase.html#_set_prefix">set_prefix()</a>, 
-			<a href="class-joosDatabase.html#_set_query">set_query()</a>, 
-			<a href="class-joosDatabase.html#_stderr">stderr()</a>, 
-			<a href="class-joosDatabase.html#_update_object">update_object()</a>
-		</code></td>
-	</tr>
-	</table>
+<a href="class-joosDatabase.html#___clone">__clone()</a>, 
+<a href="class-joosDatabase.html#___destruct">__destruct()</a>, 
+<a href="class-joosDatabase.html#_bind_array_to_object">bind_array_to_object()</a>, 
+<a href="class-joosDatabase.html#_debug">debug()</a>, 
+<a href="class-joosDatabase.html#_get_affected_rows">get_affected_rows()</a>, 
+<a href="class-joosDatabase.html#_get_error_msg">get_error_msg()</a>, 
+<a href="class-joosDatabase.html#_get_error_num">get_error_num()</a>, 
+<a href="class-joosDatabase.html#_get_escaped">get_escaped()</a>, 
+<a href="class-joosDatabase.html#_get_null_date">get_null_date()</a>, 
+<a href="class-joosDatabase.html#_get_num_rows">get_num_rows()</a>, 
+<a href="class-joosDatabase.html#_get_prefix">get_prefix()</a>, 
+<a href="class-joosDatabase.html#_get_query">get_query()</a>, 
+<a href="class-joosDatabase.html#_get_utils">get_utils()</a>, 
+<a href="class-joosDatabase.html#_insert_array">insert_array()</a>, 
+<a href="class-joosDatabase.html#_insert_id">insert_id()</a>, 
+<a href="class-joosDatabase.html#_insert_object">insert_object()</a>, 
+<a href="class-joosDatabase.html#_instance">instance()</a>, 
+<a href="class-joosDatabase.html#_load_assoc_list">load_assoc_list()</a>, 
+<a href="class-joosDatabase.html#_load_assoc_row">load_assoc_row()</a>, 
+<a href="class-joosDatabase.html#_load_object">load_object()</a>, 
+<a href="class-joosDatabase.html#_load_object_list">load_object_list()</a>, 
+<a href="class-joosDatabase.html#_load_result">load_result()</a>, 
+<a href="class-joosDatabase.html#_load_result_array">load_result_array()</a>, 
+<a href="class-joosDatabase.html#_load_row">load_row()</a>, 
+<a href="class-joosDatabase.html#_load_row_array">load_row_array()</a>, 
+<a href="class-joosDatabase.html#_load_row_list">load_row_list()</a>, 
+<a href="class-joosDatabase.html#_models">models()</a>, 
+<a href="class-joosDatabase.html#_name_quote">name_quote()</a>, 
+<a href="class-joosDatabase.html#_query">query()</a>, 
+<a href="class-joosDatabase.html#_quote">quote()</a>, 
+<a href="class-joosDatabase.html#_set_prefix">set_prefix()</a>, 
+<a href="class-joosDatabase.html#_set_query">set_query()</a>, 
+<a href="class-joosDatabase.html#_stderr">stderr()</a>, 
+<a href="class-joosDatabase.html#_update_object">update_object()</a>
+			</code></td>
+		</tr>
+		</table>
 
 
 
+		<h2>Properties summary</h2>
 
-
-
-
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-joosDatabase.html#properties">joosDatabase</a></caption>
-	<tr>
+		<h3>Properties inherited from <a href="class-joosDatabase.html#properties">joosDatabase</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosDatabase.html#$_cursor"><var>$_cursor</var></a>, 
-			<a href="class-joosDatabase.html#$_debug"><var>$_debug</var></a>, 
-			<a href="class-joosDatabase.html#$_error_msg"><var>$_error_msg</var></a>, 
-			<a href="class-joosDatabase.html#$_error_num"><var>$_error_num</var></a>, 
-			<a href="class-joosDatabase.html#$_limit"><var>$_limit</var></a>, 
-			<a href="class-joosDatabase.html#$_offset"><var>$_offset</var></a>, 
-			<a href="class-joosDatabase.html#$_resource"><var>$_resource</var></a>, 
-			<a href="class-joosDatabase.html#$_sql"><var>$_sql</var></a>, 
-			<a href="class-joosDatabase.html#$_table_prefix"><var>$_table_prefix</var></a>
-		</code></td>
-	</tr>
-	</table>
-
+<a href="class-joosDatabase.html#$_cursor"><var>$_cursor</var></a>, 
+<a href="class-joosDatabase.html#$_debug"><var>$_debug</var></a>, 
+<a href="class-joosDatabase.html#$_error_msg"><var>$_error_msg</var></a>, 
+<a href="class-joosDatabase.html#$_error_num"><var>$_error_num</var></a>, 
+<a href="class-joosDatabase.html#$_limit"><var>$_limit</var></a>, 
+<a href="class-joosDatabase.html#$_offset"><var>$_offset</var></a>, 
+<a href="class-joosDatabase.html#$_resource"><var>$_resource</var></a>, 
+<a href="class-joosDatabase.html#$_sql"><var>$_sql</var></a>, 
+<a href="class-joosDatabase.html#$_table_prefix"><var>$_table_prefix</var></a>
+			</code></td>
+		</tr>
+		</table>
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

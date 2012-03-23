@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class joosRequest | Joostina CMS</title>
+	<title>Class joosRequest | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-joosRequest.html" title="Summary of joosRequest"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -172,40 +209,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class joosRequest</h1>
-
 
 	<div class="description">
 	
@@ -222,12 +228,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Libraries.html">Libraries</a><br />
 
 				<b>Category:</b>
 				Libraries<br />
@@ -244,598 +248,611 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 				<b>Todo:</b>
 				в mosGetParams была очистка данных. Может, стоит и
 сюда прикрутить? joosInputFilter::instance()-&gt;process($return)<br />
-		<b>Located at</b> <a href="source-class-joosRequest.html#6" title="Go to source code">core/libraries/request.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosRequest.html#6" title="Go to source code">core/libraries/request.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="param" id="_param">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="param" id="_param">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_param">#</a>
-		<code><a href="source-class-joosRequest.html#25" title="Go to source code">param</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_param">#</a>
+			<code><a href="source-class-joosRequest.html#25" title="Go to source code">param</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">false</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметра</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметра</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра по умолчани</dd>
-					<dt><var>$vars</var></dt>
-					<dd><code>array</code><br> массив переменных из которого необходимо
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра по умолчани</dd>
+						<dt><var>$vars</var></dt>
+						<dd><code>array</code><br> массив переменных из которого необходимо
 получить параметр $name, по умолчанию
 используется суперглобальный $_REQUEST</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
-				<h4>Todo</h4>
-				<div class="list">
-						проанализировать необходимоть проверки
+					<h4>Todo</h4>
+					<div class="list">
+							проанализировать необходимоть проверки
 наличия с empty (isset($vars[$name]) &amp;&amp; !empty( $vars[$name] ) )<br />
-				</div>
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="get" id="_get">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get" id="_get">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_get">#</a>
-		<code><a href="source-class-joosRequest.html#41" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_get">#</a>
+			<code><a href="source-class-joosRequest.html#41" title="Go to source code">get</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_GET</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_GET</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="post" id="_post">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="post" id="_post">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_post">#</a>
-		<code><a href="source-class-joosRequest.html#53" title="Go to source code">post</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_post">#</a>
+			<code><a href="source-class-joosRequest.html#53" title="Go to source code">post</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_POST</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_POST</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="request" id="_request">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="request" id="_request">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_request">#</a>
-		<code><a href="source-class-joosRequest.html#65" title="Go to source code">request</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_request">#</a>
+			<code><a href="source-class-joosRequest.html#65" title="Go to source code">request</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_REQUEST</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_REQUEST</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="file" id="_file">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="file" id="_file">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_file">#</a>
-		<code><a href="source-class-joosRequest.html#77" title="Go to source code">file</a>( <span>string <var>$name</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_file">#</a>
+			<code><a href="source-class-joosRequest.html#77" title="Go to source code">file</a>( <span>string <var>$name</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров загруженного файла
 из суперглобального массива $_FILES</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров загруженного файла
 из суперглобального массива $_FILES</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>массив с информацией о файле, либо FALSE в
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>массив с информацией о файле, либо FALSE в
 случае отсутствия данных<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="server" id="_server">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="server" id="_server">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_server">#</a>
-		<code><a href="source-class-joosRequest.html#88" title="Go to source code">server</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_server">#</a>
+			<code><a href="source-class-joosRequest.html#88" title="Go to source code">server</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_SERVER</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_SERVER</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="env" id="_env">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="env" id="_env">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_env">#</a>
-		<code><a href="source-class-joosRequest.html#100" title="Go to source code">env</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_env">#</a>
+			<code><a href="source-class-joosRequest.html#100" title="Go to source code">env</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_ENV</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_ENV</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="session" id="_session">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="session" id="_session">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_session">#</a>
-		<code><a href="source-class-joosRequest.html#112" title="Go to source code">session</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_session">#</a>
+			<code><a href="source-class-joosRequest.html#112" title="Go to source code">session</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_SESSION</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_SESSION</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cookies" id="_cookies">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cookies" id="_cookies">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cookies">#</a>
-		<code><a href="source-class-joosRequest.html#124" title="Go to source code">cookies</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cookies">#</a>
+			<code><a href="source-class-joosRequest.html#124" title="Go to source code">cookies</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметров из суперглобального
 массива $_COOKIE</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметров из суперглобального
 массива $_COOKIE</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра $name</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра $name</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="header" id="_header">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="header" id="_header">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_header">#</a>
-		<code><a href="source-class-joosRequest.html#136" title="Go to source code">header</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_header">#</a>
+			<code><a href="source-class-joosRequest.html#136" title="Go to source code">header</a>( <span>string <var>$name</var></span>, <span>string <var>$default</var> = <span class="php-keyword1">false</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметра из заголовков
 сервера или клиенского браузера</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметра из заголовков
 сервера или клиенского браузера</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра, используемое по
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра, используемое по
 умолчанию</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка, либо false если
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка, либо false если
 параметр не обнаружен ( по умолчанию )<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="int" id="_int">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="int" id="_int">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_int">#</a>
-		<code><a href="source-class-joosRequest.html#161" title="Go to source code">int</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_int">#</a>
+			<code><a href="source-class-joosRequest.html#161" title="Go to source code">int</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>string <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение параметра с принудительным
 приведением к цельночисленному (йифровому)
 варианту</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение параметра с принудительным
 приведением к цельночисленному (йифровому)
 варианту</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра по умолчани</dd>
-					<dt><var>$vars</var></dt>
-					<dd><code>array</code><br> массив переменных из которого необходимо
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра по умолчани</dd>
+						<dt><var>$vars</var></dt>
+						<dd><code>array</code><br> массив переменных из которого необходимо
 получить параметр $name, по умолчанию
 используется суперглобальный $_REQUEST</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="array_param" id="_array_param">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="array_param" id="_array_param">
 
-		<td class="attributes"><code>
-			 public static
-			mixed
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_array_param">#</a>
-		<code><a href="source-class-joosRequest.html#174" title="Go to source code">array_param</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_array_param">#</a>
+			<code><a href="source-class-joosRequest.html#174" title="Go to source code">array_param</a>( <span>string <var>$name</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$default</var> = <span class="php-keyword1">null</span></span>, <span>array <var>$vars</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение массива параметров</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение массива параметров</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code><br> название параметра</dd>
-					<dt><var>$default</var></dt>
-					<dd><code>string</code><br> значение для параметра по умолчани</dd>
-					<dt><var>$vars</var></dt>
-					<dd><code>array</code><br> массив переменных из которого необходимо
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code><br> название параметра</dd>
+						<dt><var>$default</var></dt>
+						<dd><code>string</code><br> значение для параметра по умолчани</dd>
+						<dt><var>$vars</var></dt>
+						<dd><code>array</code><br> массив переменных из которого необходимо
 получить параметр $name, по умолчанию
 используется суперглобальный $_REQUEST</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>mixed</code><br>результат, массив или строка<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>результат, массив или строка<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="protocol" id="_protocol">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="protocol" id="_protocol">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_protocol">#</a>
-		<code><a href="source-class-joosRequest.html#187" title="Go to source code">protocol</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_protocol">#</a>
+			<code><a href="source-class-joosRequest.html#187" title="Go to source code">protocol</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение протокола активного
 соединения, http или https в случае защищенного
 соединения</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение протокола активного
 соединения, http или https в случае защищенного
 соединения</p>
@@ -843,372 +860,376 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>http или https<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>http или https<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_get" id="_is_get">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_get" id="_is_get">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_get">#</a>
-		<code><a href="source-class-joosRequest.html#195" title="Go to source code">is_get</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_get">#</a>
+			<code><a href="source-class-joosRequest.html#195" title="Go to source code">is_get</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на работу методом GET</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на работу методом GET</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_post" id="_is_post">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_post" id="_is_post">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_post">#</a>
-		<code><a href="source-class-joosRequest.html#203" title="Go to source code">is_post</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_post">#</a>
+			<code><a href="source-class-joosRequest.html#203" title="Go to source code">is_post</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на работу методом POST</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на работу методом POST</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_put" id="_is_put">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_put" id="_is_put">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_put">#</a>
-		<code><a href="source-class-joosRequest.html#211" title="Go to source code">is_put</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_put">#</a>
+			<code><a href="source-class-joosRequest.html#211" title="Go to source code">is_put</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на работу методом PUT</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на работу методом PUT</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_delete" id="_is_delete">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_delete" id="_is_delete">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_delete">#</a>
-		<code><a href="source-class-joosRequest.html#219" title="Go to source code">is_delete</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_delete">#</a>
+			<code><a href="source-class-joosRequest.html#219" title="Go to source code">is_delete</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на работу методом DELETE</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на работу методом DELETE</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_ajax" id="_is_ajax">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_ajax" id="_is_ajax">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_ajax">#</a>
-		<code><a href="source-class-joosRequest.html#227" title="Go to source code">is_ajax</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_ajax">#</a>
+			<code><a href="source-class-joosRequest.html#227" title="Go to source code">is_ajax</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка работы через Ajax-соединение</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка работы через Ajax-соединение</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_https" id="_is_https">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_https" id="_is_https">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_https">#</a>
-		<code><a href="source-class-joosRequest.html#235" title="Go to source code">is_https</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_https">#</a>
+			<code><a href="source-class-joosRequest.html#235" title="Go to source code">is_https</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка работы через через безопасное
 https соединение</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка работы через через безопасное
 https соединение</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="user_ip" id="_user_ip">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="user_ip" id="_user_ip">
 
-		<td class="attributes"><code>
-			 public static
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_user_ip">#</a>
-		<code><a href="source-class-joosRequest.html#243" title="Go to source code">user_ip</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_user_ip">#</a>
+			<code><a href="source-class-joosRequest.html#243" title="Go to source code">user_ip</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получение IP адреса активного
 пользователя</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение IP адреса активного
 пользователя</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>IP адрес пользователя, либо FALSE в случае если
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>IP адрес пользователя, либо FALSE в случае если
 IP адрес не получен<br />
-				</div>
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="send_headers_by_code" id="_send_headers_by_code">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="send_headers_by_code" id="_send_headers_by_code">
 
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_send_headers_by_code">#</a>
-		<code><a href="source-class-joosRequest.html#264" title="Go to source code">send_headers_by_code</a>( <span>integer <var>$code</var> = <span class="php-num">200</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_send_headers_by_code">#</a>
+			<code><a href="source-class-joosRequest.html#264" title="Go to source code">send_headers_by_code</a>( <span>integer <var>$code</var> = <span class="php-num">200</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Установка кода в заголовок страницы</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Установка кода в заголовок страницы</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$code</var></dt>
-					<dd><code>integer</code><br> номер кода</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$code</var></dt>
+						<dd><code>integer</code><br> номер кода</dd>
+					</dl></div>
 
 
 
-				<h4>Tutorial</h4>
-				<div class="list">
-						joosCore::send_headers_by_code(200);<br />
-						joosCore::send_headers_by_code(301);<br />
-						joosCore::send_headers_by_code(404);<br />
-						joosCore::send_headers_by_code(504);<br />
-				</div>
+					<h4>Tutorial</h4>
+					<div class="list">
+							joosCore::send_headers_by_code(200);<br />
+							joosCore::send_headers_by_code(301);<br />
+							joosCore::send_headers_by_code(404);<br />
+							joosCore::send_headers_by_code(504);<br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_console" id="_is_console">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_console" id="_is_console">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_console">#</a>
-		<code><a href="source-class-joosRequest.html#339" title="Go to source code">is_console</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_console">#</a>
+			<code><a href="source-class-joosRequest.html#339" title="Go to source code">is_console</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на запуск скрипта через
 консаоль</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на запуск скрипта через
 консаоль</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-
-
-
-
-
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

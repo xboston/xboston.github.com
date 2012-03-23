@@ -4,18 +4,55 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Tree | Joostina CMS</title>
+	<title>Tree | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-.html" title="Summary of "><span>Package</span></a>
+						</li>
+
+						<li class="active">
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +146,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -122,10 +156,8 @@
 				<li><a href="class-actionsAdminContent.html">actionsAdminContent</a></li>
 				<li><a href="class-actionsAdminMetainfo.html">actionsAdminMetainfo</a></li>
 				<li><a href="class-actionsAdminModules.html">actionsAdminModules</a></li>
-				<li><a href="class-actionsAdminPages.html">actionsAdminPages</a></li>
 				<li><a href="class-actionsAdminQuickicons.html">actionsAdminQuickicons</a></li>
 				<li><a href="class-actionsAdminSitemap.html">actionsAdminSitemap</a></li>
-				<li><a href="class-actionsAdminTest.html">actionsAdminTest</a></li>
 				<li><a href="class-actionsAdminUsers.html">actionsAdminUsers</a></li>
 				<li><a href="class-actionsAjaxAdminAcls.html">actionsAjaxAdminAcls</a></li>
 				<li><a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a></li>
@@ -133,6 +165,7 @@
 				<li><a href="class-actionsAjaxAdminContent.html">actionsAjaxAdminContent</a></li>
 				<li><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a></li>
 				<li><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a></li>
+				<li><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a></li>
 				<li><a href="class-actionsAjaxAdminUsers.html">actionsAjaxAdminUsers</a></li>
 				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li><a href="class-actionsAjaxUsers.html">actionsAjaxUsers</a></li>
@@ -181,6 +214,8 @@
 				<li><a href="class-Jevix.html">Jevix</a></li>
 				<li><a href="class-JJevix.html">JJevix</a></li>
 				<li><a href="class-joosAcl.html">joosAcl</a></li>
+				<li><a href="class-joosAdminController.html">joosAdminController</a></li>
+				<li><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></li>
 				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosArhive.html">joosArhive</a></li>
@@ -188,12 +223,14 @@
 				<li><a href="class-joosAttached.html">joosAttached</a></li>
 				<li><a href="class-joosAutoadmin.html">joosAutoadmin</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
+				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
 				<li><a href="class-joosBenchmark.html">joosBenchmark</a></li>
 				<li><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a></li>
 				<li><a href="class-joosCache.html">joosCache</a></li>
 				<li><a href="class-joosConfig.html">joosConfig</a></li>
 				<li><a href="class-joosController.html">joosController</a></li>
+				<li><a href="class-joosControllerAjax.html">joosControllerAjax</a></li>
 				<li><a href="class-joosCookie.html">joosCookie</a></li>
 				<li><a href="class-joosCore.html">joosCore</a></li>
 				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
@@ -216,13 +253,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosLoader.html">joosLoader</a></li>
-				<li><a href="class-joosLogging.html">joosLogging</a></li>
-				<li><a href="class-joosLoggingAutoloader.html">joosLoggingAutoloader</a></li>
-				<li><a href="class-joosLoggingHandler.html">joosLoggingHandler</a></li>
-				<li><a href="class-joosLoggingHandlerFirephp.html">joosLoggingHandlerFirephp</a></li>
-				<li><a href="class-joosLoggingHandlerMail.html">joosLoggingHandlerMail</a></li>
-				<li><a href="class-joosLoggingHandlerStream.html">joosLoggingHandlerStream</a></li>
-				<li><a href="class-joosLoggingLevels.html">joosLoggingLevels</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
 				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
@@ -325,35 +355,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-<span>Package</span>			</li>
-			<li>
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li class="active">
-<span>Tree</span>			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content">
 	<h1>Tree</h1>
 
@@ -361,1197 +363,1169 @@
 <div class="tree">
 	<ul>
 
-			<li><div class="notlast"><a href="class-JJevix.html"><span>JJevix</span></a>
+			<li><div class="notlast"><a href="class-JJevix.html">JJevix</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-Jevix.html"><span>Jevix</span></a>
+			<li><div class="notlast"><a href="class-Jevix.html">Jevix</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-Route.html"><span>Route</span></a>
+			<li><div class="notlast"><a href="class-Route.html">Route</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-joosRoute.html"><span>joosRoute</span></a>
+			<li class="last"><div class="last"><a href="class-joosRoute.html">joosRoute</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-Thumbnail.html"><span>Thumbnail</span></a>
+			<li><div class="notlast"><a href="class-Thumbnail.html">Thumbnail</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-TreeBuilder.html"><span>TreeBuilder</span></a>
+			<li><div class="notlast"><a href="class-TreeBuilder.html">TreeBuilder</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-ValumsfileUploader.html"><span>ValumsfileUploader</span></a>
+			<li><div class="notlast"><a href="class-ValumsfileUploader.html">ValumsfileUploader</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminAcls.html"><span>actionsAdminAcls</span></a>
+			<li><div class="notlast"><a href="class-editorElrte.html">editorElrte</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminAdmin.html"><span>actionsAdminAdmin</span></a>
+			<li><div class="notlast"><a href="class-editorJwysiwyg.html">editorJwysiwyg</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminCategories.html"><span>actionsAdminCategories</span></a>
+			<li><div class="notlast"><a href="class-forms.html">forms</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminCoder.html"><span>actionsAdminCoder</span></a>
+			<li><div class="notlast"><a href="class-helperAcl.html">helperAcl</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminContent.html"><span>actionsAdminContent</span></a>
+			<li><div class="notlast"><a href="class-helperAdminmenu.html">helperAdminmenu</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminMetainfo.html"><span>actionsAdminMetainfo</span></a>
+			<li><div class="notlast"><a href="class-helperCategories.html">helperCategories</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminModules.html"><span>actionsAdminModules</span></a>
+			<li><div class="notlast"><a href="class-htmlTabs.html">htmlTabs</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminPages.html"><span>actionsAdminPages</span></a>
+			<li><div class="notlast"><a href="class-joosAcl.html">joosAcl</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminQuickicons.html"><span>actionsAdminQuickicons</span></a>
+			<li><div class="notlast"><a href="class-joosAdminPagenator.html">joosAdminPagenator</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminSitemap.html"><span>actionsAdminSitemap</span></a>
+			<li><div class="notlast"><a href="class-joosAdminToolbar.html">joosAdminToolbar</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminTest.html"><span>actionsAdminTest</span></a>
+			<li><div class="notlast"><a href="class-joosArhive.html">joosArhive</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAdminUsers.html"><span>actionsAdminUsers</span></a>
+			<li><div class="notlast"><a href="class-joosArray.html">joosArray</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAjaxAdminCategories.html"><span>actionsAjaxAdminCategories</span></a>
+			<li><div class="notlast"><a href="class-joosAutoadmin.html">joosAutoadmin</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAjaxAdminCoder.html"><span>actionsAjaxAdminCoder</span></a>
+			<li><div class="notlast"><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAjaxAdminContent.html"><span>actionsAjaxAdminContent</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-actionsAjaxAdminModules.html"><span>actionsAjaxAdminModules</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-actionsAjaxAdminPages.html"><span>actionsAjaxAdminPages</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-actionsAjaxAdminUsers.html"><span>actionsAjaxAdminUsers</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-actionsAjaxTest.html"><span>actionsAjaxTest</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditCheckbox.html"><span>autoadminEditCheckbox</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditCurrentUserId.html"><span>autoadminEditCurrentUserId</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditEdit.html"><span>autoadminEditEdit</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditEndPane.html"><span>autoadminEditEndPane</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditEndTab.html"><span>autoadminEditEndTab</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditExtra.html"><span>autoadminEditExtra</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditExtraFields.html"><span>autoadminEditExtraFields</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditH3.html"><span>autoadminEditH3</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditHidden.html"><span>autoadminEditHidden</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditJson.html"><span>autoadminEditJson</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditOption.html"><span>autoadminEditOption</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditParams.html"><span>autoadminEditParams</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditStartPane.html"><span>autoadminEditStartPane</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditStartTab.html"><span>autoadminEditStartTab</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditTextArea.html"><span>autoadminEditTextArea</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditValue.html"><span>autoadminEditValue</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminEditWysiwyg.html"><span>autoadminEditWysiwyg</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListDateFormat.html"><span>autoadminListDateFormat</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListEditlink.html"><span>autoadminListEditlink</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListExtra.html"><span>autoadminListExtra</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListOneFromArray.html"><span>autoadminListOneFromArray</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListOrdering.html"><span>autoadminListOrdering</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListStatusChange.html"><span>autoadminListStatusChange</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListValue.html"><span>autoadminListValue</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListValuesMulti.html"><span>autoadminListValuesMulti</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-autoadminListValuesMultiHref.html"><span>autoadminListValuesMultiHref</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-editorElrte.html"><span>editorElrte</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-editorJwysiwyg.html"><span>editorJwysiwyg</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-forms.html"><span>forms</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-helperAcl.html"><span>helperAcl</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-helperAdminmenu.html"><span>helperAdminmenu</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-helperCategories.html"><span>helperCategories</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-htmlTabs.html"><span>htmlTabs</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAcl.html"><span>joosAcl</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAdminPagenator.html"><span>joosAdminPagenator</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAdminToolbar.html"><span>joosAdminToolbar</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosArhive.html"><span>joosArhive</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosArray.html"><span>joosArray</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAutoadmin.html"><span>joosAutoadmin</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAutoadminHTML.html"><span>joosAutoadminHTML</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosAutoloader.html"><span>joosAutoloader</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosBenchmark.html"><span>joosBenchmark</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosBreadcrumbs.html"><span>joosBreadcrumbs</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosCSRF.html"><span>joosCSRF</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosCache.html"><span>joosCache</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosConfig.html"><span>joosConfig</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosController.html"><span>joosController</span></a>
+			<li><div class="notlast"><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li><div class="notlast"><a href="class-actionsAjaxAdminAcls.html"><span>actionsAjaxAdminAcls</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditCheckbox.html">autoadminEditCheckbox</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsAjaxUsers.html"><span>actionsAjaxUsers</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditCurrentUserId.html">autoadminEditCurrentUserId</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsContent.html"><span>actionsContent</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditEdit.html">autoadminEditEdit</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsMainpage.html"><span>actionsMainpage</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditEndPane.html">autoadminEditEndPane</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsPages.html"><span>actionsPages</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditEndTab.html">autoadminEditEndTab</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsSitemap.html"><span>actionsSitemap</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditExtra.html">autoadminEditExtra</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-actionsTest.html"><span>actionsTest</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditExtraFields.html">autoadminEditExtraFields</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-actionsUsers.html"><span>actionsUsers</span></a>
+			<li><div class="notlast"><a href="class-autoadminEditH3.html">autoadminEditH3</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditHidden.html">autoadminEditHidden</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditJson.html">autoadminEditJson</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditOption.html">autoadminEditOption</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditParams.html">autoadminEditParams</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditStartPane.html">autoadminEditStartPane</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditStartTab.html">autoadminEditStartTab</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditTextArea.html">autoadminEditTextArea</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditValue.html">autoadminEditValue</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminEditWysiwyg.html">autoadminEditWysiwyg</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListDateFormat.html">autoadminListDateFormat</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListEditlink.html">autoadminListEditlink</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListExtra.html">autoadminListExtra</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListOneFromArray.html">autoadminListOneFromArray</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListOrdering.html">autoadminListOrdering</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListStatusChange.html">autoadminListStatusChange</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListValue.html">autoadminListValue</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-autoadminListValuesMulti.html">autoadminListValuesMulti</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-autoadminListValuesMultiHref.html">autoadminListValuesMultiHref</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-joosCookie.html"><span>joosCookie</span></a>
+			<li><div class="notlast"><a href="class-joosAutoloader.html">joosAutoloader</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosCore.html"><span>joosCore</span></a>
+			<li><div class="notlast"><a href="class-joosBenchmark.html">joosBenchmark</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosCSRF.html">joosCSRF</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosCache.html">joosCache</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosConfig.html">joosConfig</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosController.html">joosController</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-joosCoreAdmin.html"><span>joosCoreAdmin</span></a>
+			<li><div class="notlast"><a href="class-actionsContent.html">actionsContent</a>
 			
 			
 			</div>
 
-				</ul></li>
+				</li>
 
-			<li><div class="notlast"><a href="class-joosDatabase.html"><span>joosDatabase</span></a>
+			<li><div class="notlast"><a href="class-actionsMainpage.html">actionsMainpage</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsPages.html">actionsPages</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsSitemap.html">actionsSitemap</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsTest.html">actionsTest</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsUsers.html">actionsUsers</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosAdminController.html">joosAdminController</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-joosDatabaseUtils.html"><span>joosDatabaseUtils</span></a>
-			
-			
-			</div>
-
-				</ul></li>
-
-			<li><div class="notlast"><a href="class-joosDateTime.html"><span>joosDateTime</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminAcls.html">actionsAdminAcls</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosDebug.html"><span>joosDebug</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminAdmin.html">actionsAdminAdmin</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosDocument.html"><span>joosDocument</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminCategories.html">actionsAdminCategories</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosEditor.html"><span>joosEditor</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminCoder.html">actionsAdminCoder</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosError.html"><span>joosError</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminContent.html">actionsAdminContent</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosEvents.html"><span>joosEvents</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminMetainfo.html">actionsAdminMetainfo</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosFile.html"><span>joosFile</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminModules.html">actionsAdminModules</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosFilter.html"><span>joosFilter</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminQuickicons.html">actionsAdminQuickicons</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosFlashMessage.html"><span>joosFlashMessage</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminSitemap.html">actionsAdminSitemap</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosFolder.html"><span>joosFolder</span></a>
+			<li><div class="notlast"><a href="class-actionsAdminUsers.html">actionsAdminUsers</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosHTML.html"><span>joosHTML</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosHit.html"><span>joosHit</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosImage.html"><span>joosImage</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosInflector.html"><span>joosInflector</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosInputFilter.html"><span>joosInputFilter</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosLoader.html"><span>joosLoader</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosLogging.html"><span>joosLogging</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosLoggingAutoloader.html"><span>joosLoggingAutoloader</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosLoggingHandler.html"><span>joosLoggingHandler</span></a>
+			<li class="last"><div class="last"><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li><div class="notlast"><a href="class-joosLoggingHandlerFirephp.html"><span>joosLoggingHandlerFirephp</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxAdminAcls.html">actionsAjaxAdminAcls</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosLoggingHandlerMail.html"><span>joosLoggingHandlerMail</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-joosLoggingHandlerStream.html"><span>joosLoggingHandlerStream</span></a>
-			
-			
-			</div>
-
-				</ul></li>
-
-			<li><div class="notlast"><a href="class-joosLoggingLevels.html"><span>joosLoggingLevels</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxAdminCoder.html">actionsAjaxAdminCoder</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosMail.html"><span>joosMail</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxAdminContent.html">actionsAjaxAdminContent</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosModel.html"><span>joosModel</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-actionsAjaxAdminUsers.html">actionsAjaxAdminUsers</a>
+			
+			
+			</div>
+
+				</ul></li></ul></li>
+
+			<li class="last"><div class="last"><a href="class-joosControllerAjax.html">joosControllerAjax</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li><div class="notlast"><a href="class-CategoriesDetails.html"><span>CategoriesDetails</span></a>
+			<li><div class="notlast"><a href="class-actionsAjaxTest.html">actionsAjaxTest</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosAttached.html"><span>joosAttached</span></a>
+			<li class="last"><div class="last"><a href="class-actionsAjaxUsers.html">actionsAjaxUsers</a>
+			
+			
+			</div>
+
+				</ul></li></ul></li>
+
+			<li><div class="notlast"><a href="class-joosCookie.html">joosCookie</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosMetainfo.html"><span>joosMetainfo</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosNestedSet.html"><span>joosNestedSet</span></a>
+			<li><div class="notlast"><a href="class-joosCore.html">joosCore</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelCategories.html"><span>modelCategories</span></a>
+			<li class="last"><div class="last"><a href="class-joosCoreAdmin.html">joosCoreAdmin</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-joosParams.html"><span>joosParams</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosTrash.html"><span>joosTrash</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-modelAclAccess.html"><span>modelAclAccess</span></a>
+			<li><div class="notlast"><a href="class-joosDatabase.html">joosDatabase</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminAclAccess.html"><span>modelAdminAclAccess</span></a>
+			<li class="last"><div class="last"><a href="class-joosDatabaseUtils.html">joosDatabaseUtils</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelAclGroups.html"><span>modelAclGroups</span></a>
+			<li><div class="notlast"><a href="class-joosDateTime.html">joosDateTime</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosDebug.html">joosDebug</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosDocument.html">joosDocument</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosEditor.html">joosEditor</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosError.html">joosError</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosEvents.html">joosEvents</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosFile.html">joosFile</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosFilter.html">joosFilter</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosFlashMessage.html">joosFlashMessage</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosFolder.html">joosFolder</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosHTML.html">joosHTML</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosHit.html">joosHit</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosImage.html">joosImage</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosInflector.html">joosInflector</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosInputFilter.html">joosInputFilter</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosLoader.html">joosLoader</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosMail.html">joosMail</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosModel.html">joosModel</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminAclGroups.html"><span>modelAdminAclGroups</span></a>
+			<li><div class="notlast"><a href="class-CategoriesDetails.html">CategoriesDetails</a>
 			
 			
 			</div>
 
-				</ul></li>
+				</li>
 
-			<li><div class="notlast"><a href="class-modelAclList.html"><span>modelAclList</span></a>
+			<li><div class="notlast"><a href="class-joosAttached.html">joosAttached</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosMetainfo.html">joosMetainfo</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosNestedSet.html">joosNestedSet</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminAclList.html"><span>modelAdminAclList</span></a>
+			<li class="last"><div class="last"><a href="class-modelCategories.html">modelCategories</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelAclUsersGroups.html"><span>modelAclUsersGroups</span></a>
+			<li><div class="notlast"><a href="class-joosParams.html">joosParams</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosTrash.html">joosTrash</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-modelAclAccess.html">modelAclAccess</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminAclUsersGroups.html"><span>modelAdminAclUsersGroups</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminAclAccess.html">modelAdminAclAccess</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelContent.html"><span>modelContent</span></a>
+			<li><div class="notlast"><a href="class-modelAclGroups.html">modelAclGroups</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-adminContent.html"><span>adminContent</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminAclGroups.html">modelAdminAclGroups</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelModules.html"><span>modelModules</span></a>
+			<li><div class="notlast"><a href="class-modelAclList.html">modelAclList</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-adminModules.html"><span>adminModules</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminAclList.html">modelAdminAclList</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelModulesPages.html"><span>modelModulesPages</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-modelPages.html"><span>modelPages</span></a>
+			<li><div class="notlast"><a href="class-modelAclUsersGroups.html">modelAclUsersGroups</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminPages.html"><span>modelAdminPages</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminAclUsersGroups.html">modelAdminAclUsersGroups</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelPost.html"><span>modelPost</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-modelQuickicons.html"><span>modelQuickicons</span></a>
+			<li><div class="notlast"><a href="class-modelContent.html">modelContent</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminQuickicons.html"><span>modelAdminQuickicons</span></a>
+			<li class="last"><div class="last"><a href="class-adminContent.html">adminContent</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelUsers.html"><span>modelUsers</span></a>
+			<li><div class="notlast"><a href="class-modelModules.html">modelModules</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminUsers.html"><span>modelAdminUsers</span></a>
+			<li class="last"><div class="last"><a href="class-adminModules.html">adminModules</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelUsersExtra.html"><span>modelUsersExtra</span></a>
+			<li><div class="notlast"><a href="class-modelModulesPages.html">modelModulesPages</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-modelUsersGroups.html"><span>modelUsersGroups</span></a>
+			<li><div class="notlast"><a href="class-modelPages.html">modelPages</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminUsersGroups.html"><span>modelAdminUsersGroups</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminPages.html">modelAdminPages</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelUsersSession.html"><span>modelUsersSession</span></a>
+			<li><div class="notlast"><a href="class-modelPost.html">modelPost</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-modelUsersTokens.html"><span>modelUsersTokens</span></a>
-			
-			
-			</div>
-
-				</ul></li>
-
-			<li><div class="notlast"><a href="class-joosModule.html"><span>joosModule</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosModuleAdmin.html"><span>joosModuleAdmin</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosPager.html"><span>joosPager</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosPages.html"><span>joosPages</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosRandomizer.html"><span>joosRandomizer</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosRequest.html"><span>joosRequest</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosSession.html"><span>joosSession</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosStatic.html"><span>joosStatic</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosString.html"><span>joosString</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosText.html"><span>joosText</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosToolbar.html"><span>joosToolbar</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosUpload.html"><span>joosUpload</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosValidate.html"><span>joosValidate</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosValidateHelper.html"><span>joosValidateHelper</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-joosVersion.html"><span>joosVersion</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-mapBlog.html"><span>mapBlog</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-mapContent.html"><span>mapContent</span></a>
-			
-			
-			</div>
-
-				</li>
-
-			<li><div class="notlast"><a href="class-midelSitemap.html"><span>midelSitemap</span></a>
+			<li><div class="notlast"><a href="class-modelQuickicons.html">modelQuickicons</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-modelAdminSitemap.html"><span>modelAdminSitemap</span></a>
+			<li class="last"><div class="last"><a href="class-modelAdminQuickicons.html">modelAdminQuickicons</a>
 			
 			
 			</div>
 
 				</ul></li>
 
-			<li><div class="notlast"><a href="class-modelAdminCoder.html"><span>modelAdminCoder</span></a>
+			<li><div class="notlast"><a href="class-modelUsers.html">modelUsers</a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-modelAdminUsers.html">modelAdminUsers</a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-modelUsersExtra.html">modelUsersExtra</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-modelAdminCoder_Faker.html"><span>modelAdminCoder_Faker</span></a>
+			<li><div class="notlast"><a href="class-modelUsersGroups.html">modelUsersGroups</a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-modelAdminUsersGroups.html">modelAdminUsersGroups</a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-modelUsersSession.html">modelUsersSession</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-mosMenuBar.html"><span>mosMenuBar</span></a>
+			<li class="last"><div class="last"><a href="class-modelUsersTokens.html">modelUsersTokens</a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-joosModule.html">joosModule</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-noneEditor.html"><span>noneEditor</span></a>
+			<li><div class="notlast"><a href="class-joosModuleAdmin.html">joosModuleAdmin</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-paramsContent.html"><span>paramsContent</span></a>
+			<li><div class="notlast"><a href="class-joosPager.html">joosPager</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-qqFileUploader.html"><span>qqFileUploader</span></a>
+			<li><div class="notlast"><a href="class-joosPages.html">joosPages</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-qqUploadedFileForm.html"><span>qqUploadedFileForm</span></a>
+			<li><div class="notlast"><a href="class-joosRandomizer.html">joosRandomizer</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-stdClass.html"><span>stdClass</span></a>
+			<li><div class="notlast"><a href="class-joosRequest.html">joosRequest</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-testHelper.html"><span>testHelper</span></a>
+			<li><div class="notlast"><a href="class-joosSession.html">joosSession</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosStatic.html">joosStatic</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosString.html">joosString</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosText.html">joosText</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosToolbar.html">joosToolbar</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosUpload.html">joosUpload</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosValidate.html">joosValidate</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosValidateHelper.html">joosValidateHelper</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-joosVersion.html">joosVersion</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-mapBlog.html">mapBlog</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-mapContent.html">mapContent</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-midelSitemap.html">midelSitemap</a>
+			
+			
+			</div>
+
+				<ul>
+
+			<li class="last"><div class="last"><a href="class-modelAdminSitemap.html">modelAdminSitemap</a>
+			
+			
+			</div>
+
+				</ul></li>
+
+			<li><div class="notlast"><a href="class-modelAdminCoder.html">modelAdminCoder</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-modelAdminCoder_Faker.html">modelAdminCoder_Faker</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-mosMenuBar.html">mosMenuBar</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-noneEditor.html">noneEditor</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-paramsContent.html">paramsContent</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-qqFileUploader.html">qqFileUploader</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-qqUploadedFileForm.html">qqUploadedFileForm</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li><div class="notlast"><a href="class-stdClass.html">stdClass</a>
+			
+			
+			</div>
+
+				</li>
+
+			<li class="last"><div class="last"><a href="class-testHelper.html">testHelper</a>
 			
 			
 			</div>
@@ -1567,91 +1541,91 @@
 <div class="tree">
 	<ul>
 
-			<li class="last"><div class="last"><a href="class-Exception.html"><span>Exception</span></a>
+			<li class="last"><div class="last"><a href="class-Exception.html">Exception</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li class="last"><div class="last"><a href="class-joosException.html"><span>joosException</span></a>
+			<li class="last"><div class="last"><a href="class-joosException.html">joosException</a>
 			
 			
 			</div>
 
 				<ul>
 
-			<li><div class="notlast"><a href="class-joosAutoadminClassPlugionNotFoundException.html"><span>joosAutoadminClassPlugionNotFoundException</span></a>
+			<li><div class="notlast"><a href="class-joosAutoadminClassPlugionNotFoundException.html">joosAutoadminClassPlugionNotFoundException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosAutoadminFilePluginNotFoundException.html"><span>joosAutoadminFilePluginNotFoundException</span></a>
+			<li><div class="notlast"><a href="class-joosAutoadminFilePluginNotFoundException.html">joosAutoadminFilePluginNotFoundException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosAutoloaderClassNotFoundException.html"><span>joosAutoloaderClassNotFoundException</span></a>
+			<li><div class="notlast"><a href="class-joosAutoloaderClassNotFoundException.html">joosAutoloaderClassNotFoundException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosAutoloaderFileNotFoundException.html"><span>joosAutoloaderFileNotFoundException</span></a>
+			<li><div class="notlast"><a href="class-joosAutoloaderFileNotFoundException.html">joosAutoloaderFileNotFoundException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosAutoloaderOnStartFileNotFoundException.html"><span>joosAutoloaderOnStartFileNotFoundException</span></a>
+			<li><div class="notlast"><a href="class-joosAutoloaderOnStartFileNotFoundException.html">joosAutoloaderOnStartFileNotFoundException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosCacheException.html"><span>joosCacheException</span></a>
+			<li><div class="notlast"><a href="class-joosCacheException.html">joosCacheException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosCoreException.html"><span>joosCoreException</span></a>
+			<li><div class="notlast"><a href="class-joosCoreException.html">joosCoreException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosDatabaseException.html"><span>joosDatabaseException</span></a>
+			<li><div class="notlast"><a href="class-joosDatabaseException.html">joosDatabaseException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosFileLibrariesException.html"><span>joosFileLibrariesException</span></a>
+			<li><div class="notlast"><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li><div class="notlast"><a href="class-joosModulesException.html"><span>joosModulesException</span></a>
+			<li><div class="notlast"><a href="class-joosModulesException.html">joosModulesException</a>
 			
 			
 			</div>
 
 				</li>
 
-			<li class="last"><div class="last"><a href="class-joosUserException.html"><span>joosUserException</span></a>
+			<li class="last"><div class="last"><a href="class-joosUserException.html">joosUserException</a>
 			
 			
 			</div>
@@ -1661,11 +1635,12 @@
 	</ul>
 </div>
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

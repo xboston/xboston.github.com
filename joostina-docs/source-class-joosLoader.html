@@ -5,18 +5,58 @@
 	<meta name="generator" content="ApiGen 2.6.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File core/joostina.php | Joostina CMS</title>
+	<title>File core/joostina.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Joostina.Loader.html" title="Summary of Joostina\Loader"><span>Package</span></a>
+						</li>
+						<li>
+							<a href="class-joosLoader.html" title="Summary of joosLoader"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -110,9 +150,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -130,38 +167,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Joostina.Loader.html" title="Summary of Joostina\Loader"><span>Package</span></a>
-			</li>
-			<li>
-				<a href="class-joosLoader.html" title="Summary of joosLoader"><span>Class</span></a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <pre><code><a href="#1" id="1" class="l">  1: </a><span class="xlang">&lt;?php</span>
 <a href="#2" id="2" class="l">  2: </a>
 <a href="#3" id="3" class="l">  3: </a><span class="php-comment">/**
@@ -896,37 +902,43 @@
 <a href="#732" id="732" class="l">732: </a>
 <a href="#733" id="733" class="l">733: </a>}
 <a href="#734" id="734" class="l">734: </a>
-<a href="#735" id="735" class="l">735: </a><span class="php-comment">/**
-</span><a href="#736" id="736" class="l">736: </a><span class="php-comment"> * Заглушка для локализации интерфейса
-</span><a href="#737" id="737" class="l">737: </a><span class="php-comment"> *
-</span><a href="#738" id="738" class="l">738: </a><span class="php-comment"> * @tutorial __('К нам пришёл :user_name', array(':user_name'=&gt;'Дед мороз') );
-</span><a href="#739" id="739" class="l">739: </a><span class="php-comment"> *
-</span><a href="#740" id="740" class="l">740: </a><span class="php-comment"> * @param string $string
-</span><a href="#741" id="741" class="l">741: </a><span class="php-comment"> * @param array  $args
+<a href="#735" id="735" class="l">735: </a>
+<a href="#736" id="736" class="l">736: </a><span class="php-keyword1">class</span>  joosControllerAjax <span class="php-keyword1">extends</span> joosController{
+<a href="#737" id="737" class="l">737: </a>
+<a href="#738" id="738" class="l">738: </a>}
+<a href="#739" id="739" class="l">739: </a>
+<a href="#740" id="740" class="l">740: </a><span class="php-comment">/**
+</span><a href="#741" id="741" class="l">741: </a><span class="php-comment"> * Заглушка для локализации интерфейса
 </span><a href="#742" id="742" class="l">742: </a><span class="php-comment"> *
-</span><a href="#743" id="743" class="l">743: </a><span class="php-comment"> * @return string
-</span><a href="#744" id="744" class="l">744: </a><span class="php-comment"> */</span>
-<a href="#745" id="745" class="l">745: </a><span class="php-keyword1">function</span> __(<span class="php-var">$string</span>, <span class="php-keyword1">array</span> <span class="php-var">$args</span> = <span class="php-keyword1">null</span>) {
-<a href="#746" id="746" class="l">746: </a>    <span class="php-keyword1">return</span> <span class="php-var">$args</span> === <span class="php-keyword1">NULL</span> ? <span class="php-var">$string</span> : <span class="php-keyword2">strtr</span>(<span class="php-var">$string</span>, <span class="php-var">$args</span>);
-<a href="#747" id="747" class="l">747: </a>}
-<a href="#748" id="748" class="l">748: </a>
-<a href="#749" id="749" class="l">749: </a><span class="php-comment">/**
-</span><a href="#750" id="750" class="l">750: </a><span class="php-comment"> * Убрать, заменить везде и использовать как joosDebug::dump($var);
-</span><a href="#751" id="751" class="l">751: </a><span class="php-comment"> * @deprecated
-</span><a href="#752" id="752" class="l">752: </a><span class="php-comment"> */</span>
-<a href="#753" id="753" class="l">753: </a><span class="php-keyword1">function</span> _xdump(<span class="php-var">$var</span>) {
-<a href="#754" id="754" class="l">754: </a>    joosDebug::dump(<span class="php-var">$var</span>);
-<a href="#755" id="755" class="l">755: </a>}
-<a href="#756" id="756" class="l">756: </a>
-<a href="#757" id="757" class="l">757: </a><span class="php-keyword1">class</span> joosCoreException <span class="php-keyword1">extends</span> joosException {
-<a href="#758" id="758" class="l">758: </a>
-<a href="#759" id="759" class="l">759: </a>}
-<a href="#760" id="760" class="l">760: </a></code></pre>
+</span><a href="#743" id="743" class="l">743: </a><span class="php-comment"> * @tutorial __('К нам пришёл :user_name', array(':user_name'=&gt;'Дед мороз') );
+</span><a href="#744" id="744" class="l">744: </a><span class="php-comment"> *
+</span><a href="#745" id="745" class="l">745: </a><span class="php-comment"> * @param string $string
+</span><a href="#746" id="746" class="l">746: </a><span class="php-comment"> * @param array  $args
+</span><a href="#747" id="747" class="l">747: </a><span class="php-comment"> *
+</span><a href="#748" id="748" class="l">748: </a><span class="php-comment"> * @return string
+</span><a href="#749" id="749" class="l">749: </a><span class="php-comment"> */</span>
+<a href="#750" id="750" class="l">750: </a><span class="php-keyword1">function</span> __(<span class="php-var">$string</span>, <span class="php-keyword1">array</span> <span class="php-var">$args</span> = <span class="php-keyword1">null</span>) {
+<a href="#751" id="751" class="l">751: </a>    <span class="php-keyword1">return</span> <span class="php-var">$args</span> === <span class="php-keyword1">NULL</span> ? <span class="php-var">$string</span> : <span class="php-keyword2">strtr</span>(<span class="php-var">$string</span>, <span class="php-var">$args</span>);
+<a href="#752" id="752" class="l">752: </a>}
+<a href="#753" id="753" class="l">753: </a>
+<a href="#754" id="754" class="l">754: </a><span class="php-comment">/**
+</span><a href="#755" id="755" class="l">755: </a><span class="php-comment"> * Убрать, заменить везде и использовать как joosDebug::dump($var);
+</span><a href="#756" id="756" class="l">756: </a><span class="php-comment"> * @deprecated
+</span><a href="#757" id="757" class="l">757: </a><span class="php-comment"> */</span>
+<a href="#758" id="758" class="l">758: </a><span class="php-keyword1">function</span> _xdump(<span class="php-var">$var</span>) {
+<a href="#759" id="759" class="l">759: </a>    joosDebug::dump(<span class="php-var">$var</span>);
+<a href="#760" id="760" class="l">760: </a>}
+<a href="#761" id="761" class="l">761: </a>
+<a href="#762" id="762" class="l">762: </a><span class="php-keyword1">class</span> joosCoreException <span class="php-keyword1">extends</span> joosException {
+<a href="#763" id="763" class="l">763: </a>
+<a href="#764" id="764" class="l">764: </a>}
+<a href="#765" id="765" class="l">765: </a></code></pre>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

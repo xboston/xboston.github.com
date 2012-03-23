@@ -4,18 +4,55 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Todo | Joostina CMS</title>
+	<title>Todo | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-.html" title="Summary of "><span>Package</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li class="active">
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +146,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -122,10 +156,8 @@
 				<li><a href="class-actionsAdminContent.html">actionsAdminContent</a></li>
 				<li><a href="class-actionsAdminMetainfo.html">actionsAdminMetainfo</a></li>
 				<li><a href="class-actionsAdminModules.html">actionsAdminModules</a></li>
-				<li><a href="class-actionsAdminPages.html">actionsAdminPages</a></li>
 				<li><a href="class-actionsAdminQuickicons.html">actionsAdminQuickicons</a></li>
 				<li><a href="class-actionsAdminSitemap.html">actionsAdminSitemap</a></li>
-				<li><a href="class-actionsAdminTest.html">actionsAdminTest</a></li>
 				<li><a href="class-actionsAdminUsers.html">actionsAdminUsers</a></li>
 				<li><a href="class-actionsAjaxAdminAcls.html">actionsAjaxAdminAcls</a></li>
 				<li><a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a></li>
@@ -133,6 +165,7 @@
 				<li><a href="class-actionsAjaxAdminContent.html">actionsAjaxAdminContent</a></li>
 				<li><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a></li>
 				<li><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a></li>
+				<li><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a></li>
 				<li><a href="class-actionsAjaxAdminUsers.html">actionsAjaxAdminUsers</a></li>
 				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li><a href="class-actionsAjaxUsers.html">actionsAjaxUsers</a></li>
@@ -181,6 +214,8 @@
 				<li><a href="class-Jevix.html">Jevix</a></li>
 				<li><a href="class-JJevix.html">JJevix</a></li>
 				<li><a href="class-joosAcl.html">joosAcl</a></li>
+				<li><a href="class-joosAdminController.html">joosAdminController</a></li>
+				<li><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></li>
 				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosArhive.html">joosArhive</a></li>
@@ -188,12 +223,14 @@
 				<li><a href="class-joosAttached.html">joosAttached</a></li>
 				<li><a href="class-joosAutoadmin.html">joosAutoadmin</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
+				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
 				<li><a href="class-joosBenchmark.html">joosBenchmark</a></li>
 				<li><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a></li>
 				<li><a href="class-joosCache.html">joosCache</a></li>
 				<li><a href="class-joosConfig.html">joosConfig</a></li>
 				<li><a href="class-joosController.html">joosController</a></li>
+				<li><a href="class-joosControllerAjax.html">joosControllerAjax</a></li>
 				<li><a href="class-joosCookie.html">joosCookie</a></li>
 				<li><a href="class-joosCore.html">joosCore</a></li>
 				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
@@ -216,13 +253,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosLoader.html">joosLoader</a></li>
-				<li><a href="class-joosLogging.html">joosLogging</a></li>
-				<li><a href="class-joosLoggingAutoloader.html">joosLoggingAutoloader</a></li>
-				<li><a href="class-joosLoggingHandler.html">joosLoggingHandler</a></li>
-				<li><a href="class-joosLoggingHandlerFirephp.html">joosLoggingHandlerFirephp</a></li>
-				<li><a href="class-joosLoggingHandlerMail.html">joosLoggingHandlerMail</a></li>
-				<li><a href="class-joosLoggingHandlerStream.html">joosLoggingHandlerStream</a></li>
-				<li><a href="class-joosLoggingLevels.html">joosLoggingLevels</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
 				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
@@ -325,49 +355,65 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-<span>Package</span>			</li>
-			<li>
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li class="active">
-<span>Todo</span>			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content">
 	<h1>Todo</h1>
-
 
 	<table class="summary" id="classes">
 	<caption>Classes summary</caption>
 	<tr>
-		<td class="name" rowspan="1"><a href="class-joosConfig.html">joosConfig</a></td>
-		<td>рассмотреть возможность использования SPL
-ArrayObject
+		<td class="name" rowspan="1"><a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax
 <!-- by Texy2! --></td>
 	</tr>
 	<tr>
+		<td class="name" rowspan="1"><a href="class-actionsAjaxAdminContent.html">actionsAjaxAdminContent</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-joosAdminController.html">joosAdminController</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-joosConfig.html">joosConfig</a></td>
+		<td>рассмотреть возможность использования SPL
+ArrayObject</td>
+	</tr>
+	<tr>
 		<td class="name" rowspan="1"><a href="class-joosController.html">joosController</a></td>
+		<td>разделить/расширить инициализации
+контроллера для front, front-ajax, admin, admin-ajax</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-joosControllerAjax.html">joosControllerAjax</a></td>
 		<td>разделить/расширить инициализации
 контроллера для front, front-ajax, admin, admin-ajax</td>
 	</tr>
@@ -443,11 +489,12 @@ ArrayObject
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

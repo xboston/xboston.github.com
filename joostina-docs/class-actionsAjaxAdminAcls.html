@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class actionsAjaxAdminAcls | Joostina CMS</title>
+	<title>Class actionsAjaxAdminAcls | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Controllers.Acls.html" title="Summary of Controllers\Acls"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-actionsAjaxAdminAcls.html" title="Summary of actionsAjaxAdminAcls"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -130,58 +167,41 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Controllers.Acls.html" title="Summary of Controllers\Acls"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class actionsAjaxAdminAcls</h1>
 
-
 	<div class="description">
 	
-<p>Acl - Компонент для управления правами
+<p>Компонент для управления правами
 Контроллер панели управления</p>
 
 	</div>
 
-	<dl class="tree">
+	<dl class="tree well">
 		<dd style="padding-left:0px">
-			<a href="class-joosController.html"><span>joosController</span></a>
+			<a href="class-joosController.html">joosController</a>
 			
 			
 			
 		</dd>
 		<dd style="padding-left:30px">
 			<img src="resources/inherit.png" alt="Extended by" />
-<b><span>actionsAjaxAdminAcls</span></b>			
+			<a href="class-joosAdminController.html">joosAdminController</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:60px">
+			<img src="resources/inherit.png" alt="Extended by" />
+			<a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:90px">
+			<img src="resources/inherit.png" alt="Extended by" />
+<b>actionsAjaxAdminAcls</b>			
 			
 			
 		</dd>
@@ -193,12 +213,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Controllers.html">Controllers</a>\<a href="package-Controllers.Acls.html">Acls</a><br />
 
 				<b>Copyright:</b>
 				(C) 2007-2012 Joostina Team<br />
@@ -210,119 +228,119 @@
 href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 				<b>Version:</b>
 				1.0<br />
-		<b>Located at</b> <a href="source-class-actionsAjaxAdminAcls.html#6" title="Go to source code">app/components/acls/controller.admin.acls.ajax.php</a><br />
+		<b>Located at:</b> <a href="source-class-actionsAjaxAdminAcls.html#6" title="Go to source code">app/components/acls/controller.admin.acls.ajax.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="action_before" id="_action_before">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="action_before" id="_action_before">
 
-		<td class="attributes"><code>
-			 public static
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_action_before">#</a>
-		<code><a href="source-class-actionsAjaxAdminAcls.html#21" title="Go to source code">action_before</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_action_before">#</a>
+			<code><a href="source-class-actionsAjaxAdminAcls.html#21" title="Go to source code">action_before</a>( )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
-
-
-
+			<div class="description detailed hidden">
+				
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="change" id="_change">
 
-		<td class="attributes"><code>
-			 public static
-			array
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_change">#</a>
-		<code><a href="source-class-actionsAjaxAdminAcls.html#26" title="Go to source code">change</a>( )</code>
 
-		<div class="description short">
-			
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="change" id="_change">
+
+			<td class="attributes"><code>
+				
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_change">#</a>
+			<code><a href="source-class-actionsAjaxAdminAcls.html#26" title="Go to source code">change</a>( )</code>
+
+			<div class="description short">
+				
 <p>Смена статуса доступа группы к действию</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Смена статуса доступа группы к действию</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	</table>
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
-	<table class="summary inherited">
-	<caption>Methods inherited from <a href="class-joosController.html#methods">joosController</a></caption>
-	<tr>
+		<h3>Methods inherited from <a href="class-joosController.html#methods">joosController</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosController.html#_ajax_error404">ajax_error404()</a>, 
-			<a href="class-joosController.html#_ajax_run">ajax_run()</a>, 
-			<a href="class-joosController.html#_error404">error404()</a>, 
-			<a href="class-joosController.html#_get_view">get_view()</a>, 
-			<a href="class-joosController.html#_init">init()</a>, 
-			<a href="class-joosController.html#_run">run()</a>, 
-			<a href="class-joosController.html#_static_run">static_run()</a>
-		</code></td>
-	</tr>
-	</table>
+<a href="class-joosController.html#_ajax_error404">ajax_error404()</a>, 
+<a href="class-joosController.html#_ajax_run">ajax_run()</a>, 
+<a href="class-joosController.html#_error404">error404()</a>, 
+<a href="class-joosController.html#_get_view">get_view()</a>, 
+<a href="class-joosController.html#_init">init()</a>, 
+<a href="class-joosController.html#_run">run()</a>, 
+<a href="class-joosController.html#_static_run">static_run()</a>
+			</code></td>
+		</tr>
+		</table>
 
 
 
+		<h2>Properties summary</h2>
 
-
-
-
-	<table class="summary inherited">
-	<caption>Properties inherited from <a href="class-joosController.html#properties">joosController</a></caption>
-	<tr>
+		<h3>Properties inherited from <a href="class-joosController.html#properties">joosController</a></h3>
+		<table class="summary table table-bordered table-striped" id="methods-inherited">
+		<tr>
 		<td><code>
-			<a href="class-joosController.html#$activroute"><var>$activroute</var></a>, 
-			<a href="class-joosController.html#$controller"><var>$controller</var></a>, 
-			<a href="class-joosController.html#$error"><var>$error</var></a>, 
-			<a href="class-joosController.html#$param"><var>$param</var></a>, 
-			<a href="class-joosController.html#$task"><var>$task</var></a>
-		</code></td>
-	</tr>
-	</table>
-
+<a href="class-joosController.html#$activroute"><var>$activroute</var></a>, 
+<a href="class-joosController.html#$controller"><var>$controller</var></a>, 
+<a href="class-joosController.html#$error"><var>$error</var></a>, 
+<a href="class-joosController.html#$param"><var>$param</var></a>, 
+<a href="class-joosController.html#$task"><var>$task</var></a>
+			</code></td>
+		</tr>
+		</table>
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

@@ -5,18 +5,58 @@
 	<meta name="generator" content="ApiGen 2.6.0" />
 	<meta name="robots" content="noindex" />
 
-	<title>File app/vendors/text/jevix/jevix.class.php | Joostina CMS</title>
+	<title>File app/vendors/text/jevix/jevix.class.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+						</li>
+						<li>
+							<a href="class-Jevix.html" title="Summary of Jevix"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -110,13 +150,9 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
@@ -124,15 +160,9 @@
 				<li><a href="class-JJevix.html">JJevix</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
+				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
-				<li><a href="class-joosLogging.html">joosLogging</a></li>
-				<li><a href="class-joosLoggingAutoloader.html">joosLoggingAutoloader</a></li>
-				<li><a href="class-joosLoggingHandler.html">joosLoggingHandler</a></li>
-				<li><a href="class-joosLoggingHandlerFirephp.html">joosLoggingHandlerFirephp</a></li>
-				<li><a href="class-joosLoggingHandlerMail.html">joosLoggingHandlerMail</a></li>
-				<li><a href="class-joosLoggingHandlerStream.html">joosLoggingHandlerStream</a></li>
-				<li><a href="class-joosLoggingLevels.html">joosLoggingLevels</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
@@ -175,38 +205,7 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-None.html" title="Summary of None"><span>Package</span></a>
-			</li>
-			<li>
-				<a href="class-Jevix.html" title="Summary of Jevix"><span>Class</span></a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <pre><code><a href="#1" id="1" class="l">   1: </a><span class="xlang">&lt;?php</span>
 <a href="#2" id="2" class="l">   2: </a>
 <a href="#3" id="3" class="l">   3: </a><span class="php-comment">/**
@@ -1953,11 +1952,12 @@
 <a href="#1744" id="1744" class="l">1744: </a>    }
 <a href="#1745" id="1745" class="l">1745: </a>}
 <a href="#1746" id="1746" class="l">1746: </a></code></pre>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

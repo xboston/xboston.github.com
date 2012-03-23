@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class joosPager | Joostina CMS</title>
+	<title>Class joosPager | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-joosPager.html" title="Summary of joosPager"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -172,40 +209,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class joosPager</h1>
-
 
 	<div class="description">
 	
@@ -221,12 +227,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Libraries.html">Libraries</a><br />
 
 				<b>Category:</b>
 				Libraries<br />
@@ -252,681 +256,700 @@ href="mailto:darkredz&#64;gmail.com">darkredz&#64;<!---->gmail.com</a>&gt;<br />
 				<b>Todo:</b>
 				переписать joosPager на joosRoute и привести к
 общему виду<br />
-		<b>Located at</b> <a href="source-class-joosPager.html#6" title="Go to source code">core/libraries/pager.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosPager.html#6" title="Go to source code">core/libraries/pager.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="__construct" id="___construct">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="__construct" id="___construct">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#___construct">#</a>
-		<code><a href="source-class-joosPager.html#150" title="Go to source code">__construct</a>( <span>string <var>$baseURL</var> = <span class="php-quote">''</span> </span>, <span>integer <var>$totalItems</var> = <span class="php-num">120</span> </span>, <span>integer <var>$itemPerPage</var> = <span class="php-num">10</span> </span>, <span>integer <var>$maxlength</var> = <span class="php-num">11</span> </span>, <span>string <var>$extraURL</var> = <span class="php-quote">''</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-joosPager.html#150" title="Go to source code">__construct</a>( <span>string <var>$baseURL</var> = <span class="php-quote">''</span> </span>, <span>integer <var>$totalItems</var> = <span class="php-num">120</span> </span>, <span>integer <var>$itemPerPage</var> = <span class="php-num">10</span> </span>, <span>integer <var>$maxlength</var> = <span class="php-num">11</span> </span>, <span>string <var>$extraURL</var> = <span class="php-quote">''</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Instanciate the Pager object</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Instanciate the Pager object</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$baseURL</var></dt>
-					<dd><code>string</code><br> Base URL to be appended to the page number</dd>
-					<dt><var>$totalItems</var></dt>
-					<dd><code>integer</code><br> Total items to be paginate</dd>
-					<dt><var>$itemPerPage</var></dt>
-					<dd><code>integer</code><br> Items to be shown in one page.</dd>
-					<dt><var>$maxlength</var></dt>
-					<dd><code>integer</code><br> Number of links for the pager navigation</dd>
-					<dt><var>$extraURL</var></dt>
-					<dd><code>string</code><br>$prevText joosText for the Previous button link</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$baseURL</var></dt>
+						<dd><code>string</code><br> Base URL to be appended to the page number</dd>
+						<dt><var>$totalItems</var></dt>
+						<dd><code>integer</code><br> Total items to be paginate</dd>
+						<dt><var>$itemPerPage</var></dt>
+						<dd><code>integer</code><br> Items to be shown in one page.</dd>
+						<dt><var>$maxlength</var></dt>
+						<dd><code>integer</code><br> Number of links for the pager navigation</dd>
+						<dt><var>$extraURL</var></dt>
+						<dd><code>string</code><br>$prevText joosText for the Previous button link</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="paginate" id="_paginate">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="paginate" id="_paginate">
 
-		<td class="attributes"><code>
-			 public 
-			array
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				array
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_paginate">#</a>
-		<code><a href="source-class-joosPager.html#168" title="Go to source code">paginate</a>( <span>integer <var>$page</var></span>, <span>integer <var>$itemPerPage</var> = <span class="php-num">0</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_paginate">#</a>
+			<code><a href="source-class-joosPager.html#168" title="Go to source code">paginate</a>( <span>integer <var>$page</var></span>, <span>integer <var>$itemPerPage</var> = <span class="php-num">0</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Paginate the list of items and prepare pager components to be use in
 View.</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Paginate the list of items and prepare pager components to be use in
 View.</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$page</var></dt>
-					<dd><code>integer</code><br> The current page number</dd>
-					<dt><var>$itemPerPage</var></dt>
-					<dd><code>integer</code><br> Items per page</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$page</var></dt>
+						<dd><code>integer</code><br> The current page number</dd>
+						<dt><var>$itemPerPage</var></dt>
+						<dd><code>integer</code><br> Items per page</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>array</code><br>An array of pager component, access via &lt;strong&gt;pages, jump_menu,
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>An array of pager component, access via &lt;strong&gt;pages, jump_menu,
 page_size, current_page, total_page, next_link, prev_link&lt;/strong&gt;<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="pagesCss" id="$pagesCss">
+
+			<td class="attributes"><code>
+				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#29" title="Go to source code"><var>$pagesCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'paginate'</span></code></td>
+			<td class="description"><div>
+				<a href="#$pagesCss" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>CSS class name for the modelPages links</p>
+
 				</div>
 
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-
-
-
-
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="pagesCss" id="$pagesCss">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#29" title="Go to source code"><var>$pagesCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'paginate'</span></code></td>
-		<td class="description"><div>
-			<a href="#$pagesCss" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>CSS class name for the modelPages links</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for the modelPages links</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="dropDownCss" id="$dropDownCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="dropDownCss" id="$dropDownCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#35" title="Go to source code"><var>$dropDownCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'pagerDropDown'</span></code></td>
-		<td class="description"><div>
-			<a href="#$dropDownCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#35" title="Go to source code"><var>$dropDownCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'pagerDropDown'</span></code></td>
+			<td class="description"><div>
+				<a href="#$dropDownCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for the modelPages DropDown menu</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for the modelPages DropDown menu</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="pageSizeCss" id="$pageSizeCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="pageSizeCss" id="$pageSizeCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#41" title="Go to source code"><var>$pageSizeCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'pageSize'</span></code></td>
-		<td class="description"><div>
-			<a href="#$pageSizeCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#41" title="Go to source code"><var>$pageSizeCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'pageSize'</span></code></td>
+			<td class="description"><div>
+				<a href="#$pageSizeCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for the page sizes menu</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for the page sizes menu</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="inactivePrevCss" id="$inactivePrevCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="inactivePrevCss" id="$inactivePrevCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#47" title="Go to source code"><var>$inactivePrevCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'inactivePrev'</span></code></td>
-		<td class="description"><div>
-			<a href="#$inactivePrevCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#47" title="Go to source code"><var>$inactivePrevCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'inactivePrev'</span></code></td>
+			<td class="description"><div>
+				<a href="#$inactivePrevCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for inactive links</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
-<p>CSS class name for inactive links</p>
-
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="inactiveNextCss" id="$inactiveNextCss">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#53" title="Go to source code"><var>$inactiveNextCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'inactiveNext'</span></code></td>
-		<td class="description"><div>
-			<a href="#$inactiveNextCss" class="anchor">#</a>
-
-			<div class="description short">
-				
-<p>CSS class name for inactive links</p>
-
-			</div>
-
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for inactive links</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="currentCss" id="$currentCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="inactiveNextCss" id="$inactiveNextCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#59" title="Go to source code"><var>$currentCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'active'</span></code></td>
-		<td class="description"><div>
-			<a href="#$currentCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#53" title="Go to source code"><var>$inactiveNextCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'inactiveNext'</span></code></td>
+			<td class="description"><div>
+				<a href="#$inactiveNextCss" class="anchor">#</a>
+
+				<div class="description short">
+					
+<p>CSS class name for inactive links</p>
+
+				</div>
+
+				<div class="description detailed hidden">
+					
+<p>CSS class name for inactive links</p>
+
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="currentCss" id="$currentCss">
+
+			<td class="attributes"><code>
+				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#59" title="Go to source code"><var>$currentCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'active'</span></code></td>
+			<td class="description"><div>
+				<a href="#$currentCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for selected current link</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for selected current link</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="nextCss" id="$nextCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="nextCss" id="$nextCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#65" title="Go to source code"><var>$nextCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'next'</span></code></td>
-		<td class="description"><div>
-			<a href="#$nextCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#65" title="Go to source code"><var>$nextCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'next'</span></code></td>
+			<td class="description"><div>
+				<a href="#$nextCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for next link</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for next link</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="prevCss" id="$prevCss">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="prevCss" id="$prevCss">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#71" title="Go to source code"><var>$prevCss</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">'prev'</span></code></td>
-		<td class="description"><div>
-			<a href="#$prevCss" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#71" title="Go to source code"><var>$prevCss</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">'prev'</span></code></td>
+			<td class="description"><div>
+				<a href="#$prevCss" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>CSS class name for previous link</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>CSS class name for previous link</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="components" id="$components">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="components" id="$components">
 
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#77" title="Go to source code"><var>$components</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$components" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#77" title="Go to source code"><var>$components</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$components" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Contain the list of components to be used in view. (pages, jump menu,
 page_size, current_page, total_page)</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Contain the list of components to be used in view. (pages, jump menu,
 page_size, current_page, total_page)</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="itemPerPage" id="$itemPerPage">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="itemPerPage" id="$itemPerPage">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#83" title="Go to source code"><var>$itemPerPage</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">10</span></code></td>
-		<td class="description"><div>
-			<a href="#$itemPerPage" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#83" title="Go to source code"><var>$itemPerPage</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">10</span></code></td>
+			<td class="description"><div>
+				<a href="#$itemPerPage" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Items to be displayed per page</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Items to be displayed per page</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="currentPage" id="$currentPage">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="currentPage" id="$currentPage">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#89" title="Go to source code"><var>$currentPage</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">1</span></code></td>
-		<td class="description"><div>
-			<a href="#$currentPage" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#89" title="Go to source code"><var>$currentPage</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">1</span></code></td>
+			<td class="description"><div>
+				<a href="#$currentPage" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>The current page number</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The current page number</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="maxLength" id="$maxLength">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="maxLength" id="$maxLength">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#95" title="Go to source code"><var>$maxLength</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">10</span></code></td>
-		<td class="description"><div>
-			<a href="#$maxLength" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#95" title="Go to source code"><var>$maxLength</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">10</span></code></td>
+			<td class="description"><div>
+				<a href="#$maxLength" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Maximum Pager length</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Maximum Pager length</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="totalItem" id="$totalItem">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="totalItem" id="$totalItem">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#101" title="Go to source code"><var>$totalItem</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$totalItem" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#101" title="Go to source code"><var>$totalItem</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$totalItem" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Total items to be split in the pagination</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Total items to be split in the pagination</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="totalPage" id="$totalPage">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="totalPage" id="$totalPage">
 
-		<td class="attributes"><code>
-			public 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#107" title="Go to source code"><var>$totalPage</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$totalPage" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#107" title="Go to source code"><var>$totalPage</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$totalPage" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Total pages in the pagination</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Total pages in the pagination</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="output" id="$output">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="output" id="$output">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#113" title="Go to source code"><var>$output</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$output" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#113" title="Go to source code"><var>$output</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$output" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>The pages HTML output</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The pages HTML output</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="baseUrl" id="$baseUrl">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="baseUrl" id="$baseUrl">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#119" title="Go to source code"><var>$baseUrl</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$baseUrl" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#119" title="Go to source code"><var>$baseUrl</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$baseUrl" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>The URL prefix for all the pagination links</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>The URL prefix for all the pagination links</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="low" id="$low">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="low" id="$low">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#126" title="Go to source code"><var>$low</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$low" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#126" title="Go to source code"><var>$low</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$low" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Position of the record to begin the pagination LIMIT query</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Position of the record to begin the pagination LIMIT query</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="high" id="$high">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="high" id="$high">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#132" title="Go to source code"><var>$high</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$high" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#132" title="Go to source code"><var>$high</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$high" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>Position of the record to end the pagination LIMIT query</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Position of the record to end the pagination LIMIT query</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="limit" id="$limit">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="limit" id="$limit">
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#138" title="Go to source code"><var>$limit</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$limit" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-joosPager.html#138" title="Go to source code"><var>$limit</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$limit" class="anchor">#</a>
+
+				<div class="description short">
+					
 <p>To be use with the pagination LIMIT query LIMIT $limit</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>To be use with the pagination LIMIT query LIMIT $limit</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="offset" id="$offset">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="offset" id="$offset">
 
-		<td class="attributes"><code>
-			public 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-joosPager.html#144" title="Go to source code"><var>$offset</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$offset" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
-			</div>
-
-			<div class="description detailed hidden">
+				public 
 				
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
+			<td class="name">
+					<a href="source-class-joosPager.html#144" title="Go to source code"><var>$offset</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$offset" class="anchor">#</a>
 
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

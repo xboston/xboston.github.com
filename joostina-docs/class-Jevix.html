@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class Jevix | Joostina CMS</title>
+	<title>Class Jevix | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-Jevix.html" title="Summary of Jevix"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,13 +149,9 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
@@ -123,15 +159,9 @@
 				<li><a href="class-JJevix.html">JJevix</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
+				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
-				<li><a href="class-joosLogging.html">joosLogging</a></li>
-				<li><a href="class-joosLoggingAutoloader.html">joosLoggingAutoloader</a></li>
-				<li><a href="class-joosLoggingHandler.html">joosLoggingHandler</a></li>
-				<li><a href="class-joosLoggingHandlerFirephp.html">joosLoggingHandlerFirephp</a></li>
-				<li><a href="class-joosLoggingHandlerMail.html">joosLoggingHandlerMail</a></li>
-				<li><a href="class-joosLoggingHandlerStream.html">joosLoggingHandlerStream</a></li>
-				<li><a href="class-joosLoggingLevels.html">joosLoggingLevels</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
@@ -174,40 +204,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-None.html" title="Summary of None"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class Jevix</h1>
-
 
 	<div class="description">
 	
@@ -229,9 +228,7 @@ href="http://code.google.com/p/jevix/">http://code.google.com/p/jevix/</a></p>
 
 
 
-
-	<div class="info">
-		
+	<div class="alert alert-info">
 		
 		
 		
@@ -324,281 +321,288 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 , при включенном -<br />
 + Несколько незначительных багфиксов 0.9 +
 Первый бета-релиз<br />
-		<b>Located at</b> <a href="source-class-Jevix.html#3" title="Go to source code">app/vendors/text/jevix/jevix.class.php</a><br />
+		<b>Located at:</b> <a href="source-class-Jevix.html#3" title="Go to source code">app/vendors/text/jevix/jevix.class.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="_cfgSetTagsFlag" id="__cfgSetTagsFlag">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="_cfgSetTagsFlag" id="__cfgSetTagsFlag">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#__cfgSetTagsFlag">#</a>
-		<code><a href="source-class-Jevix.html#350" title="Go to source code">_cfgSetTagsFlag</a>( <span>array|string <var>$tags</var></span>, <span>integer <var>$flag</var></span>, <span>mixed <var>$value</var></span>, <span>boolean <var>$createIfNoExists</var> = <span class="php-keyword1">true</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#__cfgSetTagsFlag">#</a>
+			<code><a href="source-class-Jevix.html#350" title="Go to source code">_cfgSetTagsFlag</a>( <span>array|string <var>$tags</var></span>, <span>integer <var>$flag</var></span>, <span>mixed <var>$value</var></span>, <span>boolean <var>$createIfNoExists</var> = <span class="php-keyword1">true</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Установка конфигурационного флага для
 одного или нескольких тегов</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Установка конфигурационного флага для
 одного или нескольких тегов</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-					<dt><var>$flag</var></dt>
-					<dd><code>integer</code><br> флаг</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>mixed</code><br> значеник=е флага</dd>
-					<dt><var>$createIfNoExists</var></dt>
-					<dd><code>boolean</code><br> если тег ещё не определён - создть его</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+						<dt><var>$flag</var></dt>
+						<dd><code>integer</code><br> флаг</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>mixed</code><br> значеник=е флага</dd>
+						<dt><var>$createIfNoExists</var></dt>
+						<dd><code>boolean</code><br> если тег ещё не определён - создть его</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgAllowTags" id="_cfgAllowTags">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgAllowTags" id="_cfgAllowTags">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgAllowTags">#</a>
-		<code><a href="source-class-Jevix.html#374" title="Go to source code">cfgAllowTags</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgAllowTags">#</a>
+			<code><a href="source-class-Jevix.html#374" title="Go to source code">cfgAllowTags</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Разрешение или запрет тегов
 Все не разрешённые теги считаются
 запрещёнными</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Разрешение или запрет тегов
 Все не разрешённые теги считаются
 запрещёнными</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagShort" id="_cfgSetTagShort">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagShort" id="_cfgSetTagShort">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagShort">#</a>
-		<code><a href="source-class-Jevix.html#384" title="Go to source code">cfgSetTagShort</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagShort">#</a>
+			<code><a href="source-class-Jevix.html#384" title="Go to source code">cfgSetTagShort</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Коротие теги типа &lt;img&gt;</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Коротие теги типа &lt;img&gt;</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagPreformatted" id="_cfgSetTagPreformatted">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagPreformatted" id="_cfgSetTagPreformatted">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagPreformatted">#</a>
-		<code><a href="source-class-Jevix.html#393" title="Go to source code">cfgSetTagPreformatted</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagPreformatted">#</a>
+			<code><a href="source-class-Jevix.html#393" title="Go to source code">cfgSetTagPreformatted</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Преформатированные теги, в
 которых всё заменяется на HTML сущности типа
 &lt;pre&gt;</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Преформатированные теги, в
 которых всё заменяется на HTML сущности типа
 &lt;pre&gt;</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagNoTypography" id="_cfgSetTagNoTypography">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagNoTypography" id="_cfgSetTagNoTypography">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagNoTypography">#</a>
-		<code><a href="source-class-Jevix.html#402" title="Go to source code">cfgSetTagNoTypography</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagNoTypography">#</a>
+			<code><a href="source-class-Jevix.html#402" title="Go to source code">cfgSetTagNoTypography</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Теги в которых отключено
 типографирование типа &lt;code&gt;</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Теги в которых отключено
 типографирование типа &lt;code&gt;</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagIsEmpty" id="_cfgSetTagIsEmpty">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagIsEmpty" id="_cfgSetTagIsEmpty">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagIsEmpty">#</a>
-		<code><a href="source-class-Jevix.html#411" title="Go to source code">cfgSetTagIsEmpty</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagIsEmpty">#</a>
+			<code><a href="source-class-Jevix.html#411" title="Go to source code">cfgSetTagIsEmpty</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Не короткие теги которые не
 нужно удалять с пустым содержанием,
 например, &lt;param name="code" value="die!"&gt;&lt;/param&gt;</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Не короткие теги которые не
 нужно удалять с пустым содержанием,
 например, &lt;param name="code" value="die!"&gt;&lt;/param&gt;</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagNoAutoBr" id="_cfgSetTagNoAutoBr">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagNoAutoBr" id="_cfgSetTagNoAutoBr">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagNoAutoBr">#</a>
-		<code><a href="source-class-Jevix.html#420" title="Go to source code">cfgSetTagNoAutoBr</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagNoAutoBr">#</a>
+			<code><a href="source-class-Jevix.html#420" title="Go to source code">cfgSetTagNoAutoBr</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			КОНФИГУРАЦИЯ: Теги внутри который не нужна
+			<div class="description short">
+				КОНФИГУРАЦИЯ: Теги внутри который не нужна
 авто-расстановка<br />
 , например,
 <ul></ul>
  и
 <ol></ol>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			КОНФИГУРАЦИЯ: Теги внутри который не нужна
+			<div class="description detailed hidden">
+				КОНФИГУРАЦИЯ: Теги внутри который не нужна
 авто-расстановка<br />
 , например,
 <ul></ul>
@@ -607,603 +611,619 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagCutWithContent" id="_cfgSetTagCutWithContent">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagCutWithContent" id="_cfgSetTagCutWithContent">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagCutWithContent">#</a>
-		<code><a href="source-class-Jevix.html#429" title="Go to source code">cfgSetTagCutWithContent</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagCutWithContent">#</a>
+			<code><a href="source-class-Jevix.html#429" title="Go to source code">cfgSetTagCutWithContent</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Тег необходимо вырезать
 вместе с контентом (script, iframe)</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Тег необходимо вырезать
 вместе с контентом (script, iframe)</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagBlockType" id="_cfgSetTagBlockType">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagBlockType" id="_cfgSetTagBlockType">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagBlockType">#</a>
-		<code><a href="source-class-Jevix.html#438" title="Go to source code">cfgSetTagBlockType</a>( <span>array|string <var>$tags</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagBlockType">#</a>
+			<code><a href="source-class-Jevix.html#438" title="Go to source code">cfgSetTagBlockType</a>( <span>array|string <var>$tags</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: После тега не нужно
 добавлять дополнительный<br />
 </p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: После тега не нужно
 добавлять дополнительный<br />
 </p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tags</var></dt>
-					<dd><code>array|string</code><br> тег(и)</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tags</var></dt>
+						<dd><code>array|string</code><br> тег(и)</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgAllowTagParams" id="_cfgAllowTagParams">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgAllowTagParams" id="_cfgAllowTagParams">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgAllowTagParams">#</a>
-		<code><a href="source-class-Jevix.html#447" title="Go to source code">cfgAllowTagParams</a>( <span>string <var>$tag</var></span>, <span>string|array <var>$params</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgAllowTagParams">#</a>
+			<code><a href="source-class-Jevix.html#447" title="Go to source code">cfgAllowTagParams</a>( <span>string <var>$tag</var></span>, <span>string|array <var>$params</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Добавление разрешённых
 параметров тега</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Добавление разрешённых
 параметров тега</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tag</var></dt>
-					<dd><code>string</code><br> тег</dd>
-					<dt><var>$params</var></dt>
-					<dd><code>string|array</code><br> разрешённые параметры</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tag</var></dt>
+						<dd><code>string</code><br> тег</dd>
+						<dt><var>$params</var></dt>
+						<dd><code>string|array</code><br> разрешённые параметры</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagParamsRequired" id="_cfgSetTagParamsRequired">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagParamsRequired" id="_cfgSetTagParamsRequired">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagParamsRequired">#</a>
-		<code><a href="source-class-Jevix.html#473" title="Go to source code">cfgSetTagParamsRequired</a>( <span>string <var>$tag</var></span>, <span>string|array <var>$params</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagParamsRequired">#</a>
+			<code><a href="source-class-Jevix.html#473" title="Go to source code">cfgSetTagParamsRequired</a>( <span>string <var>$tag</var></span>, <span>string|array <var>$params</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Добавление необходимых
 параметров тега</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Добавление необходимых
 параметров тега</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tag</var></dt>
-					<dd><code>string</code><br> тег</dd>
-					<dt><var>$params</var></dt>
-					<dd><code>string|array</code><br> разрешённые параметры</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tag</var></dt>
+						<dd><code>string</code><br> тег</dd>
+						<dt><var>$params</var></dt>
+						<dd><code>string|array</code><br> разрешённые параметры</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagChilds" id="_cfgSetTagChilds">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagChilds" id="_cfgSetTagChilds">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagChilds">#</a>
-		<code><a href="source-class-Jevix.html#502" title="Go to source code">cfgSetTagChilds</a>( <span> <var>$tag</var></span>, <span> <var>$childs</var></span>, <span> <var>$isContainerOnly</var> = <span class="php-keyword1">false</span> </span>, <span> <var>$isChildOnly</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagChilds">#</a>
+			<code><a href="source-class-Jevix.html#502" title="Go to source code">cfgSetTagChilds</a>( <span> <var>$tag</var></span>, <span> <var>$childs</var></span>, <span> <var>$isContainerOnly</var> = <span class="php-keyword1">false</span> </span>, <span> <var>$isChildOnly</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
-
-
-
+			<div class="description detailed hidden">
+				
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagParamDefault" id="_cfgSetTagParamDefault">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagParamDefault">#</a>
-		<code><a href="source-class-Jevix.html#546" title="Go to source code">cfgSetTagParamDefault</a>( <span>string <var>$tag</var></span>, <span>string <var>$param</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$isRewrite</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagParamDefault" id="_cfgSetTagParamDefault">
+
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagParamDefault">#</a>
+			<code><a href="source-class-Jevix.html#546" title="Go to source code">cfgSetTagParamDefault</a>( <span>string <var>$tag</var></span>, <span>string <var>$param</var></span>, <span>string <var>$value</var></span>, <span>boolean <var>$isRewrite</var> = <span class="php-keyword1">false</span> </span> )</code>
+
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Установка дефолтных
 значений для атрибутов тега</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Установка дефолтных
 значений для атрибутов тега</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tag</var></dt>
-					<dd><code>string</code><br> тег</dd>
-					<dt><var>$param</var></dt>
-					<dd><code>string</code><br> атрибут</dd>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br> значение</dd>
-					<dt><var>$isRewrite</var></dt>
-					<dd><code>boolean</code><br> заменять указанное значение дефолтным</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tag</var></dt>
+						<dd><code>string</code><br> тег</dd>
+						<dt><var>$param</var></dt>
+						<dd><code>string</code><br> атрибут</dd>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br> значение</dd>
+						<dt><var>$isRewrite</var></dt>
+						<dd><code>boolean</code><br> заменять указанное значение дефолтным</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetTagCallback" id="_cfgSetTagCallback">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetTagCallback" id="_cfgSetTagCallback">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetTagCallback">#</a>
-		<code><a href="source-class-Jevix.html#567" title="Go to source code">cfgSetTagCallback</a>( <span>string <var>$tag</var></span>, <span>mixed <var>$callback</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetTagCallback">#</a>
+			<code><a href="source-class-Jevix.html#567" title="Go to source code">cfgSetTagCallback</a>( <span>string <var>$tag</var></span>, <span>mixed <var>$callback</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>КОНФИГУРАЦИЯ: Устанавливаем callback-функцию
 на обработку содержимого тега</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>КОНФИГУРАЦИЯ: Устанавливаем callback-функцию
 на обработку содержимого тега</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$tag</var></dt>
-					<dd><code>string</code><br> тег</dd>
-					<dt><var>$callback</var></dt>
-					<dd><code>mixed</code><br> функция</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tag</var></dt>
+						<dd><code>string</code><br> тег</dd>
+						<dt><var>$callback</var></dt>
+						<dd><code>mixed</code><br> функция</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetAutoReplace" id="_cfgSetAutoReplace">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetAutoReplace" id="_cfgSetAutoReplace">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetAutoReplace">#</a>
-		<code><a href="source-class-Jevix.html#580" title="Go to source code">cfgSetAutoReplace</a>( <span>array <var>$from</var></span>, <span>array <var>$to</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetAutoReplace">#</a>
+			<code><a href="source-class-Jevix.html#580" title="Go to source code">cfgSetAutoReplace</a>( <span>array <var>$from</var></span>, <span>array <var>$to</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Автозамена</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Автозамена</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$from</var></dt>
-					<dd><code>array</code><br> с</dd>
-					<dt><var>$to</var></dt>
-					<dd><code>array</code><br> на</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$from</var></dt>
+						<dd><code>array</code><br> с</dd>
+						<dt><var>$to</var></dt>
+						<dd><code>array</code><br> на</dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetXHTMLMode" id="_cfgSetXHTMLMode">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetXHTMLMode" id="_cfgSetXHTMLMode">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetXHTMLMode">#</a>
-		<code><a href="source-class-Jevix.html#591" title="Go to source code">cfgSetXHTMLMode</a>( <span>boolean <var>$isXHTMLMode</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetXHTMLMode">#</a>
+			<code><a href="source-class-Jevix.html#591" title="Go to source code">cfgSetXHTMLMode</a>( <span>boolean <var>$isXHTMLMode</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Включение или выключение режима XTML</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Включение или выключение режима XTML</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$isXHTMLMode</var></dt>
-					<dd><code>boolean</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isXHTMLMode</var></dt>
+						<dd><code>boolean</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetAutoBrMode" id="_cfgSetAutoBrMode">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetAutoBrMode" id="_cfgSetAutoBrMode">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetAutoBrMode">#</a>
-		<code><a href="source-class-Jevix.html#601" title="Go to source code">cfgSetAutoBrMode</a>( <span>boolean <var>$isAutoBrMode</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetAutoBrMode">#</a>
+			<code><a href="source-class-Jevix.html#601" title="Go to source code">cfgSetAutoBrMode</a>( <span>boolean <var>$isAutoBrMode</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Включение или выключение режима замены
 новых строк на<br />
 </p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Включение или выключение режима замены
 новых строк на<br />
 </p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$isAutoBrMode</var></dt>
-					<dd><code>boolean</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isAutoBrMode</var></dt>
+						<dd><code>boolean</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="cfgSetAutoLinkMode" id="_cfgSetAutoLinkMode">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="cfgSetAutoLinkMode" id="_cfgSetAutoLinkMode">
 
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_cfgSetAutoLinkMode">#</a>
-		<code><a href="source-class-Jevix.html#610" title="Go to source code">cfgSetAutoLinkMode</a>( <span>boolean <var>$isAutoLinkMode</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_cfgSetAutoLinkMode">#</a>
+			<code><a href="source-class-Jevix.html#610" title="Go to source code">cfgSetAutoLinkMode</a>( <span>boolean <var>$isAutoLinkMode</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Включение или выключение режима
 автоматического определения ссылок</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Включение или выключение режима
 автоматического определения ссылок</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$isAutoLinkMode</var></dt>
-					<dd><code>boolean</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isAutoLinkMode</var></dt>
+						<dd><code>boolean</code></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="strToArray" id="_strToArray">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="strToArray" id="_strToArray">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			&amp;
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				&amp;
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_strToArray">#</a>
-		<code><a href="source-class-Jevix.html#619" title="Go to source code">strToArray</a>( <span> <var>$str</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_strToArray">#</a>
+			<code><a href="source-class-Jevix.html#619" title="Go to source code">strToArray</a>( <span> <var>$str</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="parse" id="_parse">
-
-		<td class="attributes"><code>
-			 public 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_parse">#</a>
-		<code><a href="source-class-Jevix.html#625" title="Go to source code">parse</a>( <span> <var>$text</var></span>, <span> <var>&amp; $errors</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getCh" id="_getCh">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parse" id="_parse">
 
-		<td class="attributes"><code>
-			 protected 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getCh">#</a>
-		<code><a href="source-class-Jevix.html#660" title="Go to source code">getCh</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_parse">#</a>
+			<code><a href="source-class-Jevix.html#625" title="Go to source code">parse</a>( <span> <var>$text</var></span>, <span> <var>&amp; $errors</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCh" id="_getCh">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCh">#</a>
+			<code><a href="source-class-Jevix.html#660" title="Go to source code">getCh</a>( )</code>
+
+			<div class="description short">
+				
 <p>Получение следующего символа из входной
 строки</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получение следующего символа из входной
 строки</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>считанный символ<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>считанный символ<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="goToPosition" id="_goToPosition">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="goToPosition" id="_goToPosition">
 
-		<td class="attributes"><code>
-			 protected 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_goToPosition">#</a>
-		<code><a href="source-class-Jevix.html#668" title="Go to source code">goToPosition</a>( <span> <var>$position</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_goToPosition">#</a>
+			<code><a href="source-class-Jevix.html#668" title="Go to source code">goToPosition</a>( <span> <var>$position</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Перемещение на указанную позицию во
 входной строке и считывание символа</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Перемещение на указанную позицию во
 входной строке и считывание символа</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>символ в указанной позиции<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>символ в указанной позиции<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="saveState" id="_saveState">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saveState" id="_saveState">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_saveState">#</a>
-		<code><a href="source-class-Jevix.html#686" title="Go to source code">saveState</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_saveState">#</a>
+			<code><a href="source-class-Jevix.html#686" title="Go to source code">saveState</a>( )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Сохранить текущее состояние</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Сохранить текущее состояние</p>
 
 
@@ -1212,30 +1232,31 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="restoreState" id="_restoreState">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="restoreState" id="_restoreState">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_restoreState">#</a>
-		<code><a href="source-class-Jevix.html#700" title="Go to source code">restoreState</a>( <span> <var>$index</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_restoreState">#</a>
+			<code><a href="source-class-Jevix.html#700" title="Go to source code">restoreState</a>( <span> <var>$index</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Восстановить</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Восстановить</p>
 
 
@@ -1244,33 +1265,34 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="matchCh" id="_matchCh">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchCh" id="_matchCh">
 
-		<td class="attributes"><code>
-			 protected 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_matchCh">#</a>
-		<code><a href="source-class-Jevix.html#724" title="Go to source code">matchCh</a>( <span>string <var>$ch</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_matchCh">#</a>
+			<code><a href="source-class-Jevix.html#724" title="Go to source code">matchCh</a>( <span>string <var>$ch</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет точное вхождение символа в
 текущей позиции Если символ соответствует
 указанному автомат сдвигается на
 следующий</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет точное вхождение символа в
 текущей позиции Если символ соответствует
 указанному автомат сдвигается на
@@ -1278,48 +1300,49 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$ch</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$skipSpaces</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ch</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$skipSpaces</var></dt>
+						<dd></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="matchChClass" id="_matchChClass">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchChClass" id="_matchChClass">
 
-		<td class="attributes"><code>
-			 protected 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_matchChClass">#</a>
-		<code><a href="source-class-Jevix.html#744" title="Go to source code">matchChClass</a>( <span>integer <var>$chClass</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_matchChClass">#</a>
+			<code><a href="source-class-Jevix.html#744" title="Go to source code">matchChClass</a>( <span>integer <var>$chClass</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет точное вхождение символа
 указанного класса в текущей позиции Если
 символ соответствует указанному классу
 автомат сдвигается на следующий</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет точное вхождение символа
 указанного класса в текущей позиции Если
 символ соответствует указанному классу
@@ -1327,48 +1350,49 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$chClass</var></dt>
-					<dd><code>integer</code><br> класс символа</dd>
-					<dt><var>$skipSpaces</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$chClass</var></dt>
+						<dd><code>integer</code><br> класс символа</dd>
+						<dt><var>$skipSpaces</var></dt>
+						<dd></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>найденый символ или false<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>найденый символ или false<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="matchStr" id="_matchStr">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchStr" id="_matchStr">
 
-		<td class="attributes"><code>
-			 protected 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_matchStr">#</a>
-		<code><a href="source-class-Jevix.html#765" title="Go to source code">matchStr</a>( <span>string <var>$str</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_matchStr">#</a>
+			<code><a href="source-class-Jevix.html#765" title="Go to source code">matchStr</a>( <span>string <var>$str</var></span>, <span> <var>$skipSpaces</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на точное совпадение строки в
 текущей позиции Если строка соответствует
 указанной автомат сдвигается на следующий
 после строки символ</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на точное совпадение строки в
 текущей позиции Если строка соответствует
 указанной автомат сдвигается на следующий
@@ -1376,167 +1400,171 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$str</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$skipSpaces</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$skipSpaces</var></dt>
+						<dd></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="skipUntilCh" id="_skipUntilCh">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="skipUntilCh" id="_skipUntilCh">
 
-		<td class="attributes"><code>
-			 protected 
-			string
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				string
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_skipUntilCh">#</a>
-		<code><a href="source-class-Jevix.html#793" title="Go to source code">skipUntilCh</a>( <span>string <var>$ch</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_skipUntilCh">#</a>
+			<code><a href="source-class-Jevix.html#793" title="Go to source code">skipUntilCh</a>( <span>string <var>$ch</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Пропуск текста до нахождения указанного
 символа</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Пропуск текста до нахождения указанного
 символа</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$ch</var></dt>
-					<dd><code>string</code><br> сиимвол</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ch</var></dt>
+						<dd><code>string</code><br> сиимвол</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>string</code><br>найденый символ или false<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>найденый символ или false<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="skipUntilStr" id="_skipUntilStr">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="skipUntilStr" id="_skipUntilStr">
 
-		<td class="attributes"><code>
-			 protected 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_skipUntilStr">#</a>
-		<code><a href="source-class-Jevix.html#809" title="Go to source code">skipUntilStr</a>( <span>string <var>$str</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_skipUntilStr">#</a>
+			<code><a href="source-class-Jevix.html#809" title="Go to source code">skipUntilStr</a>( <span>string <var>$str</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Пропуск текста до нахождения указанной
 строки или символа</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Пропуск текста до нахождения указанной
 строки или символа</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$str</var></dt>
-					<dd><code>string</code><br> строка или символ ля поиска</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd><code>string</code><br> строка или символ ля поиска</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="getCharClass" id="_getCharClass">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCharClass" id="_getCharClass">
 
-		<td class="attributes"><code>
-			 protected 
-			integer
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				integer
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_getCharClass">#</a>
-		<code><a href="source-class-Jevix.html#852" title="Go to source code">getCharClass</a>( <span> <var>$ord</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_getCharClass">#</a>
+			<code><a href="source-class-Jevix.html#852" title="Go to source code">getCharClass</a>( <span> <var>$ord</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Возвращает класс символа</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Возвращает класс символа</p>
 
 
 
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>integer</code><br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer</code><br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="skipSpaces" id="_skipSpaces">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="skipSpaces" id="_skipSpaces">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_skipSpaces">#</a>
-		<code><a href="source-class-Jevix.html#865" title="Go to source code">skipSpaces</a>( <span> <var>&amp; $count</var> = <span class="php-num">0</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_skipSpaces">#</a>
+			<code><a href="source-class-Jevix.html#865" title="Go to source code">skipSpaces</a>( <span> <var>&amp; $count</var> = <span class="php-num">0</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Пропуск пробелов</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Пропуск пробелов</p>
 
 
@@ -1545,2291 +1573,2381 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="name" id="_name">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="name" id="_name">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_name">#</a>
-		<code><a href="source-class-Jevix.html#877" title="Go to source code">name</a>( <span>string <var>&amp; $name</var> = <span class="php-quote">''</span> </span>, <span> <var>$minus</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_name">#</a>
+			<code><a href="source-class-Jevix.html#877" title="Go to source code">name</a>( <span>string <var>&amp; $name</var> = <span class="php-quote">''</span> </span>, <span> <var>$minus</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Получает име (тега, параметра) по принципу
 1 сиивол далее цифра или символ</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Получает име (тега, параметра) по принципу
 1 сиивол далее цифра или символ</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$name</var></dt>
-					<dd><code>string</code></dd>
-					<dt><var>$minus</var></dt>
-					<dd></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$name</var></dt>
+						<dd><code>string</code></dd>
+						<dt><var>$minus</var></dt>
+						<dd></dd>
+					</dl></div>
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tag" id="_tag">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tag" id="_tag">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tag">#</a>
-		<code><a href="source-class-Jevix.html#899" title="Go to source code">tag</a>( <span> <var>&amp; $tag</var></span>, <span> <var>&amp; $params</var></span>, <span> <var>&amp; $content</var></span>, <span> <var>&amp; $short</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tag">#</a>
+			<code><a href="source-class-Jevix.html#899" title="Go to source code">tag</a>( <span> <var>&amp; $tag</var></span>, <span> <var>&amp; $params</var></span>, <span> <var>&amp; $content</var></span>, <span> <var>&amp; $short</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="preformatted" id="_preformatted">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="preformatted" id="_preformatted">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_preformatted">#</a>
-		<code><a href="source-class-Jevix.html#963" title="Go to source code">preformatted</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$insideTag</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_preformatted">#</a>
+			<code><a href="source-class-Jevix.html#963" title="Go to source code">preformatted</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$insideTag</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="callback" id="_callback">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="callback" id="_callback">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_callback">#</a>
-		<code><a href="source-class-Jevix.html#984" title="Go to source code">callback</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$insideTag</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_callback">#</a>
+			<code><a href="source-class-Jevix.html#984" title="Go to source code">callback</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$insideTag</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagOpen" id="_tagOpen">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagOpen" id="_tagOpen">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tagOpen">#</a>
-		<code><a href="source-class-Jevix.html#1008" title="Go to source code">tagOpen</a>( <span> <var>&amp; $name</var></span>, <span> <var>&amp; $params</var></span>, <span> <var>&amp; $short</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tagOpen">#</a>
+			<code><a href="source-class-Jevix.html#1008" title="Go to source code">tagOpen</a>( <span> <var>&amp; $name</var></span>, <span> <var>&amp; $params</var></span>, <span> <var>&amp; $short</var> = <span class="php-keyword1">false</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagParams" id="_tagParams">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagParams" id="_tagParams">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tagParams">#</a>
-		<code><a href="source-class-Jevix.html#1049" title="Go to source code">tagParams</a>( <span> <var>&amp; $params</var> = <span class="php-keyword1">array</span> () </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tagParams">#</a>
+			<code><a href="source-class-Jevix.html#1049" title="Go to source code">tagParams</a>( <span> <var>&amp; $params</var> = <span class="php-keyword1">array</span> () </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagParam" id="_tagParam">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagParam" id="_tagParam">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tagParam">#</a>
-		<code><a href="source-class-Jevix.html#1060" title="Go to source code">tagParam</a>( <span> <var>&amp; $name</var></span>, <span> <var>&amp; $value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tagParam">#</a>
+			<code><a href="source-class-Jevix.html#1060" title="Go to source code">tagParam</a>( <span> <var>&amp; $name</var></span>, <span> <var>&amp; $value</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagParamValue" id="_tagParamValue">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagParamValue" id="_tagParamValue">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tagParamValue">#</a>
-		<code><a href="source-class-Jevix.html#1093" title="Go to source code">tagParamValue</a>( <span> <var>&amp; $value</var></span>, <span> <var>$quote</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tagParamValue">#</a>
+			<code><a href="source-class-Jevix.html#1093" title="Go to source code">tagParamValue</a>( <span> <var>&amp; $value</var></span>, <span> <var>$quote</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagClose" id="_tagClose">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagClose" id="_tagClose">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_tagClose">#</a>
-		<code><a href="source-class-Jevix.html#1119" title="Go to source code">tagClose</a>( <span> <var>&amp; $name</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_tagClose">#</a>
+			<code><a href="source-class-Jevix.html#1119" title="Go to source code">tagClose</a>( <span> <var>&amp; $name</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="makeTag" id="_makeTag">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="makeTag" id="_makeTag">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_makeTag">#</a>
-		<code><a href="source-class-Jevix.html#1143" title="Go to source code">makeTag</a>( <span> <var>$tag</var></span>, <span> <var>$params</var></span>, <span> <var>$content</var></span>, <span> <var>$short</var></span>, <span> <var>$parentTag</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_makeTag">#</a>
+			<code><a href="source-class-Jevix.html#1143" title="Go to source code">makeTag</a>( <span> <var>$tag</var></span>, <span> <var>$params</var></span>, <span> <var>$content</var></span>, <span> <var>$short</var></span>, <span> <var>$parentTag</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="comment" id="_comment">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="comment" id="_comment">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_comment">#</a>
-		<code><a href="source-class-Jevix.html#1307" title="Go to source code">comment</a>( )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_comment">#</a>
+			<code><a href="source-class-Jevix.html#1307" title="Go to source code">comment</a>( )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="anyThing" id="_anyThing">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="anyThing" id="_anyThing">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_anyThing">#</a>
-		<code><a href="source-class-Jevix.html#1314" title="Go to source code">anyThing</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$parentTag</var> = <span class="php-keyword1">null</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_anyThing">#</a>
+			<code><a href="source-class-Jevix.html#1314" title="Go to source code">anyThing</a>( <span> <var>&amp; $content</var> = <span class="php-quote">''</span> </span>, <span> <var>$parentTag</var> = <span class="php-keyword1">null</span> </span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="skipNL" id="_skipNL">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="skipNL" id="_skipNL">
 
-		<td class="attributes"><code>
-			 protected 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_skipNL">#</a>
-		<code><a href="source-class-Jevix.html#1379" title="Go to source code">skipNL</a>( <span>integer <var>&amp; $count</var> = <span class="php-num">0</span> </span>, <span>integer <var>$limit</var> = <span class="php-num">0</span> </span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_skipNL">#</a>
+			<code><a href="source-class-Jevix.html#1379" title="Go to source code">skipNL</a>( <span>integer <var>&amp; $count</var> = <span class="php-num">0</span> </span>, <span>integer <var>$limit</var> = <span class="php-num">0</span> </span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Пропуск переводов строк подсчет кол-ва</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Пропуск переводов строк подсчет кол-ва</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$count</var></dt>
-					<dd><code>integer</code><br> ссылка для возвращения числа переводов
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$count</var></dt>
+						<dd><code>integer</code><br> ссылка для возвращения числа переводов
 строк</dd>
-					<dt><var>$limit</var></dt>
-					<dd><code>integer</code><br> максимальное число пропущенных переводов
+						<dt><var>$limit</var></dt>
+						<dd><code>integer</code><br> максимальное число пропущенных переводов
 строк, при уставновке в 0 - не лимитируется</dd>
-				</dl></div>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="dash" id="_dash">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_dash">#</a>
-		<code><a href="source-class-Jevix.html#1412" title="Go to source code">dash</a>( <span> <var>&amp; $dash</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
 
 
 
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="dash" id="_dash">
 
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
+			<td class="name"><div>
+			<a class="anchor" href="#_dash">#</a>
+			<code><a href="source-class-Jevix.html#1412" title="Go to source code">dash</a>( <span> <var>&amp; $dash</var></span> )</code>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="punctuation" id="_punctuation">
+			<div class="description short">
+				
+			</div>
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_punctuation">#</a>
-		<code><a href="source-class-Jevix.html#1430" title="Go to source code">punctuation</a>( <span> <var>&amp; $punctuation</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="number" id="_number">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="punctuation" id="_punctuation">
 
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_number">#</a>
-		<code><a href="source-class-Jevix.html#1468" title="Go to source code">number</a>( <span> <var>&amp; $num</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_punctuation">#</a>
+			<code><a href="source-class-Jevix.html#1430" title="Go to source code">punctuation</a>( <span> <var>&amp; $punctuation</var></span> )</code>
 
-		<div class="description short">
-			
-		</div>
+			<div class="description short">
+				
+			</div>
 
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="htmlEntity" id="_htmlEntity">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_htmlEntity">#</a>
-		<code><a href="source-class-Jevix.html#1481" title="Go to source code">htmlEntity</a>( <span> <var>&amp; $entityCh</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 
 
 
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="quote" id="_quote">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="number" id="_number">
 
-		<td class="attributes"><code>
-			 protected 
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_quote">#</a>
-		<code><a href="source-class-Jevix.html#1506" title="Go to source code">quote</a>( <span>boolean <var>$spacesBefore</var></span>, <span>string <var>&amp; $quote</var></span>, <span>boolean <var>&amp; $closed</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_number">#</a>
+			<code><a href="source-class-Jevix.html#1468" title="Go to source code">number</a>( <span> <var>&amp; $num</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="htmlEntity" id="_htmlEntity">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_htmlEntity">#</a>
+			<code><a href="source-class-Jevix.html#1481" title="Go to source code">htmlEntity</a>( <span> <var>&amp; $entityCh</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="quote" id="_quote">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_quote">#</a>
+			<code><a href="source-class-Jevix.html#1506" title="Go to source code">quote</a>( <span>boolean <var>$spacesBefore</var></span>, <span>string <var>&amp; $quote</var></span>, <span>boolean <var>&amp; $closed</var></span> )</code>
+
+			<div class="description short">
+				
 <p>Кавычка</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Кавычка</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$spacesBefore</var></dt>
-					<dd><code>boolean</code><br> были до этого пробелы</dd>
-					<dt><var>$quote</var></dt>
-					<dd><code>string</code><br> кавычка</dd>
-					<dt><var>$closed</var></dt>
-					<dd><code>boolean</code><br> закрывающаяся</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$spacesBefore</var></dt>
+						<dd><code>boolean</code><br> были до этого пробелы</dd>
+						<dt><var>$quote</var></dt>
+						<dd><code>string</code><br> кавычка</dd>
+						<dt><var>$closed</var></dt>
+						<dd><code>boolean</code><br> закрывающаяся</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br />
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="makeQuote" id="_makeQuote">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_makeQuote">#</a>
+			<code><a href="source-class-Jevix.html#1530" title="Go to source code">makeQuote</a>( <span> <var>$closed</var></span>, <span> <var>$level</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="text" id="_text">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_text">#</a>
+			<code><a href="source-class-Jevix.html#1538" title="Go to source code">text</a>( <span> <var>&amp; $text</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="url" id="_url">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_url">#</a>
+			<code><a href="source-class-Jevix.html#1634" title="Go to source code">url</a>( <span> <var>&amp; $url</var></span>, <span> <var>&amp; $href</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="eror" id="_eror">
+
+			<td class="attributes"><code>
+				
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_eror">#</a>
+			<code><a href="source-class-Jevix.html#1686" title="Go to source code">eror</a>( <span> <var>$message</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+
+		<h2>Constants summary</h2>
+		<table class="summary table table-bordered table-striped" id="constants">
+		<tr data-order="PRINATABLE" id="PRINATABLE">
+
+			<td class="attributes"><code>
+				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#75" title="Go to source code"><b>PRINATABLE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x1</span></code></td>
+			<td class="description"><div>
+				<a href="#PRINATABLE" class="anchor">#</a>
+
+				<div class="description short">
+					
 				</div>
 
+				<div class="description detailed hidden">
+					
 
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="ALPHA" id="ALPHA">
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="makeQuote" id="_makeQuote">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_makeQuote">#</a>
-		<code><a href="source-class-Jevix.html#1530" title="Go to source code">makeQuote</a>( <span> <var>$closed</var></span>, <span> <var>$level</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="text" id="_text">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_text">#</a>
-		<code><a href="source-class-Jevix.html#1538" title="Go to source code">text</a>( <span> <var>&amp; $text</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="url" id="_url">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_url">#</a>
-		<code><a href="source-class-Jevix.html#1634" title="Go to source code">url</a>( <span> <var>&amp; $url</var></span>, <span> <var>&amp; $href</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="eror" id="_eror">
-
-		<td class="attributes"><code>
-			 protected 
-			
-			
-			</code>
-		</td>
-
-		<td class="name"><div>
-		<a class="anchor" href="#_eror">#</a>
-		<code><a href="source-class-Jevix.html#1686" title="Go to source code">eror</a>( <span> <var>$message</var></span> )</code>
-
-		<div class="description short">
-			
-		</div>
-
-		<div class="description detailed hidden">
-			
-
-
-
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
-
-
-
-
-	<table class="summary" id="constants">
-	<caption>Constants summary</caption>
-	<tr data-order="PRINATABLE" id="PRINATABLE">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#75" title="Go to source code"><b>PRINATABLE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x1</span></code></td>
-		<td class="description"><div>
-			<a href="#PRINATABLE" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#76" title="Go to source code"><b>ALPHA</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x2</span></code></td>
+			<td class="description"><div>
+				<a href="#ALPHA" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="LAT" id="LAT">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#77" title="Go to source code"><b>LAT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x4</span></code></td>
+			<td class="description"><div>
+				<a href="#LAT" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="ALPHA" id="ALPHA">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#76" title="Go to source code"><b>ALPHA</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x2</span></code></td>
-		<td class="description"><div>
-			<a href="#ALPHA" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="RUS" id="RUS">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#78" title="Go to source code"><b>RUS</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x8</span></code></td>
+			<td class="description"><div>
+				<a href="#RUS" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="NUMERIC" id="NUMERIC">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#79" title="Go to source code"><b>NUMERIC</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x10</span></code></td>
+			<td class="description"><div>
+				<a href="#NUMERIC" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="LAT" id="LAT">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#77" title="Go to source code"><b>LAT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x4</span></code></td>
-		<td class="description"><div>
-			<a href="#LAT" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="SPACE" id="SPACE">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#80" title="Go to source code"><b>SPACE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x20</span></code></td>
+			<td class="description"><div>
+				<a href="#SPACE" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="NAME" id="NAME">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#81" title="Go to source code"><b>NAME</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x40</span></code></td>
+			<td class="description"><div>
+				<a href="#NAME" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="RUS" id="RUS">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#78" title="Go to source code"><b>RUS</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x8</span></code></td>
-		<td class="description"><div>
-			<a href="#RUS" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="URL" id="URL">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#82" title="Go to source code"><b>URL</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x100</span></code></td>
+			<td class="description"><div>
+				<a href="#URL" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="NOPRINT" id="NOPRINT">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#83" title="Go to source code"><b>NOPRINT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x200</span></code></td>
+			<td class="description"><div>
+				<a href="#NOPRINT" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="NUMERIC" id="NUMERIC">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#79" title="Go to source code"><b>NUMERIC</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x10</span></code></td>
-		<td class="description"><div>
-			<a href="#NUMERIC" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="PUNCTUATUON" id="PUNCTUATUON">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#84" title="Go to source code"><b>PUNCTUATUON</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x400</span></code></td>
+			<td class="description"><div>
+				<a href="#PUNCTUATUON" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="HTML_QUOTE" id="HTML_QUOTE">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#87" title="Go to source code"><b>HTML_QUOTE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x2000</span></code></td>
+			<td class="description"><div>
+				<a href="#HTML_QUOTE" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="SPACE" id="SPACE">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#80" title="Go to source code"><b>SPACE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x20</span></code></td>
-		<td class="description"><div>
-			<a href="#SPACE" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TAG_QUOTE" id="TAG_QUOTE">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#88" title="Go to source code"><b>TAG_QUOTE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x4000</span></code></td>
+			<td class="description"><div>
+				<a href="#TAG_QUOTE" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="QUOTE_CLOSE" id="QUOTE_CLOSE">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#89" title="Go to source code"><b>QUOTE_CLOSE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x8000</span></code></td>
+			<td class="description"><div>
+				<a href="#QUOTE_CLOSE" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="NAME" id="NAME">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#81" title="Go to source code"><b>NAME</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x40</span></code></td>
-		<td class="description"><div>
-			<a href="#NAME" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="NL" id="NL">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#90" title="Go to source code"><b>NL</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0x10000</span></code></td>
+			<td class="description"><div>
+				<a href="#NL" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="QUOTE_OPEN" id="QUOTE_OPEN">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#91" title="Go to source code"><b>QUOTE_OPEN</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#QUOTE_OPEN" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="URL" id="URL">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#82" title="Go to source code"><b>URL</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x100</span></code></td>
-		<td class="description"><div>
-			<a href="#URL" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_TEXT" id="STATE_TEXT">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#93" title="Go to source code"><b>STATE_TEXT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_TEXT" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_TAG_PARAMS" id="STATE_TAG_PARAMS">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#94" title="Go to source code"><b>STATE_TAG_PARAMS</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">1</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_TAG_PARAMS" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="NOPRINT" id="NOPRINT">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#83" title="Go to source code"><b>NOPRINT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x200</span></code></td>
-		<td class="description"><div>
-			<a href="#NOPRINT" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_TAG_PARAM_VALUE" id="STATE_TAG_PARAM_VALUE">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#95" title="Go to source code"><b>STATE_TAG_PARAM_VALUE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">2</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_TAG_PARAM_VALUE" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_INSIDE_TAG" id="STATE_INSIDE_TAG">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#96" title="Go to source code"><b>STATE_INSIDE_TAG</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">3</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_INSIDE_TAG" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="PUNCTUATUON" id="PUNCTUATUON">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#84" title="Go to source code"><b>PUNCTUATUON</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x400</span></code></td>
-		<td class="description"><div>
-			<a href="#PUNCTUATUON" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_INSIDE_NOTEXT_TAG" id="STATE_INSIDE_NOTEXT_TAG">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#97" title="Go to source code"><b>STATE_INSIDE_NOTEXT_TAG</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">4</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_INSIDE_NOTEXT_TAG" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_INSIDE_PREFORMATTED_TAG" id="STATE_INSIDE_PREFORMATTED_TAG">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#98" title="Go to source code"><b>STATE_INSIDE_PREFORMATTED_TAG</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">5</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_INSIDE_PREFORMATTED_TAG" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="HTML_QUOTE" id="HTML_QUOTE">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#87" title="Go to source code"><b>HTML_QUOTE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x2000</span></code></td>
-		<td class="description"><div>
-			<a href="#HTML_QUOTE" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="STATE_INSIDE_CALLBACK_TAG" id="STATE_INSIDE_CALLBACK_TAG">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#99" title="Go to source code"><b>STATE_INSIDE_CALLBACK_TAG</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">6</span></code></td>
+			<td class="description"><div>
+				<a href="#STATE_INSIDE_CALLBACK_TAG" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_ALLOWED" id="TR_TAG_ALLOWED">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#145" title="Go to source code"><b>TR_TAG_ALLOWED</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">1</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_ALLOWED" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TAG_QUOTE" id="TAG_QUOTE">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#88" title="Go to source code"><b>TAG_QUOTE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x4000</span></code></td>
-		<td class="description"><div>
-			<a href="#TAG_QUOTE" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="QUOTE_CLOSE" id="QUOTE_CLOSE">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#89" title="Go to source code"><b>QUOTE_CLOSE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x8000</span></code></td>
-		<td class="description"><div>
-			<a href="#QUOTE_CLOSE" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="NL" id="NL">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#90" title="Go to source code"><b>NL</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0x10000</span></code></td>
-		<td class="description"><div>
-			<a href="#NL" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="QUOTE_OPEN" id="QUOTE_OPEN">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#91" title="Go to source code"><b>QUOTE_OPEN</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#QUOTE_OPEN" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_TEXT" id="STATE_TEXT">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#93" title="Go to source code"><b>STATE_TEXT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_TEXT" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_TAG_PARAMS" id="STATE_TAG_PARAMS">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#94" title="Go to source code"><b>STATE_TAG_PARAMS</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">1</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_TAG_PARAMS" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_TAG_PARAM_VALUE" id="STATE_TAG_PARAM_VALUE">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#95" title="Go to source code"><b>STATE_TAG_PARAM_VALUE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">2</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_TAG_PARAM_VALUE" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_INSIDE_TAG" id="STATE_INSIDE_TAG">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#96" title="Go to source code"><b>STATE_INSIDE_TAG</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">3</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_INSIDE_TAG" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_INSIDE_NOTEXT_TAG" id="STATE_INSIDE_NOTEXT_TAG">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#97" title="Go to source code"><b>STATE_INSIDE_NOTEXT_TAG</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">4</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_INSIDE_NOTEXT_TAG" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_INSIDE_PREFORMATTED_TAG" id="STATE_INSIDE_PREFORMATTED_TAG">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#98" title="Go to source code"><b>STATE_INSIDE_PREFORMATTED_TAG</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">5</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_INSIDE_PREFORMATTED_TAG" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="STATE_INSIDE_CALLBACK_TAG" id="STATE_INSIDE_CALLBACK_TAG">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#99" title="Go to source code"><b>STATE_INSIDE_CALLBACK_TAG</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">6</span></code></td>
-		<td class="description"><div>
-			<a href="#STATE_INSIDE_CALLBACK_TAG" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_ALLOWED" id="TR_TAG_ALLOWED">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#145" title="Go to source code"><b>TR_TAG_ALLOWED</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">1</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_ALLOWED" class="anchor">#</a>
-
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Константы для класификации тегов</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Константы для класификации тегов</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_PARAM_ALLOWED" id="TR_PARAM_ALLOWED">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_PARAM_ALLOWED" id="TR_PARAM_ALLOWED">
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#150" title="Go to source code"><b>TR_PARAM_ALLOWED</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">2</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_PARAM_ALLOWED" class="anchor">#</a>
-
-			<div class="description short">
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#150" title="Go to source code"><b>TR_PARAM_ALLOWED</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">2</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_PARAM_ALLOWED" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_PARAM_REQUIRED" id="TR_PARAM_REQUIRED">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#151" title="Go to source code"><b>TR_PARAM_REQUIRED</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">3</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_PARAM_REQUIRED" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_PARAM_REQUIRED" id="TR_PARAM_REQUIRED">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#151" title="Go to source code"><b>TR_PARAM_REQUIRED</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">3</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_PARAM_REQUIRED" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_SHORT" id="TR_TAG_SHORT">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#152" title="Go to source code"><b>TR_TAG_SHORT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">4</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_SHORT" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_CUT" id="TR_TAG_CUT">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#153" title="Go to source code"><b>TR_TAG_CUT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">5</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_CUT" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_SHORT" id="TR_TAG_SHORT">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#152" title="Go to source code"><b>TR_TAG_SHORT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">4</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_SHORT" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_CHILD" id="TR_TAG_CHILD">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#154" title="Go to source code"><b>TR_TAG_CHILD</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">6</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_CHILD" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_CONTAINER" id="TR_TAG_CONTAINER">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#155" title="Go to source code"><b>TR_TAG_CONTAINER</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">7</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_CONTAINER" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_CUT" id="TR_TAG_CUT">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#153" title="Go to source code"><b>TR_TAG_CUT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">5</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_CUT" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_CHILD_TAGS" id="TR_TAG_CHILD_TAGS">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#156" title="Go to source code"><b>TR_TAG_CHILD_TAGS</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">8</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_CHILD_TAGS" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_PARENT" id="TR_TAG_PARENT">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#157" title="Go to source code"><b>TR_TAG_PARENT</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">9</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_PARENT" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_CHILD" id="TR_TAG_CHILD">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#154" title="Go to source code"><b>TR_TAG_CHILD</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">6</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_CHILD" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_PREFORMATTED" id="TR_TAG_PREFORMATTED">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#158" title="Go to source code"><b>TR_TAG_PREFORMATTED</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">10</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_PREFORMATTED" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_PARAM_AUTO_ADD" id="TR_PARAM_AUTO_ADD">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#159" title="Go to source code"><b>TR_PARAM_AUTO_ADD</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">11</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_PARAM_AUTO_ADD" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_CONTAINER" id="TR_TAG_CONTAINER">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#155" title="Go to source code"><b>TR_TAG_CONTAINER</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">7</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_CONTAINER" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_NO_TYPOGRAPHY" id="TR_TAG_NO_TYPOGRAPHY">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#160" title="Go to source code"><b>TR_TAG_NO_TYPOGRAPHY</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">12</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_NO_TYPOGRAPHY" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_IS_EMPTY" id="TR_TAG_IS_EMPTY">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#161" title="Go to source code"><b>TR_TAG_IS_EMPTY</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">13</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_IS_EMPTY" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_CHILD_TAGS" id="TR_TAG_CHILD_TAGS">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#156" title="Go to source code"><b>TR_TAG_CHILD_TAGS</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">8</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_CHILD_TAGS" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_NO_AUTO_BR" id="TR_TAG_NO_AUTO_BR">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#162" title="Go to source code"><b>TR_TAG_NO_AUTO_BR</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">14</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_NO_AUTO_BR" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_CALLBACK" id="TR_TAG_CALLBACK">
+
+			<td class="attributes"><code>
 				
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#163" title="Go to source code"><b>TR_TAG_CALLBACK</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">15</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_CALLBACK" class="anchor">#</a>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_PARENT" id="TR_TAG_PARENT">
+				<div class="description short">
+					
+				</div>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#157" title="Go to source code"><b>TR_TAG_PARENT</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">9</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_PARENT" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="TR_TAG_BLOCK_TYPE" id="TR_TAG_BLOCK_TYPE">
+
+			<td class="attributes"><code>
 				
-			</div>
+				integer
+			</code></td>
+			<td class="name"><code>
+					<a href="source-class-Jevix.html#164" title="Go to source code"><b>TR_TAG_BLOCK_TYPE</b></a>
+			</code></td>
+			<td class="value"><code><span class="php-num">16</span></code></td>
+			<td class="description"><div>
+				<a href="#TR_TAG_BLOCK_TYPE" class="anchor">#</a>
 
-			<div class="description detailed hidden">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="tagsRules" id="$tagsRules">
+
+			<td class="attributes"><code>
 				
+				public 
+				array
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_PREFORMATTED" id="TR_TAG_PREFORMATTED">
+			<td class="name">
+					<a href="source-class-Jevix.html#101" title="Go to source code"><var>$tagsRules</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ()</code></td>
+			<td class="description"><div>
+				<a href="#$tagsRules" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#158" title="Go to source code"><b>TR_TAG_PREFORMATTED</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">10</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_PREFORMATTED" class="anchor">#</a>
+				<div class="description short">
+					
+				</div>
 
-			<div class="description short">
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="entities1" id="$entities1">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				array
+			</code></td>
 
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_PARAM_AUTO_ADD" id="TR_PARAM_AUTO_ADD">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#159" title="Go to source code"><b>TR_PARAM_AUTO_ADD</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">11</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_PARAM_AUTO_ADD" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_NO_TYPOGRAPHY" id="TR_TAG_NO_TYPOGRAPHY">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#160" title="Go to source code"><b>TR_TAG_NO_TYPOGRAPHY</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">12</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_NO_TYPOGRAPHY" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_IS_EMPTY" id="TR_TAG_IS_EMPTY">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#161" title="Go to source code"><b>TR_TAG_IS_EMPTY</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">13</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_IS_EMPTY" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_NO_AUTO_BR" id="TR_TAG_NO_AUTO_BR">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#162" title="Go to source code"><b>TR_TAG_NO_AUTO_BR</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">14</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_NO_AUTO_BR" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_CALLBACK" id="TR_TAG_CALLBACK">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#163" title="Go to source code"><b>TR_TAG_CALLBACK</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">15</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_CALLBACK" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="TR_TAG_BLOCK_TYPE" id="TR_TAG_BLOCK_TYPE">
-
-		<td class="attributes"><code>
-			integer
-		</code></td>
-		<td class="name"><code>
-				<a href="source-class-Jevix.html#164" title="Go to source code"><b>TR_TAG_BLOCK_TYPE</b></a>
-		</code></td>
-		<td class="value"><code><span class="php-num">16</span></code></td>
-		<td class="description"><div>
-			<a href="#TR_TAG_BLOCK_TYPE" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	</table>
-
-
-
-	<table class="summary" id="properties">
-	<caption>Properties summary</caption>
-	<tr data-order="tagsRules" id="$tagsRules">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#101" title="Go to source code"><var>$tagsRules</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ()</code></td>
-		<td class="description"><div>
-			<a href="#$tagsRules" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="entities1" id="$entities1">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#102" title="Go to source code"><var>$entities1</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'&quot;'</span> =&gt; <span class="php-quote">'&amp;quot;'</span> ,
+			<td class="name">
+					<a href="source-class-Jevix.html#102" title="Go to source code"><var>$entities1</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'&quot;'</span> =&gt; <span class="php-quote">'&amp;quot;'</span> ,
                             <span class="php-quote">&quot;'&quot;</span> =&gt; <span class="php-quote">'&amp;#39;'</span> ,
                             <span class="php-quote">'&amp;'</span> =&gt; <span class="php-quote">'&amp;amp;'</span> ,
                             <span class="php-quote">'&lt;'</span> =&gt; <span class="php-quote">'&amp;lt;'</span> ,
                             <span class="php-quote">'&gt;'</span> =&gt; <span class="php-quote">'&amp;gt;'</span> )</code></td>
-		<td class="description"><div>
-			<a href="#$entities1" class="anchor">#</a>
+			<td class="description"><div>
+				<a href="#$entities1" class="anchor">#</a>
 
-			<div class="description short">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="entities2" id="$entities2">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				array
+			</code></td>
 
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="entities2" id="$entities2">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#107" title="Go to source code"><var>$entities2</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'&lt;'</span> =&gt; <span class="php-quote">'&amp;lt;'</span> ,
+			<td class="name">
+					<a href="source-class-Jevix.html#107" title="Go to source code"><var>$entities2</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'&lt;'</span> =&gt; <span class="php-quote">'&amp;lt;'</span> ,
                             <span class="php-quote">'&gt;'</span> =&gt; <span class="php-quote">'&amp;gt;'</span> ,
                             <span class="php-quote">'&quot;'</span> =&gt; <span class="php-quote">'&amp;quot;'</span> )</code></td>
-		<td class="description"><div>
-			<a href="#$entities2" class="anchor">#</a>
+			<td class="description"><div>
+				<a href="#$entities2" class="anchor">#</a>
 
-			<div class="description short">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="textQuotes" id="$textQuotes">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				array
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#110" title="Go to source code"><var>$textQuotes</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-keyword1">array</span> ( <span class="php-quote">'«'</span> , <span class="php-quote">'»'</span> ) , <span class="php-keyword1">array</span> ( <span class="php-quote">'„'</span> , <span class="php-quote">'“'</span> ) )</code></td>
+			<td class="description"><div>
+				<a href="#$textQuotes" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="dash" id="$dash">
+
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="textQuotes" id="$textQuotes">
+			<td class="name">
+					<a href="source-class-Jevix.html#111" title="Go to source code"><var>$dash</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">&quot; — &quot;</span></code></td>
+			<td class="description"><div>
+				<a href="#$dash" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#110" title="Go to source code"><var>$textQuotes</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-keyword1">array</span> ( <span class="php-quote">'«'</span> , <span class="php-quote">'»'</span> ) , <span class="php-keyword1">array</span> ( <span class="php-quote">'„'</span> , <span class="php-quote">'“'</span> ) )</code></td>
-		<td class="description"><div>
-			<a href="#$textQuotes" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="apostrof" id="$apostrof">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				string
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#112" title="Go to source code"><var>$apostrof</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">&quot;’&quot;</span></code></td>
+			<td class="description"><div>
+				<a href="#$apostrof" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="dotes" id="$dotes">
+
+			<td class="attributes"><code>
 				
+				public 
+				string
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="dash" id="$dash">
+			<td class="name">
+					<a href="source-class-Jevix.html#113" title="Go to source code"><var>$dotes</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">&quot;…&quot;</span></code></td>
+			<td class="description"><div>
+				<a href="#$dotes" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#111" title="Go to source code"><var>$dash</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot; — &quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$dash" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="nl" id="$nl">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				string
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#114" title="Go to source code"><var>$nl</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">&quot;\r\n&quot;</span></code></td>
+			<td class="description"><div>
+				<a href="#$nl" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="defaultTagParamRules" id="$defaultTagParamRules">
+
+			<td class="attributes"><code>
 				
+				public 
+				array
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="apostrof" id="$apostrof">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#112" title="Go to source code"><var>$apostrof</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;’&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$apostrof" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="dotes" id="$dotes">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#113" title="Go to source code"><var>$dotes</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;…&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$dotes" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="nl" id="$nl">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#114" title="Go to source code"><var>$nl</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;\r\n&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$nl" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="defaultTagParamRules" id="$defaultTagParamRules">
-
-		<td class="attributes"><code>
-			public 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#115" title="Go to source code"><var>$defaultTagParamRules</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'href'</span>   =&gt; <span class="php-quote">'#link'</span> ,
+			<td class="name">
+					<a href="source-class-Jevix.html#115" title="Go to source code"><var>$defaultTagParamRules</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-quote">'href'</span>   =&gt; <span class="php-quote">'#link'</span> ,
                                        <span class="php-quote">'src'</span>    =&gt; <span class="php-quote">'#image'</span> ,
                                        <span class="php-quote">'width'</span>  =&gt; <span class="php-quote">'#int'</span> ,
                                        <span class="php-quote">'height'</span> =&gt; <span class="php-quote">'#int'</span> ,
                                        <span class="php-quote">'text'</span>   =&gt; <span class="php-quote">'#text'</span> ,
                                        <span class="php-quote">'title'</span>  =&gt; <span class="php-quote">'#text'</span> )</code></td>
-		<td class="description"><div>
-			<a href="#$defaultTagParamRules" class="anchor">#</a>
+			<td class="description"><div>
+				<a href="#$defaultTagParamRules" class="anchor">#</a>
 
-			<div class="description short">
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="text" id="$text">
+
+			<td class="attributes"><code>
 				
-			</div>
-
-			<div class="description detailed hidden">
+				protected 
 				
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="text" id="$text">
+			<td class="name">
+					<a href="source-class-Jevix.html#121" title="Go to source code"><var>$text</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$text" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#121" title="Go to source code"><var>$text</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$text" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="textBuf" id="$textBuf">
+
+			<td class="attributes"><code>
 				
-			</div>
-
-			<div class="description detailed hidden">
+				protected 
 				
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="textBuf" id="$textBuf">
+			<td class="name">
+					<a href="source-class-Jevix.html#122" title="Go to source code"><var>$textBuf</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$textBuf" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#122" title="Go to source code"><var>$textBuf</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$textBuf" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="textLen" id="$textLen">
+
+			<td class="attributes"><code>
 				
-			</div>
+				protected 
+				integer
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#123" title="Go to source code"><var>$textLen</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#$textLen" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="curPos" id="$curPos">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="textLen" id="$textLen">
-
-		<td class="attributes"><code>
-			protected 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#123" title="Go to source code"><var>$textLen</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#$textLen" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#124" title="Go to source code"><var>$curPos</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$curPos" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="curCh" id="$curCh">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="curPos" id="$curPos">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#124" title="Go to source code"><var>$curPos</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$curPos" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#125" title="Go to source code"><var>$curCh</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$curCh" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="curChOrd" id="$curChOrd">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="curCh" id="$curCh">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#125" title="Go to source code"><var>$curCh</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$curCh" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#126" title="Go to source code"><var>$curChOrd</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$curChOrd" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="curChClass" id="$curChClass">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="curChOrd" id="$curChOrd">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#126" title="Go to source code"><var>$curChOrd</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$curChOrd" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#127" title="Go to source code"><var>$curChClass</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$curChClass" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="curParentTag" id="$curParentTag">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="curChClass" id="$curChClass">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#127" title="Go to source code"><var>$curChClass</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$curChClass" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#128" title="Go to source code"><var>$curParentTag</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$curParentTag" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="states" id="$states">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="curParentTag" id="$curParentTag">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#128" title="Go to source code"><var>$curParentTag</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$curParentTag" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#129" title="Go to source code"><var>$states</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$states" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="quotesOpened" id="$quotesOpened">
+
+			<td class="attributes"><code>
 				
+				protected 
+				integer
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="states" id="$states">
+			<td class="name">
+					<a href="source-class-Jevix.html#130" title="Go to source code"><var>$quotesOpened</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#$quotesOpened" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#129" title="Go to source code"><var>$states</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$states" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="brAdded" id="$brAdded">
+
+			<td class="attributes"><code>
 				
-			</div>
+				protected 
+				integer
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#131" title="Go to source code"><var>$brAdded</var></a>
+			</td>
+			<td class="value"><code><span class="php-num">0</span></code></td>
+			<td class="description"><div>
+				<a href="#$brAdded" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="state" id="$state">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="quotesOpened" id="$quotesOpened">
-
-		<td class="attributes"><code>
-			protected 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#130" title="Go to source code"><var>$quotesOpened</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#$quotesOpened" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#132" title="Go to source code"><var>$state</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$state" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="tagsStack" id="$tagsStack">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="brAdded" id="$brAdded">
-
-		<td class="attributes"><code>
-			protected 
-			integer
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#131" title="Go to source code"><var>$brAdded</var></a>
-		</td>
-		<td class="value"><code><span class="php-num">0</span></code></td>
-		<td class="description"><div>
-			<a href="#$brAdded" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#133" title="Go to source code"><var>$tagsStack</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$tagsStack" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="openedTag" id="$openedTag">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="state" id="$state">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#132" title="Go to source code"><var>$state</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$state" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#134" title="Go to source code"><var>$openedTag</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$openedTag" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="autoReplace" id="$autoReplace">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="tagsStack" id="$tagsStack">
-
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#133" title="Go to source code"><var>$tagsStack</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$tagsStack" class="anchor">#</a>
-
-			<div class="description short">
+				protected 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#135" title="Go to source code"><var>$autoReplace</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$autoReplace" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="isXHTMLMode" id="$isXHTMLMode">
+
+			<td class="attributes"><code>
 				
+				protected 
+				boolean
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="openedTag" id="$openedTag">
+			<td class="name">
+					<a href="source-class-Jevix.html#136" title="Go to source code"><var>$isXHTMLMode</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$isXHTMLMode" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#134" title="Go to source code"><var>$openedTag</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$openedTag" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="isAutoBrMode" id="$isAutoBrMode">
+
+			<td class="attributes"><code>
 				
-			</div>
+				protected 
+				boolean
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#137" title="Go to source code"><var>$isAutoBrMode</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$isAutoBrMode" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="isAutoLinkMode" id="$isAutoLinkMode">
+
+			<td class="attributes"><code>
 				
+				protected 
+				boolean
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="autoReplace" id="$autoReplace">
+			<td class="name">
+					<a href="source-class-Jevix.html#138" title="Go to source code"><var>$isAutoLinkMode</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">true</span></code></td>
+			<td class="description"><div>
+				<a href="#$isAutoLinkMode" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#135" title="Go to source code"><var>$autoReplace</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$autoReplace" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="br" id="$br">
+
+			<td class="attributes"><code>
 				
-			</div>
+				protected 
+				string
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#139" title="Go to source code"><var>$br</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">&quot;&lt;br/&gt;&quot;</span></code></td>
+			<td class="description"><div>
+				<a href="#$br" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="noTypoMode" id="$noTypoMode">
+
+			<td class="attributes"><code>
 				
+				protected 
+				boolean
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="isXHTMLMode" id="$isXHTMLMode">
+			<td class="name">
+					<a href="source-class-Jevix.html#140" title="Go to source code"><var>$noTypoMode</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">false</span></code></td>
+			<td class="description"><div>
+				<a href="#$noTypoMode" class="anchor">#</a>
 
-		<td class="attributes"><code>
-			protected 
-			boolean
-		</code></td>
+				<div class="description short">
+					
+				</div>
 
-		<td class="name">
-				<a href="source-class-Jevix.html#136" title="Go to source code"><var>$isXHTMLMode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$isXHTMLMode" class="anchor">#</a>
+				<div class="description detailed hidden">
+					
 
-			<div class="description short">
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="outBuffer" id="$outBuffer">
+
+			<td class="attributes"><code>
 				
-			</div>
+				public 
+				string
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#141" title="Go to source code"><var>$outBuffer</var></a>
+			</td>
+			<td class="value"><code><span class="php-quote">''</span></code></td>
+			<td class="description"><div>
+				<a href="#$outBuffer" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="errors" id="$errors">
+
+			<td class="attributes"><code>
 				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="isAutoBrMode" id="$isAutoBrMode">
-
-		<td class="attributes"><code>
-			protected 
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#137" title="Go to source code"><var>$isAutoBrMode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$isAutoBrMode" class="anchor">#</a>
-
-			<div class="description short">
+				public 
 				
-			</div>
+			</code></td>
 
-			<div class="description detailed hidden">
+			<td class="name">
+					<a href="source-class-Jevix.html#142" title="Go to source code"><var>$errors</var></a>
+			</td>
+			<td class="value"><code></code></td>
+			<td class="description"><div>
+				<a href="#$errors" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		<tr data-order="chClasses" id="$chClasses">
+
+			<td class="attributes"><code>
 				
+				protected 
+				array
+			</code></td>
 
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="isAutoLinkMode" id="$isAutoLinkMode">
-
-		<td class="attributes"><code>
-			protected 
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#138" title="Go to source code"><var>$isAutoLinkMode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">true</span></code></td>
-		<td class="description"><div>
-			<a href="#$isAutoLinkMode" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="br" id="$br">
-
-		<td class="attributes"><code>
-			protected 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#139" title="Go to source code"><var>$br</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">&quot;&lt;br/&gt;&quot;</span></code></td>
-		<td class="description"><div>
-			<a href="#$br" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="noTypoMode" id="$noTypoMode">
-
-		<td class="attributes"><code>
-			protected 
-			boolean
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#140" title="Go to source code"><var>$noTypoMode</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">false</span></code></td>
-		<td class="description"><div>
-			<a href="#$noTypoMode" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="outBuffer" id="$outBuffer">
-
-		<td class="attributes"><code>
-			public 
-			string
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#141" title="Go to source code"><var>$outBuffer</var></a>
-		</td>
-		<td class="value"><code><span class="php-quote">''</span></code></td>
-		<td class="description"><div>
-			<a href="#$outBuffer" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="errors" id="$errors">
-
-		<td class="attributes"><code>
-			public 
-			
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#142" title="Go to source code"><var>$errors</var></a>
-		</td>
-		<td class="value"><code></code></td>
-		<td class="description"><div>
-			<a href="#$errors" class="anchor">#</a>
-
-			<div class="description short">
-				
-			</div>
-
-			<div class="description detailed hidden">
-				
-
-			</div>
-		</div></td>
-	</tr>
-	<tr data-order="chClasses" id="$chClasses">
-
-		<td class="attributes"><code>
-			protected 
-			array
-		</code></td>
-
-		<td class="name">
-				<a href="source-class-Jevix.html#166" title="Go to source code"><var>$chClasses</var></a>
-		</td>
-		<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-num">0</span>    =&gt; <span class="php-num">512</span> ,
+			<td class="name">
+					<a href="source-class-Jevix.html#166" title="Go to source code"><var>$chClasses</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span> ( <span class="php-num">0</span>    =&gt; <span class="php-num">512</span> ,
                                <span class="php-num">1</span>    =&gt; <span class="php-num">512</span> ,
                                <span class="php-num">2</span>    =&gt; <span class="php-num">512</span> ,
                                <span class="php-num">3</span>    =&gt; <span class="php-num">512</span> ,
@@ -4007,33 +4125,33 @@ cfgSetTagPreformatted() + Добавлена настройка cfgSetXHTMLMode.
                                <span class="php-num">43</span>   =&gt; <span class="php-num">257</span> ,
                                <span class="php-num">35</span>   =&gt; <span class="php-num">257</span> ,
                                <span class="php-num">124</span>  =&gt; <span class="php-num">257</span> , )</code></td>
-		<td class="description"><div>
-			<a href="#$chClasses" class="anchor">#</a>
+			<td class="description"><div>
+				<a href="#$chClasses" class="anchor">#</a>
 
-			<div class="description short">
-				
+				<div class="description short">
+					
 <p>Классы символов генерируются symclass.php</p>
 
-			</div>
+				</div>
 
-			<div class="description detailed hidden">
-				
+				<div class="description detailed hidden">
+					
 <p>Классы символов генерируются symclass.php</p>
 
 
-			</div>
-		</div></td>
-	</tr>
-	</table>
-
+				</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>

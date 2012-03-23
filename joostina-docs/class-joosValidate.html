@@ -4,18 +4,58 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
 
-	<title>Class joosValidate | Joostina CMS</title>
+	<title>Class joosValidate | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="resources/combined.js?428767200"></script>
-	<script type="text/javascript" src="elementlist.js?1943087859"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2495970611" />
-
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?591247433"></script>
+	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1772368972" />
 </head>
 
 <body>
-<div id="left">
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a href="/" class="brand">Joostina CMS v2.* API</a>
+				<div class="nav-collapse">
+					<ul class="nav">
+						<li>
+							<a href="index.html" title="Overview">Docs</a>
+						</li>
+
+						<li class="divider-vertical"></li>
+
+						<li>
+							<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
+						</li>
+						<li class="active">
+							<a href="class-joosValidate.html" title="Summary of joosValidate"><span>Class</span></a>
+						</li>
+
+						<li>
+							<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions">Tree</a>
+						</li>
+						<li>
+							<a href="todo.html" title="Todo list">Todo</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="left">
 	<div id="menu">
-		<a href="index.html" title="Overview"><span>Overview</span></a>
+		<form id="search" class="form-search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="search-query" placeholder="Search" />
+		</form>
+
+		<div>
+		<a href="index.html">Overview</a>
+		</div>
 
 
 		<div id="groups">
@@ -109,9 +149,6 @@
 			</ul>
 		</div>
 
-		<hr />
-
-
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -172,40 +209,9 @@
 <div id="splitter"></div>
 
 <div id="right">
-<div id="rightInner">
-	<form id="search">
-		<input type="hidden" name="cx" value="" />
-		<input type="hidden" name="ie" value="UTF-8" />
-		<input type="text" name="q" class="text" />
-		<input type="submit" value="Search" />
-	</form>
-
-	<div id="navigation">
-		<ul>
-			<li>
-				<a href="index.html" title="Overview"><span>Overview</span></a>
-			</li>
-			<li>
-				<a href="package-Libraries.html" title="Summary of Libraries"><span>Package</span></a>
-			</li>
-			<li class="active">
-<span>Class</span>			</li>
-		</ul>
-		<ul>
-			<li>
-				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
-			</li>
-			<li>
-				<a href="todo.html" title="Todo list"><span>Todo</span></a>
-			</li>
-		</ul>
-		<ul>
-		</ul>
-	</div>
-
+	<div id="rightInner">
 <div id="content" class="class">
 	<h1>Class joosValidate</h1>
-
 
 	<div class="description">
 	
@@ -221,12 +227,10 @@
 
 
 
-
-	<div class="info">
+	<div class="alert alert-info">
 		
 		
 		
-		<b>Package:</b> <a href="package-Libraries.html">Libraries</a><br />
 
 				<b>Category:</b>
 				Libraries<br />
@@ -240,959 +244,975 @@
 href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 				<b>Version:</b>
 				1.0<br />
-		<b>Located at</b> <a href="source-class-joosValidate.html#6" title="Go to source code">core/libraries/validate.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosValidate.html#6" title="Go to source code">core/libraries/validate.php</a><br />
 	</div>
 
 
-	<table class="summary" id="methods">
-	<caption>Methods summary</caption>
-	<tr data-order="is_email" id="_is_email">
+		<h2>Methods summary</h2>
+		<table class="summary table table-bordered table-striped" id="methods">
+		<tr data-order="is_email" id="_is_email">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_email">#</a>
-		<code><a href="source-class-joosValidate.html#22" title="Go to source code">is_email</a>( <span>string <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_email">#</a>
+			<code><a href="source-class-joosValidate.html#22" title="Go to source code">is_email</a>( <span>string <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка строка на соответствие email -
 формату</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка строка на соответствие email -
 формату</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code><br> email адрес для проверки</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code><br> email адрес для проверки</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
-				<h4>Tutorial</h4>
-				<div class="list">
-						joosValidate::is_email('admin@joostina.ru')<br />
-						joosValidate::is_email('noooo@mail.ru')<br />
-				</div>
+					<h4>Tutorial</h4>
+					<div class="list">
+							joosValidate::is_email('admin@joostina.ru')<br />
+							joosValidate::is_email('noooo@mail.ru')<br />
+					</div>
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_digital" id="_is_digital">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_digital" id="_is_digital">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_digital">#</a>
-		<code><a href="source-class-joosValidate.html#35" title="Go to source code">is_digital</a>( <span>string|integer <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_digital">#</a>
+			<code><a href="source-class-joosValidate.html#35" title="Go to source code">is_digital</a>( <span>string|integer <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка строки на наличие в ней только
 цифр, либо сама строка - число</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка строки на наличие в ней только
 цифр, либо сама строка - число</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>string|integer</code><br> значение для проверки</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string|integer</code><br> значение для проверки</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_digital_value_min" id="_is_digital_value_min">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_digital_value_min" id="_is_digital_value_min">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_digital_value_min">#</a>
-		<code><a href="source-class-joosValidate.html#46" title="Go to source code">is_digital_value_min</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_digital_value_min">#</a>
+			<code><a href="source-class-joosValidate.html#46" title="Go to source code">is_digital_value_min</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет, что значение переменной больше
 чем указанное число min</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет, что значение переменной больше
 чем указанное число min</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code><br> значение для проверки</dd>
-					<dt><var>$min</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code><br> значение для проверки</dd>
+						<dt><var>$min</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_digital_value_max" id="_is_digital_value_max">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_digital_value_max" id="_is_digital_value_max">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_digital_value_max">#</a>
-		<code><a href="source-class-joosValidate.html#57" title="Go to source code">is_digital_value_max</a>( <span>type <var>$value</var></span>, <span>type <var>$max</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_digital_value_max">#</a>
+			<code><a href="source-class-joosValidate.html#57" title="Go to source code">is_digital_value_max</a>( <span>type <var>$value</var></span>, <span>type <var>$max</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет, что значение переменной меньше
 чем указанное число max</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет, что значение переменной меньше
 чем указанное число max</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code><br> значение для проверки</dd>
-					<dt><var>$max</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code><br> значение для проверки</dd>
+						<dt><var>$max</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_digital_value_between" id="_is_digital_value_between">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_digital_value_between" id="_is_digital_value_between">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_digital_value_between">#</a>
-		<code><a href="source-class-joosValidate.html#68" title="Go to source code">is_digital_value_between</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$max</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_digital_value_between">#</a>
+			<code><a href="source-class-joosValidate.html#68" title="Go to source code">is_digital_value_between</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$max</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка вхождения цифрового значения
 переменной в указанный диапазон min и max</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка вхождения цифрового значения
 переменной в указанный диапазон min и max</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code><br> значение для проверки</dd>
-					<dt><var>$min</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$max</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code><br> значение для проверки</dd>
+						<dt><var>$min</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$max</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_alfa" id="_is_alfa">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_alfa" id="_is_alfa">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_alfa">#</a>
-		<code><a href="source-class-joosValidate.html#81" title="Go to source code">is_alfa</a>( <span>string <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_alfa">#</a>
+			<code><a href="source-class-joosValidate.html#81" title="Go to source code">is_alfa</a>( <span>string <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка строка на наличие в ней только
 цифр алфавита, русского и английского а-я
 a-z</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка строка на наличие в ней только
 цифр алфавита, русского и английского а-я
 a-z</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_url" id="_is_url">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_url" id="_is_url">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_url">#</a>
-		<code><a href="source-class-joosValidate.html#92" title="Go to source code">is_url</a>( <span>string <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_url">#</a>
+			<code><a href="source-class-joosValidate.html#92" title="Go to source code">is_url</a>( <span>string <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка строка на соответствие url -
 формату</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка строка на соответствие url -
 формату</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>string</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_array" id="_is_array">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_array" id="_is_array">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_array">#</a>
-		<code><a href="source-class-joosValidate.html#103" title="Go to source code">is_array</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_array">#</a>
+			<code><a href="source-class-joosValidate.html#103" title="Go to source code">is_array</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка переменной на то что она
 является массивом</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка переменной на то что она
 является массивом</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_bool" id="_is_bool">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_bool" id="_is_bool">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_bool">#</a>
-		<code><a href="source-class-joosValidate.html#113" title="Go to source code">is_bool</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_bool">#</a>
+			<code><a href="source-class-joosValidate.html#113" title="Go to source code">is_bool</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на булевый тип</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на булевый тип</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_float" id="_is_float">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_float" id="_is_float">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_float">#</a>
-		<code><a href="source-class-joosValidate.html#123" title="Go to source code">is_float</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_float">#</a>
+			<code><a href="source-class-joosValidate.html#123" title="Go to source code">is_float</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка на тип float</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка на тип float</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_ip" id="_is_ip">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_ip" id="_is_ip">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_ip">#</a>
-		<code><a href="source-class-joosValidate.html#133" title="Go to source code">is_ip</a>( <span>type <var>$value</var></span>, <span>type <var>$flags</var> = <span class="php-keyword1">null</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_ip">#</a>
+			<code><a href="source-class-joosValidate.html#133" title="Go to source code">is_ip</a>( <span>type <var>$value</var></span>, <span>type <var>$flags</var> = <span class="php-keyword1">null</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка что переменная является
 валидным IP адресом</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка что переменная является
 валидным IP адресом</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$flags</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$flags</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_json" id="_is_json">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_json" id="_is_json">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_json">#</a>
-		<code><a href="source-class-joosValidate.html#145" title="Go to source code">is_json</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_json">#</a>
+			<code><a href="source-class-joosValidate.html#145" title="Go to source code">is_json</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет, что длина строки переменной
 меньше чем указанное число max</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет, что длина строки переменной
 меньше чем указанное число max</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_length_min" id="_is_length_min">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_length_min" id="_is_length_min">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_length_min">#</a>
-		<code><a href="source-class-joosValidate.html#155" title="Go to source code">is_length_min</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_length_min">#</a>
+			<code><a href="source-class-joosValidate.html#155" title="Go to source code">is_length_min</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет, что длина строки переменной
 меньше чем указанное число max в символах</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет, что длина строки переменной
 меньше чем указанное число max в символах</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$min</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$inclusive</var></dt>
-					<dd><code>type</code><br> проверять учитывая равенство величине</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$min</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$inclusive</var></dt>
+						<dd><code>type</code><br> проверять учитывая равенство величине</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_length_max" id="_is_length_max">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_length_max" id="_is_length_max">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_length_max">#</a>
-		<code><a href="source-class-joosValidate.html#168" title="Go to source code">is_length_max</a>( <span>type <var>$value</var></span>, <span>type <var>$max</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_length_max">#</a>
+			<code><a href="source-class-joosValidate.html#168" title="Go to source code">is_length_max</a>( <span>type <var>$value</var></span>, <span>type <var>$max</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет, что длина строки переменной
 больше чем указанное число max в символах</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет, что длина строки переменной
 больше чем указанное число max в символах</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$max</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$inclusive</var></dt>
-					<dd><code>type</code><br> проверять учитывая равенство величине</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$max</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$inclusive</var></dt>
+						<dd><code>type</code><br> проверять учитывая равенство величине</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_length_between" id="_is_length_between">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_length_between" id="_is_length_between">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_length_between">#</a>
-		<code><a href="source-class-joosValidate.html#181" title="Go to source code">is_length_between</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$max</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_length_between">#</a>
+			<code><a href="source-class-joosValidate.html#181" title="Go to source code">is_length_between</a>( <span>type <var>$value</var></span>, <span>type <var>$min</var></span>, <span>type <var>$max</var></span>, <span>type <var>$inclusive</var> = <span class="php-keyword1">true</span></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что длина строки переменной
 входит в указанный диапазон min и max</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что длина строки переменной
 входит в указанный диапазон min и max</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$min</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$max</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$inclusive</var></dt>
-					<dd><code>type</code><br> проверять учитывая равенство величине</dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$min</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$max</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$inclusive</var></dt>
+						<dd><code>type</code><br> проверять учитывая равенство величине</dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_lower" id="_is_lower">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_lower" id="_is_lower">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_lower">#</a>
-		<code><a href="source-class-joosValidate.html#195" title="Go to source code">is_lower</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_lower">#</a>
+			<code><a href="source-class-joosValidate.html#195" title="Go to source code">is_lower</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что все символы строки в нижнем
 регистре</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что все символы строки в нижнем
 регистре</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_upper" id="_is_upper">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_upper" id="_is_upper">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_upper">#</a>
-		<code><a href="source-class-joosValidate.html#205" title="Go to source code">is_upper</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_upper">#</a>
+			<code><a href="source-class-joosValidate.html#205" title="Go to source code">is_upper</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что все символы строки в
 верхнем регистре</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что все символы строки в
 верхнем регистре</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_regex_check" id="_is_regex_check">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_regex_check" id="_is_regex_check">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_regex_check">#</a>
-		<code><a href="source-class-joosValidate.html#215" title="Go to source code">is_regex_check</a>( <span>type <var>$value</var></span>, <span>type <var>$regex</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_regex_check">#</a>
+			<code><a href="source-class-joosValidate.html#215" title="Go to source code">is_regex_check</a>( <span>type <var>$value</var></span>, <span>type <var>$regex</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверка строки на соответсвие любому
 регулярному выражению</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверка строки на соответсвие любому
 регулярному выражению</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-					<dt><var>$regex</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+						<dt><var>$regex</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_blank" id="_is_blank">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_blank" id="_is_blank">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_blank">#</a>
-		<code><a href="source-class-joosValidate.html#226" title="Go to source code">is_blank</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_blank">#</a>
+			<code><a href="source-class-joosValidate.html#226" title="Go to source code">is_blank</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что строка является пустотой
 или состояит из непечатаемых символов</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что строка является пустотой
 или состояит из непечатаемых символов</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_not_blank" id="_is_not_blank">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_not_blank" id="_is_not_blank">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_not_blank">#</a>
-		<code><a href="source-class-joosValidate.html#236" title="Go to source code">is_not_blank</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_not_blank">#</a>
+			<code><a href="source-class-joosValidate.html#236" title="Go to source code">is_not_blank</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что строка имеет хоть один
 видимый сивол</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что строка имеет хоть один
 видимый сивол</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-		</div>
-		</div></td>
-	</tr>
-	<tr data-order="is_not_null" id="_is_not_null">
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="is_not_null" id="_is_not_null">
 
-		<td class="attributes"><code>
-			 public static
-			boolean
-			
-			</code>
-		</td>
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
 
-		<td class="name"><div>
-		<a class="anchor" href="#_is_not_null">#</a>
-		<code><a href="source-class-joosValidate.html#246" title="Go to source code">is_not_null</a>( <span>type <var>$value</var></span> )</code>
+			<td class="name"><div>
+			<a class="anchor" href="#_is_not_null">#</a>
+			<code><a href="source-class-joosValidate.html#246" title="Go to source code">is_not_null</a>( <span>type <var>$value</var></span> )</code>
 
-		<div class="description short">
-			
+			<div class="description short">
+				
 <p>Проверяет что строка не null</p>
 
-		</div>
+			</div>
 
-		<div class="description detailed hidden">
-			
+			<div class="description detailed hidden">
+				
 <p>Проверяет что строка не null</p>
 
 
 
-				<h4>Parameters</h4>
-				<div class="list"><dl>
-					<dt><var>$value</var></dt>
-					<dd><code>type</code></dd>
-				</dl></div>
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$value</var></dt>
+						<dd><code>type</code></dd>
+					</dl></div>
 
-				<h4>Returns</h4>
-				<div class="list">
-					<code>boolean</code><br>результат проверки соответсвия<br />
-				</div>
-
-
-
-		</div>
-		</div></td>
-	</tr>
-	</table>
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат проверки соответсвия<br />
+					</div>
 
 
 
-
-
-
+			</div>
+			</div></td>
+		</tr>
+		</table>
 
 
 
 
 </div>
+	</div>
 
 	<div id="footer">
-		Joostina CMS API documentation generated by <a href="http://apigen.org">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
-</div>
 </div>
 </body>
 </html>
