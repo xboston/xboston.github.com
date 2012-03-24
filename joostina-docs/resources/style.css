@@ -152,7 +152,7 @@ caption {
 }
 
 #methods .description.short > p:first-child {
-	margin-top: 1.33em;
+	margin-top: 6px;;
 }
 
 #constants p,
@@ -543,4 +543,12 @@ div.tree span.padding {
 
 div.alert-info a{
 	text-decoration: underline;
+}
+
+.summary td:first-child {
+	text-align: right;
+}
+
+#packages.summary td:first-child, #namespaces.summary td:first-child, .inherited.summary td:first-child, .used.summary td:first-child {
+	text-align: left;
 }
