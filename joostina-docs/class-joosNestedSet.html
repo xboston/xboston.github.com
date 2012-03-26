@@ -6,11 +6,12 @@
 
 	<title>Class joosNestedSet | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -194,7 +198,6 @@
 				<li><a href="class-joosTrash.html">joosTrash</a></li>
 				<li><a href="class-joosValidate.html">joosValidate</a></li>
 				<li><a href="class-joosVersion.html">joosVersion</a></li>
-				<li><a href="class-modelPost.html">modelPost</a></li>
 				<li><a href="class-Thumbnail.html">Thumbnail</a></li>
 			</ul>
 
@@ -215,9 +218,8 @@
 
 	<div class="description">
 	
-<p>joosNestedSet - Библиотека рвботы с вложенными
-категориями и деревьями в базе данных
-Системная библиотека</p>
+<p>Работа с вложенными категориями и
+деревьями в базе данных</p>
 
 	</div>
 
@@ -283,7 +285,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-joosNestedSet.html#86" title="Go to source code">__construct</a>( <span>object <var>$params</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#94" title="Go to source code">__construct</a>( <span>object <var>$params</var></span> )</code>
 
 			<div class="description short">
 				
@@ -321,7 +323,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_insert_root_node">#</a>
-			<code><a href="source-class-joosNestedSet.html#104" title="Go to source code">insert_root_node</a>( <span>string <var>$nodeName</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#112" title="Go to source code">insert_root_node</a>( <span>string <var>$nodeName</var></span> )</code>
 
 			<div class="description short">
 				
@@ -365,7 +367,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-joosNestedSet.html#135" title="Go to source code">save</a>( <span>array <var>$source</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span> </span> )</code>
+			<code><a href="source-class-joosNestedSet.html#143" title="Go to source code">save</a>( <span>array <var>$source</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -410,7 +412,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete_branch">#</a>
-			<code><a href="source-class-joosNestedSet.html#173" title="Go to source code">delete_branch</a>( <span>integer <var>$id</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#181" title="Go to source code">delete_branch</a>( <span>integer <var>$id</var></span> )</code>
 
 			<div class="description short">
 				
@@ -454,7 +456,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete_node">#</a>
-			<code><a href="source-class-joosNestedSet.html#205" title="Go to source code">delete_node</a>( <span>integer <var>$id</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#213" title="Go to source code">delete_node</a>( <span>integer <var>$id</var></span> )</code>
 
 			<div class="description short">
 				
@@ -496,7 +498,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_move_lft">#</a>
-			<code><a href="source-class-joosNestedSet.html#237" title="Go to source code">move_lft</a>( <span>integer <var>$id</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#245" title="Go to source code">move_lft</a>( <span>integer <var>$id</var></span> )</code>
 
 			<div class="description short">
 				
@@ -540,7 +542,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_move_rgt">#</a>
-			<code><a href="source-class-joosNestedSet.html#290" title="Go to source code">move_rgt</a>( <span>integer <var>$nodeId</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#298" title="Go to source code">move_rgt</a>( <span>integer <var>$nodeId</var></span> )</code>
 
 			<div class="description short">
 				
@@ -584,7 +586,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_move_up">#</a>
-			<code><a href="source-class-joosNestedSet.html#345" title="Go to source code">move_up</a>( <span>integer <var>$nodeId</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#353" title="Go to source code">move_up</a>( <span>integer <var>$nodeId</var></span> )</code>
 
 			<div class="description short">
 				
@@ -628,7 +630,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_parent">#</a>
-			<code><a href="source-class-joosNestedSet.html#415" title="Go to source code">get_parent</a>( <span> <var>$child</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#423" title="Go to source code">get_parent</a>( <span> <var>$child</var></span> )</code>
 
 			<div class="description short">
 				
@@ -657,7 +659,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_move_down">#</a>
-			<code><a href="source-class-joosNestedSet.html#424" title="Go to source code">move_down</a>( <span>integer <var>$nodeId</var></span> )</code>
+			<code><a href="source-class-joosNestedSet.html#432" title="Go to source code">move_down</a>( <span>integer <var>$nodeId</var></span> )</code>
 
 			<div class="description short">
 				
@@ -701,7 +703,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_check_root_node">#</a>
-			<code><a href="source-class-joosNestedSet.html#480" title="Go to source code">check_root_node</a>( )</code>
+			<code><a href="source-class-joosNestedSet.html#488" title="Go to source code">check_root_node</a>( )</code>
 
 			<div class="description short">
 				
@@ -740,7 +742,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_error">#</a>
-			<code><a href="source-class-joosNestedSet.html#505" title="Go to source code">is_error</a>( )</code>
+			<code><a href="source-class-joosNestedSet.html#513" title="Go to source code">is_error</a>( )</code>
 
 			<div class="description short">
 				
@@ -777,7 +779,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_error">#</a>
-			<code><a href="source-class-joosNestedSet.html#514" title="Go to source code">get_error</a>( )</code>
+			<code><a href="source-class-joosNestedSet.html#522" title="Go to source code">get_error</a>( )</code>
 
 			<div class="description short">
 				
@@ -814,7 +816,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_full_tree_extended">#</a>
-			<code><a href="source-class-joosNestedSet.html#523" title="Go to source code">get_full_tree_extended</a>( )</code>
+			<code><a href="source-class-joosNestedSet.html#531" title="Go to source code">get_full_tree_extended</a>( )</code>
 
 			<div class="description short">
 				
@@ -851,7 +853,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_full_tree_simple">#</a>
-			<code><a href="source-class-joosNestedSet.html#550" title="Go to source code">get_full_tree_simple</a>( )</code>
+			<code><a href="source-class-joosNestedSet.html#558" title="Go to source code">get_full_tree_simple</a>( )</code>
 
 			<div class="description short">
 				
@@ -888,7 +890,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_branch">#</a>
-			<code><a href="source-class-joosNestedSet.html#565" title="Go to source code">get_branch</a>( <span>integer <var>$lft</var></span>, <span>integer <var>$rgt</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-joosNestedSet.html#573" title="Go to source code">get_branch</a>( <span>integer <var>$lft</var></span>, <span>integer <var>$rgt</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -934,7 +936,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_children">#</a>
-			<code><a href="source-class-joosNestedSet.html#582" title="Go to source code">get_children</a>( <span>integer <var>$id</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-joosNestedSet.html#590" title="Go to source code">get_children</a>( <span>integer <var>$id</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -978,7 +980,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_path_from_root">#</a>
-			<code><a href="source-class-joosNestedSet.html#598" title="Go to source code">get_path_from_root</a>( <span>integer <var>$nodeId</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span> </span> )</code>
+			<code><a href="source-class-joosNestedSet.html#606" title="Go to source code">get_path_from_root</a>( <span>integer <var>$nodeId</var></span>, <span> <var>$object_list</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1081,7 +1083,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#24" title="Go to source code"><var>$id</var></a>
+					<a href="source-class-joosNestedSet.html#23" title="Go to source code"><var>$id</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1139,7 +1141,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#36" title="Go to source code"><var>$rgt</var></a>
+					<a href="source-class-joosNestedSet.html#37" title="Go to source code"><var>$rgt</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1168,7 +1170,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#42" title="Go to source code"><var>$level</var></a>
+					<a href="source-class-joosNestedSet.html#44" title="Go to source code"><var>$level</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1197,7 +1199,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#48" title="Go to source code"><var>$parent_id</var></a>
+					<a href="source-class-joosNestedSet.html#51" title="Go to source code"><var>$parent_id</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1226,7 +1228,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#54" title="Go to source code"><var>$moved</var></a>
+					<a href="source-class-joosNestedSet.html#57" title="Go to source code"><var>$moved</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1251,7 +1253,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#55" title="Go to source code"><var>$name</var></a>
+					<a href="source-class-joosNestedSet.html#59" title="Go to source code"><var>$name</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1280,7 +1282,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#61" title="Go to source code"><var>$group</var></a>
+					<a href="source-class-joosNestedSet.html#66" title="Go to source code"><var>$group</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -1309,7 +1311,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosNestedSet.html#67" title="Go to source code"><var>$slug</var></a>
+					<a href="source-class-joosNestedSet.html#73" title="Go to source code"><var>$slug</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>

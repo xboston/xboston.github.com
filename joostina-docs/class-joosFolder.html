@@ -6,11 +6,12 @@
 
 	<title>Class joosFolder | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -194,7 +198,6 @@
 				<li><a href="class-joosTrash.html">joosTrash</a></li>
 				<li><a href="class-joosValidate.html">joosValidate</a></li>
 				<li><a href="class-joosVersion.html">joosVersion</a></li>
-				<li><a href="class-modelPost.html">modelPost</a></li>
 				<li><a href="class-Thumbnail.html">Thumbnail</a></li>
 			</ul>
 
@@ -215,8 +218,7 @@
 
 	<div class="description">
 	
-<p>joosFolder - Библиотека работы с каталогами
-файловой системы Системная библиотека</p>
+<p>Работа с каталогами файловой системы</p>
 
 	</div>
 
@@ -262,7 +264,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_exists">#</a>
-			<code><a href="source-class-joosFolder.html#22" title="Go to source code">exists</a>( <span>string <var>$location</var></span> )</code>
+			<code><a href="source-class-joosFolder.html#21" title="Go to source code">exists</a>( <span>string <var>$location</var></span> )</code>
 
 			<div class="description short">
 				
@@ -304,7 +306,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_writable">#</a>
-			<code><a href="source-class-joosFolder.html#39" title="Go to source code">is_writable</a>( <span>string <var>$location</var></span> )</code>
+			<code><a href="source-class-joosFolder.html#38" title="Go to source code">is_writable</a>( <span>string <var>$location</var></span> )</code>
 
 			<div class="description short">
 				
@@ -349,7 +351,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-joosFolder.html#50" title="Go to source code">create</a>( <span>string <var>$location</var></span>, <span>integer <var>$chmod</var> = <span class="php-num">0755</span></span> )</code>
+			<code><a href="source-class-joosFolder.html#49" title="Go to source code">create</a>( <span>string <var>$location</var></span>, <span>integer <var>$chmod</var> = <span class="php-num">0755</span></span> )</code>
 
 			<div class="description short">
 				
@@ -396,7 +398,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-joosFolder.html#63" title="Go to source code">delete</a>( <span>string <var>$location</var></span> )</code>
+			<code><a href="source-class-joosFolder.html#62" title="Go to source code">delete</a>( <span>string <var>$location</var></span> )</code>
 
 			<div class="description short">
 				
@@ -441,7 +443,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_clear">#</a>
-			<code><a href="source-class-joosFolder.html#75" title="Go to source code">clear</a>( <span>string <var>$location</var></span> )</code>
+			<code><a href="source-class-joosFolder.html#74" title="Go to source code">clear</a>( <span>string <var>$location</var></span> )</code>
 
 			<div class="description short">
 				
@@ -485,7 +487,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_rename">#</a>
-			<code><a href="source-class-joosFolder.html#102" title="Go to source code">rename</a>( <span>string <var>$location_from</var></span>, <span>string <var>$location_to</var></span>, <span>integer <var>$chmod</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosFolder.html#101" title="Go to source code">rename</a>( <span>string <var>$location_from</var></span>, <span>string <var>$location_to</var></span>, <span>integer <var>$chmod</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -517,6 +519,255 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 					<h4>Returns</h4>
 					<div class="list">
 						<code>boolean</code><br>результат переименования каталога<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="copy" id="_copy">
+
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_copy">#</a>
+			<code><a href="source-class-joosFolder.html#116" title="Go to source code">copy</a>( <span>string <var>$location_from</var></span>, <span>string <var>$location_to</var></span>, <span>integer <var>$chmod</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Копирование каталога со всеми вложенными
+файлами и подкаталогами Содержимое
+копируется в создаваемый каталог, на него
+так же можно сразу установить требуемые
+права доступа</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Копирование каталога со всеми вложенными
+файлами и подкаталогами Содержимое
+копируется в создаваемый каталог, на него
+так же можно сразу установить требуемые
+права доступа</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$location_from</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу - источнику</dd>
+						<dt><var>$location_to</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу - получателю</dd>
+						<dt><var>$chmod</var></dt>
+						<dd><code>integer</code><br> права доступа в соответсвии с условиями
+работы стандартной php функции chmod</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат капорования каталога<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="set_chmod" id="_set_chmod">
+
+			<td class="attributes"><code>
+				
+				 public static
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_set_chmod">#</a>
+			<code><a href="source-class-joosFolder.html#131" title="Go to source code">set_chmod</a>( <span>string <var>$location</var></span>, <span>integer <var>$chmod</var></span>, <span>boolean <var>$recursive</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Смена прав доступа к каталогу с
+возможностью расстановки прав
+рекурсивно</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Смена прав доступа к каталогу с
+возможностью расстановки прав
+рекурсивно</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$location</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу</dd>
+						<dt><var>$chmod</var></dt>
+						<dd><code>integer</code><br> права доступа в соответсвии с условиями
+работы стандартной php функции chmod</dd>
+						<dt><var>$recursive</var></dt>
+						<dd><code>boolean</code><br> флаг установки прав доступа рекурсивно
+внутрь, по умолчанию права ставятся без
+рекурсии</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат смены прав доступа<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_size" id="_get_size">
+
+			<td class="attributes"><code>
+				
+				 public static
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_size">#</a>
+			<code><a href="source-class-joosFolder.html#145" title="Go to source code">get_size</a>( <span>string <var>$location</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Подсчет размера занимаемого каталогом со
+всеми вложенными файлами и подкаталогами</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Подсчет размера занимаемого каталогом со
+всеми вложенными файлами и подкаталогами</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$location</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>integer</code><br>размер каталога в байтах<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_file_list" id="_get_file_list">
+
+			<td class="attributes"><code>
+				
+				 public static
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_file_list">#</a>
+			<code><a href="source-class-joosFolder.html#157" title="Go to source code">get_file_list</a>( <span>string <var>$location</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+<p>Получение списка файлов и подкаталогов
+каталога, с возможностью рекурсивного
+вывода вложенных подкаталогов</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Получение списка файлов и подкаталогов
+каталога, с возможностью рекурсивного
+вывода вложенных подкаталогов</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$location</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу</dd>
+						<dt><var>$params</var></dt>
+						<dd><code>array</code><br> массив параметров вывода списка файлов -
+расширение, только файлы/каталоги,
+включая-исключая расширения, рекурсия
+внутрь</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>array</code><br>массив вложенных файлов и каталогов<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_safe_name" id="_get_safe_name">
+
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_safe_name">#</a>
+			<code><a href="source-class-joosFolder.html#170" title="Go to source code">get_safe_name</a>( <span>string <var>$location</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Создание безопасного имени для каталога
+Работает по принципу joosFile::get_safe_name, но из
+названия дополнительно удаляются точки</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Создание безопасного имени для каталога
+Работает по принципу joosFile::get_safe_name, но из
+названия дополнительно удаляются точки</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$location</var></dt>
+						<dd><code>string</code><br> полный путь к каталогу</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br>безопасное имя для каталога<br />
 					</div>
 
 

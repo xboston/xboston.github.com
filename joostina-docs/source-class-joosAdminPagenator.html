@@ -7,11 +7,12 @@
 
 	<title>File core/admin.root.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 							</ul></li>
 			</ul>
 		</div>
+
+		<hr />
+
 
 		<div id="elements">
 			<h3>Classes</h3>
@@ -335,7 +339,7 @@
 <a href="#161" id="161" class="l">161: </a>            <span class="php-keyword2">define</span>(<span class="php-quote">'_JOS_GARBAGECLEAN'</span>, <span class="php-num">1</span>);
 <a href="#162" id="162" class="l">162: </a>
 <a href="#163" id="163" class="l">163: </a>            <span class="php-var">$garbage_timeout</span> = <span class="php-var">$session_life_admin</span> + <span class="php-num">600</span>;
-<a href="#164" id="164" class="l">164: </a>            @<span class="php-keyword2">ini_set</span>(<span class="php-quote">'session.gc_maxlifetime'</span>, <span class="php-var">$garbage_timeout</span>);
+<a href="#164" id="164" class="l">164: </a>            <span class="php-keyword2">ini_set</span>(<span class="php-quote">'session.gc_maxlifetime'</span>, <span class="php-var">$garbage_timeout</span>);
 <a href="#165" id="165" class="l">165: </a>        }
 <a href="#166" id="166" class="l">166: </a>    }
 <a href="#167" id="167" class="l">167: </a>
@@ -537,14 +541,25 @@
 <a href="#363" id="363" class="l">363: </a>
 <a href="#364" id="364" class="l">364: </a>}
 <a href="#365" id="365" class="l">365: </a>
-<a href="#366" id="366" class="l">366: </a>
-<a href="#367" id="367" class="l">367: </a><span class="php-keyword1">class</span> joosAdminController <span class="php-keyword1">extends</span> joosController{
-<a href="#368" id="368" class="l">368: </a>
-<a href="#369" id="369" class="l">369: </a>}
-<a href="#370" id="370" class="l">370: </a>
-<a href="#371" id="371" class="l">371: </a><span class="php-keyword1">class</span> joosAdminControllerAjax <span class="php-keyword1">extends</span> joosAdminController{
-<a href="#372" id="372" class="l">372: </a>
-<a href="#373" id="373" class="l">373: </a>}</code></pre>
+<a href="#366" id="366" class="l">366: </a><span class="php-comment">/**
+</span><a href="#367" id="367" class="l">367: </a><span class="php-comment"> * Базовый контроллер работы панели управления Joostina CMS
+</span><a href="#368" id="368" class="l">368: </a><span class="php-comment"> * @package    Joostina
+</span><a href="#369" id="369" class="l">369: </a><span class="php-comment"> * @subpackage Contlroller
+</span><a href="#370" id="370" class="l">370: </a><span class="php-comment"> *
+</span><a href="#371" id="371" class="l">371: </a><span class="php-comment"> */</span>
+<a href="#372" id="372" class="l">372: </a><span class="php-keyword1">class</span> joosAdminController <span class="php-keyword1">extends</span> joosController{
+<a href="#373" id="373" class="l">373: </a>
+<a href="#374" id="374" class="l">374: </a>}
+<a href="#375" id="375" class="l">375: </a>
+<a href="#376" id="376" class="l">376: </a><span class="php-comment">/**
+</span><a href="#377" id="377" class="l">377: </a><span class="php-comment"> * Базовый ajax контроллер работы панели управления Joostina CMS
+</span><a href="#378" id="378" class="l">378: </a><span class="php-comment"> * @package    Joostina
+</span><a href="#379" id="379" class="l">379: </a><span class="php-comment"> * @subpackage Contlroller
+</span><a href="#380" id="380" class="l">380: </a><span class="php-comment"> *
+</span><a href="#381" id="381" class="l">381: </a><span class="php-comment"> */</span>
+<a href="#382" id="382" class="l">382: </a><span class="php-keyword1">class</span> joosAdminControllerAjax <span class="php-keyword1">extends</span> joosAdminController{
+<a href="#383" id="383" class="l">383: </a>
+<a href="#384" id="384" class="l">384: </a>}</code></pre>
 	</div>
 
 	<div id="footer">

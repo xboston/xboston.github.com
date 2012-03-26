@@ -6,11 +6,12 @@
 
 	<title>No package | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -146,6 +147,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -157,7 +161,6 @@
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
 				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
-				<li><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
@@ -168,7 +171,9 @@
 				<li><a href="class-qqFileUploader.html">qqFileUploader</a></li>
 				<li><a href="class-qqUploadedFileForm.html">qqUploadedFileForm</a></li>
 				<li><a href="class-Route.html">Route</a></li>
+				<li><a href="class-rulesValidation.html">rulesValidation</a></li>
 				<li><a href="class-TreeBuilder.html">TreeBuilder</a></li>
+				<li><a href="class-UploadHandler.html">UploadHandler</a></li>
 				<li><a href="class-ValumsfileUploader.html">ValumsfileUploader</a></li>
 			</ul>
 
@@ -181,17 +186,14 @@
 				<li><a href="class-joosCacheException.html">joosCacheException</a></li>
 				<li><a href="class-joosDatabaseException.html">joosDatabaseException</a></li>
 				<li><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a></li>
+				<li><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></li>
 				<li><a href="class-joosModulesException.html">joosModulesException</a></li>
 			</ul>
 
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-cleanArrayXSS.html">cleanArrayXSS</a></li>
-				<li><a href="function-cleanXSS.html">cleanXSS</a></li>
 				<li><a href="function-navigation_ul_li_recurse.html">navigation_ul_li_recurse</a></li>
-				<li><a href="function-remove_xss.html">remove_xss</a></li>
-				<li><a href="function-unichr.html">unichr</a></li>
 				<li><a href="function-uniord.html">uniord</a></li>
 			</ul>
 		</div>
@@ -204,6 +206,7 @@
 	<div id="rightInner">
 <div id="content" class="package">
 	<h1>No package</h1>
+
 
 
 <h2>Classes summary</h2>
@@ -245,10 +248,6 @@ href="http://code.google.com/p/jevix/">http://code.google.com/p/jevix/</a></td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></td>
-	<td></td>
-</tr>
-<tr>
-	<td class="name"><a href="class-joosError.html">joosError</a></td>
 	<td></td>
 </tr>
 <tr>
@@ -295,7 +294,15 @@ href="http://code.google.com/p/jevix/">http://code.google.com/p/jevix/</a></td>
 оригинальной работе Kohana Team</td>
 </tr>
 <tr>
+	<td class="name"><a href="class-rulesValidation.html">rulesValidation</a></td>
+	<td></td>
+</tr>
+<tr>
 	<td class="name"><a href="class-TreeBuilder.html">TreeBuilder</a></td>
+	<td></td>
+</tr>
+<tr>
+	<td class="name"><a href="class-UploadHandler.html">UploadHandler</a></td>
 	<td></td>
 </tr>
 <tr>
@@ -329,6 +336,10 @@ href="http://code.google.com/p/jevix/">http://code.google.com/p/jevix/</a></td>
 	<td>Обработчик ошибок для библиотеки joosFile</td>
 </tr>
 <tr>
+	<td class="name"><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></td>
+	<td>Обработчик ошибок для библиотеки joosFolder</td>
+</tr>
+<tr>
 	<td class="name"><a href="class-joosModulesException.html">joosModulesException</a></td>
 	<td></td>
 </tr>
@@ -338,24 +349,8 @@ href="http://code.google.com/p/jevix/">http://code.google.com/p/jevix/</a></td>
 <h2>Functions summary</h2>
 <table class="summary table table-bordered table-striped" id="functions">
 <tr>
-	<td class="name"><a href="function-cleanArrayXSS.html">cleanArrayXSS</a></td>
-	<td>Prevent some basic XSS attacks, filters arrays</td>
-</tr>
-<tr>
-	<td class="name"><a href="function-cleanXSS.html">cleanXSS</a></td>
-	<td>Prevent some basic XSS attacks</td>
-</tr>
-<tr>
 	<td class="name"><a href="function-navigation_ul_li_recurse.html">navigation_ul_li_recurse</a></td>
 	<td></td>
-</tr>
-<tr>
-	<td class="name"><a href="function-remove_xss.html">remove_xss</a></td>
-	<td></td>
-</tr>
-<tr>
-	<td class="name"><a href="function-unichr.html">unichr</a></td>
-	<td>Функция chr() для мультибайтовы строк</td>
 </tr>
 <tr>
 	<td class="name"><a href="function-uniord.html">uniord</a></td>

@@ -6,11 +6,12 @@
 
 	<title>Class joosController | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -157,6 +161,7 @@
 				<li><a href="class-actionsAjaxAdminModules.html">actionsAjaxAdminModules</a></li>
 				<li><a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a></li>
 				<li><a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a></li>
+				<li><a href="class-actionsAjaxSite.html">actionsAjaxSite</a></li>
 				<li><a href="class-actionsAjaxTest.html">actionsAjaxTest</a></li>
 				<li><a href="class-joosAdminController.html">joosAdminController</a></li>
 				<li><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></li>
@@ -205,6 +210,7 @@
 		<div class="well">
 			<a href="class-actionsAdminAcls.html">actionsAdminAcls</a>, 
 			<a href="class-actionsAdminAdmin.html">actionsAdminAdmin</a>, 
+			<a href="class-actionsAdminUsers.html">actionsAdminUsers</a>, 
 			<a href="class-actionsAjaxAdminAcls.html">actionsAjaxAdminAcls</a>, 
 			<a href="class-actionsAjaxAdminCategories.html">actionsAjaxAdminCategories</a>, 
 			<a href="class-actionsAjaxAdminCoder.html">actionsAjaxAdminCoder</a>, 
@@ -213,17 +219,18 @@
 			<a href="class-actionsAjaxAdminPages.html">actionsAjaxAdminPages</a>, 
 			<a href="class-actionsAjaxAdminQuickicons.html">actionsAjaxAdminQuickicons</a>, 
 			<a href="class-actionsAjaxAdminUsers.html">actionsAjaxAdminUsers</a>, 
+			<a href="class-actionsAjaxSite.html">actionsAjaxSite</a>, 
+			<a href="class-actionsAdminCategories.html">actionsAdminCategories</a>, 
 			<a href="class-actionsAjaxTest.html">actionsAjaxTest</a>, 
 			<a href="class-actionsAjaxUsers.html">actionsAjaxUsers</a>, 
-			<a href="class-actionsAdminCategories.html">actionsAdminCategories</a>, 
 			<a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a>, 
 			<a href="class-actionsAdminCoder.html">actionsAdminCoder</a>, 
 			<a href="class-actionsAdminContent.html">actionsAdminContent</a>, 
 			<a href="class-actionsAdminMetainfo.html">actionsAdminMetainfo</a>, 
 			<a href="class-actionsAdminModules.html">actionsAdminModules</a>, 
+			<a href="class-actionsAdminPages.html">actionsAdminPages</a>, 
 			<a href="class-actionsAdminQuickicons.html">actionsAdminQuickicons</a>, 
-			<a href="class-actionsAdminSitemap.html">actionsAdminSitemap</a>, 
-			<a href="class-actionsAdminUsers.html">actionsAdminUsers</a>
+			<a href="class-actionsAdminSitemap.html">actionsAdminSitemap</a>
 		</div>
 	</div>
 
@@ -246,7 +253,7 @@
 				<b>Todo:</b>
 				разделить/расширить инициализации
 контроллера для front, front-ajax, admin, admin-ajax<br />
-		<b>Located at:</b> <a href="source-class-joosController.html#513" title="Go to source code">core/joostina.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosController.html#512" title="Go to source code">core/joostina.php</a><br />
 	</div>
 
 
@@ -264,7 +271,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_init">#</a>
-			<code><a href="source-class-joosController.html#528" title="Go to source code">init</a>( )</code>
+			<code><a href="source-class-joosController.html#527" title="Go to source code">init</a>( )</code>
 
 			<div class="description short">
 				
@@ -293,7 +300,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_run">#</a>
-			<code><a href="source-class-joosController.html#536" title="Go to source code">run</a>( )</code>
+			<code><a href="source-class-joosController.html#535" title="Go to source code">run</a>( )</code>
 
 			<div class="description short">
 				
@@ -333,7 +340,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ajax_run">#</a>
-			<code><a href="source-class-joosController.html#593" title="Go to source code">ajax_run</a>( )</code>
+			<code><a href="source-class-joosController.html#592" title="Go to source code">ajax_run</a>( )</code>
 
 			<div class="description short">
 				
@@ -368,7 +375,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_error404">#</a>
-			<code><a href="source-class-joosController.html#671" title="Go to source code">error404</a>( )</code>
+			<code><a href="source-class-joosController.html#670" title="Go to source code">error404</a>( )</code>
 
 			<div class="description short">
 				
@@ -401,7 +408,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_ajax_error404">#</a>
-			<code><a href="source-class-joosController.html#693" title="Go to source code">ajax_error404</a>( )</code>
+			<code><a href="source-class-joosController.html#692" title="Go to source code">ajax_error404</a>( )</code>
 
 			<div class="description short">
 				
@@ -430,7 +437,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_static_run">#</a>
-			<code><a href="source-class-joosController.html#703" title="Go to source code">static_run</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosController.html#702" title="Go to source code">static_run</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -474,7 +481,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_view">#</a>
-			<code><a href="source-class-joosController.html#720" title="Go to source code">get_view</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>array <var>$template</var> = <span class="php-quote">'default'</span></span>, <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosController.html#719" title="Go to source code">get_view</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>array <var>$template</var> = <span class="php-quote">'default'</span></span>, <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -523,7 +530,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosController.html#522" title="Go to source code"><var>$activroute</var></a>
+					<a href="source-class-joosController.html#521" title="Go to source code"><var>$activroute</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -548,7 +555,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosController.html#523" title="Go to source code"><var>$controller</var></a>
+					<a href="source-class-joosController.html#522" title="Go to source code"><var>$controller</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -573,7 +580,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosController.html#524" title="Go to source code"><var>$task</var></a>
+					<a href="source-class-joosController.html#523" title="Go to source code"><var>$task</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -598,7 +605,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosController.html#525" title="Go to source code"><var>$param</var></a>
+					<a href="source-class-joosController.html#524" title="Go to source code"><var>$param</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -623,7 +630,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosController.html#526" title="Go to source code"><var>$error</var></a>
+					<a href="source-class-joosController.html#525" title="Go to source code"><var>$error</var></a>
 			</td>
 			<td class="value"><code><span class="php-keyword1">false</span></code></td>
 			<td class="description"><div>

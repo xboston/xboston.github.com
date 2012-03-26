@@ -3,15 +3,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.0" />
-	<meta name="robots" content="noindex" />
 
-	<title>File core/libraries/errors.php | Joostina CMS v2.* API</title>
+	<title>Class rulesValidation | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -30,8 +30,8 @@
 						<li>
 							<a href="package-None.html" title="Summary of None"><span>Package</span></a>
 						</li>
-						<li>
-							<a href="class-joosError.html" title="Summary of joosError"><span>Class</span></a>
+						<li class="active">
+							<a href="class-rulesValidation.html" title="Summary of rulesValidation"><span>Class</span></a>
 						</li>
 
 						<li>
@@ -150,6 +150,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -161,7 +164,6 @@
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
 				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
-				<li class="active"><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
@@ -172,7 +174,9 @@
 				<li><a href="class-qqFileUploader.html">qqFileUploader</a></li>
 				<li><a href="class-qqUploadedFileForm.html">qqUploadedFileForm</a></li>
 				<li><a href="class-Route.html">Route</a></li>
+				<li class="active"><a href="class-rulesValidation.html">rulesValidation</a></li>
 				<li><a href="class-TreeBuilder.html">TreeBuilder</a></li>
+				<li><a href="class-UploadHandler.html">UploadHandler</a></li>
 				<li><a href="class-ValumsfileUploader.html">ValumsfileUploader</a></li>
 			</ul>
 
@@ -185,17 +189,14 @@
 				<li><a href="class-joosCacheException.html">joosCacheException</a></li>
 				<li><a href="class-joosDatabaseException.html">joosDatabaseException</a></li>
 				<li><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a></li>
+				<li><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></li>
 				<li><a href="class-joosModulesException.html">joosModulesException</a></li>
 			</ul>
 
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-cleanArrayXSS.html">cleanArrayXSS</a></li>
-				<li><a href="function-cleanXSS.html">cleanXSS</a></li>
 				<li><a href="function-navigation_ul_li_recurse.html">navigation_ul_li_recurse</a></li>
-				<li><a href="function-remove_xss.html">remove_xss</a></li>
-				<li><a href="function-unichr.html">unichr</a></li>
 				<li><a href="function-uniord.html">uniord</a></li>
 			</ul>
 		</div>
@@ -206,24 +207,103 @@
 
 <div id="right">
 	<div id="rightInner">
-<pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
-<a href="#2" id="2" class="l"> 2: </a>
-<a href="#3" id="3" class="l"> 3: </a><span class="php-keyword1">class</span> joosError {
-<a href="#4" id="4" class="l"> 4: </a>
-<a href="#5" id="5" class="l"> 5: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> error() {
-<a href="#6" id="6" class="l"> 6: </a>
-<a href="#7" id="7" class="l"> 7: </a>    }
-<a href="#8" id="8" class="l"> 8: </a>
-<a href="#9" id="9" class="l"> 9: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> warning() {
-<a href="#10" id="10" class="l">10: </a>
-<a href="#11" id="11" class="l">11: </a>    }
-<a href="#12" id="12" class="l">12: </a>
-<a href="#13" id="13" class="l">13: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> notice() {
-<a href="#14" id="14" class="l">14: </a>
-<a href="#15" id="15" class="l">15: </a>    }
-<a href="#16" id="16" class="l">16: </a>
-<a href="#17" id="17" class="l">17: </a>}
-<a href="#18" id="18" class="l">18: </a></code></pre>
+<div id="content" class="class">
+	<h1>Class rulesValidation</h1>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+
+		<b>Located at:</b> <a href="source-class-rulesValidation.html#54" title="Go to source code">app/components/test/controller.test.php</a><br />
+	</div>
+
+
+
+
+		<h2>Properties summary</h2>
+		<table class="summary table table-bordered table-striped" id="properties">
+		<tr data-order="params" id="$params">
+
+			<td class="attributes"><code>
+				
+				public static
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-rulesValidation.html#59" title="Go to source code"><var>$params</var></a>
+			</td>
+			<td class="value"><code><span class="php-keyword1">array</span>(
+	<span class="php-comment">// разрешенные расширения</span>
+	<span class="php-quote">'allowed_ext'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'jpg'</span>, <span class="php-quote">'gif'</span>, <span class="php-quote">'png'</span>),
+	<span class="php-comment">// разрешённые типы файлов</span>
+	<span class="php-quote">'allowed_mime'</span>=&gt;<span class="php-keyword1">array</span>(<span class="php-quote">'images/jpeg'</span>),
+	<span class="php-comment">// масимальный размер файла</span>
+	<span class="php-quote">'max_size'</span>=&gt;<span class="php-quote">'10mb'</span>,
+	<span class="php-comment">// минимальный размер файла</span>
+	<span class="php-quote">'min_size'</span>=&gt;<span class="php-quote">'1mb'</span>,
+	<span class="php-comment">// переименовывать файл в порядковый номер</span>
+	<span class="php-quote">'rename'</span>=&gt;<span class="php-keyword1">true</span>,
+	<span class="php-comment">// транслитерировать имя файла</span>
+	<span class="php-quote">'transliterate_name'</span>=&gt;<span class="php-quote">'true'</span>,
+	<span class="php-comment">// использовать системную работу с аттачами</span>
+	<span class="php-quote">'use_attached'</span>=&gt;<span class="php-keyword1">true</span>,
+	<span class="php-comment">// подкаталог для размещения аттачей</span>
+	<span class="php-quote">'dir'</span>=&gt;<span class="php-quote">'picsiki'</span>,
+	<span class="php-comment">// максимальное число файлов для выбора, 1 для отключения мультиселекта</span>
+	<span class="php-quote">'max_multi_select'</span>=&gt;<span class="php-num">5</span>,
+	<span class="php-comment">// использовать загрузку через перетаскивание файла в браузер</span>
+	<span class="php-quote">'use_drag_drop'</span>=&gt;<span class="php-keyword1">true</span>,
+	<span class="php-comment">// показывать прогресс-бар</span>
+	<span class="php-quote">'show_progress'</span>=&gt;<span class="php-keyword1">true</span>,
+	<span class="php-comment">// расширенные настройки js плагина, по правилам https://github.com/blueimp/jQuery-File-Upload/wiki/Options</span>
+	<span class="php-quote">'extra_options'</span>=&gt;<span class="php-keyword1">array</span>(
+		<span class="php-quote">'replaceFileInput'</span>=&gt;<span class="php-keyword1">true</span>
+	),
+	<span class="php-comment">// параметры изменения размера изображений и создания превьюшек</span>
+	<span class="php-quote">'resize_images'</span>=&gt;<span class="php-keyword1">array</span>(
+		<span class="php-quote">'small'</span>=&gt;<span class="php-keyword1">array</span>(
+			<span class="php-quote">'w'</span>=&gt;<span class="php-num">100</span>,
+			<span class="php-quote">'h'</span>=&gt;<span class="php-num">150</span>,
+			<span class="php-quote">'method'</span>=&gt;<span class="php-quote">'scall_min'</span>,
+			<span class="php-quote">'quality'</span>=&gt;<span class="php-num">90</span>
+		),
+		<span class="php-quote">'big'</span>=&gt;<span class="php-keyword1">array</span>(
+			<span class="php-quote">'w'</span>=&gt;<span class="php-num">500</span>,
+			<span class="php-quote">'h'</span>=&gt;<span class="php-num">350</span>,
+			<span class="php-quote">'method'</span>=&gt;<span class="php-quote">'scall_max'</span>,
+			<span class="php-quote">'quality'</span>=&gt;<span class="php-num">90</span>
+		),
+		<span class="php-comment">// удалять оригинальный файл изображения</span>
+		<span class="php-quote">'delete_original'</span>=&gt;<span class="php-quote">'true'</span>
+	)
+)</code></td>
+			<td class="description"><div>
+				<a href="#$params" class="anchor">#</a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</div></td>
+		</tr>
+		</table>
+
+
+</div>
 	</div>
 
 	<div id="footer">

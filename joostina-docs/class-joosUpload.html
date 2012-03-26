@@ -6,11 +6,12 @@
 
 	<title>Class joosUpload | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -160,7 +164,6 @@
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
 				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
-				<li><a href="class-joosError.html">joosError</a></li>
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li class="active"><a href="class-joosUpload.html">joosUpload</a></li>
@@ -171,7 +174,9 @@
 				<li><a href="class-qqFileUploader.html">qqFileUploader</a></li>
 				<li><a href="class-qqUploadedFileForm.html">qqUploadedFileForm</a></li>
 				<li><a href="class-Route.html">Route</a></li>
+				<li><a href="class-rulesValidation.html">rulesValidation</a></li>
 				<li><a href="class-TreeBuilder.html">TreeBuilder</a></li>
+				<li><a href="class-UploadHandler.html">UploadHandler</a></li>
 				<li><a href="class-ValumsfileUploader.html">ValumsfileUploader</a></li>
 			</ul>
 
@@ -184,17 +189,14 @@
 				<li><a href="class-joosCacheException.html">joosCacheException</a></li>
 				<li><a href="class-joosDatabaseException.html">joosDatabaseException</a></li>
 				<li><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a></li>
+				<li><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></li>
 				<li><a href="class-joosModulesException.html">joosModulesException</a></li>
 			</ul>
 
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-cleanArrayXSS.html">cleanArrayXSS</a></li>
-				<li><a href="function-cleanXSS.html">cleanXSS</a></li>
 				<li><a href="function-navigation_ul_li_recurse.html">navigation_ul_li_recurse</a></li>
-				<li><a href="function-remove_xss.html">remove_xss</a></li>
-				<li><a href="function-unichr.html">unichr</a></li>
 				<li><a href="function-uniord.html">uniord</a></li>
 			</ul>
 		</div>
@@ -268,7 +270,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_easy_upload">#</a>
-			<code><a href="source-class-joosUpload.html#9" title="Go to source code">easy_upload</a>( <span>string <var>$element_name</var></span>, <span>string <var>$upload_location</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span> <var>$only_check</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosUpload.html#9" title="Go to source code">easy_upload</a>( <span>string <var>$element_name</var></span>, <span>string <var>$upload_location</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -293,8 +295,6 @@
 						<dd><code>array</code><br> массив расширенных парамтеров загрузки
 string new_name - переименовать файл string new_extension -
 переименовать расширение файла</dd>
-						<dt><var>$only_check</var></dt>
-						<dd></dd>
 					</dl></div>
 
 

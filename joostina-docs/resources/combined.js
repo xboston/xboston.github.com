@@ -994,25 +994,28 @@ $(function() {
 	var $groups = $('#groups');
 
 	// Hide deep packages and namespaces
-	$('ul span', $groups).click(function() {
+	$('ul span', $groups).click(function(event) {
+		event.preventDefault();
+		event.stopPropagation();
 		$(this)
 			.toggleClass('collapsed')
-			.next('ul')
-				.toggleClass('collapsed');
+			.parent()
+				.next('ul')
+					.toggleClass('collapsed');
 	}).click();
 
 	$active = $('ul li.active', $groups);
 	if ($active.length > 0) {
 		// Open active
-		$('> span', $active).click();
+		$('> a > span', $active).click();
 	} else {
 		$main = $('> ul > li.main', $groups);
 		if ($main.length > 0) {
 			// Open first level of the main project
-			$('> span', $main).click();
+			$('> a > span', $main).click();
 		} else {
 			// Open first level of all
-			$('> ul > li > span', $groups).click();
+			$('> ul > li > a > span', $groups).click();
 		}
 	}
 
@@ -1043,7 +1046,7 @@ $(function() {
 			var location = window.location.href.split('/');
 			location.pop();
 			var parts = data[1].split(/::|$/);
-			var file = $.sprintf(ApiGen.config.templates.main[autocompleteFiles[data[0]]].filename, parts[0].replace('\\', '.').replace(/[^\w\.]/g, ''));
+			var file = $.sprintf(ApiGen.config.templates.main[autocompleteFiles[data[0]]].filename, parts[0].replace(/\\/g, '.').replace(/[^\w\.]/g, ''));
 			if (parts[1]) {
 				file += '#' + parts[1].replace(/([\w]+)\(\)/, '_$1');
 			}

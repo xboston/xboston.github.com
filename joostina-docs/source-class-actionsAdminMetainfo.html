@@ -7,11 +7,12 @@
 
 	<title>File app/components/metainfo/controller.admin.metainfo.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -150,6 +151,9 @@
 			</ul>
 		</div>
 
+		<hr />
+
+
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
@@ -271,11 +275,11 @@
 <a href="#101" id="101" class="l">101: </a>        <span class="php-keyword1">switch</span> ( <span class="php-var">$redirect</span> ) {
 <a href="#102" id="102" class="l">102: </a>            <span class="php-keyword1">default</span>:
 <a href="#103" id="103" class="l">103: </a>            <span class="php-keyword1">case</span> <span class="php-num">0</span>: <span class="php-comment">// просто сохранение</span>
-<a href="#104" id="104" class="l">104: </a>                <span class="php-keyword1">return</span> joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;group='</span> . <span class="php-var">$group</span> , <span class="php-quote">'Всё ок!'</span> );
+<a href="#104" id="104" class="l">104: </a>                joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;group='</span> . <span class="php-var">$group</span> , <span class="php-quote">'Всё ок!'</span> );
 <a href="#105" id="105" class="l">105: </a>                <span class="php-keyword1">break</span>;
 <a href="#106" id="106" class="l">106: </a>
 <a href="#107" id="107" class="l">107: </a>            <span class="php-keyword1">case</span> <span class="php-num">1</span>: <span class="php-comment">// применить</span>
-<a href="#108" id="108" class="l">108: </a>                <span class="php-keyword1">return</span> joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=edit&amp;id='</span> . <span class="php-var">$obj_data</span>-&gt;id . <span class="php-quote">'&amp;group='</span> . <span class="php-var">$group</span> , <span class="php-quote">'Всё ок, редактируем дальше'</span> );
+<a href="#108" id="108" class="l">108: </a>                joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=edit&amp;id='</span> . <span class="php-var">$obj_data</span>-&gt;id . <span class="php-quote">'&amp;group='</span> . <span class="php-var">$group</span> , <span class="php-quote">'Всё ок, редактируем дальше'</span> );
 <a href="#109" id="109" class="l">109: </a>                <span class="php-keyword1">break</span>;
 <a href="#110" id="110" class="l">110: </a>        }
 <a href="#111" id="111" class="l">111: </a>    }
@@ -286,7 +290,7 @@
 <a href="#116" id="116" class="l">116: </a>
 <a href="#117" id="117" class="l">117: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> cancel( <span class="php-var">$option</span> ) {
 <a href="#118" id="118" class="l">118: </a>        <span class="php-var">$group</span> = joosRequest::request( <span class="php-quote">'group'</span> );
-<a href="#119" id="119" class="l">119: </a>        <span class="php-keyword1">return</span> joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$group</span> );
+<a href="#119" id="119" class="l">119: </a>        joosRoute::redirect( <span class="php-quote">'index2.php?option='</span> . <span class="php-var">$group</span> );
 <a href="#120" id="120" class="l">120: </a>    }
 <a href="#121" id="121" class="l">121: </a>
 <a href="#122" id="122" class="l">122: </a>}</code></pre>

@@ -7,11 +7,12 @@
 
 	<title>File app/components/acls/controller.admin.acls.php | Joostina CMS v2.* API</title>
 
-	<script type="text/javascript" src="jquery.min.js"></script>
-	<script type="text/javascript" src="resources/combined.js?591247433"></script>
-	<script type="text/javascript" src="elementlist.js?3864611098"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/combined.js?230654036"></script>
+	<script type="text/javascript" src="elementlist.js?514103556"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
+
 </head>
 
 <body>
@@ -149,6 +150,9 @@
 							</ul></li>
 			</ul>
 		</div>
+
+		<hr />
+
 
 		<div id="elements">
 			<h3>Classes</h3>
@@ -291,20 +295,20 @@
 <a href="#120" id="120" class="l">120: </a>        joosCSRF::check_code();
 <a href="#121" id="121" class="l">121: </a>
 <a href="#122" id="122" class="l">122: </a>        <span class="php-var">$obj_data</span> = <span class="php-keyword1">new</span> self::<span class="php-var">$model</span>;
-<a href="#123" id="123" class="l">123: </a>        <span class="php-var">$result</span> = <span class="php-var">$obj_data</span>-&gt;save(<span class="php-var">$_POST</span>);
+<a href="#123" id="123" class="l">123: </a>        <span class="php-var">$obj_data</span>-&gt;save(<span class="php-var">$_POST</span>);
 <a href="#124" id="124" class="l">124: </a>
 <a href="#125" id="125" class="l">125: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$redirect</span>) {
 <a href="#126" id="126" class="l">126: </a>            <span class="php-keyword1">default</span>:
 <a href="#127" id="127" class="l">127: </a>            <span class="php-keyword1">case</span> <span class="php-num">0</span>: <span class="php-comment">// просто сохранение</span>
-<a href="#128" id="128" class="l">128: </a>                <span class="php-keyword1">return</span> joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span>, <span class="php-quote">'Всё ок!'</span>);
+<a href="#128" id="128" class="l">128: </a>                joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span>, <span class="php-quote">'Всё ок!'</span>);
 <a href="#129" id="129" class="l">129: </a>                <span class="php-keyword1">break</span>;
 <a href="#130" id="130" class="l">130: </a>
 <a href="#131" id="131" class="l">131: </a>            <span class="php-keyword1">case</span> <span class="php-num">1</span>: <span class="php-comment">// применить</span>
-<a href="#132" id="132" class="l">132: </a>                <span class="php-keyword1">return</span> joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=edit&amp;id='</span> . <span class="php-var">$obj_data</span>-&gt;id, <span class="php-quote">'Всё ок, редактируем дальше'</span>);
+<a href="#132" id="132" class="l">132: </a>                joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=edit&amp;id='</span> . <span class="php-var">$obj_data</span>-&gt;id, <span class="php-quote">'Всё ок, редактируем дальше'</span>);
 <a href="#133" id="133" class="l">133: </a>                <span class="php-keyword1">break</span>;
 <a href="#134" id="134" class="l">134: </a>
 <a href="#135" id="135" class="l">135: </a>            <span class="php-keyword1">case</span> <span class="php-num">2</span>: <span class="php-comment">// сохранить и добавить новое</span>
-<a href="#136" id="136" class="l">136: </a>                <span class="php-keyword1">return</span> joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=create'</span>, <span class="php-quote">'Всё ок, создаём новое'</span>);
+<a href="#136" id="136" class="l">136: </a>                joosRoute::redirect(<span class="php-quote">'index2.php?option='</span> . <span class="php-var">$option</span> . <span class="php-quote">'&amp;model='</span> . self::<span class="php-var">$model</span> . <span class="php-quote">'&amp;task=create'</span>, <span class="php-quote">'Всё ок, создаём новое'</span>);
 <a href="#137" id="137" class="l">137: </a>                <span class="php-keyword1">break</span>;
 <a href="#138" id="138" class="l">138: </a>        }
 <a href="#139" id="139" class="l">139: </a>    }
