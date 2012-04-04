@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.0" />
+	<meta name="generator" content="ApiGen 2.6.1" />
 	<meta name="robots" content="noindex" />
 
 	<title>File core/admin.root.php | Joostina CMS v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?514103556"></script>
+	<script type="text/javascript" src="elementlist.js?1185648394"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -67,8 +67,6 @@
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
 						</li>
-				<li><a href="package-Controllers.Admin.html">Admin</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
@@ -85,6 +83,8 @@
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
+				<li><a href="package-Controllers.Site.html">Site</a>
+						</li>
 				<li><a href="package-Controllers.Sitemap.html">Sitemap</a>
 						</li>
 				<li><a href="package-Controllers.Test.html">Test</a>
@@ -94,11 +94,6 @@
 							</ul></li>
 				<li><a href="package-Core.html">Core</a>
 						</li>
-				<li><a href="package-Helpers.html">Helpers<span></span></a>
-						<ul>
-				<li><a href="package-Helpers.Modules.html">Modules</a>
-						</li>
-							</ul></li>
 				<li class="active"><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
@@ -158,6 +153,9 @@
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
+				<li><a href="class-joosAdminView.html">joosAdminView</a></li>
+				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
+				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
 				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
 				<li><a href="class-joosModuleAdmin.html">joosModuleAdmin</a></li>
 				<li><a href="class-joosToolbar.html">joosToolbar</a></li>
@@ -387,7 +385,7 @@
 <a href="#209" id="209" class="l">209: </a>        <span class="php-var">$limits</span>[] = joosHtml::make_option(<span class="php-quote">'50000'</span>, __(<span class="php-quote">'-Всё-'</span>));
 <a href="#210" id="210" class="l">210: </a>        <span class="php-comment">// build the html select list</span>
 <a href="#211" id="211" class="l">211: </a>        <span class="php-var">$html</span> = <span class="php-quote">' '</span> . __(<span class="php-quote">'Отображать'</span>) . <span class="php-quote">' '</span>;
-<a href="#212" id="212" class="l">212: </a>        <span class="php-var">$html</span> .= joosHtml::selectList(<span class="php-var">$limits</span>, <span class="php-quote">'limit'</span>, <span class="php-quote">'class=&quot;inputbox&quot; size=&quot;1&quot; onchange=&quot;document.adminForm.submit();&quot;'</span>, <span class="php-quote">'value'</span>, <span class="php-quote">'text'</span>, <span class="php-var">$this</span>-&gt;limit);
+<a href="#212" id="212" class="l">212: </a>        <span class="php-var">$html</span> .= joosHtml::selectList(<span class="php-var">$limits</span>, <span class="php-quote">'limit'</span>, <span class="php-quote">'class=&quot;inputbox&quot; size=&quot;1&quot; onchange=&quot;document.admin_form.submit();&quot;'</span>, <span class="php-quote">'value'</span>, <span class="php-quote">'text'</span>, <span class="php-var">$this</span>-&gt;limit);
 <a href="#213" id="213" class="l">213: </a>        <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;input type=\&quot;hidden\&quot; name=\&quot;limitstart\&quot; value=\&quot;</span><span class="php-var">$this</span><span class="php-quote">-&gt;limitstart\&quot; /&gt;&quot;</span>;
 <a href="#214" id="214" class="l">214: </a>        <span class="php-keyword1">return</span> <span class="php-var">$html</span>;
 <a href="#215" id="215" class="l">215: </a>    }
@@ -442,7 +440,7 @@
 <a href="#264" id="264" class="l">264: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this_page</span> &gt; <span class="php-num">1</span>) {
 <a href="#265" id="265" class="l">265: </a>            <span class="php-var">$page</span> = ( <span class="php-var">$this_page</span> - <span class="php-num">2</span> ) * <span class="php-var">$this</span>-&gt;limit;
 <a href="#266" id="266" class="l">266: </a>
-<a href="#267" id="267" class="l">267: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#prev\&quot; id=\&quot;pagenav_prev\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.adminForm.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.adminForm.submit();return false;\&quot;&gt;&amp;larr;&amp;nbsp;&quot;</span> . __(<span class="php-quote">'Предыдущая'</span>) . <span class="php-quote">&quot;&lt;/a&gt;&quot;</span>;
+<a href="#267" id="267" class="l">267: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#prev\&quot; id=\&quot;pagenav_prev\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.admin_form.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.admin_form.submit();return false;\&quot;&gt;&amp;larr;&amp;nbsp;&quot;</span> . __(<span class="php-quote">'Предыдущая'</span>) . <span class="php-quote">&quot;&lt;/a&gt;&quot;</span>;
 <a href="#268" id="268" class="l">268: </a>        } <span class="php-keyword1">else</span> {
 <a href="#269" id="269" class="l">269: </a>
 <a href="#270" id="270" class="l">270: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;span  id=\&quot;pagenav_prev\&quot; class=\&quot;pagenav\&quot;&gt;&amp;larr;&amp;nbsp;&quot;</span> . __(<span class="php-quote">'Предыдущая'</span>) . <span class="php-quote">&quot;&lt;/span&gt;&quot;</span>;
@@ -453,14 +451,14 @@
 <a href="#275" id="275" class="l">275: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$i</span> == <span class="php-var">$this_page</span>) {
 <a href="#276" id="276" class="l">276: </a>                <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;span id=\&quot;pagenav_current\&quot; class=\&quot;pagenav\&quot;&gt; </span><span class="php-var">$i</span><span class="php-quote"> &lt;/span&gt;&quot;</span>;
 <a href="#277" id="277" class="l">277: </a>            } <span class="php-keyword1">else</span> {
-<a href="#278" id="278" class="l">278: </a>                <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#</span><span class="php-var">$i</span><span class="php-quote">\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.adminForm.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.adminForm.submit();return false;\&quot;&gt;</span><span class="php-var">$i</span><span class="php-quote">&lt;/a&gt;&quot;</span>;
+<a href="#278" id="278" class="l">278: </a>                <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#</span><span class="php-var">$i</span><span class="php-quote">\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.admin_form.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.admin_form.submit();return false;\&quot;&gt;</span><span class="php-var">$i</span><span class="php-quote">&lt;/a&gt;&quot;</span>;
 <a href="#279" id="279" class="l">279: </a>            }
 <a href="#280" id="280" class="l">280: </a>        }
 <a href="#281" id="281" class="l">281: </a>
 <a href="#282" id="282" class="l">282: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this_page</span> &lt; <span class="php-var">$total_pages</span>) {
 <a href="#283" id="283" class="l">283: </a>            <span class="php-var">$page</span> = <span class="php-var">$this_page</span> * <span class="php-var">$this</span>-&gt;limit;
 <a href="#284" id="284" class="l">284: </a>            <span class="php-comment">//$end_page = ($total_pages - 1) * $this-&gt;limit;</span>
-<a href="#285" id="285" class="l">285: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#next\&quot;  id=\&quot;pagenav_next\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.adminForm.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.adminForm.submit();return false;\&quot;&gt; &quot;</span> . __(<span class="php-quote">'Следующая'</span>) . <span class="php-quote">&quot;&amp;nbsp;&amp;rarr;&lt;/a&gt;&quot;</span>;
+<a href="#285" id="285" class="l">285: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;a href=\&quot;#next\&quot;  id=\&quot;pagenav_next\&quot; class=\&quot;pagenav\&quot; onclick=\&quot;javascript: document.admin_form.limitstart.value=</span><span class="php-var">$page</span><span class="php-quote">; document.admin_form.submit();return false;\&quot;&gt; &quot;</span> . __(<span class="php-quote">'Следующая'</span>) . <span class="php-quote">&quot;&amp;nbsp;&amp;rarr;&lt;/a&gt;&quot;</span>;
 <a href="#286" id="286" class="l">286: </a>        } <span class="php-keyword1">else</span> {
 <a href="#287" id="287" class="l">287: </a>            <span class="php-var">$html</span> .= <span class="php-quote">&quot;\n&lt;span id=\&quot;pagenav_next\&quot;  class=\&quot;pagenav\&quot;&gt;&quot;</span> . __(<span class="php-quote">'Следующая'</span>) . <span class="php-quote">&quot;&amp;nbsp;&amp;rarr;&lt;/span&gt;&quot;</span>;
 <a href="#288" id="288" class="l">288: </a>        }
@@ -549,21 +547,67 @@
 </span><a href="#371" id="371" class="l">371: </a><span class="php-comment"> */</span>
 <a href="#372" id="372" class="l">372: </a><span class="php-keyword1">class</span> joosAdminController <span class="php-keyword1">extends</span> joosController{
 <a href="#373" id="373" class="l">373: </a>
-<a href="#374" id="374" class="l">374: </a>}
-<a href="#375" id="375" class="l">375: </a>
-<a href="#376" id="376" class="l">376: </a><span class="php-comment">/**
-</span><a href="#377" id="377" class="l">377: </a><span class="php-comment"> * Базовый ajax контроллер работы панели управления Joostina CMS
-</span><a href="#378" id="378" class="l">378: </a><span class="php-comment"> * @package    Joostina
-</span><a href="#379" id="379" class="l">379: </a><span class="php-comment"> * @subpackage Contlroller
-</span><a href="#380" id="380" class="l">380: </a><span class="php-comment"> *
-</span><a href="#381" id="381" class="l">381: </a><span class="php-comment"> */</span>
-<a href="#382" id="382" class="l">382: </a><span class="php-keyword1">class</span> joosAdminControllerAjax <span class="php-keyword1">extends</span> joosAdminController{
-<a href="#383" id="383" class="l">383: </a>
-<a href="#384" id="384" class="l">384: </a>}</code></pre>
+<a href="#374" id="374" class="l">374: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">static</span> <span class="php-var">$submenu</span> = <span class="php-keyword1">array</span>();
+<a href="#375" id="375" class="l">375: </a>    
+<a href="#376" id="376" class="l">376: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_submenu(){
+<a href="#377" id="377" class="l">377: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">static</span>::<span class="php-var">$submenu</span>;
+<a href="#378" id="378" class="l">378: </a>    }    
+<a href="#379" id="379" class="l">379: </a>}
+<a href="#380" id="380" class="l">380: </a>
+<a href="#381" id="381" class="l">381: </a><span class="php-comment">/**
+</span><a href="#382" id="382" class="l">382: </a><span class="php-comment"> * Базовый ajax контроллер работы панели управления Joostina CMS
+</span><a href="#383" id="383" class="l">383: </a><span class="php-comment"> * @package    Joostina
+</span><a href="#384" id="384" class="l">384: </a><span class="php-comment"> * @subpackage Contlroller
+</span><a href="#385" id="385" class="l">385: </a><span class="php-comment"> *
+</span><a href="#386" id="386" class="l">386: </a><span class="php-comment"> */</span>
+<a href="#387" id="387" class="l">387: </a><span class="php-keyword1">class</span> joosAdminControllerAjax <span class="php-keyword1">extends</span> joosAdminController{
+<a href="#388" id="388" class="l">388: </a>
+<a href="#389" id="389" class="l">389: </a>}
+<a href="#390" id="390" class="l">390: </a>
+<a href="#391" id="391" class="l">391: </a><span class="php-keyword1">class</span> joosAdminView {
+<a href="#392" id="392" class="l">392: </a>    
+<a href="#393" id="393" class="l">393: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">static</span> <span class="php-var">$component_params</span> = <span class="php-keyword1">array</span>(
+<a href="#394" id="394" class="l">394: </a>        <span class="php-quote">'component_title'</span>=&gt;<span class="php-quote">''</span>,
+<a href="#395" id="395" class="l">395: </a>        <span class="php-quote">'submenu'</span>=&gt;<span class="php-keyword1">array</span>(),
+<a href="#396" id="396" class="l">396: </a>        <span class="php-quote">'component_header'</span>=&gt;<span class="php-quote">''</span>,
+<a href="#397" id="397" class="l">397: </a>        <span class="php-quote">'current_model'</span>=&gt;<span class="php-quote">''</span>,
+<a href="#398" id="398" class="l">398: </a>        
+<a href="#399" id="399" class="l">399: </a>    );
+<a href="#400" id="400" class="l">400: </a>
+<a href="#401" id="401" class="l">401: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span>  set_param(<span class="php-var">$name</span>, <span class="php-var">$value</span>){
+<a href="#402" id="402" class="l">402: </a>        self::<span class="php-var">$component_params</span>[<span class="php-var">$name</span>] = <span class="php-var">$value</span>;
+<a href="#403" id="403" class="l">403: </a>    }
+<a href="#404" id="404" class="l">404: </a>    
+<a href="#405" id="405" class="l">405: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_component_title(){
+<a href="#406" id="406" class="l">406: </a>        <span class="php-keyword1">return</span> self::<span class="php-var">$component_params</span>[<span class="php-quote">'component_title'</span>];
+<a href="#407" id="407" class="l">407: </a>    }
+<a href="#408" id="408" class="l">408: </a>
+<a href="#409" id="409" class="l">409: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_component_header(){
+<a href="#410" id="410" class="l">410: </a>        <span class="php-keyword1">return</span> self::<span class="php-var">$component_params</span>[<span class="php-quote">'component_header'</span>];
+<a href="#411" id="411" class="l">411: </a>    }
+<a href="#412" id="412" class="l">412: </a>    
+<a href="#413" id="413" class="l">413: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_submenu(){
+<a href="#414" id="414" class="l">414: </a>        <span class="php-keyword1">return</span> self::<span class="php-var">$component_params</span>[<span class="php-quote">'submenu'</span>];
+<a href="#415" id="415" class="l">415: </a>    }
+<a href="#416" id="416" class="l">416: </a>
+<a href="#417" id="417" class="l">417: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_current_model(){
+<a href="#418" id="418" class="l">418: </a>        <span class="php-keyword1">return</span> self::<span class="php-var">$component_params</span>[<span class="php-quote">'current_model'</span>];
+<a href="#419" id="419" class="l">419: </a>    }
+<a href="#420" id="420" class="l">420: </a>    
+<a href="#421" id="421" class="l">421: </a>}
+<a href="#422" id="422" class="l">422: </a>
+<a href="#423" id="423" class="l">423: </a><span class="php-keyword1">class</span> joosAdminViewToolbarListing{
+<a href="#424" id="424" class="l">424: </a>    
+<a href="#425" id="425" class="l">425: </a>}
+<a href="#426" id="426" class="l">426: </a>
+<a href="#427" id="427" class="l">427: </a>
+<a href="#428" id="428" class="l">428: </a><span class="php-keyword1">class</span> joosAdminViewToolbarEdit{
+<a href="#429" id="429" class="l">429: </a>
+<a href="#430" id="430" class="l">430: </a>}</code></pre>
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

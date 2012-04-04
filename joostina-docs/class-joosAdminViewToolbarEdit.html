@@ -2,14 +2,13 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.0" />
-	<meta name="robots" content="noindex" />
+	<meta name="generator" content="ApiGen 2.6.1" />
 
-	<title>File app/components/admin/controller.admin.admin.php | Joostina CMS v2.* API</title>
+	<title>Class joosAdminViewToolbarEdit | Joostina CMS v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?514103556"></script>
+	<script type="text/javascript" src="elementlist.js?1185648394"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -29,10 +28,10 @@
 						<li class="divider-vertical"></li>
 
 						<li>
-							<a href="package-Controllers.Admin.html" title="Summary of Controllers\Admin"><span>Package</span></a>
+							<a href="package-Joostina.html" title="Summary of Joostina"><span>Package</span></a>
 						</li>
-						<li>
-							<a href="class-actionsAdminAdmin.html" title="Summary of actionsAdminAdmin"><span>Class</span></a>
+						<li class="active">
+							<a href="class-joosAdminViewToolbarEdit.html" title="Summary of joosAdminViewToolbarEdit"><span>Class</span></a>
 						</li>
 
 						<li>
@@ -63,11 +62,9 @@
 		<div id="groups">
 			<h3>Packages</h3>
 			<ul>
-				<li class="active"><a href="package-Controllers.html">Controllers<span></span></a>
+				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
-				<li class="active"><a href="package-Controllers.Admin.html">Admin</a>
 						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
@@ -85,6 +82,8 @@
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
+				<li><a href="package-Controllers.Site.html">Site</a>
+						</li>
 				<li><a href="package-Controllers.Sitemap.html">Sitemap</a>
 						</li>
 				<li><a href="package-Controllers.Test.html">Test</a>
@@ -94,12 +93,7 @@
 							</ul></li>
 				<li><a href="package-Core.html">Core</a>
 						</li>
-				<li><a href="package-Helpers.html">Helpers<span></span></a>
-						<ul>
-				<li><a href="package-Helpers.Modules.html">Modules</a>
-						</li>
-							</ul></li>
-				<li><a href="package-Joostina.html">Joostina<span></span></a>
+				<li class="active"><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
 						</li>
@@ -157,7 +151,14 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li class="active"><a href="class-actionsAdminAdmin.html">actionsAdminAdmin</a></li>
+				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
+				<li><a href="class-joosAdminView.html">joosAdminView</a></li>
+				<li class="active"><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
+				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
+				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
+				<li><a href="class-joosModuleAdmin.html">joosModuleAdmin</a></li>
+				<li><a href="class-joosToolbar.html">joosToolbar</a></li>
+				<li><a href="class-noneEditor.html">noneEditor</a></li>
 			</ul>
 
 
@@ -172,35 +173,40 @@
 
 <div id="right">
 	<div id="rightInner">
-<pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
-<a href="#2" id="2" class="l"> 2: </a>
-<a href="#3" id="3" class="l"> 3: </a><span class="php-comment">// запрет прямого доступа</span>
-<a href="#4" id="4" class="l"> 4: </a><span class="php-keyword2">defined</span>( <span class="php-quote">'_JOOS_CORE'</span> ) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
-<a href="#5" id="5" class="l"> 5: </a>
-<a href="#6" id="6" class="l"> 6: </a><span class="php-comment">/**
-</span><a href="#7" id="7" class="l"> 7: </a><span class="php-comment"> * Компонент для управления и конфигурирования системы
-</span><a href="#8" id="8" class="l"> 8: </a><span class="php-comment"> * Контроллер панели управления
-</span><a href="#9" id="9" class="l"> 9: </a><span class="php-comment"> *
-</span><a href="#10" id="10" class="l">10: </a><span class="php-comment"> * @version    1.0
-</span><a href="#11" id="11" class="l">11: </a><span class="php-comment"> * @package    Controllers
-</span><a href="#12" id="12" class="l">12: </a><span class="php-comment"> * @subpackage Admin
-</span><a href="#13" id="13" class="l">13: </a><span class="php-comment"> * @author     Joostina Team &lt;info@joostina.ru&gt;
-</span><a href="#14" id="14" class="l">14: </a><span class="php-comment"> * @copyright  (C) 2007-2012 Joostina Team
-</span><a href="#15" id="15" class="l">15: </a><span class="php-comment"> * @license    MIT License http://www.opensource.org/licenses/mit-license.php
-</span><a href="#16" id="16" class="l">16: </a><span class="php-comment"> * Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights
-</span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> *
-</span><a href="#18" id="18" class="l">18: </a><span class="php-comment"> * */</span>
-<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> actionsAdminAdmin  <span class="php-keyword1">extends</span> joosAdminController{
-<a href="#20" id="20" class="l">20: </a>
-<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> index() {
-<a href="#22" id="22" class="l">22: </a>        <span class="php-keyword1">require_once</span> JPATH_BASE . <span class="php-quote">'/app/templates/'</span> . JTEMPLATE_ADMIN . <span class="php-quote">'/html/cpanel.php'</span>;
-<a href="#23" id="23" class="l">23: </a>    }
-<a href="#24" id="24" class="l">24: </a>
-<a href="#25" id="25" class="l">25: </a>}</code></pre>
+<div id="content" class="class">
+	<h1>Class joosAdminViewToolbarEdit</h1>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+
+				<b>Copyright:</b>
+				Авторские права (C) 2007-2010 Joostina team. Все права
+защищены.<br />
+				<b>License:</b>
+				<a href="Лицензия">http://www.gnu.org/licenses/gpl-2.0.htm GNU/GPL, или help/license.php
+Joostina! - свободное программное обеспечение распространяемое по условиям лицензии GNU/GPL
+Для получения информации о используемых расширениях и замечаний об авторском праве, смотрите файл help/copyright.php.</a><br />
+		<b>Located at:</b> <a href="source-class-joosAdminViewToolbarEdit.html#428" title="Go to source code">core/admin.root.php</a><br />
+	</div>
+
+
+
+
+</div>
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

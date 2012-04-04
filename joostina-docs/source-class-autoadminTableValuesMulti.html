@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.0" />
+	<meta name="generator" content="ApiGen 2.6.1" />
 	<meta name="robots" content="noindex" />
 
-	<title>File app/plugins/autoadmin/list.editlink.php | Joostina CMS v2.* API</title>
+	<title>File app/plugins/autoadmin/table.values_multi.php | Joostina CMS v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?514103556"></script>
+	<script type="text/javascript" src="elementlist.js?1185648394"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -32,7 +32,7 @@
 							<a href="package-Plugins.joosAutoadmin.html" title="Summary of Plugins\joosAutoadmin"><span>Package</span></a>
 						</li>
 						<li>
-							<a href="class-autoadminListEditlink.html" title="Summary of autoadminListEditlink"><span>Class</span></a>
+							<a href="class-autoadminTableValuesMulti.html" title="Summary of autoadminTableValuesMulti"><span>Class</span></a>
 						</li>
 
 						<li>
@@ -67,8 +67,6 @@
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
 						</li>
-				<li><a href="package-Controllers.Admin.html">Admin</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
@@ -85,6 +83,8 @@
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
+				<li><a href="package-Controllers.Site.html">Site</a>
+						</li>
 				<li><a href="package-Controllers.Sitemap.html">Sitemap</a>
 						</li>
 				<li><a href="package-Controllers.Test.html">Test</a>
@@ -94,11 +94,6 @@
 							</ul></li>
 				<li><a href="package-Core.html">Core</a>
 						</li>
-				<li><a href="package-Helpers.html">Helpers<span></span></a>
-						<ul>
-				<li><a href="package-Helpers.Modules.html">Modules</a>
-						</li>
-							</ul></li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
@@ -173,15 +168,15 @@
 				<li><a href="class-autoadminEditStartTab.html">autoadminEditStartTab</a></li>
 				<li><a href="class-autoadminEditTextArea.html">autoadminEditTextArea</a></li>
 				<li><a href="class-autoadminEditValue.html">autoadminEditValue</a></li>
-				<li><a href="class-autoadminListDateFormat.html">autoadminListDateFormat</a></li>
-				<li class="active"><a href="class-autoadminListEditlink.html">autoadminListEditlink</a></li>
-				<li><a href="class-autoadminListExtra.html">autoadminListExtra</a></li>
-				<li><a href="class-autoadminListOneFromArray.html">autoadminListOneFromArray</a></li>
-				<li><a href="class-autoadminListOrdering.html">autoadminListOrdering</a></li>
-				<li><a href="class-autoadminListStatusChange.html">autoadminListStatusChange</a></li>
-				<li><a href="class-autoadminListValue.html">autoadminListValue</a></li>
-				<li><a href="class-autoadminListValuesMulti.html">autoadminListValuesMulti</a></li>
-				<li><a href="class-autoadminListValuesMultiHref.html">autoadminListValuesMultiHref</a></li>
+				<li><a href="class-autoadminTableDateFormat.html">autoadminTableDateFormat</a></li>
+				<li><a href="class-autoadminTableEditlink.html">autoadminTableEditlink</a></li>
+				<li><a href="class-autoadminTableExtra.html">autoadminTableExtra</a></li>
+				<li><a href="class-autoadminTableOneFromArray.html">autoadminTableOneFromArray</a></li>
+				<li><a href="class-autoadminTableOrdering.html">autoadminTableOrdering</a></li>
+				<li><a href="class-autoadminTableStatusChange.html">autoadminTableStatusChange</a></li>
+				<li><a href="class-autoadminTableValue.html">autoadminTableValue</a></li>
+				<li class="active"><a href="class-autoadminTableValuesMulti.html">autoadminTableValuesMulti</a></li>
+				<li><a href="class-autoadminTableValuesMultiHref.html">autoadminTableValuesMultiHref</a></li>
 			</ul>
 
 
@@ -199,10 +194,10 @@
 <pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
 <a href="#2" id="2" class="l"> 2: </a>
 <a href="#3" id="3" class="l"> 3: </a><span class="php-comment">// запрет прямого доступа</span>
-<a href="#4" id="4" class="l"> 4: </a><span class="php-keyword2">defined</span>( <span class="php-quote">'_JOOS_CORE'</span> ) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
+<a href="#4" id="4" class="l"> 4: </a><span class="php-keyword2">defined</span>(<span class="php-quote">'_JOOS_CORE'</span>) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
 <a href="#5" id="5" class="l"> 5: </a>
 <a href="#6" id="6" class="l"> 6: </a><span class="php-comment">/**
-</span><a href="#7" id="7" class="l"> 7: </a><span class="php-comment"> * Для вывода значения объекта как ссылки на его редактирование
+</span><a href="#7" id="7" class="l"> 7: </a><span class="php-comment"> * Для вывода строки значений из нескольких элементов объекта
 </span><a href="#8" id="8" class="l"> 8: </a><span class="php-comment"> *
 </span><a href="#9" id="9" class="l"> 9: </a><span class="php-comment"> * @version    1.0
 </span><a href="#10" id="10" class="l">10: </a><span class="php-comment"> * @package    Plugins
@@ -214,17 +209,33 @@
 </span><a href="#16" id="16" class="l">16: </a><span class="php-comment"> * Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights
 </span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> *
 </span><a href="#18" id="18" class="l">18: </a><span class="php-comment"> * */</span>
-<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> autoadminListEditlink <span class="php-keyword1">extends</span> joosAutoadminPlugins{
+<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> autoadminTableValuesMulti <span class="php-keyword1">extends</span> joosAutoadminPlugins{
 <a href="#20" id="20" class="l">20: </a>
-<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render( joosModel <span class="php-var">$obj</span> , <span class="php-keyword1">array</span> <span class="php-var">$element_param</span> , <span class="php-var">$key</span> , <span class="php-var">$value</span> , stdClass <span class="php-var">$values</span> , <span class="php-var">$option</span> ) {
-<a href="#22" id="22" class="l">22: </a>        <span class="php-keyword1">return</span> <span class="php-quote">'&lt;a href=&quot;index2.php?option='</span> . <span class="php-var">$option</span> . ( joosAutoadmin::<span class="php-var">$model</span> ? <span class="php-quote">'&amp;menu='</span> . joosAutoadmin::<span class="php-var">$submenu</span> : <span class="php-quote">''</span> ) . <span class="php-quote">'&amp;task=edit&amp;'</span> . <span class="php-var">$obj</span>-&gt;get_key_field() . <span class="php-quote">'='</span> . <span class="php-var">$values</span>-&gt;{<span class="php-var">$obj</span>-&gt;get_key_field()} . <span class="php-quote">'&quot;&gt;'</span> . <span class="php-var">$value</span> . <span class="php-quote">'&lt;/a&gt;'</span>;
-<a href="#23" id="23" class="l">23: </a>    }
-<a href="#24" id="24" class="l">24: </a>
-<a href="#25" id="25" class="l">25: </a>}</code></pre>
+<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render(joosModel <span class="php-var">$obj</span>, <span class="php-keyword1">array</span> <span class="php-var">$element_param</span>, <span class="php-var">$key</span>, <span class="php-var">$value</span>, stdClass <span class="php-var">$values</span>, <span class="php-var">$option</span>) {
+<a href="#22" id="22" class="l">22: </a>
+<a href="#23" id="23" class="l">23: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword1">isset</span>(<span class="php-var">$element_param</span>[<span class="php-quote">'html_table_element_param'</span>][<span class="php-quote">'format'</span>])) {
+<a href="#24" id="24" class="l">24: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosException(<span class="php-quote">'Для поля не указана строка форматирования вывода format'</span>);
+<a href="#25" id="25" class="l">25: </a>        }
+<a href="#26" id="26" class="l">26: </a>
+<a href="#27" id="27" class="l">27: </a>        <span class="php-var">$format</span> = <span class="php-var">$element_param</span>[<span class="php-quote">'html_table_element_param'</span>][<span class="php-quote">'format'</span>];
+<a href="#28" id="28" class="l">28: </a>
+<a href="#29" id="29" class="l">29: </a>        <span class="php-var">$v</span> = (<span class="php-keyword1">array</span>) <span class="php-var">$values</span>;
+<a href="#30" id="30" class="l">30: </a>        <span class="php-var">$new_array_values</span> = <span class="php-keyword1">array</span>();
+<a href="#31" id="31" class="l">31: </a>
+<a href="#32" id="32" class="l">32: </a>        <span class="php-keyword2">array_walk</span>(<span class="php-var">$v</span>, <span class="php-keyword1">function</span>(&amp;<span class="php-var">$v</span>, <span class="php-var">$k</span>) <span class="php-keyword1">use</span>(&amp;<span class="php-var">$new_array_values</span>) {
+<a href="#33" id="33" class="l">33: </a>                    <span class="php-var">$key</span> = <span class="php-quote">':'</span> . <span class="php-var">$k</span>;
+<a href="#34" id="34" class="l">34: </a>                    <span class="php-var">$new_array_values</span>[<span class="php-var">$key</span>] = <span class="php-var">$v</span>;
+<a href="#35" id="35" class="l">35: </a>                }
+<a href="#36" id="36" class="l">36: </a>        );
+<a href="#37" id="37" class="l">37: </a>
+<a href="#38" id="38" class="l">38: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">strtr</span>(<span class="php-var">$format</span>, (<span class="php-keyword1">array</span>) <span class="php-var">$new_array_values</span>);
+<a href="#39" id="39" class="l">39: </a>    }
+<a href="#40" id="40" class="l">40: </a>
+<a href="#41" id="41" class="l">41: </a>}</code></pre>
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

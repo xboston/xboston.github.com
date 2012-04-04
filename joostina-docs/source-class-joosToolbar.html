@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.0" />
+	<meta name="generator" content="ApiGen 2.6.1" />
 	<meta name="robots" content="noindex" />
 
 	<title>File app/components/modules/toolbar.modules.html.php | Joostina CMS v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?514103556"></script>
+	<script type="text/javascript" src="elementlist.js?1185648394"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -67,8 +67,6 @@
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
 						</li>
-				<li><a href="package-Controllers.Admin.html">Admin</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
@@ -85,6 +83,8 @@
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
+				<li><a href="package-Controllers.Site.html">Site</a>
+						</li>
 				<li><a href="package-Controllers.Sitemap.html">Sitemap</a>
 						</li>
 				<li><a href="package-Controllers.Test.html">Test</a>
@@ -94,11 +94,6 @@
 							</ul></li>
 				<li><a href="package-Core.html">Core</a>
 						</li>
-				<li><a href="package-Helpers.html">Helpers<span></span></a>
-						<ul>
-				<li><a href="package-Helpers.Modules.html">Modules</a>
-						</li>
-							</ul></li>
 				<li class="active"><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
@@ -158,6 +153,9 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
+				<li><a href="class-joosAdminView.html">joosAdminView</a></li>
+				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
+				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
 				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
 				<li><a href="class-joosModuleAdmin.html">joosModuleAdmin</a></li>
 				<li class="active"><a href="class-joosToolbar.html">joosToolbar</a></li>
@@ -207,7 +205,7 @@
 <a href="#29" id="29" class="l">29: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> _EDIT( <span class="php-var">$cur_template</span> , <span class="php-var">$publish</span> ) {
 <a href="#30" id="30" class="l">30: </a>        <span class="php-keyword1">global</span> <span class="php-var">$id</span>;
 <a href="#31" id="31" class="l">31: </a>        mosMenuBar::startTable();
-<a href="#32" id="32" class="l">32: </a>        mosMenuBar::ext( _PREVIEW , <span class="php-quote">'#'</span> , <span class="php-quote">'-preview'</span> , <span class="php-quote">&quot; onclick=\&quot;if (typeof document.adminForm.content == 'undefined') { alert('&quot;</span> . _PREVIEW_ONLY_CREATED_MODULES . <span class="php-quote">&quot;');} else { var content = document.adminForm.content.value; content = content.replace('#', ''); var title = document.adminForm.title.value; title = title.replace('#', ''); window.open('popups/modulewindow.php?title=' + title + '&amp;amp;content=' + content + '&amp;amp;t=</span><span class="php-var">$cur_template</span><span class="php-quote">', 'win1', 'status=no,toolbar=no,scrollbars=auto,titlebar=no,menubar=no,resizable=yes,width=600,height=500,directories=no,location=no');}\&quot;&quot;</span> );
+<a href="#32" id="32" class="l">32: </a>        mosMenuBar::ext( _PREVIEW , <span class="php-quote">'#'</span> , <span class="php-quote">'-preview'</span> , <span class="php-quote">&quot; onclick=\&quot;if (typeof document.admin_form.content == 'undefined') { alert('&quot;</span> . _PREVIEW_ONLY_CREATED_MODULES . <span class="php-quote">&quot;');} else { var content = document.admin_form.content.value; content = content.replace('#', ''); var title = document.admin_form.title.value; title = title.replace('#', ''); window.open('popups/modulewindow.php?title=' + title + '&amp;amp;content=' + content + '&amp;amp;t=</span><span class="php-var">$cur_template</span><span class="php-quote">', 'win1', 'status=no,toolbar=no,scrollbars=auto,titlebar=no,menubar=no,resizable=yes,width=600,height=500,directories=no,location=no');}\&quot;&quot;</span> );
 <a href="#33" id="33" class="l">33: </a>        mosMenuBar::save();
 <a href="#34" id="34" class="l">34: </a>        mosMenuBar::spacer();
 <a href="#35" id="35" class="l">35: </a>        <span class="php-comment">// кнопка &quot;Применить&quot; с Ajax</span>
@@ -246,7 +244,7 @@
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.6.0" />
+	<meta name="generator" content="ApiGen 2.6.1" />
 	<meta name="robots" content="noindex" />
 
 	<title>File core/libraries/cache.php | Joostina CMS v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?514103556"></script>
+	<script type="text/javascript" src="elementlist.js?1185648394"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -67,8 +67,6 @@
 						<ul>
 				<li><a href="package-Controllers.Acls.html">Acls</a>
 						</li>
-				<li><a href="package-Controllers.Admin.html">Admin</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
@@ -85,6 +83,8 @@
 						</li>
 				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
+				<li><a href="package-Controllers.Site.html">Site</a>
+						</li>
 				<li><a href="package-Controllers.Sitemap.html">Sitemap</a>
 						</li>
 				<li><a href="package-Controllers.Test.html">Test</a>
@@ -94,11 +94,6 @@
 							</ul></li>
 				<li><a href="package-Core.html">Core</a>
 						</li>
-				<li><a href="package-Helpers.html">Helpers<span></span></a>
-						<ul>
-				<li><a href="package-Helpers.Modules.html">Modules</a>
-						</li>
-							</ul></li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
@@ -220,7 +215,7 @@
 <a href="#4" id="4" class="l">  4: </a><span class="php-keyword2">defined</span>(<span class="php-quote">'_JOOS_CORE'</span>) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
 <a href="#5" id="5" class="l">  5: </a>
 <a href="#6" id="6" class="l">  6: </a><span class="php-comment">/**
-</span><a href="#7" id="7" class="l">  7: </a><span class="php-comment">  * Библиотека кеширования
+</span><a href="#7" id="7" class="l">  7: </a><span class="php-comment"> * Библиотека кеширования
 </span><a href="#8" id="8" class="l">  8: </a><span class="php-comment"> * Базируется на оригинальном класса библиотеки Flourish   http://flourishlib.com/fCache
 </span><a href="#9" id="9" class="l">  9: </a><span class="php-comment"> *
 </span><a href="#10" id="10" class="l"> 10: </a><span class="php-comment"> * @version    1.0
@@ -317,7 +312,7 @@
 <a href="#101" id="101" class="l">101: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$ttl</span> &gt; <span class="php-num">2592000</span>) {
 <a href="#102" id="102" class="l">102: </a>                    <span class="php-var">$ttl</span> = <span class="php-keyword2">time</span>() + <span class="php-num">2592000</span>;
 <a href="#103" id="103" class="l">103: </a>                }
-<a href="#104" id="104" class="l">104: </a>                <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;data_store-&gt;add(<span class="php-var">$key</span>, <span class="php-keyword2">serialize</span>(<span class="php-var">$value</span>), <span class="php-num">0</span>, <span class="php-var">$ttl</span>);
+<a href="#104" id="104" class="l">104: </a>                <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;data_store-&gt;add(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-num">0</span>, <span class="php-var">$ttl</span>);
 <a href="#105" id="105" class="l">105: </a>        }
 <a href="#106" id="106" class="l">106: </a>    }
 <a href="#107" id="107" class="l">107: </a>
@@ -359,102 +354,100 @@
 <a href="#143" id="143" class="l">143: </a>
 <a href="#144" id="144" class="l">144: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get(<span class="php-var">$key</span>, <span class="php-var">$default</span> = <span class="php-keyword1">NULL</span>) {
 <a href="#145" id="145" class="l">145: </a>
-<a href="#146" id="146" class="l">146: </a>        <span class="php-comment">//если кэш запрещен</span>
-<a href="#147" id="147" class="l">147: </a>        <span class="php-keyword1">if</span> (!joosConfig::get2(<span class="php-quote">'cache'</span>, <span class="php-quote">'enable'</span>)) {
-<a href="#148" id="148" class="l">148: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">NULL</span>;
-<a href="#149" id="149" class="l">149: </a>        }
-<a href="#150" id="150" class="l">150: </a>
-<a href="#151" id="151" class="l">151: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$this</span>-&gt;type) {
-<a href="#152" id="152" class="l">152: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'apc'</span>:
-<a href="#153" id="153" class="l">153: </a>                <span class="php-var">$value</span> = <span class="php-keyword2">apc_fetch</span>(<span class="php-var">$key</span>);
-<a href="#154" id="154" class="l">154: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span> === <span class="php-keyword1">FALSE</span>) {
-<a href="#155" id="155" class="l">155: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
-<a href="#156" id="156" class="l">156: </a>                }
-<a href="#157" id="157" class="l">157: </a>                <span class="php-keyword1">return</span> <span class="php-keyword2">unserialize</span>(<span class="php-var">$value</span>);
-<a href="#158" id="158" class="l">158: </a>
-<a href="#159" id="159" class="l">159: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'file'</span>:
-<a href="#160" id="160" class="l">160: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>])) {
-<a href="#161" id="161" class="l">161: </a>                    <span class="php-var">$expire</span> = <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>][<span class="php-quote">'expire'</span>];
-<a href="#162" id="162" class="l">162: </a>                    <span class="php-keyword1">if</span> (!<span class="php-var">$expire</span> || <span class="php-var">$expire</span> &gt;= <span class="php-keyword2">time</span>()) {
-<a href="#163" id="163" class="l">163: </a>                        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>][<span class="php-quote">'value'</span>];
-<a href="#164" id="164" class="l">164: </a>                    } <span class="php-keyword1">elseif</span> (<span class="php-var">$expire</span>) {
-<a href="#165" id="165" class="l">165: </a>                        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>]);
-<a href="#166" id="166" class="l">166: </a>                        <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
-<a href="#167" id="167" class="l">167: </a>                    }
-<a href="#168" id="168" class="l">168: </a>                }
-<a href="#169" id="169" class="l">169: </a>                <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
-<a href="#170" id="170" class="l">170: </a>
-<a href="#171" id="171" class="l">171: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'memcache'</span>:
-<a href="#172" id="172" class="l">172: </a>                <span class="php-var">$value</span> = <span class="php-var">$this</span>-&gt;data_store-&gt;get(<span class="php-var">$key</span>);
-<a href="#173" id="173" class="l">173: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span> === <span class="php-keyword1">FALSE</span>) {
-<a href="#174" id="174" class="l">174: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
-<a href="#175" id="175" class="l">175: </a>                }
-<a href="#176" id="176" class="l">176: </a>                <span class="php-keyword1">return</span> <span class="php-keyword2">unserialize</span>(<span class="php-var">$value</span>);
-<a href="#177" id="177" class="l">177: </a>        }
-<a href="#178" id="178" class="l">178: </a>    }
+<a href="#146" id="146" class="l">146: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$this</span>-&gt;type) {
+<a href="#147" id="147" class="l">147: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'apc'</span>:
+<a href="#148" id="148" class="l">148: </a>                <span class="php-var">$value</span> = <span class="php-keyword2">apc_fetch</span>(<span class="php-var">$key</span>);
+<a href="#149" id="149" class="l">149: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span> === <span class="php-keyword1">FALSE</span>) {
+<a href="#150" id="150" class="l">150: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
+<a href="#151" id="151" class="l">151: </a>                }
+<a href="#152" id="152" class="l">152: </a>                <span class="php-keyword1">return</span> <span class="php-keyword2">unserialize</span>(<span class="php-var">$value</span>);
+<a href="#153" id="153" class="l">153: </a>
+<a href="#154" id="154" class="l">154: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'file'</span>:
+<a href="#155" id="155" class="l">155: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>])) {
+<a href="#156" id="156" class="l">156: </a>                    <span class="php-var">$expire</span> = <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>][<span class="php-quote">'expire'</span>];
+<a href="#157" id="157" class="l">157: </a>                    <span class="php-keyword1">if</span> (!<span class="php-var">$expire</span> || <span class="php-var">$expire</span> &gt;= <span class="php-keyword2">time</span>()) {
+<a href="#158" id="158" class="l">158: </a>                        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>][<span class="php-quote">'value'</span>];
+<a href="#159" id="159" class="l">159: </a>                    } <span class="php-keyword1">elseif</span> (<span class="php-var">$expire</span>) {
+<a href="#160" id="160" class="l">160: </a>                        <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>]);
+<a href="#161" id="161" class="l">161: </a>                        <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
+<a href="#162" id="162" class="l">162: </a>                    }
+<a href="#163" id="163" class="l">163: </a>                }
+<a href="#164" id="164" class="l">164: </a>                <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
+<a href="#165" id="165" class="l">165: </a>
+<a href="#166" id="166" class="l">166: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'memcache'</span>:
+<a href="#167" id="167" class="l">167: </a>                <span class="php-var">$value</span> = <span class="php-var">$this</span>-&gt;data_store-&gt;get(<span class="php-var">$key</span>);
+<a href="#168" id="168" class="l">168: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span> === <span class="php-keyword1">FALSE</span>) {
+<a href="#169" id="169" class="l">169: </a>                    <span class="php-keyword1">return</span> <span class="php-var">$default</span>;
+<a href="#170" id="170" class="l">170: </a>                }
+<a href="#171" id="171" class="l">171: </a>                <span class="php-keyword1">return</span> <span class="php-var">$value</span>;
+<a href="#172" id="172" class="l">172: </a>        }
+<a href="#173" id="173" class="l">173: </a>    }
+<a href="#174" id="174" class="l">174: </a>
+<a href="#175" id="175" class="l">175: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> save() {
+<a href="#176" id="176" class="l">176: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;type != <span class="php-quote">'file'</span>) {
+<a href="#177" id="177" class="l">177: </a>            <span class="php-keyword1">return</span>;
+<a href="#178" id="178" class="l">178: </a>        }
 <a href="#179" id="179" class="l">179: </a>
-<a href="#180" id="180" class="l">180: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> save() {
-<a href="#181" id="181" class="l">181: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;type != <span class="php-quote">'file'</span>) {
-<a href="#182" id="182" class="l">182: </a>            <span class="php-keyword1">return</span>;
-<a href="#183" id="183" class="l">183: </a>        }
-<a href="#184" id="184" class="l">184: </a>
-<a href="#185" id="185" class="l">185: </a>        <span class="php-comment">// Randomly clean the cache out</span>
-<a href="#186" id="186" class="l">186: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">rand</span>(<span class="php-num">0</span>, <span class="php-num">99</span>) == <span class="php-num">50</span>) {
-<a href="#187" id="187" class="l">187: </a>            <span class="php-var">$clear_before</span> = <span class="php-keyword2">time</span>();
-<a href="#188" id="188" class="l">188: </a>
-<a href="#189" id="189" class="l">189: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;cache <span class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span class="php-var">$value</span>) {
-<a href="#190" id="190" class="l">190: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span>[<span class="php-quote">'expire'</span>] &amp;&amp; <span class="php-var">$value</span>[<span class="php-quote">'expire'</span>] &lt; <span class="php-var">$clear_before</span>) {
-<a href="#191" id="191" class="l">191: </a>                    <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>]);
-<a href="#192" id="192" class="l">192: </a>                    <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
-<a href="#193" id="193" class="l">193: </a>                }
-<a href="#194" id="194" class="l">194: </a>            }
-<a href="#195" id="195" class="l">195: </a>        }
-<a href="#196" id="196" class="l">196: </a>
-<a href="#197" id="197" class="l">197: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;state == <span class="php-quote">'clean'</span>) {
-<a href="#198" id="198" class="l">198: </a>            <span class="php-keyword1">return</span>;
-<a href="#199" id="199" class="l">199: </a>        }
-<a href="#200" id="200" class="l">200: </a>
-<a href="#201" id="201" class="l">201: </a>        <span class="php-keyword2">file_put_contents</span>(<span class="php-var">$this</span>-&gt;data_store, <span class="php-keyword2">serialize</span>(<span class="php-var">$this</span>-&gt;cache));
-<a href="#202" id="202" class="l">202: </a>        <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'clean'</span>;
-<a href="#203" id="203" class="l">203: </a>    }
-<a href="#204" id="204" class="l">204: </a>
-<a href="#205" id="205" class="l">205: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> set(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-var">$ttl</span> = <span class="php-num">0</span>) {
-<a href="#206" id="206" class="l">206: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$this</span>-&gt;type) {
-<a href="#207" id="207" class="l">207: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'apc'</span>:
-<a href="#208" id="208" class="l">208: </a>                <span class="php-keyword2">apc_store</span>(<span class="php-var">$key</span>, <span class="php-keyword2">serialize</span>(<span class="php-var">$value</span>), <span class="php-var">$ttl</span>);
-<a href="#209" id="209" class="l">209: </a>                <span class="php-keyword1">return</span>;
-<a href="#210" id="210" class="l">210: </a>
-<a href="#211" id="211" class="l">211: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'file'</span>:
-<a href="#212" id="212" class="l">212: </a>                <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>] = <span class="php-keyword1">array</span>(<span class="php-quote">'value'</span> =&gt; <span class="php-var">$value</span>,
-<a href="#213" id="213" class="l">213: </a>                    <span class="php-quote">'expire'</span> =&gt; (!<span class="php-var">$ttl</span> ) ? <span class="php-num">0</span> : <span class="php-keyword2">time</span>() + <span class="php-var">$ttl</span>);
-<a href="#214" id="214" class="l">214: </a>                <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
-<a href="#215" id="215" class="l">215: </a>                <span class="php-keyword1">return</span>;
-<a href="#216" id="216" class="l">216: </a>
-<a href="#217" id="217" class="l">217: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'memcache'</span>:
-<a href="#218" id="218" class="l">218: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$ttl</span> &gt; <span class="php-num">2592000</span>) {
-<a href="#219" id="219" class="l">219: </a>                    <span class="php-var">$ttl</span> = <span class="php-keyword2">time</span>() + <span class="php-num">2592000</span>;
-<a href="#220" id="220" class="l">220: </a>                }
-<a href="#221" id="221" class="l">221: </a>                <span class="php-var">$value</span> = <span class="php-keyword2">serialize</span>(<span class="php-var">$value</span>);
-<a href="#222" id="222" class="l">222: </a>                <span class="php-keyword1">if</span> (!<span class="php-var">$this</span>-&gt;data_store-&gt;replace(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-num">0</span>, <span class="php-var">$ttl</span>)) {
-<a href="#223" id="223" class="l">223: </a>                    <span class="php-var">$this</span>-&gt;data_store-&gt;set(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-num">0</span>, <span class="php-var">$ttl</span>);
-<a href="#224" id="224" class="l">224: </a>                }
-<a href="#225" id="225" class="l">225: </a>                <span class="php-keyword1">return</span>;
-<a href="#226" id="226" class="l">226: </a>        }
-<a href="#227" id="227" class="l">227: </a>    }
+<a href="#180" id="180" class="l">180: </a>        <span class="php-comment">// Randomly clean the cache out</span>
+<a href="#181" id="181" class="l">181: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">rand</span>(<span class="php-num">0</span>, <span class="php-num">99</span>) == <span class="php-num">50</span>) {
+<a href="#182" id="182" class="l">182: </a>            <span class="php-var">$clear_before</span> = <span class="php-keyword2">time</span>();
+<a href="#183" id="183" class="l">183: </a>
+<a href="#184" id="184" class="l">184: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;cache <span class="php-keyword1">as</span> <span class="php-var">$key</span> =&gt; <span class="php-var">$value</span>) {
+<a href="#185" id="185" class="l">185: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$value</span>[<span class="php-quote">'expire'</span>] &amp;&amp; <span class="php-var">$value</span>[<span class="php-quote">'expire'</span>] &lt; <span class="php-var">$clear_before</span>) {
+<a href="#186" id="186" class="l">186: </a>                    <span class="php-keyword1">unset</span>(<span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>]);
+<a href="#187" id="187" class="l">187: </a>                    <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
+<a href="#188" id="188" class="l">188: </a>                }
+<a href="#189" id="189" class="l">189: </a>            }
+<a href="#190" id="190" class="l">190: </a>        }
+<a href="#191" id="191" class="l">191: </a>
+<a href="#192" id="192" class="l">192: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;state == <span class="php-quote">'clean'</span>) {
+<a href="#193" id="193" class="l">193: </a>            <span class="php-keyword1">return</span>;
+<a href="#194" id="194" class="l">194: </a>        }
+<a href="#195" id="195" class="l">195: </a>
+<a href="#196" id="196" class="l">196: </a>        <span class="php-keyword2">file_put_contents</span>(<span class="php-var">$this</span>-&gt;data_store, <span class="php-keyword2">serialize</span>(<span class="php-var">$this</span>-&gt;cache));
+<a href="#197" id="197" class="l">197: </a>        <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'clean'</span>;
+<a href="#198" id="198" class="l">198: </a>    }
+<a href="#199" id="199" class="l">199: </a>
+<a href="#200" id="200" class="l">200: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> set(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-var">$ttl</span> = <span class="php-num">0</span>) {
+<a href="#201" id="201" class="l">201: </a>
+<a href="#202" id="202" class="l">202: </a>        <span class="php-comment">//если кэш запрещен</span>
+<a href="#203" id="203" class="l">203: </a>        <span class="php-keyword1">if</span> (!joosConfig::get2(<span class="php-quote">'cache'</span>, <span class="php-quote">'enable'</span>)) {
+<a href="#204" id="204" class="l">204: </a>            <span class="php-keyword1">return</span>;
+<a href="#205" id="205" class="l">205: </a>        }
+<a href="#206" id="206" class="l">206: </a>
+<a href="#207" id="207" class="l">207: </a>        <span class="php-keyword1">switch</span> (<span class="php-var">$this</span>-&gt;type) {
+<a href="#208" id="208" class="l">208: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'apc'</span>:
+<a href="#209" id="209" class="l">209: </a>                <span class="php-keyword2">apc_store</span>(<span class="php-var">$key</span>, <span class="php-keyword2">serialize</span>(<span class="php-var">$value</span>), <span class="php-var">$ttl</span>);
+<a href="#210" id="210" class="l">210: </a>                <span class="php-keyword1">return</span>;
+<a href="#211" id="211" class="l">211: </a>
+<a href="#212" id="212" class="l">212: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'file'</span>:
+<a href="#213" id="213" class="l">213: </a>                <span class="php-var">$this</span>-&gt;cache[<span class="php-var">$key</span>] = <span class="php-keyword1">array</span>(<span class="php-quote">'value'</span> =&gt; <span class="php-var">$value</span>,
+<a href="#214" id="214" class="l">214: </a>                    <span class="php-quote">'expire'</span> =&gt; (!<span class="php-var">$ttl</span> ) ? <span class="php-num">0</span> : <span class="php-keyword2">time</span>() + <span class="php-var">$ttl</span>);
+<a href="#215" id="215" class="l">215: </a>                <span class="php-var">$this</span>-&gt;state = <span class="php-quote">'dirty'</span>;
+<a href="#216" id="216" class="l">216: </a>                <span class="php-keyword1">return</span>;
+<a href="#217" id="217" class="l">217: </a>
+<a href="#218" id="218" class="l">218: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'memcache'</span>:
+<a href="#219" id="219" class="l">219: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$ttl</span> &gt; <span class="php-num">2592000</span>) {
+<a href="#220" id="220" class="l">220: </a>                    <span class="php-var">$ttl</span> = <span class="php-keyword2">time</span>() + <span class="php-num">2592000</span>;
+<a href="#221" id="221" class="l">221: </a>                }
+<a href="#222" id="222" class="l">222: </a>                <span class="php-var">$this</span>-&gt;data_store-&gt;set(<span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-num">0</span>, <span class="php-var">$ttl</span>);
+<a href="#223" id="223" class="l">223: </a>                <span class="php-keyword1">return</span>;
+<a href="#224" id="224" class="l">224: </a>        }
+<a href="#225" id="225" class="l">225: </a>    }
+<a href="#226" id="226" class="l">226: </a>
+<a href="#227" id="227" class="l">227: </a>}
 <a href="#228" id="228" class="l">228: </a>
-<a href="#229" id="229" class="l">229: </a>}
-<a href="#230" id="230" class="l">230: </a>
-<a href="#231" id="231" class="l">231: </a><span class="php-comment">/**
-</span><a href="#232" id="232" class="l">232: </a><span class="php-comment"> * Обработка исключений и ошибок кеширования
-</span><a href="#233" id="233" class="l">233: </a><span class="php-comment"> */</span>
-<a href="#234" id="234" class="l">234: </a><span class="php-keyword1">class</span> joosCacheException <span class="php-keyword1">extends</span> joosException {
-<a href="#235" id="235" class="l">235: </a>
-<a href="#236" id="236" class="l">236: </a>}
-<a href="#237" id="237" class="l">237: </a></code></pre>
+<a href="#229" id="229" class="l">229: </a><span class="php-comment">/**
+</span><a href="#230" id="230" class="l">230: </a><span class="php-comment"> * Обработка исключений и ошибок кеширования
+</span><a href="#231" id="231" class="l">231: </a><span class="php-comment"> */</span>
+<a href="#232" id="232" class="l">232: </a><span class="php-keyword1">class</span> joosCacheException <span class="php-keyword1">extends</span> joosException {
+<a href="#233" id="233" class="l">233: </a>
+<a href="#234" id="234" class="l">234: </a>}
+<a href="#235" id="235" class="l">235: </a></code></pre>
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.0</a>
+		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>
