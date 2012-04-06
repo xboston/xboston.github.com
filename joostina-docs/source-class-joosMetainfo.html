@@ -5,11 +5,11 @@
 	<meta name="generator" content="ApiGen 2.6.1" />
 	<meta name="robots" content="noindex" />
 
-	<title>File core/libraries/metainfo.php | Joostina CMS v2.* API</title>
+	<title>File core/libraries/metainfo.php | Joostina CMS / CMF v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?1185648394"></script>
+	<script type="text/javascript" src="elementlist.js?3474096715"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -19,7 +19,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a href="index.html" class="brand">Joostina CMS v2.* API</a>
+				<a href="index.html" class="brand">Joostina CMS / CMF v2.* API</a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li>
@@ -152,11 +152,11 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-joosAcl.html">joosAcl</a></li>
 				<li><a href="class-joosArhive.html">joosArhive</a></li>
 				<li><a href="class-joosArray.html">joosArray</a></li>
 				<li><a href="class-joosAttached.html">joosAttached</a></li>
 				<li><a href="class-joosAutoadmin.html">joosAutoadmin</a></li>
+				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
 				<li><a href="class-joosBenchmark.html">joosBenchmark</a></li>
 				<li><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a></li>
 				<li><a href="class-joosCache.html">joosCache</a></li>
@@ -164,7 +164,9 @@
 				<li><a href="class-joosCookie.html">joosCookie</a></li>
 				<li><a href="class-joosCSRF.html">joosCSRF</a></li>
 				<li><a href="class-joosDatabase.html">joosDatabase</a></li>
-				<li><a href="class-joosDatabaseUtils.html">joosDatabaseUtils</a></li>
+				<li><a href="class-joosDatabaseMysqli.html">joosDatabaseMysqli</a></li>
+				<li><a href="class-joosDatabaseMysqliUtils.html">joosDatabaseMysqliUtils</a></li>
+				<li><a href="class-joosDatabasePDO.html">joosDatabasePDO</a></li>
 				<li><a href="class-joosDateTime.html">joosDateTime</a></li>
 				<li><a href="class-joosDebug.html">joosDebug</a></li>
 				<li><a href="class-joosEditor.html">joosEditor</a></li>
@@ -176,6 +178,7 @@
 				<li><a href="class-joosHit.html">joosHit</a></li>
 				<li><a href="class-joosHTML.html">joosHTML</a></li>
 				<li><a href="class-joosImage.html">joosImage</a></li>
+				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
 				<li class="active"><a href="class-joosMetainfo.html">joosMetainfo</a></li>
@@ -199,6 +202,14 @@
 
 
 
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-joosAutoloaderClassNotFoundException.html">joosAutoloaderClassNotFoundException</a></li>
+				<li><a href="class-joosAutoloaderFileNotFoundException.html">joosAutoloaderFileNotFoundException</a></li>
+				<li><a href="class-joosAutoloaderOnStartFileNotFoundException.html">joosAutoloaderOnStartFileNotFoundException</a></li>
+				<li><a href="class-joosException.html">joosException</a></li>
+				<li><a href="class-joosUserException.html">joosUserException</a></li>
+			</ul>
 
 
 		</div>
@@ -444,7 +455,7 @@
 </span><a href="#233" id="233" class="l">233: </a><span class="php-comment">     * Получение всех метаданных
 </span><a href="#234" id="234" class="l">234: </a><span class="php-comment">     */</span>
 <a href="#235" id="235" class="l">235: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_all_meta() {
-<a href="#236" id="236" class="l">236: </a>        <span class="php-keyword1">return</span> joosDatabase::instance()-&gt;setQuery(<span class="php-quote">'SELECT * FROM #__metainfo'</span>)-&gt;loadObjectList(<span class="php-quote">'obj_id'</span>);
+<a href="#236" id="236" class="l">236: </a>        <span class="php-keyword1">return</span> joosDatabase::instance()-&gt;set_query(<span class="php-quote">'SELECT * FROM #__metainfo'</span>)-&gt;load_object_list(<span class="php-quote">'obj_id'</span>);
 <a href="#237" id="237" class="l">237: </a>    }
 <a href="#238" id="238" class="l">238: </a>
 <a href="#239" id="239" class="l">239: </a>    <span class="php-comment">/**
@@ -452,7 +463,7 @@
 </span><a href="#241" id="241" class="l">241: </a><span class="php-comment">     * Получение всех метаданных
 </span><a href="#242" id="242" class="l">242: </a><span class="php-comment">     */</span>
 <a href="#243" id="243" class="l">243: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_all_meta_items(<span class="php-var">$group</span>, <span class="php-var">$subgroup</span>) {
-<a href="#244" id="244" class="l">244: </a>        <span class="php-keyword1">return</span> joosDatabase::instance()-&gt;setQuery(<span class="php-quote">&quot;SELECT id as meta_id, obj_id, meta_title, meta_description, meta_keywords FROM #__metainfo WHERE subgroup='&quot;</span> . <span class="php-var">$subgroup</span> . <span class="php-quote">&quot;' AND obj_id &gt; 0 AND group = '&quot;</span> . <span class="php-var">$group</span> . <span class="php-quote">&quot;'&quot;</span>)-&gt;loadObjectList(<span class="php-quote">'obj_id'</span>);
+<a href="#244" id="244" class="l">244: </a>        <span class="php-keyword1">return</span> joosDatabase::instance()-&gt;set_query(<span class="php-quote">&quot;SELECT id as meta_id, obj_id, meta_title, meta_description, meta_keywords FROM #__metainfo WHERE subgroup='&quot;</span> . <span class="php-var">$subgroup</span> . <span class="php-quote">&quot;' AND obj_id &gt; 0 AND group = '&quot;</span> . <span class="php-var">$group</span> . <span class="php-quote">&quot;'&quot;</span>)-&gt;load_object_list(<span class="php-quote">'obj_id'</span>);
 <a href="#245" id="245" class="l">245: </a>    }
 <a href="#246" id="246" class="l">246: </a>
 <a href="#247" id="247" class="l">247: </a>}
@@ -460,7 +471,7 @@
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
+		Joostina CMS / CMF v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

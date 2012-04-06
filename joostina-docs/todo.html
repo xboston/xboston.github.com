@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.1" />
 
-	<title>Todo | Joostina CMS v2.* API</title>
+	<title>Todo | Joostina CMS / CMF v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?1185648394"></script>
+	<script type="text/javascript" src="elementlist.js?3474096715"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -18,7 +18,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a href="index.html" class="brand">Joostina CMS v2.* API</a>
+				<a href="index.html" class="brand">Joostina CMS / CMF v2.* API</a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li>
@@ -148,11 +148,11 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-joosAcl.html">joosAcl</a></li>
 				<li><a href="class-joosAdminController.html">joosAdminController</a></li>
 				<li><a href="class-joosAdminControllerAjax.html">joosAdminControllerAjax</a></li>
 				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
 				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
+				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
 				<li><a href="class-joosAdminView.html">joosAdminView</a></li>
 				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
 				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
@@ -161,7 +161,6 @@
 				<li><a href="class-joosAttached.html">joosAttached</a></li>
 				<li><a href="class-joosAutoadmin.html">joosAutoadmin</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
-				<li><a href="class-joosAutoadminPlugins.html">joosAutoadminPlugins</a></li>
 				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
 				<li><a href="class-joosBenchmark.html">joosBenchmark</a></li>
 				<li><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a></li>
@@ -174,7 +173,10 @@
 				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
 				<li><a href="class-joosCSRF.html">joosCSRF</a></li>
 				<li><a href="class-joosDatabase.html">joosDatabase</a></li>
-				<li><a href="class-joosDatabaseUtils.html">joosDatabaseUtils</a></li>
+				<li><a href="class-joosDatabaseMysqli.html">joosDatabaseMysqli</a></li>
+				<li><a href="class-joosDatabaseMysqliUtils.html">joosDatabaseMysqliUtils</a></li>
+				<li><a href="class-joosDatabasePDO.html">joosDatabasePDO</a></li>
+				<li><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></li>
 				<li><a href="class-joosDateTime.html">joosDateTime</a></li>
 				<li><a href="class-joosDebug.html">joosDebug</a></li>
 				<li><a href="class-joosDocument.html">joosDocument</a></li>
@@ -202,11 +204,11 @@
 				<li><a href="class-joosRandomizer.html">joosRandomizer</a></li>
 				<li><a href="class-joosRequest.html">joosRequest</a></li>
 				<li><a href="class-joosRoute.html">joosRoute</a></li>
+				<li><a href="class-joosSecurity.html">joosSecurity</a></li>
 				<li><a href="class-joosSession.html">joosSession</a></li>
 				<li><a href="class-joosStatic.html">joosStatic</a></li>
 				<li><a href="class-joosString.html">joosString</a></li>
 				<li><a href="class-joosText.html">joosText</a></li>
-				<li><a href="class-joosToolbar.html">joosToolbar</a></li>
 				<li><a href="class-joosTrash.html">joosTrash</a></li>
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidate.html">joosValidate</a></li>
@@ -214,6 +216,13 @@
 				<li><a href="class-joosVersion.html">joosVersion</a></li>
 			</ul>
 
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-joosAutoadminPluginsEdit.html">joosAutoadminPluginsEdit</a></li>
+				<li><a href="class-joosAutoadminPluginsTable.html">joosAutoadminPluginsTable</a></li>
+				<li><a href="class-joosInterfaceDatabase.html">joosInterfaceDatabase</a></li>
+				<li><a href="class-joosInterfaceDatabaseUtils.html">joosInterfaceDatabaseUtils</a></li>
+			</ul>
 
 
 			<h3>Exceptions</h3>
@@ -249,6 +258,14 @@
 	<h2>Classes summary</h2>
 	<table class="summary table table-bordered table-striped" id="classes">
 	<tr>
+		<td class="name" rowspan="2"><a href="class-joosCache.html">joosCache</a></td>
+		<td>добавить проверки использую библиотеки
+работы с файлами и каталогами</td></tr><tr>
+		<td>добавить проверку что кеше включен, сейчас
+при выключенном кешировании объекты и
+проверки всё равно выполняются</td>
+	</tr>
+	<tr>
 		<td class="name" rowspan="1"><a href="class-joosConfig.html">joosConfig</a></td>
 		<td>рассмотреть возможность использования SPL
 ArrayObject</td>
@@ -282,11 +299,6 @@ clearstatcache</td>
 общему виду</td>
 	</tr>
 	<tr>
-		<td class="name" rowspan="1"><a href="class-joosPages.html">joosPages</a></td>
-		<td>добавить подключение шаблонов и другие
-базовые страницы</td>
-	</tr>
-	<tr>
 		<td class="name" rowspan="1"><a href="class-joosRequest.html">joosRequest</a></td>
 		<td>в mosGetParams была очистка данных. Может, стоит и
 сюда прикрутить? joosInputFilter::instance()-&gt;process($return)</td>
@@ -303,6 +315,12 @@ clearstatcache</td>
 		<td class="name" rowspan="1"><code><a href="class-joosController.html#_run">run()</a></code></td>
 		<td>добавить сюда события events ДО, ПОСЛЕ и ВМЕСТО
 выполнения задчи контроллера</td>
+	</tr>
+	<tr>
+		<td class="name" rowspan="1"><a href="class-joosDatabaseMysqli.html">joosDatabaseMysqli</a></td>
+		<td class="name" rowspan="1"><code><a href="class-joosDatabaseMysqli.html#___clone">__clone()</a></code></td>
+		<td>исправить, метод CLONE используется при
+кешированиии и сериалзации модели</td>
 	</tr>
 	<tr>
 		<td class="name" rowspan="1"><a href="class-joosDebug.html">joosDebug</a></td>
@@ -337,15 +355,16 @@ $find_result</td>
 наличия с empty (isset($vars[$name]) &amp;&amp; !empty( $vars[$name] ) )</td>
 	</tr>
 	<tr>
+		<td class="name" rowspan="1"><a href="class-joosSession.html">joosSession</a></td>
+		<td class="name" rowspan="1"><code><a href="class-joosSession.html#_session_cookie_value">session_cookie_value()</a></code></td>
+		<td>добавить возможность работы через прокси,
+когда у пользователя меняется конечный IP,
+но единый IP прокси</td>
+	</tr>
+	<tr>
 		<td class="name" rowspan="1"><a href="class-joosText.html">joosText</a></td>
 		<td class="name" rowspan="1"><code><a href="class-joosText.html#_id_decode">id_decode()</a></code></td>
 		<td>тут можно/лучше использовать base_convert</td>
-	</tr>
-	<tr>
-		<td class="name" rowspan="2"><a href="class-joosText.html">joosText</a></td>
-		<td class="name" rowspan="2"><code><a href="class-joosText.html#_pretty_date">pretty_date()</a></code></td>
-		<td>локализовать, описать, сделать примеры</td></tr><tr>
-		<td>сделать склонения</td>
 	</tr>
 	</table>
 
@@ -355,7 +374,7 @@ $find_result</td>
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
+		Joostina CMS / CMF v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>

@@ -130,9 +130,6 @@
 
 
 <url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosAcl.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAdminController.html</loc>
 </url>
 <url>
@@ -143,6 +140,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAdminToolbar.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosAdminToolbarButtons.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAdminView.html</loc>
@@ -167,9 +167,6 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminHTML.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminPlugins.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAutoloader.html</loc>
@@ -208,7 +205,16 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosDatabase.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosDatabaseUtils.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/class-joosDatabaseMysqli.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosDatabaseMysqliUtils.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosDatabasePDO.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosDatabaseUtilsPDO.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosDateTime.html</loc>
@@ -292,6 +298,9 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosRoute.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosSecurity.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosSession.html</loc>
 </url>
 <url>
@@ -302,9 +311,6 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosText.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosToolbar.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosTrash.html</loc>
@@ -320,6 +326,18 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosVersion.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminPluginsEdit.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminPluginsTable.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosInterfaceDatabase.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosInterfaceDatabaseUtils.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminClassPlugionNotFoundException.html</loc>

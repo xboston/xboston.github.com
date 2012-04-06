@@ -4,11 +4,11 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="generator" content="ApiGen 2.6.1" />
 
-	<title>Class joosModel | Joostina CMS v2.* API</title>
+	<title>Class joosModel | Joostina CMS / CMF v2.* API</title>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?1185648394"></script>
+	<script type="text/javascript" src="elementlist.js?3474096715"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -18,7 +18,7 @@
 	<div class="navbar navbar-fixed-top">
 		<div class="navbar-inner">
 			<div class="container">
-				<a href="index.html" class="brand">Joostina CMS v2.* API</a>
+				<a href="index.html" class="brand">Joostina CMS / CMF v2.* API</a>
 				<div class="nav-collapse">
 					<ul class="nav">
 						<li>
@@ -151,11 +151,11 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-joosAcl.html">joosAcl</a></li>
 				<li><a href="class-joosArhive.html">joosArhive</a></li>
 				<li><a href="class-joosArray.html">joosArray</a></li>
 				<li><a href="class-joosAttached.html">joosAttached</a></li>
 				<li><a href="class-joosAutoadmin.html">joosAutoadmin</a></li>
+				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
 				<li><a href="class-joosBenchmark.html">joosBenchmark</a></li>
 				<li><a href="class-joosBreadcrumbs.html">joosBreadcrumbs</a></li>
 				<li><a href="class-joosCache.html">joosCache</a></li>
@@ -163,7 +163,9 @@
 				<li><a href="class-joosCookie.html">joosCookie</a></li>
 				<li><a href="class-joosCSRF.html">joosCSRF</a></li>
 				<li><a href="class-joosDatabase.html">joosDatabase</a></li>
-				<li><a href="class-joosDatabaseUtils.html">joosDatabaseUtils</a></li>
+				<li><a href="class-joosDatabaseMysqli.html">joosDatabaseMysqli</a></li>
+				<li><a href="class-joosDatabaseMysqliUtils.html">joosDatabaseMysqliUtils</a></li>
+				<li><a href="class-joosDatabasePDO.html">joosDatabasePDO</a></li>
 				<li><a href="class-joosDateTime.html">joosDateTime</a></li>
 				<li><a href="class-joosDebug.html">joosDebug</a></li>
 				<li><a href="class-joosEditor.html">joosEditor</a></li>
@@ -175,6 +177,7 @@
 				<li><a href="class-joosHit.html">joosHit</a></li>
 				<li><a href="class-joosHTML.html">joosHTML</a></li>
 				<li><a href="class-joosImage.html">joosImage</a></li>
+				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
 				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
@@ -198,6 +201,14 @@
 
 
 
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-joosAutoloaderClassNotFoundException.html">joosAutoloaderClassNotFoundException</a></li>
+				<li><a href="class-joosAutoloaderFileNotFoundException.html">joosAutoloaderFileNotFoundException</a></li>
+				<li><a href="class-joosAutoloaderOnStartFileNotFoundException.html">joosAutoloaderOnStartFileNotFoundException</a></li>
+				<li><a href="class-joosException.html">joosException</a></li>
+				<li><a href="class-joosUserException.html">joosUserException</a></li>
+			</ul>
 
 
 		</div>
@@ -281,7 +292,7 @@
 href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 				<b>Version:</b>
 				1.0<br />
-		<b>Located at:</b> <a href="source-class-joosModel.html#961" title="Go to source code">core/libraries/database.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosModel.html#12" title="Go to source code">core/libraries/database.php</a><br />
 	</div>
 
 
@@ -299,7 +310,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#___construct">#</a>
-			<code><a href="source-class-joosModel.html#1021" title="Go to source code">__construct</a>( <span>string <var>$table</var></span>, <span>string <var>$key</var></span> )</code>
+			<code><a href="source-class-joosModel.html#72" title="Go to source code">__construct</a>( <span>string <var>$table</var></span>, <span>string <var>$key</var></span> )</code>
 
 			<div class="description short">
 				
@@ -340,7 +351,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_classname">#</a>
-			<code><a href="source-class-joosModel.html#1033" title="Go to source code">classname</a>( )</code>
+			<code><a href="source-class-joosModel.html#84" title="Go to source code">classname</a>( )</code>
 
 			<div class="description short">
 				
@@ -377,7 +388,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_extrainfo">#</a>
-			<code><a href="source-class-joosModel.html#1041" title="Go to source code">get_extrainfo</a>( )</code>
+			<code><a href="source-class-joosModel.html#92" title="Go to source code">get_extrainfo</a>( )</code>
 
 			<div class="description short">
 				
@@ -410,7 +421,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="attributes"><code>
 				
-				 protected 
+				 public 
 				array
 				
 				</code>
@@ -418,7 +429,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_fieldinfo">#</a>
-			<code><a href="source-class-joosModel.html#1049" title="Go to source code">get_fieldinfo</a>( )</code>
+			<code><a href="source-class-joosModel.html#100" title="Go to source code">get_fieldinfo</a>( )</code>
 
 			<div class="description short">
 				
@@ -447,7 +458,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="attributes"><code>
 				
-				 protected 
+				 public 
 				array
 				
 				</code>
@@ -455,7 +466,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_tableinfo">#</a>
-			<code><a href="source-class-joosModel.html#1057" title="Go to source code">get_tableinfo</a>( )</code>
+			<code><a href="source-class-joosModel.html#108" title="Go to source code">get_tableinfo</a>( )</code>
 
 			<div class="description short">
 				
@@ -486,7 +497,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="attributes"><code>
 				
-				 protected 
+				 public 
 				array
 				
 				</code>
@@ -494,7 +505,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_tabsinfo">#</a>
-			<code><a href="source-class-joosModel.html#1065" title="Go to source code">get_tabsinfo</a>( )</code>
+			<code><a href="source-class-joosModel.html#116" title="Go to source code">get_tabsinfo</a>( )</code>
 
 			<div class="description short">
 				
@@ -525,7 +536,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="attributes"><code>
 				
-				 protected 
+				 public 
 				array
 				
 				</code>
@@ -533,7 +544,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_validate_rules">#</a>
-			<code><a href="source-class-joosModel.html#1074" title="Go to source code">get_validate_rules</a>( )</code>
+			<code><a href="source-class-joosModel.html#125" title="Go to source code">get_validate_rules</a>( )</code>
 
 			<div class="description short">
 				
@@ -572,7 +583,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_validation_error_messages">#</a>
-			<code><a href="source-class-joosModel.html#1083" title="Go to source code">get_validation_error_messages</a>( )</code>
+			<code><a href="source-class-joosModel.html#134" title="Go to source code">get_validation_error_messages</a>( )</code>
 
 			<div class="description short">
 				
@@ -611,7 +622,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_validate">#</a>
-			<code><a href="source-class-joosModel.html#1092" title="Go to source code">validate</a>( )</code>
+			<code><a href="source-class-joosModel.html#143" title="Go to source code">validate</a>( )</code>
 
 			<div class="description short">
 				
@@ -648,7 +659,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#___set_state">#</a>
-			<code><a href="source-class-joosModel.html#1113" title="Go to source code">__set_state</a>( <span>array <var>$values</var></span> )</code>
+			<code><a href="source-class-joosModel.html#164" title="Go to source code">__set_state</a>( <span>array <var>$values</var></span> )</code>
 
 			<div class="description short">
 				
@@ -694,7 +705,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_to_cache">#</a>
-			<code><a href="source-class-joosModel.html#1130" title="Go to source code">to_cache</a>( )</code>
+			<code><a href="source-class-joosModel.html#181" title="Go to source code">to_cache</a>( )</code>
 
 			<div class="description short">
 				
@@ -731,7 +742,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_key_field">#</a>
-			<code><a href="source-class-joosModel.html#1144" title="Go to source code">get_key_field</a>( )</code>
+			<code><a href="source-class-joosModel.html#195" title="Go to source code">get_key_field</a>( )</code>
 
 			<div class="description short">
 				
@@ -770,7 +781,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_public_properties">#</a>
-			<code><a href="source-class-joosModel.html#1152" title="Go to source code">get_public_properties</a>( )</code>
+			<code><a href="source-class-joosModel.html#203" title="Go to source code">get_public_properties</a>( )</code>
 
 			<div class="description short">
 				
@@ -809,7 +820,7 @@ href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_filter">#</a>
-			<code><a href="source-class-joosModel.html#1172" title="Go to source code">filter</a>( <span>array <var>$ignoreList</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-joosModel.html#223" title="Go to source code">filter</a>( <span>array <var>$ignoreList</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -852,7 +863,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_error">#</a>
-			<code><a href="source-class-joosModel.html#1190" title="Go to source code">get_error</a>( )</code>
+			<code><a href="source-class-joosModel.html#241" title="Go to source code">get_error</a>( )</code>
 
 			<div class="description short">
 				
@@ -891,7 +902,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get">#</a>
-			<code><a href="source-class-joosModel.html#1198" title="Go to source code">get</a>( <span>string <var>$_property</var></span> )</code>
+			<code><a href="source-class-joosModel.html#249" title="Go to source code">get</a>( <span>string <var>$_property</var></span> )</code>
 
 			<div class="description short">
 				
@@ -933,7 +944,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_set">#</a>
-			<code><a href="source-class-joosModel.html#1209" title="Go to source code">set</a>( <span>string <var>$_property</var></span>, <span>string <var>$_value</var></span> )</code>
+			<code><a href="source-class-joosModel.html#260" title="Go to source code">set</a>( <span>string <var>$_property</var></span>, <span>string <var>$_value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -975,7 +986,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_reset">#</a>
-			<code><a href="source-class-joosModel.html#1219" title="Go to source code">reset</a>( <span>string <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-joosModel.html#270" title="Go to source code">reset</a>( <span>string <var>$value</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1014,7 +1025,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_bind">#</a>
-			<code><a href="source-class-joosModel.html#1231" title="Go to source code">bind</a>( <span>array <var>$array</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-joosModel.html#282" title="Go to source code">bind</a>( <span>array <var>$array</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1061,7 +1072,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load">#</a>
-			<code><a href="source-class-joosModel.html#1243" title="Go to source code">load</a>( <span>integer <var>$oid</var></span> )</code>
+			<code><a href="source-class-joosModel.html#294" title="Go to source code">load</a>( <span>integer <var>$oid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1112,7 +1123,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load_by_field">#</a>
-			<code><a href="source-class-joosModel.html#1265" title="Go to source code">load_by_field</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
+			<code><a href="source-class-joosModel.html#316" title="Go to source code">load_by_field</a>( <span>string <var>$field</var></span>, <span>string <var>$value</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1164,7 +1175,7 @@ array('desc','extra') );</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_store">#</a>
-			<code><a href="source-class-joosModel.html#1282" title="Go to source code">store</a>( <span>boolean <var>$update_nulls</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$forced_Insert</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosModel.html#333" title="Go to source code">store</a>( <span>boolean <var>$update_nulls</var> = <span class="php-keyword1">false</span></span>, <span>boolean <var>$forced_Insert</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1212,6 +1223,45 @@ $news-&gt;title='Новость 1'</p>
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="update" id="_update">
+
+			<td class="attributes"><code>
+				
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_update">#</a>
+			<code><a href="source-class-joosModel.html#377" title="Go to source code">update</a>( )</code>
+
+			<div class="description short">
+				
+<p>Прямое обновление значения полей объекта
+модели</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Прямое обновление значения полей объекта
+модели</p>
+
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>boolean</code><br>результат выполнения обновления<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="check" id="_check">
 
 			<td class="attributes"><code>
@@ -1224,7 +1274,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_check">#</a>
-			<code><a href="source-class-joosModel.html#1327" title="Go to source code">check</a>( )</code>
+			<code><a href="source-class-joosModel.html#386" title="Go to source code">check</a>( )</code>
 
 			<div class="description short">
 				
@@ -1263,7 +1313,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_before_update">#</a>
-			<code><a href="source-class-joosModel.html#1336" title="Go to source code">before_update</a>( )</code>
+			<code><a href="source-class-joosModel.html#395" title="Go to source code">before_update</a>( )</code>
 
 			<div class="description short">
 				
@@ -1302,7 +1352,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_after_update">#</a>
-			<code><a href="source-class-joosModel.html#1345" title="Go to source code">after_update</a>( )</code>
+			<code><a href="source-class-joosModel.html#404" title="Go to source code">after_update</a>( )</code>
 
 			<div class="description short">
 				
@@ -1341,7 +1391,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_before_insert">#</a>
-			<code><a href="source-class-joosModel.html#1354" title="Go to source code">before_insert</a>( )</code>
+			<code><a href="source-class-joosModel.html#413" title="Go to source code">before_insert</a>( )</code>
 
 			<div class="description short">
 				
@@ -1380,7 +1430,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_after_insert">#</a>
-			<code><a href="source-class-joosModel.html#1363" title="Go to source code">after_insert</a>( )</code>
+			<code><a href="source-class-joosModel.html#422" title="Go to source code">after_insert</a>( )</code>
 
 			<div class="description short">
 				
@@ -1419,7 +1469,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_before_store">#</a>
-			<code><a href="source-class-joosModel.html#1372" title="Go to source code">before_store</a>( )</code>
+			<code><a href="source-class-joosModel.html#431" title="Go to source code">before_store</a>( )</code>
 
 			<div class="description short">
 				
@@ -1458,7 +1508,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_after_store">#</a>
-			<code><a href="source-class-joosModel.html#1381" title="Go to source code">after_store</a>( )</code>
+			<code><a href="source-class-joosModel.html#440" title="Go to source code">after_store</a>( )</code>
 
 			<div class="description short">
 				
@@ -1499,7 +1549,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_before_delete">#</a>
-			<code><a href="source-class-joosModel.html#1390" title="Go to source code">before_delete</a>( )</code>
+			<code><a href="source-class-joosModel.html#449" title="Go to source code">before_delete</a>( )</code>
 
 			<div class="description short">
 				
@@ -1538,7 +1588,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_after_delete">#</a>
-			<code><a href="source-class-joosModel.html#1399" title="Go to source code">after_delete</a>( )</code>
+			<code><a href="source-class-joosModel.html#458" title="Go to source code">after_delete</a>( )</code>
 
 			<div class="description short">
 				
@@ -1577,7 +1627,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete">#</a>
-			<code><a href="source-class-joosModel.html#1408" title="Go to source code">delete</a>( <span>mixed <var>$oid</var></span> )</code>
+			<code><a href="source-class-joosModel.html#467" title="Go to source code">delete</a>( <span>mixed <var>$oid</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1623,7 +1673,7 @@ $news-&gt;title='Новость 1'</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete_array">#</a>
-			<code><a href="source-class-joosModel.html#1442" title="Go to source code">delete_array</a>( <span>array <var>$oid</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$key</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$table</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosModel.html#500" title="Go to source code">delete_array</a>( <span>array <var>$oid</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$key</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$table</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1682,7 +1732,7 @@ array(1,15,16,22)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_delete_list">#</a>
-			<code><a href="source-class-joosModel.html#1487" title="Go to source code">delete_list</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#544" title="Go to source code">delete_list</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -1727,7 +1777,7 @@ array(1,15,16,22)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_copy_array">#</a>
-			<code><a href="source-class-joosModel.html#1508" title="Go to source code">copy_array</a>( <span>array <var>$oid</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$key</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$table</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosModel.html#564" title="Go to source code">copy_array</a>( <span>array <var>$oid</var> = <span class="php-keyword1">array</span>()</span>, <span>string <var>$key</var> = <span class="php-keyword1">false</span></span>, <span>string <var>$table</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1782,7 +1832,7 @@ array(1,15,16,22)</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-joosModel.html#1535" title="Go to source code">save</a>( <span>array <var>$source</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-joosModel.html#591" title="Go to source code">save</a>( <span>array <var>$source</var></span>, <span>string <var>$ignore</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1828,7 +1878,7 @@ self::bind )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_publish">#</a>
-			<code><a href="source-class-joosModel.html#1558" title="Go to source code">publish</a>( <span>array <var>$cid</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$publish</var> = <span class="php-num">1</span></span> )</code>
+			<code><a href="source-class-joosModel.html#614" title="Go to source code">publish</a>( <span>array <var>$cid</var> = <span class="php-keyword1">null</span></span>, <span>type <var>$publish</var> = <span class="php-num">1</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1872,7 +1922,7 @@ self::bind )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_change_state">#</a>
-			<code><a href="source-class-joosModel.html#1588" title="Go to source code">change_state</a>( <span>string <var>$field_name</var></span> )</code>
+			<code><a href="source-class-joosModel.html#643" title="Go to source code">change_state</a>( <span>string <var>$field_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1921,7 +1971,7 @@ self::bind )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_count">#</a>
-			<code><a href="source-class-joosModel.html#1601" title="Go to source code">count</a>( <span>string <var>$where</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-joosModel.html#656" title="Go to source code">count</a>( <span>string <var>$where</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1966,7 +2016,7 @@ self::bind )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_sum">#</a>
-			<code><a href="source-class-joosModel.html#1613" title="Go to source code">sum</a>( <span>string <var>$field</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span> )</code>
+			<code><a href="source-class-joosModel.html#668" title="Go to source code">sum</a>( <span>string <var>$field</var></span>, <span>string <var>$where</var> = <span class="php-quote">''</span></span> )</code>
 
 			<div class="description short">
 				
@@ -2010,7 +2060,7 @@ self::bind )</dd>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_list">#</a>
-			<code><a href="source-class-joosModel.html#1626" title="Go to source code">get_list</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#681" title="Go to source code">get_list</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -2070,7 +2120,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_list_cache">#</a>
-			<code><a href="source-class-joosModel.html#1670" title="Go to source code">get_list_cache</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$cache_time</var> = <span class="php-num">86400</span></span> )</code>
+			<code><a href="source-class-joosModel.html#725" title="Go to source code">get_list_cache</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span>, <span>integer <var>$cache_time</var> = <span class="php-num">86400</span></span> )</code>
 
 			<div class="description short">
 				
@@ -2114,7 +2164,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_selector">#</a>
-			<code><a href="source-class-joosModel.html#1691" title="Go to source code">get_selector</a>( <span>array <var>$key_val</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#746" title="Go to source code">get_selector</a>( <span>array <var>$key_val</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -2173,7 +2223,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_select_one_to_many">#</a>
-			<code><a href="source-class-joosModel.html#1730" title="Go to source code">get_select_one_to_many</a>( <span> <var>$table_values</var></span>, <span> <var>$table_keys</var></span>, <span> <var>$key_parent</var></span>, <span> <var>$key_children</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#785" title="Go to source code">get_select_one_to_many</a>( <span> <var>$table_values</var></span>, <span> <var>$table_keys</var></span>, <span> <var>$key_parent</var></span>, <span> <var>$key_children</var></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -2202,7 +2252,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save_one_to_many">#</a>
-			<code><a href="source-class-joosModel.html#1744" title="Go to source code">save_one_to_many</a>( <span> <var>$name_table_keys</var></span>, <span> <var>$key_name</var></span>, <span> <var>$value_name</var></span>, <span> <var>$key_value</var></span>, <span>array <var>$values</var></span> )</code>
+			<code><a href="source-class-joosModel.html#799" title="Go to source code">save_one_to_many</a>( <span> <var>$name_table_keys</var></span>, <span> <var>$key_name</var></span>, <span> <var>$value_name</var></span>, <span> <var>$key_value</var></span>, <span>array <var>$values</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2231,7 +2281,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_one_to_many_selectors">#</a>
-			<code><a href="source-class-joosModel.html#1770" title="Go to source code">get_one_to_many_selectors</a>( <span> <var>$name</var></span>, <span> <var>$table_values</var></span>, <span> <var>$table_keys</var></span>, <span> <var>$key_parent</var></span>, <span> <var>$key_children</var></span>, <span>array <var>$selected_ids</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#825" title="Go to source code">get_one_to_many_selectors</a>( <span> <var>$name</var></span>, <span> <var>$table_values</var></span>, <span> <var>$table_keys</var></span>, <span> <var>$key_parent</var></span>, <span> <var>$key_children</var></span>, <span>array <var>$selected_ids</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -2260,7 +2310,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_find">#</a>
-			<code><a href="source-class-joosModel.html#1788" title="Go to source code">find</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'select'</span> =&gt; <span class="php-quote">'*'</span>)</span> )</code>
+			<code><a href="source-class-joosModel.html#843" title="Go to source code">find</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'select'</span> =&gt; <span class="php-quote">'*'</span>)</span> )</code>
 
 			<div class="description short">
 				
@@ -2305,7 +2355,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_find_cache">#</a>
-			<code><a href="source-class-joosModel.html#1824" title="Go to source code">find_cache</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'select'</span> =&gt; <span class="php-quote">'*'</span>)</span>, <span>integer <var>$cache_time</var> = <span class="php-num">86400</span></span> )</code>
+			<code><a href="source-class-joosModel.html#879" title="Go to source code">find_cache</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>(<span class="php-quote">'select'</span> =&gt; <span class="php-quote">'*'</span>)</span>, <span>integer <var>$cache_time</var> = <span class="php-num">86400</span></span> )</code>
 
 			<div class="description short">
 				
@@ -2354,7 +2404,7 @@ $find_result<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_find_all">#</a>
-			<code><a href="source-class-joosModel.html#1857" title="Go to source code">find_all</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosModel.html#912" title="Go to source code">find_all</a>( <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -2411,7 +2461,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_max_by_field">#</a>
-			<code><a href="source-class-joosModel.html#1906" title="Go to source code">get_max_by_field</a>( <span>string <var>$name</var></span> )</code>
+			<code><a href="source-class-joosModel.html#961" title="Go to source code">get_max_by_field</a>( <span>string <var>$name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2455,7 +2505,7 @@ key=&gt;FALSE если необходимо сделать простой
 
 			<td class="name"><div>
 			<a class="anchor" href="#_insert_array">#</a>
-			<code><a href="source-class-joosModel.html#1918" title="Go to source code">insert_array</a>( <span>array <var>$array_values</var></span> )</code>
+			<code><a href="source-class-joosModel.html#973" title="Go to source code">insert_array</a>( <span>array <var>$array_values</var></span> )</code>
 
 			<div class="description short">
 				
@@ -2510,7 +2560,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#976" title="Go to source code"><var>$_tbl</var></a>
+					<a href="source-class-joosModel.html#27" title="Go to source code"><var>$_tbl</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -2541,7 +2591,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#983" title="Go to source code"><var>$_tbl_key</var></a>
+					<a href="source-class-joosModel.html#34" title="Go to source code"><var>$_tbl_key</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -2576,7 +2626,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#991" title="Go to source code"><var>$_error</var></a>
+					<a href="source-class-joosModel.html#42" title="Go to source code"><var>$_error</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -2605,7 +2655,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#998" title="Go to source code"><var>$_db</var></a>
+					<a href="source-class-joosModel.html#49" title="Go to source code"><var>$_db</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -2634,7 +2684,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#1005" title="Go to source code"><var>$_soft_delete</var></a>
+					<a href="source-class-joosModel.html#56" title="Go to source code"><var>$_soft_delete</var></a>
 			</td>
 			<td class="value"><code><span class="php-keyword1">FALSE</span></code></td>
 			<td class="description"><div>
@@ -2669,7 +2719,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#1013" title="Go to source code"><var>$__obj_name</var></a>
+					<a href="source-class-joosModel.html#64" title="Go to source code"><var>$__obj_name</var></a>
 			</td>
 			<td class="value"><code></code></td>
 			<td class="description"><div>
@@ -2698,7 +2748,7 @@ key=&gt;FALSE если необходимо сделать простой
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosModel.html#1019" title="Go to source code"><var>$_validation_error_messages</var></a>
+					<a href="source-class-joosModel.html#70" title="Go to source code"><var>$_validation_error_messages</var></a>
 			</td>
 			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
@@ -2721,7 +2771,7 @@ key=&gt;FALSE если необходимо сделать простой
 	</div>
 
 	<div id="footer">
-		Joostina CMS v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
+		Joostina CMS / CMF v2.* API API documentation generated by <a href="http://apigen.org" target="_blank">ApiGen 2.6.1</a>
 		&ndash; Template adapted by <a href="https://twitter.com/olvlvl" target="_blank">@olvlv</a> and <a href="http://www.joostina.ru">Joostina Team</a>
 	</div>
 </div>
