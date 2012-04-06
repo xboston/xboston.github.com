@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li class="active"><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -192,18 +180,16 @@
 <a href="#22" id="22" class="l">22: </a>        <span class="php-comment">//Хлебные крошки</span>
 <a href="#23" id="23" class="l">23: </a>        joosBreadcrumbs::instance()-&gt;add(<span class="php-quote">'Карта сайта'</span>);
 <a href="#24" id="24" class="l">24: </a>
-<a href="#25" id="25" class="l">25: </a>        <span class="php-comment">//Метаинформация страницы</span>
-<a href="#26" id="26" class="l">26: </a>        joosMetainfo::set_meta(<span class="php-quote">'sitemap'</span>, <span class="php-quote">''</span>, <span class="php-quote">''</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'title'</span> =&gt; <span class="php-quote">'Карта сайта'</span>));
-<a href="#27" id="27" class="l">27: </a>    }
+<a href="#25" id="25" class="l">25: </a>    }
+<a href="#26" id="26" class="l">26: </a>
+<a href="#27" id="27" class="l">27: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> index() {
 <a href="#28" id="28" class="l">28: </a>
-<a href="#29" id="29" class="l">29: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> index() {
+<a href="#29" id="29" class="l">29: </a>        <span class="php-var">$map</span> = midelSitemap::get_map();
 <a href="#30" id="30" class="l">30: </a>
-<a href="#31" id="31" class="l">31: </a>        <span class="php-var">$map</span> = midelSitemap::get_map();
-<a href="#32" id="32" class="l">32: </a>
-<a href="#33" id="33" class="l">33: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-quote">'map'</span> =&gt; <span class="php-var">$map</span>);
-<a href="#34" id="34" class="l">34: </a>    }
-<a href="#35" id="35" class="l">35: </a>
-<a href="#36" id="36" class="l">36: </a>}</code></pre>
+<a href="#31" id="31" class="l">31: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-quote">'map'</span> =&gt; <span class="php-var">$map</span>);
+<a href="#32" id="32" class="l">32: </a>    }
+<a href="#33" id="33" class="l">33: </a>
+<a href="#34" id="34" class="l">34: </a>}</code></pre>
 	</div>
 
 	<div id="footer">

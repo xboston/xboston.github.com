@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -181,7 +169,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
-				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
 				<li><a href="class-joosModule.html">joosModule</a></li>
 				<li><a href="class-joosNestedSet.html">joosNestedSet</a></li>
@@ -528,9 +515,9 @@
 </span><a href="#306" id="306" class="l">306: </a><span class="php-comment">     *
 </span><a href="#307" id="307" class="l">307: </a><span class="php-comment">     * @param string $text исходная строка
 </span><a href="#308" id="308" class="l">308: </a><span class="php-comment">     *
-</span><a href="#309" id="309" class="l">309: </a><span class="php-comment">     * @return type
+</span><a href="#309" id="309" class="l">309: </a><span class="php-comment">     * @return string
 </span><a href="#310" id="310" class="l">310: </a><span class="php-comment">     */</span>
-<a href="#311" id="311" class="l">311: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> to_canonikal(<span class="php-var">$text</span>) {
+<a href="#311" id="311" class="l">311: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> to_canonical(<span class="php-var">$text</span>) {
 <a href="#312" id="312" class="l">312: </a>        <span class="php-comment">// приводим к единому нижнему регистру</span>
 <a href="#313" id="313" class="l">313: </a>        <span class="php-var">$text</span> = joosString:: <span class="php-keyword2">strtolower</span>(<span class="php-var">$text</span>);
 <a href="#314" id="314" class="l">314: </a>
@@ -556,120 +543,86 @@
 <a href="#334" id="334" class="l">334: </a>        <span class="php-keyword1">return</span> <span class="php-var">$return</span>;
 <a href="#335" id="335" class="l">335: </a>    }
 <a href="#336" id="336" class="l">336: </a>
-<a href="#337" id="337" class="l">337: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> amp_replace(<span class="php-var">$text</span>) {
-<a href="#338" id="338" class="l">338: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'&amp;&amp;'</span>, <span class="php-quote">'*--*'</span>, <span class="php-var">$text</span>);
-<a href="#339" id="339" class="l">339: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'&amp;#'</span>, <span class="php-quote">'*-*'</span>, <span class="php-var">$text</span>);
-<a href="#340" id="340" class="l">340: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'&amp;amp;'</span>, <span class="php-quote">'&amp;'</span>, <span class="php-var">$text</span>);
-<a href="#341" id="341" class="l">341: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">preg_replace</span>(<span class="php-quote">'|&amp;(?![\w]+;)|'</span>, <span class="php-quote">'&amp;amp;'</span>, <span class="php-var">$text</span>);
-<a href="#342" id="342" class="l">342: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'*-*'</span>, <span class="php-quote">'&amp;#'</span>, <span class="php-var">$text</span>);
-<a href="#343" id="343" class="l">343: </a>        <span class="php-var">$text</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'*--*'</span>, <span class="php-quote">'&amp;&amp;'</span>, <span class="php-var">$text</span>);
-<a href="#344" id="344" class="l">344: </a>        <span class="php-keyword1">return</span> <span class="php-var">$text</span>;
-<a href="#345" id="345" class="l">345: </a>    }
-<a href="#346" id="346" class="l">346: </a>
-<a href="#347" id="347" class="l">347: </a>    <span class="php-keyword1">function</span> mosSmartSubstr(<span class="php-var">$text</span>, <span class="php-var">$length</span> = <span class="php-num">200</span>, <span class="php-var">$searchword</span> = <span class="php-quote">''</span>) {
-<a href="#348" id="348" class="l">348: </a>
-<a href="#349" id="349" class="l">349: </a>        <span class="php-var">$wordpos</span> = joosString::<span class="php-keyword2">strpos</span>(joosString::<span class="php-keyword2">strtolower</span>(<span class="php-var">$text</span>), joosString::<span class="php-keyword2">strtolower</span>(<span class="php-var">$searchword</span>));
-<a href="#350" id="350" class="l">350: </a>        <span class="php-var">$halfside</span> = <span class="php-keyword2">intval</span>(<span class="php-var">$wordpos</span> - <span class="php-var">$length</span> / <span class="php-num">2</span> - joosString::<span class="php-keyword2">strlen</span>(<span class="php-var">$searchword</span>));
-<a href="#351" id="351" class="l">351: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$wordpos</span> &amp;&amp; <span class="php-var">$halfside</span> &gt; <span class="php-num">0</span>) {
-<a href="#352" id="352" class="l">352: </a>            <span class="php-keyword1">return</span> <span class="php-quote">'...'</span> . joosString::<span class="php-keyword2">substr</span>(<span class="php-var">$text</span>, <span class="php-var">$halfside</span>, <span class="php-var">$length</span>) . <span class="php-quote">'...'</span>;
-<a href="#353" id="353" class="l">353: </a>        } <span class="php-keyword1">else</span> {
-<a href="#354" id="354" class="l">354: </a>            <span class="php-keyword1">return</span> joosString::<span class="php-keyword2">substr</span>(<span class="php-var">$text</span>, <span class="php-num">0</span>, <span class="php-var">$length</span>);
-<a href="#355" id="355" class="l">355: </a>        }
-<a href="#356" id="356" class="l">356: </a>    }
-<a href="#357" id="357" class="l">357: </a>
-<a href="#358" id="358" class="l">358: </a>    <span class="php-comment">/**
-</span><a href="#359" id="359" class="l">359: </a><span class="php-comment">     * Преобразование названия вложенной модели
-</span><a href="#360" id="360" class="l">360: </a><span class="php-comment">     * Требуется для определения файла содержащего множественный модели единого контроллера
-</span><a href="#361" id="361" class="l">361: </a><span class="php-comment">     * @tutorial UserGroops =&gt; User_Groops
-</span><a href="#362" id="362" class="l">362: </a><span class="php-comment">     *
-</span><a href="#363" id="363" class="l">363: </a><span class="php-comment">     * @param type $string
-</span><a href="#364" id="364" class="l">364: </a><span class="php-comment">     *
-</span><a href="#365" id="365" class="l">365: </a><span class="php-comment">     * @return string
-</span><a href="#366" id="366" class="l">366: </a><span class="php-comment">     */</span>
-<a href="#367" id="367" class="l">367: </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> underscore(<span class="php-var">$string</span>) {
-<a href="#368" id="368" class="l">368: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">strtolower</span>(<span class="php-keyword2">preg_replace</span>(<span class="php-quote">'/(?&lt;=\\w)([A-Z])/'</span>, <span class="php-quote">'_\\1'</span>, <span class="php-var">$string</span>));
-<a href="#369" id="369" class="l">369: </a>    }
-<a href="#370" id="370" class="l">370: </a>
-<a href="#371" id="371" class="l">371: </a>    <span class="php-comment">/**
-</span><a href="#372" id="372" class="l">372: </a><span class="php-comment">     * Кодировкищик, позволяющий хранить 8 492 487 570 записей всего в 6 символах.
-</span><a href="#373" id="373" class="l">373: </a><span class="php-comment">     *
-</span><a href="#374" id="374" class="l">374: </a><span class="php-comment">     * @param type $string
-</span><a href="#375" id="375" class="l">375: </a><span class="php-comment">     *
-</span><a href="#376" id="376" class="l">376: </a><span class="php-comment">     * @todo тут можно/лучше использовать base_convert
-</span><a href="#377" id="377" class="l">377: </a><span class="php-comment">     * @return type
-</span><a href="#378" id="378" class="l">378: </a><span class="php-comment">     */</span>
-<a href="#379" id="379" class="l">379: </a>    <span class="php-keyword1">function</span> id_decode(<span class="php-var">$string</span>) {
-<a href="#380" id="380" class="l">380: </a>        <span class="php-var">$chars</span> = <span class="php-quote">'23456789abcdeghkmnpqsuvxyzABCDEGHKLMNPQSUVXYZ'</span>; <span class="php-comment">// Используем непохожие друг на друга символы</span>
-<a href="#381" id="381" class="l">381: </a>        <span class="php-var">$length</span> = <span class="php-num">45</span>; <span class="php-comment">//strlen($chars); // если изменяем набор символов, то число нужно изменить</span>
-<a href="#382" id="382" class="l">382: </a>        <span class="php-var">$size</span> = <span class="php-keyword2">strlen</span>(<span class="php-var">$string</span>) - <span class="php-num">1</span>;
-<a href="#383" id="383" class="l">383: </a>        <span class="php-var">$array</span> = <span class="php-keyword2">str_split</span>(<span class="php-var">$string</span>);
-<a href="#384" id="384" class="l">384: </a>        <span class="php-var">$id</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$chars</span>, <span class="php-keyword2">array_pop</span>(<span class="php-var">$array</span>));
-<a href="#385" id="385" class="l">385: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$array</span> <span class="php-keyword1">as</span> <span class="php-var">$i</span> =&gt; <span class="php-var">$char</span>) {
-<a href="#386" id="386" class="l">386: </a>            <span class="php-var">$id</span> += <span class="php-keyword2">strpos</span>(<span class="php-var">$chars</span>, <span class="php-var">$char</span>) * <span class="php-keyword2">pow</span>(<span class="php-var">$length</span>, <span class="php-var">$size</span> - <span class="php-var">$i</span>);
-<a href="#387" id="387" class="l">387: </a>        }
-<a href="#388" id="388" class="l">388: </a>        <span class="php-keyword1">return</span> <span class="php-var">$id</span>;
-<a href="#389" id="389" class="l">389: </a>    }
-<a href="#390" id="390" class="l">390: </a>
-<a href="#391" id="391" class="l">391: </a>    <span class="php-comment">/**
-</span><a href="#392" id="392" class="l">392: </a><span class="php-comment">     * Вывод нуждной формы слова, в зависимости от пола
+<a href="#337" id="337" class="l">337: </a>    <span class="php-comment">/**
+</span><a href="#338" id="338" class="l">338: </a><span class="php-comment">     * Кодировкищик, позволяющий хранить 8 492 487 570 записей всего в 6 символах.
+</span><a href="#339" id="339" class="l">339: </a><span class="php-comment">     *
+</span><a href="#340" id="340" class="l">340: </a><span class="php-comment">     * @param type $string
+</span><a href="#341" id="341" class="l">341: </a><span class="php-comment">     *
+</span><a href="#342" id="342" class="l">342: </a><span class="php-comment">     * @todo тут можно/лучше использовать base_convert
+</span><a href="#343" id="343" class="l">343: </a><span class="php-comment">     * @return type
+</span><a href="#344" id="344" class="l">344: </a><span class="php-comment">     */</span>
+<a href="#345" id="345" class="l">345: </a>    <span class="php-keyword1">function</span> id_decode(<span class="php-var">$string</span>) {
+<a href="#346" id="346" class="l">346: </a>        <span class="php-var">$chars</span> = <span class="php-quote">'23456789abcdeghkmnpqsuvxyzABCDEGHKLMNPQSUVXYZ'</span>; <span class="php-comment">// Используем непохожие друг на друга символы</span>
+<a href="#347" id="347" class="l">347: </a>        <span class="php-var">$length</span> = <span class="php-num">45</span>; <span class="php-comment">//strlen($chars); // если изменяем набор символов, то число нужно изменить</span>
+<a href="#348" id="348" class="l">348: </a>        <span class="php-var">$size</span> = <span class="php-keyword2">strlen</span>(<span class="php-var">$string</span>) - <span class="php-num">1</span>;
+<a href="#349" id="349" class="l">349: </a>        <span class="php-var">$array</span> = <span class="php-keyword2">str_split</span>(<span class="php-var">$string</span>);
+<a href="#350" id="350" class="l">350: </a>        <span class="php-var">$id</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$chars</span>, <span class="php-keyword2">array_pop</span>(<span class="php-var">$array</span>));
+<a href="#351" id="351" class="l">351: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$array</span> <span class="php-keyword1">as</span> <span class="php-var">$i</span> =&gt; <span class="php-var">$char</span>) {
+<a href="#352" id="352" class="l">352: </a>            <span class="php-var">$id</span> += <span class="php-keyword2">strpos</span>(<span class="php-var">$chars</span>, <span class="php-var">$char</span>) * <span class="php-keyword2">pow</span>(<span class="php-var">$length</span>, <span class="php-var">$size</span> - <span class="php-var">$i</span>);
+<a href="#353" id="353" class="l">353: </a>        }
+<a href="#354" id="354" class="l">354: </a>        <span class="php-keyword1">return</span> <span class="php-var">$id</span>;
+<a href="#355" id="355" class="l">355: </a>    }
+<a href="#356" id="356" class="l">356: </a>
+<a href="#357" id="357" class="l">357: </a>    <span class="php-comment">/**
+</span><a href="#358" id="358" class="l">358: </a><span class="php-comment">     * Вывод нуждной формы слова, в зависимости от пола
+</span><a href="#359" id="359" class="l">359: </a><span class="php-comment">     *
+</span><a href="#360" id="360" class="l">360: </a><span class="php-comment">     *
+</span><a href="#361" id="361" class="l">361: </a><span class="php-comment">     * @tutorial joosText::sexerate( 1, array('умник','умница','умницо') );
+</span><a href="#362" id="362" class="l">362: </a><span class="php-comment">     * @tutorial joosText::sexerate( 'm', array('делал','делала','делало') )
+</span><a href="#363" id="363" class="l">363: </a><span class="php-comment">     *
+</span><a href="#364" id="364" class="l">364: </a><span class="php-comment">     * @param string $sex - пол, принимает варианты 1/2, м/ж, m/f. Если вариан  отсутствует - то используется 2й элементы неопределённого пола
+</span><a href="#365" id="365" class="l">365: </a><span class="php-comment">     * @param array $texts - 3х элементый массив слов для каждого пола 0-мужской, 1-женский, 2
+</span><a href="#366" id="366" class="l">366: </a><span class="php-comment">     * @return type
+</span><a href="#367" id="367" class="l">367: </a><span class="php-comment">     */</span>
+<a href="#368" id="368" class="l">368: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> sexerate(<span class="php-var">$sex</span>, <span class="php-keyword1">array</span> <span class="php-var">$texts</span>) {
+<a href="#369" id="369" class="l">369: </a>
+<a href="#370" id="370" class="l">370: </a>        <span class="php-var">$sex</span> = joosString::<span class="php-keyword2">strtolower</span>(<span class="php-var">$sex</span>);
+<a href="#371" id="371" class="l">371: </a>        <span class="php-var">$sex</span> = <span class="php-keyword2">strtr</span>(<span class="php-var">$sex</span>, <span class="php-keyword1">array</span>(
+<a href="#372" id="372" class="l">372: </a>            <span class="php-quote">'м'</span> =&gt; <span class="php-num">0</span>,
+<a href="#373" id="373" class="l">373: </a>            <span class="php-quote">'ж'</span> =&gt; <span class="php-num">1</span>,
+<a href="#374" id="374" class="l">374: </a>            <span class="php-quote">'m'</span> =&gt; <span class="php-num">0</span>,
+<a href="#375" id="375" class="l">375: </a>            <span class="php-quote">'f'</span> =&gt; <span class="php-num">1</span>,
+<a href="#376" id="376" class="l">376: </a>            <span class="php-quote">'муж'</span> =&gt; <span class="php-num">0</span>,
+<a href="#377" id="377" class="l">377: </a>            <span class="php-quote">'жен'</span> =&gt; <span class="php-num">1</span>,
+<a href="#378" id="378" class="l">378: </a>            <span class="php-quote">'male'</span> =&gt; <span class="php-num">0</span>,
+<a href="#379" id="379" class="l">379: </a>            <span class="php-quote">'female'</span> =&gt; <span class="php-num">1</span>,
+<a href="#380" id="380" class="l">380: </a>            <span class="php-quote">'мужчина'</span> =&gt; <span class="php-num">0</span>,
+<a href="#381" id="381" class="l">381: </a>            <span class="php-quote">'женщина'</span> =&gt; <span class="php-num">1</span>,
+<a href="#382" id="382" class="l">382: </a>                )
+<a href="#383" id="383" class="l">383: </a>        );
+<a href="#384" id="384" class="l">384: </a>
+<a href="#385" id="385" class="l">385: </a>
+<a href="#386" id="386" class="l">386: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$texts</span>[<span class="php-var">$sex</span>]) ? <span class="php-var">$texts</span>[<span class="php-var">$sex</span>] : <span class="php-var">$texts</span>[<span class="php-var">$sex</span>];
+<a href="#387" id="387" class="l">387: </a>    }
+<a href="#388" id="388" class="l">388: </a>
+<a href="#389" id="389" class="l">389: </a>    <span class="php-comment">/**
+</span><a href="#390" id="390" class="l">390: </a><span class="php-comment">     * Конвертер в JSON с подержкой прямого вывода русских символов
+</span><a href="#391" id="391" class="l">391: </a><span class="php-comment">     *
+</span><a href="#392" id="392" class="l">392: </a><span class="php-comment">     * @tutorial  joosText::json_encode( array(1=&gt;'Один',2=&gt;'Два') ); =&gt; {&quot;1&quot;:&quot;Один&quot;,&quot;2&quot;:&quot;Два&quot;}
 </span><a href="#393" id="393" class="l">393: </a><span class="php-comment">     *
-</span><a href="#394" id="394" class="l">394: </a><span class="php-comment">     *
-</span><a href="#395" id="395" class="l">395: </a><span class="php-comment">     * @tutorial joosText::sexerate( 1, array('умник','умница','умницо') );
-</span><a href="#396" id="396" class="l">396: </a><span class="php-comment">     * @tutorial joosText::sexerate( 'm', array('делал','делала','делало') )
-</span><a href="#397" id="397" class="l">397: </a><span class="php-comment">     *
-</span><a href="#398" id="398" class="l">398: </a><span class="php-comment">     * @param string $sex - пол, принимает варианты 1/2, м/ж, m/f. Если вариан  отсутствует - то используется 2й элементы неопределённого пола
-</span><a href="#399" id="399" class="l">399: </a><span class="php-comment">     * @param array $texts - 3х элементый массив слов для каждого пола 0-мужской, 1-женский, 2
-</span><a href="#400" id="400" class="l">400: </a><span class="php-comment">     * @return type
-</span><a href="#401" id="401" class="l">401: </a><span class="php-comment">     */</span>
-<a href="#402" id="402" class="l">402: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> sexerate(<span class="php-var">$sex</span>, <span class="php-keyword1">array</span> <span class="php-var">$texts</span>) {
-<a href="#403" id="403" class="l">403: </a>
-<a href="#404" id="404" class="l">404: </a>        <span class="php-var">$sex</span> = joosString::<span class="php-keyword2">strtolower</span>(<span class="php-var">$sex</span>);
-<a href="#405" id="405" class="l">405: </a>        <span class="php-var">$sex</span> = <span class="php-keyword2">strtr</span>(<span class="php-var">$sex</span>, <span class="php-keyword1">array</span>(
-<a href="#406" id="406" class="l">406: </a>            <span class="php-quote">'м'</span> =&gt; <span class="php-num">0</span>,
-<a href="#407" id="407" class="l">407: </a>            <span class="php-quote">'ж'</span> =&gt; <span class="php-num">1</span>,
-<a href="#408" id="408" class="l">408: </a>            <span class="php-quote">'m'</span> =&gt; <span class="php-num">0</span>,
-<a href="#409" id="409" class="l">409: </a>            <span class="php-quote">'f'</span> =&gt; <span class="php-num">1</span>,
-<a href="#410" id="410" class="l">410: </a>            <span class="php-quote">'муж'</span> =&gt; <span class="php-num">0</span>,
-<a href="#411" id="411" class="l">411: </a>            <span class="php-quote">'жен'</span> =&gt; <span class="php-num">1</span>,
-<a href="#412" id="412" class="l">412: </a>            <span class="php-quote">'male'</span> =&gt; <span class="php-num">0</span>,
-<a href="#413" id="413" class="l">413: </a>            <span class="php-quote">'female'</span> =&gt; <span class="php-num">1</span>,
-<a href="#414" id="414" class="l">414: </a>            <span class="php-quote">'мужчина'</span> =&gt; <span class="php-num">0</span>,
-<a href="#415" id="415" class="l">415: </a>            <span class="php-quote">'женщина'</span> =&gt; <span class="php-num">1</span>,
-<a href="#416" id="416" class="l">416: </a>                )
-<a href="#417" id="417" class="l">417: </a>        );
-<a href="#418" id="418" class="l">418: </a>
-<a href="#419" id="419" class="l">419: </a>
-<a href="#420" id="420" class="l">420: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">isset</span>(<span class="php-var">$texts</span>[<span class="php-var">$sex</span>]) ? <span class="php-var">$texts</span>[<span class="php-var">$sex</span>] : <span class="php-var">$texts</span>[<span class="php-var">$sex</span>];
-<a href="#421" id="421" class="l">421: </a>    }
-<a href="#422" id="422" class="l">422: </a>
-<a href="#423" id="423" class="l">423: </a>    <span class="php-comment">/**
-</span><a href="#424" id="424" class="l">424: </a><span class="php-comment">     * Конвертер в JSON с подержкой прямого вывода русских символов
-</span><a href="#425" id="425" class="l">425: </a><span class="php-comment">     *
-</span><a href="#426" id="426" class="l">426: </a><span class="php-comment">     * @tutorial  joosText::json_encode( array(1=&gt;'Один',2=&gt;'Два') ); =&gt; {&quot;1&quot;:&quot;Один&quot;,&quot;2&quot;:&quot;Два&quot;}
-</span><a href="#427" id="427" class="l">427: </a><span class="php-comment">     *
-</span><a href="#428" id="428" class="l">428: </a><span class="php-comment">     * @param mixed $value любой тип переменной
-</span><a href="#429" id="429" class="l">429: </a><span class="php-comment">     * @return json_string
-</span><a href="#430" id="430" class="l">430: </a><span class="php-comment">     */</span>
-<a href="#431" id="431" class="l">431: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$value</span>) {
-<a href="#432" id="432" class="l">432: </a>        <span class="php-var">$arr_replace_utf</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'\u0410'</span>, <span class="php-quote">'\u0430'</span>, <span class="php-quote">'\u0411'</span>, <span class="php-quote">'\u0431'</span>, <span class="php-quote">'\u0412'</span>, <span class="php-quote">'\u0432'</span>,
-<a href="#433" id="433" class="l">433: </a>            <span class="php-quote">'\u0413'</span>, <span class="php-quote">'\u0433'</span>, <span class="php-quote">'\u0414'</span>, <span class="php-quote">'\u0434'</span>, <span class="php-quote">'\u0415'</span>, <span class="php-quote">'\u0435'</span>, <span class="php-quote">'\u0401'</span>, <span class="php-quote">'\u0451'</span>, <span class="php-quote">'\u0416'</span>,
-<a href="#434" id="434" class="l">434: </a>            <span class="php-quote">'\u0436'</span>, <span class="php-quote">'\u0417'</span>, <span class="php-quote">'\u0437'</span>, <span class="php-quote">'\u0418'</span>, <span class="php-quote">'\u0438'</span>, <span class="php-quote">'\u0419'</span>, <span class="php-quote">'\u0439'</span>, <span class="php-quote">'\u041a'</span>, <span class="php-quote">'\u043a'</span>,
-<a href="#435" id="435" class="l">435: </a>            <span class="php-quote">'\u041b'</span>, <span class="php-quote">'\u043b'</span>, <span class="php-quote">'\u041c'</span>, <span class="php-quote">'\u043c'</span>, <span class="php-quote">'\u041d'</span>, <span class="php-quote">'\u043d'</span>, <span class="php-quote">'\u041e'</span>, <span class="php-quote">'\u043e'</span>, <span class="php-quote">'\u041f'</span>,
-<a href="#436" id="436" class="l">436: </a>            <span class="php-quote">'\u043f'</span>, <span class="php-quote">'\u0420'</span>, <span class="php-quote">'\u0440'</span>, <span class="php-quote">'\u0421'</span>, <span class="php-quote">'\u0441'</span>, <span class="php-quote">'\u0422'</span>, <span class="php-quote">'\u0442'</span>, <span class="php-quote">'\u0423'</span>, <span class="php-quote">'\u0443'</span>,
-<a href="#437" id="437" class="l">437: </a>            <span class="php-quote">'\u0424'</span>, <span class="php-quote">'\u0444'</span>, <span class="php-quote">'\u0425'</span>, <span class="php-quote">'\u0445'</span>, <span class="php-quote">'\u0426'</span>, <span class="php-quote">'\u0446'</span>, <span class="php-quote">'\u0427'</span>, <span class="php-quote">'\u0447'</span>, <span class="php-quote">'\u0428'</span>,
-<a href="#438" id="438" class="l">438: </a>            <span class="php-quote">'\u0448'</span>, <span class="php-quote">'\u0429'</span>, <span class="php-quote">'\u0449'</span>, <span class="php-quote">'\u042a'</span>, <span class="php-quote">'\u044a'</span>, <span class="php-quote">'\u042b'</span>, <span class="php-quote">'\u044b'</span>, <span class="php-quote">'\u042c'</span>, <span class="php-quote">'\u044c'</span>,
-<a href="#439" id="439" class="l">439: </a>            <span class="php-quote">'\u042d'</span>, <span class="php-quote">'\u044d'</span>, <span class="php-quote">'\u042e'</span>, <span class="php-quote">'\u044e'</span>, <span class="php-quote">'\u042f'</span>, <span class="php-quote">'\u044f'</span>);
-<a href="#440" id="440" class="l">440: </a>        <span class="php-var">$arr_replace_cyr</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'А'</span>, <span class="php-quote">'а'</span>, <span class="php-quote">'Б'</span>, <span class="php-quote">'б'</span>, <span class="php-quote">'В'</span>, <span class="php-quote">'в'</span>, <span class="php-quote">'Г'</span>, <span class="php-quote">'г'</span>, <span class="php-quote">'Д'</span>, <span class="php-quote">'д'</span>, <span class="php-quote">'Е'</span>, <span class="php-quote">'е'</span>,
-<a href="#441" id="441" class="l">441: </a>            <span class="php-quote">'Ё'</span>, <span class="php-quote">'ё'</span>, <span class="php-quote">'Ж'</span>, <span class="php-quote">'ж'</span>, <span class="php-quote">'З'</span>, <span class="php-quote">'з'</span>, <span class="php-quote">'И'</span>, <span class="php-quote">'и'</span>, <span class="php-quote">'Й'</span>, <span class="php-quote">'й'</span>, <span class="php-quote">'К'</span>, <span class="php-quote">'к'</span>, <span class="php-quote">'Л'</span>, <span class="php-quote">'л'</span>, <span class="php-quote">'М'</span>, <span class="php-quote">'м'</span>, <span class="php-quote">'Н'</span>, <span class="php-quote">'н'</span>, <span class="php-quote">'О'</span>, <span class="php-quote">'о'</span>,
-<a href="#442" id="442" class="l">442: </a>            <span class="php-quote">'П'</span>, <span class="php-quote">'п'</span>, <span class="php-quote">'Р'</span>, <span class="php-quote">'р'</span>, <span class="php-quote">'С'</span>, <span class="php-quote">'с'</span>, <span class="php-quote">'Т'</span>, <span class="php-quote">'т'</span>, <span class="php-quote">'У'</span>, <span class="php-quote">'у'</span>, <span class="php-quote">'Ф'</span>, <span class="php-quote">'ф'</span>, <span class="php-quote">'Х'</span>, <span class="php-quote">'х'</span>, <span class="php-quote">'Ц'</span>, <span class="php-quote">'ц'</span>, <span class="php-quote">'Ч'</span>, <span class="php-quote">'ч'</span>, <span class="php-quote">'Ш'</span>, <span class="php-quote">'ш'</span>,
-<a href="#443" id="443" class="l">443: </a>            <span class="php-quote">'Щ'</span>, <span class="php-quote">'щ'</span>, <span class="php-quote">'Ъ'</span>, <span class="php-quote">'ъ'</span>, <span class="php-quote">'Ы'</span>, <span class="php-quote">'ы'</span>, <span class="php-quote">'Ь'</span>, <span class="php-quote">'ь'</span>, <span class="php-quote">'Э'</span>, <span class="php-quote">'э'</span>, <span class="php-quote">'Ю'</span>, <span class="php-quote">'ю'</span>, <span class="php-quote">'Я'</span>, <span class="php-quote">'я'</span>);
-<a href="#444" id="444" class="l">444: </a>        <span class="php-var">$str1</span> = <span class="php-keyword2">json_encode</span>(<span class="php-var">$value</span>);
-<a href="#445" id="445" class="l">445: </a>        <span class="php-var">$str2</span> = <span class="php-keyword2">str_replace</span>(<span class="php-var">$arr_replace_utf</span>, <span class="php-var">$arr_replace_cyr</span>, <span class="php-var">$str1</span>);
-<a href="#446" id="446" class="l">446: </a>        <span class="php-keyword1">return</span> <span class="php-var">$str2</span>;
-<a href="#447" id="447" class="l">447: </a>    }
-<a href="#448" id="448" class="l">448: </a>
-<a href="#449" id="449" class="l">449: </a>}
-<a href="#450" id="450" class="l">450: </a></code></pre>
+</span><a href="#394" id="394" class="l">394: </a><span class="php-comment">     * @param mixed $value любой тип переменной
+</span><a href="#395" id="395" class="l">395: </a><span class="php-comment">     * @return json_string
+</span><a href="#396" id="396" class="l">396: </a><span class="php-comment">     */</span>
+<a href="#397" id="397" class="l">397: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$value</span>) {
+<a href="#398" id="398" class="l">398: </a>        <span class="php-var">$arr_replace_utf</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'\u0410'</span>, <span class="php-quote">'\u0430'</span>, <span class="php-quote">'\u0411'</span>, <span class="php-quote">'\u0431'</span>, <span class="php-quote">'\u0412'</span>, <span class="php-quote">'\u0432'</span>,
+<a href="#399" id="399" class="l">399: </a>            <span class="php-quote">'\u0413'</span>, <span class="php-quote">'\u0433'</span>, <span class="php-quote">'\u0414'</span>, <span class="php-quote">'\u0434'</span>, <span class="php-quote">'\u0415'</span>, <span class="php-quote">'\u0435'</span>, <span class="php-quote">'\u0401'</span>, <span class="php-quote">'\u0451'</span>, <span class="php-quote">'\u0416'</span>,
+<a href="#400" id="400" class="l">400: </a>            <span class="php-quote">'\u0436'</span>, <span class="php-quote">'\u0417'</span>, <span class="php-quote">'\u0437'</span>, <span class="php-quote">'\u0418'</span>, <span class="php-quote">'\u0438'</span>, <span class="php-quote">'\u0419'</span>, <span class="php-quote">'\u0439'</span>, <span class="php-quote">'\u041a'</span>, <span class="php-quote">'\u043a'</span>,
+<a href="#401" id="401" class="l">401: </a>            <span class="php-quote">'\u041b'</span>, <span class="php-quote">'\u043b'</span>, <span class="php-quote">'\u041c'</span>, <span class="php-quote">'\u043c'</span>, <span class="php-quote">'\u041d'</span>, <span class="php-quote">'\u043d'</span>, <span class="php-quote">'\u041e'</span>, <span class="php-quote">'\u043e'</span>, <span class="php-quote">'\u041f'</span>,
+<a href="#402" id="402" class="l">402: </a>            <span class="php-quote">'\u043f'</span>, <span class="php-quote">'\u0420'</span>, <span class="php-quote">'\u0440'</span>, <span class="php-quote">'\u0421'</span>, <span class="php-quote">'\u0441'</span>, <span class="php-quote">'\u0422'</span>, <span class="php-quote">'\u0442'</span>, <span class="php-quote">'\u0423'</span>, <span class="php-quote">'\u0443'</span>,
+<a href="#403" id="403" class="l">403: </a>            <span class="php-quote">'\u0424'</span>, <span class="php-quote">'\u0444'</span>, <span class="php-quote">'\u0425'</span>, <span class="php-quote">'\u0445'</span>, <span class="php-quote">'\u0426'</span>, <span class="php-quote">'\u0446'</span>, <span class="php-quote">'\u0427'</span>, <span class="php-quote">'\u0447'</span>, <span class="php-quote">'\u0428'</span>,
+<a href="#404" id="404" class="l">404: </a>            <span class="php-quote">'\u0448'</span>, <span class="php-quote">'\u0429'</span>, <span class="php-quote">'\u0449'</span>, <span class="php-quote">'\u042a'</span>, <span class="php-quote">'\u044a'</span>, <span class="php-quote">'\u042b'</span>, <span class="php-quote">'\u044b'</span>, <span class="php-quote">'\u042c'</span>, <span class="php-quote">'\u044c'</span>,
+<a href="#405" id="405" class="l">405: </a>            <span class="php-quote">'\u042d'</span>, <span class="php-quote">'\u044d'</span>, <span class="php-quote">'\u042e'</span>, <span class="php-quote">'\u044e'</span>, <span class="php-quote">'\u042f'</span>, <span class="php-quote">'\u044f'</span>);
+<a href="#406" id="406" class="l">406: </a>        <span class="php-var">$arr_replace_cyr</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'А'</span>, <span class="php-quote">'а'</span>, <span class="php-quote">'Б'</span>, <span class="php-quote">'б'</span>, <span class="php-quote">'В'</span>, <span class="php-quote">'в'</span>, <span class="php-quote">'Г'</span>, <span class="php-quote">'г'</span>, <span class="php-quote">'Д'</span>, <span class="php-quote">'д'</span>, <span class="php-quote">'Е'</span>, <span class="php-quote">'е'</span>,
+<a href="#407" id="407" class="l">407: </a>            <span class="php-quote">'Ё'</span>, <span class="php-quote">'ё'</span>, <span class="php-quote">'Ж'</span>, <span class="php-quote">'ж'</span>, <span class="php-quote">'З'</span>, <span class="php-quote">'з'</span>, <span class="php-quote">'И'</span>, <span class="php-quote">'и'</span>, <span class="php-quote">'Й'</span>, <span class="php-quote">'й'</span>, <span class="php-quote">'К'</span>, <span class="php-quote">'к'</span>, <span class="php-quote">'Л'</span>, <span class="php-quote">'л'</span>, <span class="php-quote">'М'</span>, <span class="php-quote">'м'</span>, <span class="php-quote">'Н'</span>, <span class="php-quote">'н'</span>, <span class="php-quote">'О'</span>, <span class="php-quote">'о'</span>,
+<a href="#408" id="408" class="l">408: </a>            <span class="php-quote">'П'</span>, <span class="php-quote">'п'</span>, <span class="php-quote">'Р'</span>, <span class="php-quote">'р'</span>, <span class="php-quote">'С'</span>, <span class="php-quote">'с'</span>, <span class="php-quote">'Т'</span>, <span class="php-quote">'т'</span>, <span class="php-quote">'У'</span>, <span class="php-quote">'у'</span>, <span class="php-quote">'Ф'</span>, <span class="php-quote">'ф'</span>, <span class="php-quote">'Х'</span>, <span class="php-quote">'х'</span>, <span class="php-quote">'Ц'</span>, <span class="php-quote">'ц'</span>, <span class="php-quote">'Ч'</span>, <span class="php-quote">'ч'</span>, <span class="php-quote">'Ш'</span>, <span class="php-quote">'ш'</span>,
+<a href="#409" id="409" class="l">409: </a>            <span class="php-quote">'Щ'</span>, <span class="php-quote">'щ'</span>, <span class="php-quote">'Ъ'</span>, <span class="php-quote">'ъ'</span>, <span class="php-quote">'Ы'</span>, <span class="php-quote">'ы'</span>, <span class="php-quote">'Ь'</span>, <span class="php-quote">'ь'</span>, <span class="php-quote">'Э'</span>, <span class="php-quote">'э'</span>, <span class="php-quote">'Ю'</span>, <span class="php-quote">'ю'</span>, <span class="php-quote">'Я'</span>, <span class="php-quote">'я'</span>);
+<a href="#410" id="410" class="l">410: </a>        <span class="php-var">$str1</span> = <span class="php-keyword2">json_encode</span>(<span class="php-var">$value</span>);
+<a href="#411" id="411" class="l">411: </a>        <span class="php-var">$str2</span> = <span class="php-keyword2">str_replace</span>(<span class="php-var">$arr_replace_utf</span>, <span class="php-var">$arr_replace_cyr</span>, <span class="php-var">$str1</span>);
+<a href="#412" id="412" class="l">412: </a>        <span class="php-keyword1">return</span> <span class="php-var">$str2</span>;
+<a href="#413" id="413" class="l">413: </a>    }
+<a href="#414" id="414" class="l">414: </a>
+<a href="#415" id="415" class="l">415: </a>}
+<a href="#416" id="416" class="l">416: </a></code></pre>
 	</div>
 
 	<div id="footer">

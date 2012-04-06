@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li class="active"><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -412,7 +400,7 @@
 <a href="#242" id="242" class="l">242: </a>        <span class="php-var">$xml</span>[] = <span class="php-keyword2">implode</span>(<span class="php-quote">&quot;\n&quot;</span>, <span class="php-var">$sitemap</span>);
 <a href="#243" id="243" class="l">243: </a>        <span class="php-var">$xml</span>[] = <span class="php-quote">&quot;&lt;/sitemapindex&gt;&quot;</span>;
 <a href="#244" id="244" class="l">244: </a>
-<a href="#245" id="245" class="l">245: </a>        <span class="php-comment">//is_file( JPATH_BASE . DS . 'sitemap.xml' ) ? unlink(JPATH_BASE . DS . 'sitemap.xml') : null;</span>
+<a href="#245" id="245" class="l">245: </a>        <span class="php-comment">// joosFile::exists( JPATH_BASE . DS . 'sitemap.xml' ) ? unlink(JPATH_BASE . DS . 'sitemap.xml') : null;</span>
 <a href="#246" id="246" class="l">246: </a>
 <a href="#247" id="247" class="l">247: </a>        <span class="php-var">$xml</span> = <span class="php-keyword1">new</span> SimpleXMLElement(<span class="php-keyword2">implode</span>(<span class="php-quote">&quot;\n&quot;</span>, <span class="php-var">$xml</span>));
 <a href="#248" id="248" class="l">248: </a>        <span class="php-var">$xml</span>-&gt;asXML(JPATH_BASE . DS . <span class="php-quote">'sitemap.xml'</span>);

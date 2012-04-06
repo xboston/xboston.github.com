@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li class="active"><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -320,7 +308,7 @@
 <a href="#149" id="149" class="l">149: </a>        <span class="php-var">$file</span> = <span class="php-quote">'modules'</span> . DS . <span class="php-var">$item</span>-&gt;module . DS . <span class="php-var">$item</span>-&gt;module . <span class="php-quote">'.params.php'</span>;
 <a href="#150" id="150" class="l">150: </a>        <span class="php-var">$file</span> = <span class="php-var">$item</span>-&gt;client_id ? JPATH_BASE . DS . JPATH_BASE_ADMIN . <span class="php-var">$file</span> : JPATH_BASE . DS . <span class="php-var">$file</span>;
 <a href="#151" id="151" class="l">151: </a>
-<a href="#152" id="152" class="l">152: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span>)) {
+<a href="#152" id="152" class="l">152: </a>        <span class="php-keyword1">if</span> (joosFile::exists(<span class="php-var">$file</span>)) {
 <a href="#153" id="153" class="l">153: </a>            <span class="php-keyword1">require</span>( <span class="php-var">$file</span> );
 <a href="#154" id="154" class="l">154: </a>            <span class="php-keyword1">return</span> <span class="php-var">$extension_params</span>;
 <a href="#155" id="155" class="l">155: </a>        } <span class="php-keyword1">else</span> {

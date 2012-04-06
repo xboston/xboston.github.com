@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -157,7 +145,6 @@
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
 				<li><a href="class-Jevix.html">Jevix</a></li>
 				<li><a href="class-JJevix.html">JJevix</a></li>
-				<li><a href="class-joosAdminToolbar.html">joosAdminToolbar</a></li>
 				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
 				<li><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></li>
@@ -166,8 +153,6 @@
 				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
 				<li><a href="class-modelAdminCoder_Faker.html">modelAdminCoder_Faker</a></li>
-				<li><a href="class-mosMenuBar.html">mosMenuBar</a></li>
-				<li><a href="class-paramsContent.html">paramsContent</a></li>
 				<li><a href="class-qqFileUploader.html">qqFileUploader</a></li>
 				<li><a href="class-qqUploadedFileForm.html">qqUploadedFileForm</a></li>
 				<li><a href="class-Route.html">Route</a></li>
@@ -194,13 +179,13 @@
 				<li><a href="class-joosDatabaseException.html">joosDatabaseException</a></li>
 				<li><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a></li>
 				<li><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></li>
+				<li><a href="class-joosImageLibrariesException.html">joosImageLibrariesException</a></li>
 				<li><a href="class-joosModulesException.html">joosModulesException</a></li>
 			</ul>
 
 
 			<h3>Functions</h3>
 			<ul>
-				<li><a href="function-navigation_ul_li_recurse.html">navigation_ul_li_recurse</a></li>
 				<li><a href="function-uniord.html">uniord</a></li>
 			</ul>
 		</div>
@@ -294,13 +279,13 @@
 <a href="#81" id="81" class="l"> 81: </a>
 <a href="#82" id="82" class="l"> 82: </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> get_file_object(<span class="php-var">$file_name</span>) {
 <a href="#83" id="83" class="l"> 83: </a>        <span class="php-var">$file_path</span> = <span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>;
-<a href="#84" id="84" class="l"> 84: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file_name</span>[<span class="php-num">0</span>] !== <span class="php-quote">'.'</span>) {
+<a href="#84" id="84" class="l"> 84: </a>        <span class="php-keyword1">if</span> (joosFile::exists(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file_name</span>[<span class="php-num">0</span>] !== <span class="php-quote">'.'</span>) {
 <a href="#85" id="85" class="l"> 85: </a>            <span class="php-var">$file</span> = <span class="php-keyword1">new</span> stdClass();
 <a href="#86" id="86" class="l"> 86: </a>            <span class="php-var">$file</span>-&gt;name = <span class="php-var">$file_name</span>;
 <a href="#87" id="87" class="l"> 87: </a>            <span class="php-var">$file</span>-&gt;size = <span class="php-keyword2">filesize</span>(<span class="php-var">$file_path</span>);
 <a href="#88" id="88" class="l"> 88: </a>            <span class="php-var">$file</span>-&gt;url = <span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_url'</span>] . <span class="php-keyword2">rawurlencode</span>(<span class="php-var">$file</span>-&gt;name);
 <a href="#89" id="89" class="l"> 89: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'image_versions'</span>] <span class="php-keyword1">as</span> <span class="php-var">$version</span> =&gt; <span class="php-var">$options</span>) {
-<a href="#90" id="90" class="l"> 90: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$options</span>[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>)) {
+<a href="#90" id="90" class="l"> 90: </a>                <span class="php-keyword1">if</span> ( joosFile::exists(<span class="php-var">$options</span>[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>)) {
 <a href="#91" id="91" class="l"> 91: </a>                    <span class="php-var">$file</span>-&gt;{<span class="php-var">$version</span> . <span class="php-quote">'_url'</span>} = <span class="php-var">$options</span>[<span class="php-quote">'upload_url'</span>]
 <a href="#92" id="92" class="l"> 92: </a>                            . <span class="php-keyword2">rawurlencode</span>(<span class="php-var">$file</span>-&gt;name);
 <a href="#93" id="93" class="l"> 93: </a>                }
@@ -424,7 +409,7 @@
 <a href="#211" id="211" class="l">211: </a>            <span class="php-var">$file_name</span> .= <span class="php-quote">'.'</span> . <span class="php-var">$matches</span>[<span class="php-num">1</span>];
 <a href="#212" id="212" class="l">212: </a>        }
 <a href="#213" id="213" class="l">213: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'discard_aborted_uploads'</span>]) {
-<a href="#214" id="214" class="l">214: </a>            <span class="php-keyword1">while</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>)) {
+<a href="#214" id="214" class="l">214: </a>            <span class="php-keyword1">while</span> ( joosFile::exists(<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>)) {
 <a href="#215" id="215" class="l">215: </a>                <span class="php-var">$file_name</span> = <span class="php-var">$this</span>-&gt;upcount_name(<span class="php-var">$file_name</span>);
 <a href="#216" id="216" class="l">216: </a>            }
 <a href="#217" id="217" class="l">217: </a>        }
@@ -466,7 +451,7 @@
 <a href="#253" id="253" class="l">253: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$error</span> &amp;&amp; <span class="php-var">$file</span>-&gt;name) {
 <a href="#254" id="254" class="l">254: </a>            <span class="php-var">$file_path</span> = <span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file</span>-&gt;name;
 <a href="#255" id="255" class="l">255: </a>            <span class="php-var">$append_file</span> = !<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'discard_aborted_uploads'</span>] &amp;&amp;
-<a href="#256" id="256" class="l">256: </a>                    <span class="php-keyword2">is_file</span>(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file</span>-&gt;size &gt; <span class="php-keyword2">filesize</span>(<span class="php-var">$file_path</span>);
+<a href="#256" id="256" class="l">256: </a>                     joosFile::exists(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file</span>-&gt;size &gt; <span class="php-keyword2">filesize</span>(<span class="php-var">$file_path</span>);
 <a href="#257" id="257" class="l">257: </a>            <span class="php-keyword2">clearstatcache</span>();
 <a href="#258" id="258" class="l">258: </a>            <span class="php-keyword1">if</span> (<span class="php-var">$uploaded_file</span> &amp;&amp; <span class="php-keyword2">is_uploaded_file</span>(<span class="php-var">$uploaded_file</span>)) {
 <a href="#259" id="259" class="l">259: </a>                <span class="php-comment">// multipart/formdata uploads (POST method uploads)</span>
@@ -520,7 +505,7 @@
 <a href="#307" id="307" class="l">307: </a>        } <span class="php-keyword1">else</span> {
 <a href="#308" id="308" class="l">308: </a>            <span class="php-var">$info</span> = <span class="php-var">$this</span>-&gt;get_file_objects();
 <a href="#309" id="309" class="l">309: </a>        }
-<a href="#310" id="310" class="l">310: </a>        <span class="php-keyword2">header</span>(<span class="php-quote">'Content-type: application/json'</span>);
+<a href="#310" id="310" class="l">310: </a>        joosRequest::send_headers(<span class="php-quote">'Content-type: application/json'</span>);
 <a href="#311" id="311" class="l">311: </a>        <span class="php-keyword1">echo</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$info</span>);
 <a href="#312" id="312" class="l">312: </a>    }
 <a href="#313" id="313" class="l">313: </a>
@@ -555,19 +540,19 @@
 <a href="#342" id="342" class="l">342: </a>                                    <span class="php-var">$upload</span>[<span class="php-quote">'type'</span>] : <span class="php-keyword1">null</span>), <span class="php-keyword1">isset</span>(<span class="php-var">$upload</span>[<span class="php-quote">'error'</span>]) ? <span class="php-var">$upload</span>[<span class="php-quote">'error'</span>] : <span class="php-keyword1">null</span>
 <a href="#343" id="343" class="l">343: </a>            );
 <a href="#344" id="344" class="l">344: </a>        }
-<a href="#345" id="345" class="l">345: </a>        <span class="php-keyword2">header</span>(<span class="php-quote">'Vary: Accept'</span>);
+<a href="#345" id="345" class="l">345: </a>        joosRequest::send_headers(<span class="php-quote">'Vary: Accept'</span>);
 <a href="#346" id="346" class="l">346: </a>        <span class="php-var">$json</span> = <span class="php-keyword2">json_encode</span>(<span class="php-var">$info</span>);
 <a href="#347" id="347" class="l">347: </a>        <span class="php-var">$redirect</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'redirect'</span>]) ?
 <a href="#348" id="348" class="l">348: </a>                <span class="php-keyword2">stripslashes</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'redirect'</span>]) : <span class="php-keyword1">null</span>;
 <a href="#349" id="349" class="l">349: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$redirect</span>) {
-<a href="#350" id="350" class="l">350: </a>            <span class="php-keyword2">header</span>(<span class="php-quote">'Location: '</span> . <span class="php-keyword2">sprintf</span>(<span class="php-var">$redirect</span>, <span class="php-keyword2">rawurlencode</span>(<span class="php-var">$json</span>)));
+<a href="#350" id="350" class="l">350: </a>            joosRequest::send_headers(<span class="php-quote">'Location: '</span> . <span class="php-keyword2">sprintf</span>(<span class="php-var">$redirect</span>, <span class="php-keyword2">rawurlencode</span>(<span class="php-var">$json</span>)));
 <a href="#351" id="351" class="l">351: </a>            <span class="php-keyword1">return</span>;
 <a href="#352" id="352" class="l">352: </a>        }
 <a href="#353" id="353" class="l">353: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword1">isset</span>(<span class="php-var">$_SERVER</span>[<span class="php-quote">'HTTP_ACCEPT'</span>]) &amp;&amp;
 <a href="#354" id="354" class="l">354: </a>                (<span class="php-keyword2">strpos</span>(<span class="php-var">$_SERVER</span>[<span class="php-quote">'HTTP_ACCEPT'</span>], <span class="php-quote">'application/json'</span>) !== <span class="php-keyword1">false</span>)) {
-<a href="#355" id="355" class="l">355: </a>            <span class="php-keyword2">header</span>(<span class="php-quote">'Content-type: application/json'</span>);
+<a href="#355" id="355" class="l">355: </a>            joosRequest::send_headers(<span class="php-quote">'Content-type: application/json'</span>);
 <a href="#356" id="356" class="l">356: </a>        } <span class="php-keyword1">else</span> {
-<a href="#357" id="357" class="l">357: </a>            <span class="php-keyword2">header</span>(<span class="php-quote">'Content-type: text/plain'</span>);
+<a href="#357" id="357" class="l">357: </a>            joosRequest::send_headers(<span class="php-quote">'Content-type: text/plain'</span>);
 <a href="#358" id="358" class="l">358: </a>        }
 <a href="#359" id="359" class="l">359: </a>        <span class="php-keyword1">echo</span> <span class="php-var">$json</span>;
 <a href="#360" id="360" class="l">360: </a>    }
@@ -576,16 +561,16 @@
 <a href="#363" id="363" class="l">363: </a>        <span class="php-var">$file_name</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'file'</span>]) ?
 <a href="#364" id="364" class="l">364: </a>                <span class="php-keyword2">basename</span>(<span class="php-keyword2">stripslashes</span>(<span class="php-var">$_REQUEST</span>[<span class="php-quote">'file'</span>])) : <span class="php-keyword1">null</span>;
 <a href="#365" id="365" class="l">365: </a>        <span class="php-var">$file_path</span> = <span class="php-var">$this</span>-&gt;options[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>;
-<a href="#366" id="366" class="l">366: </a>        <span class="php-var">$success</span> = <span class="php-keyword2">is_file</span>(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file_name</span>[<span class="php-num">0</span>] !== <span class="php-quote">'.'</span> &amp;&amp; <span class="php-keyword2">unlink</span>(<span class="php-var">$file_path</span>);
+<a href="#366" id="366" class="l">366: </a>        <span class="php-var">$success</span> =  joosFile::exists(<span class="php-var">$file_path</span>) &amp;&amp; <span class="php-var">$file_name</span>[<span class="php-num">0</span>] !== <span class="php-quote">'.'</span> &amp;&amp; <span class="php-keyword2">unlink</span>(<span class="php-var">$file_path</span>);
 <a href="#367" id="367" class="l">367: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$success</span>) {
 <a href="#368" id="368" class="l">368: </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;options[<span class="php-quote">'image_versions'</span>] <span class="php-keyword1">as</span> <span class="php-var">$options</span>) {
 <a href="#369" id="369" class="l">369: </a>                <span class="php-var">$file</span> = <span class="php-var">$options</span>[<span class="php-quote">'upload_dir'</span>] . <span class="php-var">$file_name</span>;
-<a href="#370" id="370" class="l">370: </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span>)) {
+<a href="#370" id="370" class="l">370: </a>                <span class="php-keyword1">if</span> ( joosFile::exists(<span class="php-var">$file</span>)) {
 <a href="#371" id="371" class="l">371: </a>                    <span class="php-keyword2">unlink</span>(<span class="php-var">$file</span>);
 <a href="#372" id="372" class="l">372: </a>                }
 <a href="#373" id="373" class="l">373: </a>            }
 <a href="#374" id="374" class="l">374: </a>        }
-<a href="#375" id="375" class="l">375: </a>        <span class="php-keyword2">header</span>(<span class="php-quote">'Content-type: application/json'</span>);
+<a href="#375" id="375" class="l">375: </a>        joosRequest::send_headers(<span class="php-quote">'Content-type: application/json'</span>);
 <a href="#376" id="376" class="l">376: </a>        <span class="php-keyword1">echo</span> <span class="php-keyword2">json_encode</span>(<span class="php-var">$success</span>);
 <a href="#377" id="377" class="l">377: </a>    }
 <a href="#378" id="378" class="l">378: </a>

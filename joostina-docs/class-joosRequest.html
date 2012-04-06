@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -64,23 +64,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -116,13 +108,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -180,7 +168,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
-				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
 				<li><a href="class-joosModule.html">joosModule</a></li>
 				<li><a href="class-joosNestedSet.html">joosNestedSet</a></li>
@@ -1142,6 +1129,44 @@ IP адрес не получен<br />
 			</div>
 			</div></td>
 		</tr>
+		<tr data-order="send_headers" id="_send_headers">
+
+			<td class="attributes"><code>
+				
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_send_headers">#</a>
+			<code><a href="source-class-joosRequest.html#263" title="Go to source code">send_headers</a>( <span>$code_string <var>$code_string</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Отправка HTTP заголовков</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Отправка HTTP заголовков</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$code_string</var></dt>
+						<dd><code>$code_string</code></dd>
+					</dl></div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
 		<tr data-order="send_headers_by_code" id="_send_headers_by_code">
 
 			<td class="attributes"><code>
@@ -1154,23 +1179,25 @@ IP адрес не получен<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_send_headers_by_code">#</a>
-			<code><a href="source-class-joosRequest.html#263" title="Go to source code">send_headers_by_code</a>( <span>integer <var>$code</var> = <span class="php-num">200</span></span> )</code>
+			<code><a href="source-class-joosRequest.html#273" title="Go to source code">send_headers_by_code</a>( <span>integer <var>$code_num</var> = <span class="php-num">200</span></span> )</code>
 
 			<div class="description short">
 				
-<p>Установка кода в заголовок страницы</p>
+<p>Установка кода HTTP ответа в заголовок
+страницы</p>
 
 			</div>
 
 			<div class="description detailed hidden">
 				
-<p>Установка кода в заголовок страницы</p>
+<p>Установка кода HTTP ответа в заголовок
+страницы</p>
 
 
 
 					<h4>Parameters</h4>
 					<div class="list"><dl>
-						<dt><var>$code</var></dt>
+						<dt><var>$code_num</var></dt>
 						<dd><code>integer</code><br> номер кода</dd>
 					</dl></div>
 
@@ -1178,10 +1205,10 @@ IP адрес не получен<br />
 
 					<h4>Tutorial</h4>
 					<div class="list">
-							joosCore::send_headers_by_code(200);<br />
-							joosCore::send_headers_by_code(301);<br />
-							joosCore::send_headers_by_code(404);<br />
-							joosCore::send_headers_by_code(504);<br />
+							joosRequest::send_headers_by_code(200);<br />
+							joosRequest::send_headers_by_code(301);<br />
+							joosRequest::send_headers_by_code(404);<br />
+							joosRequest::send_headers_by_code(504);<br />
 					</div>
 
 			</div>
@@ -1199,7 +1226,7 @@ IP адрес не получен<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_console">#</a>
-			<code><a href="source-class-joosRequest.html#338" title="Go to source code">is_console</a>( )</code>
+			<code><a href="source-class-joosRequest.html#356" title="Go to source code">is_console</a>( )</code>
 
 			<div class="description short">
 				

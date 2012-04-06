@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -181,7 +169,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
-				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
 				<li><a href="class-joosModule.html">joosModule</a></li>
 				<li><a href="class-joosNestedSet.html">joosNestedSet</a></li>
@@ -281,16 +268,16 @@
 <a href="#59" id="59" class="l"> 59: </a>            <span class="php-keyword2">session_start</span>();
 <a href="#60" id="60" class="l"> 60: </a>        }
 <a href="#61" id="61" class="l"> 61: </a>
-<a href="#62" id="62" class="l"> 62: </a>        <span class="php-var">$mosmsg</span> = joosRequest::session(<span class="php-quote">'joostina.mosmsg'</span>, <span class="php-keyword1">false</span>);
+<a href="#62" id="62" class="l"> 62: </a>        <span class="php-var">$message</span> = joosRequest::session(<span class="php-quote">'joostina.mosmsg'</span>, <span class="php-keyword1">false</span>);
 <a href="#63" id="63" class="l"> 63: </a>
-<a href="#64" id="64" class="l"> 64: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$mosmsg</span> != <span class="php-quote">''</span> &amp;&amp; joosString::<span class="php-keyword2">strlen</span>(<span class="php-var">$mosmsg</span>) &gt; <span class="php-num">300</span>) { <span class="php-comment">// выводим сообщения не длинее 300 символов</span>
-<a href="#65" id="65" class="l"> 65: </a>            <span class="php-var">$mosmsg</span> = joosString::<span class="php-keyword2">substr</span>(<span class="php-var">$mosmsg</span>, <span class="php-num">0</span>, <span class="php-num">300</span>);
+<a href="#64" id="64" class="l"> 64: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$message</span> != <span class="php-quote">''</span> &amp;&amp; joosString::<span class="php-keyword2">strlen</span>(<span class="php-var">$message</span>) &gt; <span class="php-num">300</span>) { <span class="php-comment">// выводим сообщения не длинее 300 символов</span>
+<a href="#65" id="65" class="l"> 65: </a>            <span class="php-var">$message</span> = joosString::<span class="php-keyword2">substr</span>(<span class="php-var">$message</span>, <span class="php-num">0</span>, <span class="php-num">300</span>);
 <a href="#66" id="66" class="l"> 66: </a>        }
 <a href="#67" id="67" class="l"> 67: </a>
 <a href="#68" id="68" class="l"> 68: </a>        <span class="php-comment">/**
 </span><a href="#69" id="69" class="l"> 69: </a><span class="php-comment">          @var $_SESSION array */</span>
 <a href="#70" id="70" class="l"> 70: </a>        <span class="php-keyword1">unset</span>(<span class="php-var">$_SESSION</span>[<span class="php-quote">'joostina.mosmsg'</span>]);
-<a href="#71" id="71" class="l"> 71: </a>        <span class="php-keyword1">return</span> <span class="php-var">$mosmsg</span> ? <span class="php-quote">'&lt;div class=&quot;b-system_message&quot;&gt;'</span> . <span class="php-var">$mosmsg</span> . <span class="php-quote">'&lt;/div&gt;'</span> : <span class="php-quote">''</span>;
+<a href="#71" id="71" class="l"> 71: </a>        <span class="php-keyword1">return</span> <span class="php-var">$message</span> ? <span class="php-quote">'&lt;div class=&quot;b-system_message&quot;&gt;'</span> . <span class="php-var">$message</span> . <span class="php-quote">'&lt;/div&gt;'</span> : <span class="php-quote">''</span>;
 <a href="#72" id="72" class="l"> 72: </a>    }
 <a href="#73" id="73" class="l"> 73: </a>
 <a href="#74" id="74" class="l"> 74: </a>    <span class="php-comment">/*

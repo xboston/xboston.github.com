@@ -17,31 +17,19 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Acls.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Categories.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Coder.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Content.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Mainpage.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Metainfo.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Modules.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Pages.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Quickicons.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Site.html</loc>
@@ -92,16 +80,10 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Models.Coder.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Content.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Models.Modules.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Models.Pages.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Quickicons.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Models.Sitemap.html</loc>
@@ -137,9 +119,6 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAdminPagenator.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosAdminToolbar.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAdminToolbarButtons.html</loc>
@@ -265,9 +244,6 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosMail.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosMetainfo.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosModel.html</loc>
 </url>
 <url>
@@ -371,6 +347,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosFolderLibrariesException.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosImageLibrariesException.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosModulesException.html</loc>

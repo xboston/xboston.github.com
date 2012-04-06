@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -208,7 +196,7 @@
 <a href="#37" id="37" class="l">37: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> display(<span class="php-var">$name</span>, <span class="php-var">$content</span>, <span class="php-var">$hiddenField</span>, <span class="php-var">$width</span>, <span class="php-var">$height</span>, <span class="php-var">$col</span>, <span class="php-var">$row</span>, <span class="php-var">$params</span>) {
 <a href="#38" id="38" class="l">38: </a>
 <a href="#39" id="39" class="l">39: </a>        <span class="php-var">$toolbar</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$params</span>[<span class="php-quote">'toolbar'</span>]) ? <span class="php-var">$params</span>[<span class="php-quote">'toolbar'</span>] : <span class="php-quote">'complete'</span>;
-<a href="#40" id="40" class="l">40: </a>        <span class="php-var">$config</span> = <span class="php-keyword2">is_file</span>(__DIR__ . <span class="php-quote">'/toolbars/'</span> . <span class="php-var">$toolbar</span> . <span class="php-quote">'.php'</span>) ? <span class="php-keyword1">require_once</span> ( __DIR__ . <span class="php-quote">'/toolbars/'</span> . <span class="php-var">$toolbar</span> . <span class="php-quote">'.php'</span> ) : <span class="php-quote">''</span>;
+<a href="#40" id="40" class="l">40: </a>        <span class="php-var">$config</span> =  joosFile::exists(__DIR__ . <span class="php-quote">'/toolbars/'</span> . <span class="php-var">$toolbar</span> . <span class="php-quote">'.php'</span>) ? <span class="php-keyword1">require_once</span> ( __DIR__ . <span class="php-quote">'/toolbars/'</span> . <span class="php-var">$toolbar</span> . <span class="php-quote">'.php'</span> ) : <span class="php-quote">''</span>;
 <a href="#41" id="41" class="l">41: </a>
 <a href="#42" id="42" class="l">42: </a>        <span class="php-var">$code_on_ready</span> = <span class="php-keyword2">sprintf</span>(<span class="php-quote">&quot;</span><span class="php-var">$</span><span class="php-quote">().ready(function() { </span><span class="php-var">$</span><span class="php-quote">('#%s').wysiwyg(%s); })&quot;</span>, <span class="php-var">$name</span>, <span class="php-var">$config</span>);
 <a href="#43" id="43" class="l">43: </a>        joosDocument::<span class="php-var">$data</span>[<span class="php-quote">'js_code'</span>][] = <span class="php-var">$code_on_ready</span>;

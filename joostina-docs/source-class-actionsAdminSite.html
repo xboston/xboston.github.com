@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li class="active"><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li class="active"><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -185,13 +173,18 @@
 </span><a href="#16" id="16" class="l">16: </a><span class="php-comment"> * Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights
 </span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> *
 </span><a href="#18" id="18" class="l">18: </a><span class="php-comment"> * */</span>
-<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> actionsAdminSite  <span class="php-keyword1">extends</span> joosAdminController{
+<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> actionsAdminSite <span class="php-keyword1">extends</span> joosAdminController{
 <a href="#20" id="20" class="l">20: </a>
-<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> index() {
-<a href="#22" id="22" class="l">22: </a>        <span class="php-keyword1">require_once</span> JPATH_BASE . <span class="php-quote">'/app/templates/'</span> . JTEMPLATE_ADMIN . <span class="php-quote">'/html/cpanel.php'</span>;
-<a href="#23" id="23" class="l">23: </a>    }
+<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span>  action_before(){}
+<a href="#22" id="22" class="l">22: </a>    
+<a href="#23" id="23" class="l">23: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> index() {
 <a href="#24" id="24" class="l">24: </a>
-<a href="#25" id="25" class="l">25: </a>}</code></pre>
+<a href="#25" id="25" class="l">25: </a>        <span class="php-keyword1">require_once</span> JPATH_BASE . <span class="php-quote">'/app/templates/'</span> . JTEMPLATE_ADMIN . <span class="php-quote">'/html/cpanel.php'</span>;
+<a href="#26" id="26" class="l">26: </a>        
+<a href="#27" id="27" class="l">27: </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>();
+<a href="#28" id="28" class="l">28: </a>    }
+<a href="#29" id="29" class="l">29: </a>    
+<a href="#30" id="30" class="l">30: </a>}</code></pre>
 	</div>
 
 	<div id="footer">

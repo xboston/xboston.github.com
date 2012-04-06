@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3474096715"></script>
+	<script type="text/javascript" src="elementlist.js?816013197"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -65,23 +65,15 @@
 			<ul>
 				<li><a href="package-Controllers.html">Controllers<span></span></a>
 						<ul>
-				<li><a href="package-Controllers.Acls.html">Acls</a>
-						</li>
 				<li><a href="package-Controllers.Categories.html">Categories</a>
 						</li>
 				<li><a href="package-Controllers.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Controllers.Content.html">Content</a>
-						</li>
 				<li><a href="package-Controllers.Mainpage.html">Mainpage</a>
-						</li>
-				<li><a href="package-Controllers.Metainfo.html">Metainfo</a>
 						</li>
 				<li><a href="package-Controllers.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Controllers.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Controllers.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Controllers.Site.html">Site</a>
 						</li>
@@ -117,13 +109,9 @@
 						</li>
 				<li><a href="package-Models.Coder.html">Coder</a>
 						</li>
-				<li><a href="package-Models.Content.html">Content</a>
-						</li>
 				<li><a href="package-Models.Modules.html">Modules</a>
 						</li>
 				<li><a href="package-Models.Pages.html">Pages</a>
-						</li>
-				<li><a href="package-Models.Quickicons.html">Quickicons</a>
 						</li>
 				<li><a href="package-Models.Sitemap.html">Sitemap</a>
 						</li>
@@ -181,7 +169,6 @@
 				<li><a href="class-joosInflector.html">joosInflector</a></li>
 				<li><a href="class-joosInputFilter.html">joosInputFilter</a></li>
 				<li><a href="class-joosMail.html">joosMail</a></li>
-				<li><a href="class-joosMetainfo.html">joosMetainfo</a></li>
 				<li><a href="class-joosModel.html">joosModel</a></li>
 				<li><a href="class-joosModule.html">joosModule</a></li>
 				<li><a href="class-joosNestedSet.html">joosNestedSet</a></li>
@@ -358,7 +345,7 @@
 <a href="#136" id="136" class="l">136: </a>
 <a href="#137" id="137" class="l">137: </a>        <span class="php-var">$model</span> = <span class="php-quote">'params'</span> . <span class="php-keyword2">ucfirst</span>(<span class="php-var">$item</span>-&gt;group);
 <a href="#138" id="138" class="l">138: </a>
-<a href="#139" id="139" class="l">139: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span>)) {
+<a href="#139" id="139" class="l">139: </a>        <span class="php-keyword1">if</span> ( joosFile::exists(<span class="php-var">$file</span>)) {
 <a href="#140" id="140" class="l">140: </a>            <span class="php-keyword1">require_once</span>( <span class="php-var">$file</span> );
 <a href="#141" id="141" class="l">141: </a>            <span class="php-keyword1">return</span> <span class="php-var">$model</span>::get_params_scheme(<span class="php-quote">'default'</span>);
 <a href="#142" id="142" class="l">142: </a>        } <span class="php-keyword1">else</span> {
@@ -375,7 +362,7 @@
 <a href="#153" id="153" class="l">153: </a>
 <a href="#154" id="154" class="l">154: </a>        <span class="php-var">$model</span> = <span class="php-quote">'params'</span> . <span class="php-keyword2">ucfirst</span>(<span class="php-var">$group</span>);
 <a href="#155" id="155" class="l">155: </a>
-<a href="#156" id="156" class="l">156: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_file</span>(<span class="php-var">$file</span>)) {
+<a href="#156" id="156" class="l">156: </a>        <span class="php-keyword1">if</span> ( joosFile::exists(<span class="php-var">$file</span>)) {
 <a href="#157" id="157" class="l">157: </a>            <span class="php-keyword1">require_once</span>( <span class="php-var">$file</span> );
 <a href="#158" id="158" class="l">158: </a>
 <a href="#159" id="159" class="l">159: </a>            <span class="php-var">$params</span> = <span class="php-keyword1">array</span>(<span class="php-quote">'notdefault'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'Использовать уникальные параметры'</span>,
