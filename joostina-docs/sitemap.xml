@@ -14,37 +14,289 @@
 	<loc>http://xboston.github.com/joostina-docs/index.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Categories.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Acls.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Coder.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Acls.Models.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Mainpage.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Acls.Models.Admin.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Modules.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Acls.Models.Site.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Pages.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Site.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.Controllers.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Sitemap.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.Controllers.Admin.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Test.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.Models.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Controllers.Users.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Mainpage.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Mainpage.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Mainpage.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Helpers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.News.Models.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Models.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Site.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Site.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Site.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Sitemap.Models.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Test.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Test.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Test.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Models.Site.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Core.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Arhive.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Array.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Attached.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Autoadmin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Benchmark.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Breadcrumbs.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Cache.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Config.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Cookie.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Csrf.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.Drivers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.Drivers.Interfac.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Datetime.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Debug.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Editor.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Events.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.File.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Filter.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Flashmessage.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Folder.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Hit.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Html.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Image.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Inflector.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Inputfilter.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Libraries.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Mail.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Module.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Nestedset.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Pager.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Pages.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Params.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Randomizer.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Request.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Route.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Security.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Session.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Static.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.String.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Text.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Trash.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Validate.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Modules.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Modules.Helpers.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.html</loc>
@@ -60,36 +312,6 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Loader.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Joostina.modelModules.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Libraries.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Acls.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Categories.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Coder.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Modules.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Pages.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Sitemap.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Models.Users.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-None.html</loc>
@@ -299,9 +521,6 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosValidateHelper.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosVersion.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAutoadminPluginsEdit.html</loc>
