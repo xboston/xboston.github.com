@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3231802300"></script>
+	<script type="text/javascript" src="elementlist.js?4189424930"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -71,6 +71,33 @@
 				<li><a href="package-Components.Acls.Models.Admin.html">Admin</a>
 						</li>
 				<li><a href="package-Components.Acls.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.BlogCategory.html">BlogCategory<span></span></a>
+						<ul>
+				<li><a href="package-Components.BlogCategory.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.BlogCategory.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.BlogCategory.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.Blogs.html">Blogs<span></span></a>
+						<ul>
+				<li><a href="package-Components.Blogs.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Blogs.Controllers.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Blogs.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Components.Blogs.Helpers.html">Helpers</a>
+						</li>
+				<li><a href="package-Components.Blogs.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.Blogs.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Blogs.Models.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Components.Coder.html">Coder<span></span></a>
@@ -247,6 +274,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Request.html">Request</a>
 						</li>
+				<li><a href="package-Core.Libraries.RobotLoader.html">RobotLoader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Route.html">Route</a>
 						</li>
 				<li><a href="package-Core.Libraries.Security.html">Security</a>
@@ -263,15 +292,10 @@
 						</li>
 				<li><a href="package-Core.Libraries.Validate.html">Validate</a>
 						</li>
-							</ul></li>
-				<li><a href="package-Core.Modules.html">Modules<span></span></a>
-						<ul>
-				<li><a href="package-Core.Modules.Helpers.html">Helpers</a>
-						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
-				<li><a href="package-Joostina.Contlroller.html">Contlroller</a>
+				<li><a href="package-Joostina.Controller.html">Controller</a>
 						</li>
 				<li><a href="package-Joostina.Core.html">Core</a>
 						</li>
@@ -502,7 +526,7 @@ clearstatcache<br />
 			</div>
 			</div></td>
 		</tr>
-		<tr data-order="mime_content_type" id="_mime_content_type">
+		<tr data-order="get_mime_content_type" id="_get_mime_content_type">
 
 			<td class="attributes"><code>
 				
@@ -513,8 +537,8 @@ clearstatcache<br />
 			</td>
 
 			<td class="name"><div>
-			<a class="anchor" href="#_mime_content_type">#</a>
-			<code><a href="source-class-joosFile.html#74" title="Go to source code">mime_content_type</a>( <span>string <var>$file_name</var></span> )</code>
+			<a class="anchor" href="#_get_mime_content_type">#</a>
+			<code><a href="source-class-joosFile.html#74" title="Go to source code">get_mime_content_type</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -542,10 +566,61 @@ clearstatcache<br />
 
 					<h4>Tutorial</h4>
 					<div class="list">
-							joosFile::mime_content_type( __FILE__ );<br />
-							joosFile::mime_content_type( JPATH_BASE . DS . 'media' . DS . 'favicon.ico' );<br />
-							joosFile::mime_content_type( JPATH_BASE . DS . 'media' . DS . 'js' . DS .
+							joosFile::get_mime_content_type( __FILE__ );<br />
+							joosFile::get_mime_content_type( JPATH_BASE . DS . 'media' . DS . 'favicon.ico'
+);<br />
+							joosFile::get_mime_content_type( JPATH_BASE . DS . 'media' . DS . 'js' . DS .
 'jquery.js');<br />
+					</div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="get_mime_content_type_by_extension" id="_get_mime_content_type_by_extension">
+
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_get_mime_content_type_by_extension">#</a>
+			<code><a href="source-class-joosFile.html#104" title="Go to source code">get_mime_content_type_by_extension</a>( <span>string <var>$file_name</var></span> )</code>
+
+			<div class="description short">
+				
+<p>Получение MIME типа файла по расширению</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Получение MIME типа файла по расширению</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file_name</var></dt>
+						<dd><code>string</code></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
+					</div>
+
+
+					<h4>Tutorial</h4>
+					<div class="list">
+							joosFile::get_mime_content_type_by_extension( __FILE__ );<br />
+							joosFile::get_mime_content_type_by_extension( JPATH_BASE . DS . 'media' . DS .
+'favicon.ico' );<br />
+							joosFile::get_mime_content_type_by_extension( JPATH_BASE . DS . 'media' . DS .
+'js' . DS . 'jquery.js');<br />
 					</div>
 
 			</div>
@@ -563,7 +638,7 @@ clearstatcache<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_make_file_location">#</a>
-			<code><a href="source-class-joosFile.html#169" title="Go to source code">make_file_location</a>( <span>integer <var>$id</var></span>, <span> <var>$split_by</var> = <span class="php-num">3</span></span>, <span> <var>$capacity</var> = <span class="php-num">9</span></span>, <span> <var>$round</var> = <span class="php-keyword1">false</span></span> )</code>
+			<code><a href="source-class-joosFile.html#190" title="Go to source code">make_file_location</a>( <span>integer <var>$id</var></span>, <span> <var>$split_by</var> = <span class="php-num">3</span></span>, <span> <var>$capacity</var> = <span class="php-num">9</span></span>, <span> <var>$round</var> = <span class="php-keyword1">false</span></span> )</code>
 
 			<div class="description short">
 				
@@ -623,7 +698,7 @@ clearstatcache<br />
 
 			<td class="name"><div>
 			<a class="anchor" href="#_file_info">#</a>
-			<code><a href="source-class-joosFile.html#204" title="Go to source code">file_info</a>( <span>string <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#225" title="Go to source code">file_info</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -678,7 +753,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_make_safe_name">#</a>
-			<code><a href="source-class-joosFile.html#236" title="Go to source code">make_safe_name</a>( <span>type <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#257" title="Go to source code">make_safe_name</a>( <span>type <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -731,7 +806,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_modified_date">#</a>
-			<code><a href="source-class-joosFile.html#260" title="Go to source code">get_modified_date</a>( <span>string <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#281" title="Go to source code">get_modified_date</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -780,7 +855,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_size">#</a>
-			<code><a href="source-class-joosFile.html#274" title="Go to source code">get_size</a>( <span>string <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#295" title="Go to source code">get_size</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -827,7 +902,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_type">#</a>
-			<code><a href="source-class-joosFile.html#288" title="Go to source code">get_type</a>( <span>string <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#309" title="Go to source code">get_type</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -874,7 +949,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_put_content">#</a>
-			<code><a href="source-class-joosFile.html#302" title="Go to source code">put_content</a>( <span>string <var>$file_name</var></span>, <span>string <var>$data</var></span> )</code>
+			<code><a href="source-class-joosFile.html#323" title="Go to source code">put_content</a>( <span>string <var>$file_name</var></span>, <span>string <var>$data</var></span> )</code>
 
 			<div class="description short">
 				
@@ -923,7 +998,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_content">#</a>
-			<code><a href="source-class-joosFile.html#321" title="Go to source code">get_content</a>( <span>string <var>$file_name</var></span> )</code>
+			<code><a href="source-class-joosFile.html#342" title="Go to source code">get_content</a>( <span>string <var>$file_name</var></span> )</code>
 
 			<div class="description short">
 				
@@ -970,7 +1045,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_writable">#</a>
-			<code><a href="source-class-joosFile.html#339" title="Go to source code">is_writable</a>( <span>string <var>$file_location</var></span> )</code>
+			<code><a href="source-class-joosFile.html#360" title="Go to source code">is_writable</a>( <span>string <var>$file_location</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1013,7 +1088,7 @@ size - размер файла в байтах ext - расширение
 
 			<td class="name"><div>
 			<a class="anchor" href="#_is_readable">#</a>
-			<code><a href="source-class-joosFile.html#350" title="Go to source code">is_readable</a>( <span>string <var>$file_location</var></span> )</code>
+			<code><a href="source-class-joosFile.html#371" title="Go to source code">is_readable</a>( <span>string <var>$file_location</var></span> )</code>
 
 			<div class="description short">
 				

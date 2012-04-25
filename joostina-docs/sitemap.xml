@@ -29,6 +29,42 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Acls.Models.Site.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.BlogCategory.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.BlogCategory.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.BlogCategory.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.BlogCategory.Models.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Helpers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Blogs.Models.Site.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.html</loc>
 </url>
 <url>
@@ -269,6 +305,9 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Request.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.RobotLoader.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Route.html</loc>
 </url>
 <url>
@@ -293,16 +332,10 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Validate.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Core.Modules.html</loc>
-</url>
-<url>
-	<loc>http://xboston.github.com/joostina-docs/package-Core.Modules.Helpers.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Contlroller.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Controller.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Core.html</loc>
@@ -493,6 +526,9 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosRequest.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosRobotLoader.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosRoute.html</loc>
 </url>
 <url>
@@ -572,6 +608,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosModulesException.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosUploadLibrariesException.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosUserException.html</loc>
