@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li class="active"><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -327,7 +327,6 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
 				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
@@ -335,10 +334,6 @@
 				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
 				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
-				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
-				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
-				<li><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></li>
-				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
 				<li><a href="class-modelAdminCoder_Faker.html">modelAdminCoder_Faker</a></li>
 				<li><a href="class-Route.html">Route</a></li>
@@ -373,11 +368,6 @@
 			</ul>
 
 
-			<h3>Functions</h3>
-			<ul>
-				<li><a href="function-__.html">__</a></li>
-				<li><a href="function-sig_handler.html">sig_handler</a></li>
-			</ul>
 		</div>
 	</div>
 </div>
@@ -423,10 +413,10 @@
 <a href="#35" id="35" class="l"> 35: </a>
 <a href="#36" id="36" class="l"> 36: </a>                <span class="php-var">$exists</span> = <span class="php-keyword2">file_exists</span>(<span class="php-var">$data_store</span>);
 <a href="#37" id="37" class="l"> 37: </a>                <span class="php-keyword1">if</span> (!<span class="php-var">$exists</span> &amp;&amp; !<span class="php-keyword2">is_writable</span>(<span class="php-keyword2">dirname</span>(<span class="php-var">$data_store</span>))) {
-<a href="#38" id="38" class="l"> 38: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Каталог кеширования %s недоступен для записи'</span>), <span class="php-var">$data_store</span>));
+<a href="#38" id="38" class="l"> 38: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Каталог кеширования %s недоступен для записи'</span>, <span class="php-var">$data_store</span>));
 <a href="#39" id="39" class="l"> 39: </a>                }
 <a href="#40" id="40" class="l"> 40: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$exists</span> &amp;&amp; !<span class="php-keyword2">is_writable</span>(<span class="php-var">$data_store</span>)) {
-<a href="#41" id="41" class="l"> 41: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Файл кеша %s недоступен для записи'</span>), <span class="php-var">$data_store</span>));
+<a href="#41" id="41" class="l"> 41: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Файл кеша %s недоступен для записи'</span>, <span class="php-var">$data_store</span>));
 <a href="#42" id="42" class="l"> 42: </a>                }
 <a href="#43" id="43" class="l"> 43: </a>                <span class="php-var">$this</span>-&gt;data_store = <span class="php-var">$data_store</span>;
 <a href="#44" id="44" class="l"> 44: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$exists</span>) {
@@ -441,7 +431,7 @@
 <a href="#53" id="53" class="l"> 53: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'xcache'</span>:
 <a href="#54" id="54" class="l"> 54: </a>            <span class="php-keyword1">case</span> <span class="php-quote">'memcache'</span>:
 <a href="#55" id="55" class="l"> 55: </a>                <span class="php-keyword1">if</span> (!<span class="php-keyword2">extension_loaded</span>(<span class="php-var">$type</span>)) {
-<a href="#56" id="56" class="l"> 56: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Расширение кеширования %s недоступно либо не установлено'</span>), <span class="php-var">$type</span>));
+<a href="#56" id="56" class="l"> 56: </a>                    <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Расширение кеширования %s недоступно либо не установлено'</span>, <span class="php-var">$type</span>));
 <a href="#57" id="57" class="l"> 57: </a>                }
 <a href="#58" id="58" class="l"> 58: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$type</span> == <span class="php-quote">'memcache'</span>) {
 <a href="#59" id="59" class="l"> 59: </a>
@@ -451,14 +441,14 @@
 <a href="#63" id="63" class="l"> 63: </a>                    }
 <a href="#64" id="64" class="l"> 64: </a>
 <a href="#65" id="65" class="l"> 65: </a>                    <span class="php-keyword1">if</span> (!<span class="php-var">$data_store</span> <span class="php-keyword1">instanceof</span> Memcache) {
-<a href="#66" id="66" class="l"> 66: </a>                        <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(__(<span class="php-quote">'Объект кеширования не является допустимым объектом Memcache'</span>));
+<a href="#66" id="66" class="l"> 66: </a>                        <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-quote">'Объект кеширования не является допустимым объектом Memcache'</span>);
 <a href="#67" id="67" class="l"> 67: </a>                    }
 <a href="#68" id="68" class="l"> 68: </a>                    <span class="php-var">$this</span>-&gt;data_store = <span class="php-var">$data_store</span>;
 <a href="#69" id="69" class="l"> 69: </a>                }
 <a href="#70" id="70" class="l"> 70: </a>                <span class="php-keyword1">break</span>;
 <a href="#71" id="71" class="l"> 71: </a>
 <a href="#72" id="72" class="l"> 72: </a>            <span class="php-keyword1">default</span>:
-<a href="#73" id="73" class="l"> 73: </a>                <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Кеширующая система не поддерживает %s, разрешено лишь %s'</span>), <span class="php-var">$type</span>, <span class="php-keyword2">join</span>(<span class="php-quote">', '</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'apc'</span>, <span class="php-quote">'file'</span>, <span class="php-quote">'memcache'</span>, <span class="php-quote">'xcache'</span>))));
+<a href="#73" id="73" class="l"> 73: </a>                <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosCacheException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Кеширующая система не поддерживает %s, разрешено лишь %s'</span>, <span class="php-var">$type</span>, <span class="php-keyword2">join</span>(<span class="php-quote">', '</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'apc'</span>, <span class="php-quote">'file'</span>, <span class="php-quote">'memcache'</span>, <span class="php-quote">'xcache'</span>))));
 <a href="#74" id="74" class="l"> 74: </a>        }
 <a href="#75" id="75" class="l"> 75: </a>
 <a href="#76" id="76" class="l"> 76: </a>        <span class="php-var">$this</span>-&gt;type = <span class="php-var">$type</span>;

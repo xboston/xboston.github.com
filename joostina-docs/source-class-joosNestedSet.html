@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -460,7 +460,7 @@
 <a href="#116" id="116" class="l">116: </a>        <span class="php-comment">//проверяем, не существует ли уже корневой узел</span>
 <a href="#117" id="117" class="l">117: </a>        <span class="php-comment">//если существует - прекрашаем выполнение</span>
 <a href="#118" id="118" class="l">118: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;check_root_node() === <span class="php-keyword1">true</span>) {
-<a href="#119" id="119" class="l">119: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Корневой узел уже существует. NestedSet::insert_root_node (&quot;'</span> . <span class="php-var">$nodeName</span> . <span class="php-quote">'&quot;)'</span>);
+<a href="#119" id="119" class="l">119: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Корневой узел уже существует. NestedSet::insert_root_node (&quot;'</span> . <span class="php-var">$nodeName</span> . <span class="php-quote">'&quot;)'</span>;
 <a href="#120" id="120" class="l">120: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#121" id="121" class="l">121: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#122" id="122" class="l">122: </a>        }
@@ -471,7 +471,7 @@
 <a href="#127" id="127" class="l">127: </a>        <span class="php-var">$this</span>-&gt;level = <span class="php-num">0</span>;
 <a href="#128" id="128" class="l">128: </a>
 <a href="#129" id="129" class="l">129: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;store()) {
-<a href="#130" id="130" class="l">130: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Ошибка запроса к БД. NestedSet::insert_root_node (&quot;'</span> . <span class="php-var">$nodeName</span> . <span class="php-quote">'&quot;)'</span>);
+<a href="#130" id="130" class="l">130: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Ошибка запроса к БД. NestedSet::insert_root_node (&quot;'</span> . <span class="php-var">$nodeName</span> . <span class="php-quote">'&quot;)'</span>;
 <a href="#131" id="131" class="l">131: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#132" id="132" class="l">132: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#133" id="133" class="l">133: </a>        }
@@ -493,7 +493,7 @@
 <a href="#149" id="149" class="l">149: </a>        <span class="php-var">$parent</span> = <span class="php-keyword1">new</span> self(<span class="php-keyword1">array</span>(<span class="php-quote">'table'</span> =&gt; <span class="php-var">$this</span>-&gt;_tbl));
 <a href="#150" id="150" class="l">150: </a>
 <a href="#151" id="151" class="l">151: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$parent</span>-&gt;load(<span class="php-var">$source</span>[<span class="php-quote">'parent_id'</span>])) {
-<a href="#152" id="152" class="l">152: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родительский узел не найден (&quot;'</span> . <span class="php-var">$source</span>[<span class="php-quote">'parent_id'</span>] . <span class="php-quote">'&quot;)'</span>);
+<a href="#152" id="152" class="l">152: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родительский узел не найден (&quot;'</span> . <span class="php-var">$source</span>[<span class="php-quote">'parent_id'</span>] . <span class="php-quote">'&quot;)'</span>;
 <a href="#153" id="153" class="l">153: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#154" id="154" class="l">154: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#155" id="155" class="l">155: </a>        }
@@ -529,7 +529,7 @@
 <a href="#185" id="185" class="l">185: </a>        <span class="php-var">$branch</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>;
 <a href="#186" id="186" class="l">186: </a>
 <a href="#187" id="187" class="l">187: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$branch</span>-&gt;load(<span class="php-var">$id</span>)) {
-<a href="#188" id="188" class="l">188: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Требуемый узел не найден'</span>);
+<a href="#188" id="188" class="l">188: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Требуемый узел не найден'</span>;
 <a href="#189" id="189" class="l">189: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#190" id="190" class="l">190: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#191" id="191" class="l">191: </a>        }
@@ -561,7 +561,7 @@
 <a href="#217" id="217" class="l">217: </a>        <span class="php-var">$node</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>;
 <a href="#218" id="218" class="l">218: </a>
 <a href="#219" id="219" class="l">219: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$node</span>-&gt;load(<span class="php-var">$id</span>)) {
-<a href="#220" id="220" class="l">220: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Требуемый узел не найден'</span>);
+<a href="#220" id="220" class="l">220: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Требуемый узел не найден'</span>;
 <a href="#221" id="221" class="l">221: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#222" id="222" class="l">222: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#223" id="223" class="l">223: </a>        }
@@ -593,7 +593,7 @@
 <a href="#249" id="249" class="l">249: </a>        <span class="php-var">$node</span> = <span class="php-keyword1">clone</span> <span class="php-var">$this</span>;
 <a href="#250" id="250" class="l">250: </a>
 <a href="#251" id="251" class="l">251: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$node</span>-&gt;load(<span class="php-var">$id</span>)) {
-<a href="#252" id="252" class="l">252: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Требуемый узел не найден'</span>);
+<a href="#252" id="252" class="l">252: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Требуемый узел не найден'</span>;
 <a href="#253" id="253" class="l">253: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#254" id="254" class="l">254: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#255" id="255" class="l">255: </a>        }
@@ -602,13 +602,13 @@
 <a href="#258" id="258" class="l">258: </a>        <span class="php-var">$a_rgt</span> = <span class="php-var">$node</span>-&gt;rgt;
 <a href="#259" id="259" class="l">259: </a>
 <a href="#260" id="260" class="l">260: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b_id</span> = <span class="php-var">$this</span>-&gt;_get_id(<span class="php-var">$a_lft</span> - <span class="php-num">1</span>, <span class="php-quote">'r'</span>)) {
-<a href="#261" id="261" class="l">261: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел слева не найден. NestedSet::move_lft ('</span> . <span class="php-var">$id</span> . <span class="php-quote">')'</span>);
+<a href="#261" id="261" class="l">261: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел слева не найден. NestedSet::move_lft ('</span> . <span class="php-var">$id</span> . <span class="php-quote">')'</span>;
 <a href="#262" id="262" class="l">262: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#263" id="263" class="l">263: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#264" id="264" class="l">264: </a>        }
 <a href="#265" id="265" class="l">265: </a>
 <a href="#266" id="266" class="l">266: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b</span> = <span class="php-var">$this</span>-&gt;_get_node(<span class="php-var">$b_id</span>)) {
-<a href="#267" id="267" class="l">267: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел слева не найден. NestedSet::move_lft ('</span> . <span class="php-var">$id</span> . <span class="php-quote">')'</span>);
+<a href="#267" id="267" class="l">267: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел слева не найден. NestedSet::move_lft ('</span> . <span class="php-var">$id</span> . <span class="php-quote">')'</span>;
 <a href="#268" id="268" class="l">268: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#269" id="269" class="l">269: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#270" id="270" class="l">270: </a>        }
@@ -645,7 +645,7 @@
 <a href="#301" id="301" class="l">301: </a>        <span class="php-var">$nodeLevel</span> = <span class="php-var">$this</span>-&gt;_get_node_level(<span class="php-var">$nodeId</span>);
 <a href="#302" id="302" class="l">302: </a>
 <a href="#303" id="303" class="l">303: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$nodeLevel</span> == <span class="php-num">0</span>) {
-<a href="#304" id="304" class="l">304: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">' '</span> . <span class="php-var">$nodeLevel</span> . <span class="php-quote">')'</span>);
+<a href="#304" id="304" class="l">304: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">' '</span> . <span class="php-var">$nodeLevel</span> . <span class="php-quote">')'</span>;
 <a href="#305" id="305" class="l">305: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#306" id="306" class="l">306: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#307" id="307" class="l">307: </a>        }
@@ -655,13 +655,13 @@
 <a href="#311" id="311" class="l">311: </a>        <span class="php-var">$a_rgt</span> = <span class="php-var">$a</span>[<span class="php-quote">'rgt'</span>];
 <a href="#312" id="312" class="l">312: </a>
 <a href="#313" id="313" class="l">313: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b_id</span> = <span class="php-var">$this</span>-&gt;_get_id(<span class="php-var">$a_rgt</span> + <span class="php-num">1</span>, <span class="php-quote">'l'</span>)) {
-<a href="#314" id="314" class="l">314: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел справа не найден. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#314" id="314" class="l">314: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел справа не найден. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#315" id="315" class="l">315: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#316" id="316" class="l">316: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#317" id="317" class="l">317: </a>        }
 <a href="#318" id="318" class="l">318: </a>
 <a href="#319" id="319" class="l">319: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b</span> = <span class="php-var">$this</span>-&gt;_get_node(<span class="php-var">$b_id</span>)) {
-<a href="#320" id="320" class="l">320: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел справа не найден. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#320" id="320" class="l">320: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел справа не найден. NestedSet::move_rgt ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#321" id="321" class="l">321: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#322" id="322" class="l">322: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#323" id="323" class="l">323: </a>        }
@@ -703,13 +703,13 @@
 <a href="#359" id="359" class="l">359: </a>        <span class="php-comment">//echo 'Уровень узла: '.$nodeLevel;</span>
 <a href="#360" id="360" class="l">360: </a>
 <a href="#361" id="361" class="l">361: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$nodeLevel</span> == <span class="php-num">0</span>) {
-<a href="#362" id="362" class="l">362: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#362" id="362" class="l">362: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#363" id="363" class="l">363: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#364" id="364" class="l">364: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#365" id="365" class="l">365: </a>        }
 <a href="#366" id="366" class="l">366: </a>
 <a href="#367" id="367" class="l">367: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$nodeLevel</span> == <span class="php-num">1</span>) {
-<a href="#368" id="368" class="l">368: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел справа не найден. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#368" id="368" class="l">368: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел справа не найден. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#369" id="369" class="l">369: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#370" id="370" class="l">370: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#371" id="371" class="l">371: </a>        }
@@ -726,13 +726,13 @@
 <a href="#382" id="382" class="l">382: </a>        <span class="php-var">$a_rgt</span> = <span class="php-var">$a</span>[<span class="php-quote">'rgt'</span>];
 <a href="#383" id="383" class="l">383: </a>
 <a href="#384" id="384" class="l">384: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b_id</span> = <span class="php-var">$this</span>-&gt;_get_id(<span class="php-var">$a_rgt</span> + <span class="php-num">1</span>, <span class="php-quote">'r'</span>)) {
-<a href="#385" id="385" class="l">385: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'На корневной уровень нельзя переместиться. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#385" id="385" class="l">385: </a>            <span class="php-var">$error</span> = <span class="php-quote">'На корневной уровень нельзя переместиться. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#386" id="386" class="l">386: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#387" id="387" class="l">387: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#388" id="388" class="l">388: </a>        }
 <a href="#389" id="389" class="l">389: </a>
 <a href="#390" id="390" class="l">390: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b</span> = <span class="php-var">$this</span>-&gt;_get_node(<span class="php-var">$b_id</span>)) {
-<a href="#391" id="391" class="l">391: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'На корневной уровень нельзя переместиться. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#391" id="391" class="l">391: </a>            <span class="php-var">$error</span> = <span class="php-quote">'На корневной уровень нельзя переместиться. NestedSet::move_up ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#392" id="392" class="l">392: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#393" id="393" class="l">393: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#394" id="394" class="l">394: </a>        }
@@ -780,7 +780,7 @@
 <a href="#436" id="436" class="l">436: </a>        <span class="php-var">$nodeLevel</span> = <span class="php-var">$this</span>-&gt;_get_node_level(<span class="php-var">$nodeId</span>);
 <a href="#437" id="437" class="l">437: </a>
 <a href="#438" id="438" class="l">438: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$nodeLevel</span> == <span class="php-num">1</span>) {
-<a href="#439" id="439" class="l">439: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#439" id="439" class="l">439: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Это корневой узел, его нельзя перемещать. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#440" id="440" class="l">440: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#441" id="441" class="l">441: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#442" id="442" class="l">442: </a>        }
@@ -790,12 +790,12 @@
 <a href="#446" id="446" class="l">446: </a>        <span class="php-var">$a_rgt</span> = <span class="php-var">$a</span>[<span class="php-quote">'rgt'</span>];
 <a href="#447" id="447" class="l">447: </a>
 <a href="#448" id="448" class="l">448: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b_id</span> = <span class="php-var">$this</span>-&gt;_get_id(<span class="php-var">$a_lft</span> - <span class="php-num">1</span>, <span class="php-quote">'r'</span>)) {
-<a href="#449" id="449" class="l">449: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел слева не найден. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#449" id="449" class="l">449: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел слева не найден. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#450" id="450" class="l">450: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#451" id="451" class="l">451: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#452" id="452" class="l">452: </a>        }
 <a href="#453" id="453" class="l">453: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$b</span> = <span class="php-var">$this</span>-&gt;_get_node(<span class="php-var">$b_id</span>)) {
-<a href="#454" id="454" class="l">454: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Родственный узел слева не найден. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>);
+<a href="#454" id="454" class="l">454: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Родственный узел слева не найден. NestedSet::move_down ('</span> . <span class="php-var">$nodeId</span> . <span class="php-quote">')'</span>;
 <a href="#455" id="455" class="l">455: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#456" id="456" class="l">456: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#457" id="457" class="l">457: </a>        }
@@ -835,13 +835,13 @@
 <a href="#491" id="491" class="l">491: </a>        <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$sql</span>);
 <a href="#492" id="492" class="l">492: </a>
 <a href="#493" id="493" class="l">493: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;_db-&gt;query()) {
-<a href="#494" id="494" class="l">494: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Ошибка запроса к БД. NestedSet::check_root_node ()'</span>);
+<a href="#494" id="494" class="l">494: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Ошибка запроса к БД. NestedSet::check_root_node ()'</span>;
 <a href="#495" id="495" class="l">495: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#496" id="496" class="l">496: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#497" id="497" class="l">497: </a>        }
 <a href="#498" id="498" class="l">498: </a>
 <a href="#499" id="499" class="l">499: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span>-&gt;num_rows) {
-<a href="#500" id="500" class="l">500: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Корневой узел не найден. NestedSet::check_root_node ()'</span>);
+<a href="#500" id="500" class="l">500: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Корневой узел не найден. NestedSet::check_root_node ()'</span>;
 <a href="#501" id="501" class="l">501: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#502" id="502" class="l">502: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#503" id="503" class="l">503: </a>        }
@@ -973,13 +973,13 @@
 <a href="#629" id="629" class="l">629: </a>        <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$sql</span>);
 <a href="#630" id="630" class="l">630: </a>
 <a href="#631" id="631" class="l">631: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;_db-&gt;query()) {
-<a href="#632" id="632" class="l">632: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Ошибка запроса к БД. NestedSet::_get_id()'</span>);
+<a href="#632" id="632" class="l">632: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Ошибка запроса к БД. NestedSet::_get_id()'</span>;
 <a href="#633" id="633" class="l">633: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#634" id="634" class="l">634: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#635" id="635" class="l">635: </a>        }
 <a href="#636" id="636" class="l">636: </a>
 <a href="#637" id="637" class="l">637: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span>-&gt;num_rows) {
-<a href="#638" id="638" class="l">638: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Невозможно получить информацию по предоставленным данным. NestedSet::_get_id()'</span>);
+<a href="#638" id="638" class="l">638: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Невозможно получить информацию по предоставленным данным. NestedSet::_get_id()'</span>;
 <a href="#639" id="639" class="l">639: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#640" id="640" class="l">640: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#641" id="641" class="l">641: </a>        }
@@ -1001,13 +1001,13 @@
 <a href="#657" id="657" class="l">657: </a>        <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$sql</span>);
 <a href="#658" id="658" class="l">658: </a>
 <a href="#659" id="659" class="l">659: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;_db-&gt;query()) {
-<a href="#660" id="660" class="l">660: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Ошибка запроса к БД. NestedSet::_get_node()'</span>);
+<a href="#660" id="660" class="l">660: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Ошибка запроса к БД. NestedSet::_get_node()'</span>;
 <a href="#661" id="661" class="l">661: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#662" id="662" class="l">662: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#663" id="663" class="l">663: </a>        }
 <a href="#664" id="664" class="l">664: </a>
 <a href="#665" id="665" class="l">665: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span>-&gt;num_rows) {
-<a href="#666" id="666" class="l">666: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Требуемый узел не найден. NestedSet::_get_node()'</span>);
+<a href="#666" id="666" class="l">666: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Требуемый узел не найден. NestedSet::_get_node()'</span>;
 <a href="#667" id="667" class="l">667: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#668" id="668" class="l">668: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#669" id="669" class="l">669: </a>        }
@@ -1036,13 +1036,13 @@
 </span><a href="#692" id="692" class="l">692: </a><span class="php-comment">
 </span><a href="#693" id="693" class="l">693: </a><span class="php-comment">
 </span><a href="#694" id="694" class="l">694: </a><span class="php-comment">          if (!$result = $this-&gt;_db-&gt;query()) {
-</span><a href="#695" id="695" class="l">695: </a><span class="php-comment">          $error = __('Ошибка запроса к БД. NestedSet::_get_node_level()');
+</span><a href="#695" id="695" class="l">695: </a><span class="php-comment">          $error = 'Ошибка запроса к БД. NestedSet::_get_node_level()';
 </span><a href="#696" id="696" class="l">696: </a><span class="php-comment">          $this-&gt;_set_error($error);
 </span><a href="#697" id="697" class="l">697: </a><span class="php-comment">          return false;
 </span><a href="#698" id="698" class="l">698: </a><span class="php-comment">          }
 </span><a href="#699" id="699" class="l">699: </a><span class="php-comment">
 </span><a href="#700" id="700" class="l">700: </a><span class="php-comment">          if (!$result-&gt;num_rows) {
-</span><a href="#701" id="701" class="l">701: </a><span class="php-comment">          $error = __('Требуемый узел не найден. NestedSet::_get_node_level()');
+</span><a href="#701" id="701" class="l">701: </a><span class="php-comment">          $error = 'Требуемый узел не найден. NestedSet::_get_node_level()';
 </span><a href="#702" id="702" class="l">702: </a><span class="php-comment">          $this-&gt;_set_error($error);
 </span><a href="#703" id="703" class="l">703: </a><span class="php-comment">          return false;
 </span><a href="#704" id="704" class="l">704: </a><span class="php-comment">          }
@@ -1069,13 +1069,13 @@
 <a href="#725" id="725" class="l">725: </a>        <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$sql</span>);
 <a href="#726" id="726" class="l">726: </a>
 <a href="#727" id="727" class="l">727: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span> = <span class="php-var">$this</span>-&gt;_db-&gt;query()) {
-<a href="#728" id="728" class="l">728: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Ошибка запроса к БД. NestedSet::_count_nodes()'</span>);
+<a href="#728" id="728" class="l">728: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Ошибка запроса к БД. NestedSet::_count_nodes()'</span>;
 <a href="#729" id="729" class="l">729: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#730" id="730" class="l">730: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#731" id="731" class="l">731: </a>        }
 <a href="#732" id="732" class="l">732: </a>
 <a href="#733" id="733" class="l">733: </a>        <span class="php-keyword1">if</span> (!<span class="php-var">$result</span>-&gt;num_rows) {
-<a href="#734" id="734" class="l">734: </a>            <span class="php-var">$error</span> = __(<span class="php-quote">'Узлы не найдены. NestedSet::_count_nodes()'</span>);
+<a href="#734" id="734" class="l">734: </a>            <span class="php-var">$error</span> = <span class="php-quote">'Узлы не найдены. NestedSet::_count_nodes()'</span>;
 <a href="#735" id="735" class="l">735: </a>            <span class="php-var">$this</span>-&gt;_set_error(<span class="php-var">$error</span>);
 <a href="#736" id="736" class="l">736: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#737" id="737" class="l">737: </a>        }

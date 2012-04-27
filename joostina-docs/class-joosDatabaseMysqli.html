@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li class="active"><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -1187,7 +1187,7 @@ UPDATE или DELETE</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_load_object">#</a>
-			<code><a href="source-class-joosDatabaseMysqli.html#381" title="Go to source code">load_object</a>( <span><code><a href="class-joosModel.html">joosModel</a></code>|<code><a href="class-stdClass.html">stdClass</a></code> <var>&amp; $object</var></span> )</code>
+			<code><a href="source-class-joosDatabaseMysqli.html#381" title="Go to source code">load_object</a>( <span><code><a href="class-joosModel.html">joosModel</a></code>|stdClass <var>&amp; $object</var></span> )</code>
 
 			<div class="description short">
 				
@@ -1206,7 +1206,7 @@ UPDATE или DELETE</p>
 					<h4>Parameters</h4>
 					<div class="list"><dl>
 						<dt><var>$object</var></dt>
-						<dd><code><code><a href="class-joosModel.html">joosModel</a></code>|<code><a href="class-stdClass.html">stdClass</a></code></code><br> объект для загрузки результата</dd>
+						<dd><code><code><a href="class-joosModel.html">joosModel</a></code>|stdClass</code><br> объект для загрузки результата</dd>
 					</dl></div>
 
 					<h4>Returns</h4>
@@ -1475,7 +1475,7 @@ UPDATE или DELETE</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_insert_object">#</a>
-			<code><a href="source-class-joosDatabaseMysqli.html#543" title="Go to source code">insert_object</a>( <span>string <var>$table</var></span>, <span><code><a href="class-stdClass.html">stdClass</a></code> <var>$object</var></span>, <span>string <var>$keyName</var> = <span class="php-keyword1">null</span></span> )</code>
+			<code><a href="source-class-joosDatabaseMysqli.html#543" title="Go to source code">insert_object</a>( <span>string <var>$table</var></span>, <span>stdClass <var>$object</var></span>, <span>string <var>$keyName</var> = <span class="php-keyword1">null</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1502,7 +1502,7 @@ joosDatabaseMysqli::instance()-&gt;insert_object</p>
 						<dt><var>$table</var></dt>
 						<dd><code>string</code><br> название таблицы, можно с преффиксом #__</dd>
 						<dt><var>$object</var></dt>
-						<dd><code><code><a href="class-stdClass.html">stdClass</a></code></code><br> объект с заполненными свойствами</dd>
+						<dd><code>stdClass</code><br> объект с заполненными свойствами</dd>
 						<dt><var>$keyName</var></dt>
 						<dd><code>string</code><br> название ключевого автоинскриментного
 поля таблицы</dd>
@@ -1560,7 +1560,7 @@ joosDatabaseMysqli::instance()-&gt;insert_object</p>
 
 			<td class="name"><div>
 			<a class="anchor" href="#_update_object">#</a>
-			<code><a href="source-class-joosDatabaseMysqli.html#628" title="Go to source code">update_object</a>( <span>string <var>$table</var></span>, <span><code><a href="class-stdClass.html">stdClass</a></code> <var>$object</var></span>, <span>string <var>$key_name</var></span>, <span>boolean <var>$update_nulls</var> = <span class="php-keyword1">true</span></span> )</code>
+			<code><a href="source-class-joosDatabaseMysqli.html#628" title="Go to source code">update_object</a>( <span>string <var>$table</var></span>, <span>stdClass <var>$object</var></span>, <span>string <var>$key_name</var></span>, <span>boolean <var>$update_nulls</var> = <span class="php-keyword1">true</span></span> )</code>
 
 			<div class="description short">
 				
@@ -1585,7 +1585,7 @@ joosDatabaseMysqli::instance()-&gt;insert_object</p>
 						<dt><var>$table</var></dt>
 						<dd><code>string</code><br> название таблицы, можно с преффиксом #__</dd>
 						<dt><var>$object</var></dt>
-						<dd><code><code><a href="class-stdClass.html">stdClass</a></code></code><br> объект с заполненными свойствами</dd>
+						<dd><code>stdClass</code><br> объект с заполненными свойствами</dd>
 						<dt><var>$key_name</var></dt>
 						<dd><code>string</code><br> название ключевого автоинскриментного
 поля таблицы</dd>

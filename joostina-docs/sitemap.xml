@@ -212,6 +212,9 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Autoadmin.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Autoloader.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Benchmark.html</loc>
 </url>
 <url>
@@ -236,7 +239,7 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.Drivers.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.Drivers.Interfac.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Database.Drivers.Interfaces.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Datetime.html</loc>
@@ -350,16 +353,13 @@
 	<loc>http://xboston.github.com/joostina-docs/package-None.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-PHP.html</loc>
-</url>
-<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Plugins.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Plugins.joosAutoadmin.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Plugins.Autoadmin.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Plugins.joosEditor.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-Plugins.Editor.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Plugins.Sitemap.html</loc>

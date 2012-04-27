@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -409,10 +409,10 @@
 <a href="#65" id="65" class="l"> 65: </a>        <span class="php-keyword1">if</span> ( joosFile::exists(<span class="php-var">$editor_file</span>)) {
 <a href="#66" id="66" class="l"> 66: </a>            <span class="php-keyword1">require_once</span> <span class="php-var">$editor_file</span>;
 <a href="#67" id="67" class="l"> 67: </a>        } <span class="php-keyword1">else</span> {
-<a href="#68" id="68" class="l"> 68: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;!-- %s jooEditor::'</span> . self::<span class="php-var">$editor</span> . <span class="php-quote">' --&gt;'</span>, __(<span class="php-quote">'Не найден редактор:'</span>));
+<a href="#68" id="68" class="l"> 68: </a>            <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>(<span class="php-quote">'&lt;!-- %s jooEditor::'</span> . self::<span class="php-var">$editor</span> . <span class="php-quote">' --&gt;'</span>, <span class="php-quote">'Не найден редактор:'</span>);
 <a href="#69" id="69" class="l"> 69: </a>        }
 <a href="#70" id="70" class="l"> 70: </a>
-<a href="#71" id="71" class="l"> 71: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'editor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
+<a href="#71" id="71" class="l"> 71: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'pluginEditor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
 <a href="#72" id="72" class="l"> 72: </a>
 <a href="#73" id="73" class="l"> 73: </a>        <span class="php-comment">// инициализация редактора</span>
 <a href="#74" id="74" class="l"> 74: </a>        (!<span class="php-keyword1">isset</span>(self::<span class="php-var">$init</span>[self::<span class="php-var">$editor</span>]) ) ? <span class="php-keyword2">call_user_func_array</span>(<span class="php-quote">&quot;</span><span class="php-var">$editor_class</span><span class="php-quote">::init&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-var">$params</span>)) : <span class="php-keyword1">null</span>;
@@ -432,7 +432,7 @@
 </span><a href="#88" id="88" class="l"> 88: </a><span class="php-comment">     * @return mixed js код получения содержмиого, либо js код и комплект необходимого HTML кода
 </span><a href="#89" id="89" class="l"> 89: </a><span class="php-comment">     */</span>
 <a href="#90" id="90" class="l"> 90: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_content(<span class="php-var">$field_name</span>, <span class="php-keyword1">array</span> <span class="php-var">$params</span> = <span class="php-keyword1">array</span>()) {
-<a href="#91" id="91" class="l"> 91: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'editor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
+<a href="#91" id="91" class="l"> 91: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'pluginEditor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
 <a href="#92" id="92" class="l"> 92: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">call_user_func_array</span>(<span class="php-quote">&quot;</span><span class="php-var">$editor_class</span><span class="php-quote">::get_content&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-var">$field_name</span>, <span class="php-var">$params</span>));
 <a href="#93" id="93" class="l"> 93: </a>    }
 <a href="#94" id="94" class="l"> 94: </a>
@@ -446,7 +446,7 @@
 </span><a href="#102" id="102" class="l">102: </a><span class="php-comment">     * @return mixed js код получения содержмиого, либо js код и комплект необходимого HTML кода
 </span><a href="#103" id="103" class="l">103: </a><span class="php-comment">     */</span>
 <a href="#104" id="104" class="l">104: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> <span class="php-keyword2">set_content</span>(<span class="php-var">$field_name</span>, <span class="php-var">$content</span>) {
-<a href="#105" id="105" class="l">105: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'editor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
+<a href="#105" id="105" class="l">105: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'pluginEditor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
 <a href="#106" id="106" class="l">106: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">call_user_func_array</span>(<span class="php-quote">&quot;</span><span class="php-var">$editor_class</span><span class="php-quote">::set_content&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-var">$field_name</span>, <span class="php-var">$content</span>));
 <a href="#107" id="107" class="l">107: </a>    }
 <a href="#108" id="108" class="l">108: </a>
@@ -459,7 +459,7 @@
 </span><a href="#115" id="115" class="l">115: </a><span class="php-comment">     * @return mixed js код получения содержмиого, либо js код и комплект необходимого HTML кода
 </span><a href="#116" id="116" class="l">116: </a><span class="php-comment">     */</span>
 <a href="#117" id="117" class="l">117: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> insert_content(<span class="php-var">$field_name</span>, <span class="php-var">$content</span>) {
-<a href="#118" id="118" class="l">118: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'editor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
+<a href="#118" id="118" class="l">118: </a>        <span class="php-var">$editor_class</span> = <span class="php-quote">'pluginEditor'</span> . joosInflector::camelize(self::<span class="php-var">$editor</span>);
 <a href="#119" id="119" class="l">119: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">call_user_func_array</span>(<span class="php-quote">&quot;</span><span class="php-var">$editor_class</span><span class="php-quote">::set_content&quot;</span>, <span class="php-keyword1">array</span>(<span class="php-var">$field_name</span>, <span class="php-var">$content</span>));
 <a href="#120" id="120" class="l">120: </a>    }
 <a href="#121" id="121" class="l">121: </a>

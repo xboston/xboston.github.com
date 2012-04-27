@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -969,7 +969,7 @@
 <a href="#625" id="625" class="l"> 625: </a>    <span class="php-keyword1">function</span> set_state_group(<span class="php-keyword1">array</span> <span class="php-var">$cid</span> = <span class="php-keyword1">null</span>, <span class="php-var">$state</span> = <span class="php-num">1</span>) {
 <a href="#626" id="626" class="l"> 626: </a>
 <a href="#627" id="627" class="l"> 627: </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$cid</span>) &lt; <span class="php-num">1</span>) {
-<a href="#628" id="628" class="l"> 628: </a>            <span class="php-var">$this</span>-&gt;_error = __(<span class="php-quote">'Ничего не было выбрано'</span>);
+<a href="#628" id="628" class="l"> 628: </a>            <span class="php-var">$this</span>-&gt;_error = <span class="php-quote">'Ничего не было выбрано'</span>;
 <a href="#629" id="629" class="l"> 629: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#630" id="630" class="l"> 630: </a>        }
 <a href="#631" id="631" class="l"> 631: </a>
@@ -1179,7 +1179,7 @@
 <a href="#835" id="835" class="l"> 835: </a>            <span class="php-var">$el_id</span> = <span class="php-var">$name</span> . <span class="php-var">$key</span>;
 <a href="#836" id="836" class="l"> 836: </a>            <span class="php-var">$checked</span> = (bool) <span class="php-keyword1">isset</span>(<span class="php-var">$selected_ids</span>[<span class="php-var">$key</span>]);
 <a href="#837" id="837" class="l"> 837: </a>            <span class="php-var">$rets</span>[] = <span class="php-quote">'&lt;label class=&quot;checkbox&quot;&gt;'</span>;
-<a href="#838" id="838" class="l"> 838: </a>            <span class="php-var">$rets</span>[] = forms::checkbox(<span class="php-var">$name</span> . <span class="php-quote">'[]'</span>, <span class="php-var">$key</span>, <span class="php-var">$checked</span>, <span class="php-quote">'id=&quot;'</span> . <span class="php-var">$el_id</span> . <span class="php-quote">'&quot; '</span>);
+<a href="#838" id="838" class="l"> 838: </a>            <span class="php-var">$rets</span>[] = joosHtml::checkbox(<span class="php-var">$name</span> . <span class="php-quote">'[]'</span>, <span class="php-var">$key</span>, <span class="php-var">$checked</span>, <span class="php-quote">'id=&quot;'</span> . <span class="php-var">$el_id</span> . <span class="php-quote">'&quot; '</span>);
 <a href="#839" id="839" class="l"> 839: </a>            <span class="php-var">$rets</span>[] =  <span class="php-var">$value</span>;
 <a href="#840" id="840" class="l"> 840: </a>            <span class="php-var">$rets</span>[] = <span class="php-quote">'&lt;/label&gt;'</span>;
 <a href="#841" id="841" class="l"> 841: </a>            <span class="php-comment">//$rets[] = forms::label($el_id, $value);</span>
@@ -1361,23 +1361,27 @@
 <a href="#1017" id="1017" class="l">1017: </a>
 <a href="#1018" id="1018" class="l">1018: </a>}
 <a href="#1019" id="1019" class="l">1019: </a>
-<a href="#1020" id="1020" class="l">1020: </a><span class="php-keyword1">class</span> joosDatabaseException <span class="php-keyword1">extends</span> joosException {
-<a href="#1021" id="1021" class="l">1021: </a>
-<a href="#1022" id="1022" class="l">1022: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$message</span> = <span class="php-quote">''</span>, <span class="php-keyword1">array</span> <span class="php-var">$params</span> = <span class="php-keyword1">array</span>()) {
-<a href="#1023" id="1023" class="l">1023: </a>
-<a href="#1024" id="1024" class="l">1024: </a>        <span class="php-keyword1">if</span>( JDEBUG ){
-<a href="#1025" id="1025" class="l">1025: </a>            <span class="php-comment">// при включенной отладке покажем полные данные о ошибке</span>
-<a href="#1026" id="1026" class="l">1026: </a>            parent::__construct(<span class="php-keyword2">strtr</span>(<span class="php-var">$message</span>, <span class="php-var">$params</span>));
-<a href="#1027" id="1027" class="l">1027: </a>        }<span class="php-keyword1">else</span>{
-<a href="#1028" id="1028" class="l">1028: </a>            <span class="php-comment">// при выключенной отладке - общую информацию о системе</span>
-<a href="#1029" id="1029" class="l">1029: </a>            joosPages::error_database( <span class="php-keyword2">strtr</span>(<span class="php-var">$message</span>, <span class="php-var">$params</span>) );
-<a href="#1030" id="1030" class="l">1030: </a>
-<a href="#1031" id="1031" class="l">1031: </a>        }
-<a href="#1032" id="1032" class="l">1032: </a>
-<a href="#1033" id="1033" class="l">1033: </a>    }
+<a href="#1020" id="1020" class="l">1020: </a><span class="php-comment">/**
+</span><a href="#1021" id="1021" class="l">1021: </a><span class="php-comment"> * Обработка ошибок работы с базой данных
+</span><a href="#1022" id="1022" class="l">1022: </a><span class="php-comment"> * 
+</span><a href="#1023" id="1023" class="l">1023: </a><span class="php-comment"> */</span>
+<a href="#1024" id="1024" class="l">1024: </a><span class="php-keyword1">class</span> joosDatabaseException <span class="php-keyword1">extends</span> joosException {
+<a href="#1025" id="1025" class="l">1025: </a>
+<a href="#1026" id="1026" class="l">1026: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$message</span> = <span class="php-quote">''</span>, <span class="php-keyword1">array</span> <span class="php-var">$params</span> = <span class="php-keyword1">array</span>()) {
+<a href="#1027" id="1027" class="l">1027: </a>
+<a href="#1028" id="1028" class="l">1028: </a>        <span class="php-keyword1">if</span>( JDEBUG ){
+<a href="#1029" id="1029" class="l">1029: </a>            <span class="php-comment">// при включенной отладке покажем полные данные о ошибке</span>
+<a href="#1030" id="1030" class="l">1030: </a>            parent::__construct(<span class="php-keyword2">strtr</span>(<span class="php-var">$message</span>, <span class="php-var">$params</span>));
+<a href="#1031" id="1031" class="l">1031: </a>        }<span class="php-keyword1">else</span>{
+<a href="#1032" id="1032" class="l">1032: </a>            <span class="php-comment">// при выключенной отладке - общую информацию о системе</span>
+<a href="#1033" id="1033" class="l">1033: </a>            joosPages::error_database( <span class="php-keyword2">strtr</span>(<span class="php-var">$message</span>, <span class="php-var">$params</span>) );
 <a href="#1034" id="1034" class="l">1034: </a>
-<a href="#1035" id="1035" class="l">1035: </a>}
-<a href="#1036" id="1036" class="l">1036: </a></code></pre>
+<a href="#1035" id="1035" class="l">1035: </a>        }
+<a href="#1036" id="1036" class="l">1036: </a>
+<a href="#1037" id="1037" class="l">1037: </a>    }
+<a href="#1038" id="1038" class="l">1038: </a>
+<a href="#1039" id="1039" class="l">1039: </a>}
+<a href="#1040" id="1040" class="l">1040: </a></code></pre>
 	</div>
 
 	<div id="footer">

@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -506,14 +506,14 @@
 <a href="#159" id="159" class="l">159: </a>        <span class="php-var">$query</span> = <span class="php-quote">&quot;SELECT id FROM #__users WHERE user_name = &quot;</span> . <span class="php-var">$this</span>-&gt;_db-&gt;get_quoted(<span class="php-var">$this</span>-&gt;user_name) . <span class="php-quote">&quot; AND id != &quot;</span> . (int) <span class="php-var">$this</span>-&gt;id;
 <a href="#160" id="160" class="l">160: </a>        <span class="php-var">$xid</span> = <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$query</span>)-&gt;load_result();
 <a href="#161" id="161" class="l">161: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$xid</span> &amp;&amp; <span class="php-var">$xid</span> != <span class="php-var">$this</span>-&gt;id) {
-<a href="#162" id="162" class="l">162: </a>            <span class="php-var">$this</span>-&gt;_error = __(<span class="php-quote">'Логин уже зарегистрирован'</span>);
+<a href="#162" id="162" class="l">162: </a>            <span class="php-var">$this</span>-&gt;_error = <span class="php-quote">'Логин уже зарегистрирован'</span>;
 <a href="#163" id="163" class="l">163: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#164" id="164" class="l">164: </a>        }
 <a href="#165" id="165" class="l">165: </a>
 <a href="#166" id="166" class="l">166: </a>        <span class="php-var">$query</span> = <span class="php-quote">&quot;SELECT id FROM #__users WHERE email = &quot;</span> . <span class="php-var">$this</span>-&gt;_db-&gt;get_quoted(<span class="php-var">$this</span>-&gt;email) . <span class="php-quote">&quot; AND id != &quot;</span> . (int) <span class="php-var">$this</span>-&gt;id;
 <a href="#167" id="167" class="l">167: </a>        <span class="php-var">$xid</span> = <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-var">$query</span>)-&gt;load_result();
 <a href="#168" id="168" class="l">168: </a>        <span class="php-keyword1">if</span> (<span class="php-var">$xid</span> &amp;&amp; <span class="php-var">$xid</span> != <span class="php-var">$this</span>-&gt;id) {
-<a href="#169" id="169" class="l">169: </a>            <span class="php-var">$this</span>-&gt;_error = __(<span class="php-quote">'Email уже зарегистрирован'</span>);
+<a href="#169" id="169" class="l">169: </a>            <span class="php-var">$this</span>-&gt;_error = <span class="php-quote">'Email уже зарегистрирован'</span>;
 <a href="#170" id="170" class="l">170: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
 <a href="#171" id="171" class="l">171: </a>        }
 <a href="#172" id="172" class="l">172: </a>

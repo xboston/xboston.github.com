@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -586,7 +586,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_view">#</a>
-			<code><a href="source-class-joosController.html#674" title="Go to source code">get_view</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>array <var>$template</var> = <span class="php-quote">'default'</span></span>, <span> <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
+			<code><a href="source-class-joosController.html#674" title="Go to source code">get_view</a>( <span>string <var>$controller</var></span>, <span>string <var>$task</var></span>, <span>string <var>$template</var> = <span class="php-quote">'default'</span></span>, <span>array <var>$params</var> = <span class="php-keyword1">array</span>()</span> )</code>
 
 			<div class="description short">
 				
@@ -607,10 +607,10 @@
 						<dt><var>$task</var></dt>
 						<dd><code>string</code><br> выполняемая задача</dd>
 						<dt><var>$template</var></dt>
-						<dd><code>array</code><br>$params массив параметров, которые могут
-переданы в шаблон</dd>
+						<dd><code>string</code><br> название шаблона оформления</dd>
 						<dt><var>$params</var></dt>
-						<dd></dd>
+						<dd><code>array</code><br> массив параметров, которые могут переданы
+в шаблон</dd>
 					</dl></div>
 
 

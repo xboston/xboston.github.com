@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li class="active"><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -327,7 +327,6 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
 				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
@@ -335,10 +334,6 @@
 				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
 				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
-				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
-				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
-				<li><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></li>
-				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
 				<li><a href="class-modelAdminCoder_Faker.html">modelAdminCoder_Faker</a></li>
 				<li><a href="class-Route.html">Route</a></li>
@@ -373,11 +368,6 @@
 			</ul>
 
 
-			<h3>Functions</h3>
-			<ul>
-				<li><a href="function-__.html">__</a></li>
-				<li><a href="function-sig_handler.html">sig_handler</a></li>
-			</ul>
 		</div>
 	</div>
 </div>
@@ -598,7 +588,7 @@
 <a href="#210" id="210" class="l">210: </a>            <span class="php-var">$dop_class</span> = <span class="php-var">$group_by</span> ? <span class="php-var">$group_by</span> . <span class="php-quote">'-'</span> . <span class="php-var">$values</span>-&gt;<span class="php-var">$group_by</span> : <span class="php-quote">''</span>;
 <a href="#211" id="211" class="l">211: </a>
 <a href="#212" id="212" class="l">212: </a>            <span class="php-var">$table_body</span> .= <span class="php-quote">'&lt;tr class=&quot;row-'</span> . <span class="php-var">$k</span> . <span class="php-quote">'&quot; '</span> . ( <span class="php-var">$group_by</span> ? <span class="php-quote">' data-obj-ordering=&quot;'</span> . <span class="php-var">$values</span>-&gt;ordering . <span class="php-quote">'&quot;'</span> : <span class="php-quote">''</span> ) . <span class="php-quote">' data-obj-id=&quot;'</span> . <span class="php-var">$values</span>-&gt;{<span class="php-var">$obj</span>-&gt;get_key_field()} . <span class="php-quote">'&quot; id=&quot;adminlist-row-'</span> . <span class="php-var">$values</span>-&gt;{<span class="php-var">$obj</span>-&gt;get_key_field()} . <span class="php-quote">'&quot; rel=&quot;'</span> . <span class="php-var">$dop_class</span> . <span class="php-quote">'&quot;&gt;'</span>;
-<a href="#213" id="213" class="l">213: </a>            <span class="php-var">$table_body</span> .= <span class="php-quote">'&lt;td align=&quot;center&quot;&gt;'</span> . joosHtml::idBox(<span class="php-var">$i</span>, <span class="php-var">$values</span>-&gt;{<span class="php-var">$obj</span>-&gt;get_key_field()}) . <span class="php-quote">'&lt;/td&gt;'</span>;
+<a href="#213" id="213" class="l">213: </a>            <span class="php-var">$table_body</span> .= <span class="php-quote">'&lt;td align=&quot;center&quot;&gt;'</span> . joosHtml::id_box(<span class="php-var">$i</span>, <span class="php-var">$values</span>-&gt;{<span class="php-var">$obj</span>-&gt;get_key_field()}) . <span class="php-quote">'&lt;/td&gt;'</span>;
 <a href="#214" id="214" class="l">214: </a>            <span class="php-keyword1">for</span> (<span class="php-var">$index</span> = <span class="php-num">0</span>; <span class="php-var">$index</span> &lt; <span class="php-var">$n</span>; <span class="php-var">$index</span>++) {
 <a href="#215" id="215" class="l">215: </a>                <span class="php-var">$current_value</span> = <span class="php-keyword1">isset</span>(<span class="php-var">$values</span>-&gt;<span class="php-var">$fields_to_table</span>[<span class="php-var">$index</span>]) ? <span class="php-var">$values</span>-&gt;<span class="php-var">$fields_to_table</span>[<span class="php-var">$index</span>] : <span class="php-keyword1">null</span>;
 <a href="#216" id="216" class="l">216: </a>                <span class="php-var">$data</span> = joosAutoadmin::get_listing_html_element(<span class="php-var">$obj</span>, <span class="php-var">$fields_info</span>[<span class="php-var">$fields_to_table</span>[<span class="php-var">$index</span>]], <span class="php-var">$fields_to_table</span>[<span class="php-var">$index</span>], <span class="php-var">$current_value</span>, <span class="php-var">$values</span>, <span class="php-var">$option</span>);
@@ -622,11 +612,11 @@
 <a href="#234" id="234" class="l">234: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_listing_html_element(joosModel <span class="php-var">$obj</span>, <span class="php-keyword1">array</span> <span class="php-var">$element_param</span>, <span class="php-var">$key</span>, <span class="php-var">$value</span>, stdClass <span class="php-var">$values</span>, <span class="php-var">$option</span>) {
 <a href="#235" id="235" class="l">235: </a>
 <a href="#236" id="236" class="l">236: </a>        <span class="php-var">$class_file</span> = JPATH_BASE . <span class="php-quote">'/app/plugins/autoadmin/table.'</span> . <span class="php-var">$element_param</span>[<span class="php-quote">'html_table_element'</span>] . <span class="php-quote">'.php'</span>;
-<a href="#237" id="237" class="l">237: </a>        <span class="php-var">$class_name</span> = <span class="php-quote">'autoadminTable'</span> . self::get_plugin_name(<span class="php-var">$element_param</span>[<span class="php-quote">'html_table_element'</span>]);
+<a href="#237" id="237" class="l">237: </a>        <span class="php-var">$class_name</span> = <span class="php-quote">'pluginAutoadminTable'</span> . self::get_plugin_name(<span class="php-var">$element_param</span>[<span class="php-quote">'html_table_element'</span>]);
 <a href="#238" id="238" class="l">238: </a>
 <a href="#239" id="239" class="l">239: </a>        <span class="php-keyword1">if</span> (! joosFile::exists(<span class="php-var">$class_file</span>)) {
 <a href="#240" id="240" class="l">240: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminFilePluginNotFoundException(
-<a href="#241" id="241" class="l">241: </a>                <span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Файл плагина joosAutoadmin %s  для вывода элемента %s не найден'</span>), <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>)
+<a href="#241" id="241" class="l">241: </a>                <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Файл плагина joosAutoadmin %s  для вывода элемента %s не найден'</span>, <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>)
 <a href="#242" id="242" class="l">242: </a>            );
 <a href="#243" id="243" class="l">243: </a>        }
 <a href="#244" id="244" class="l">244: </a>
@@ -634,7 +624,7 @@
 <a href="#246" id="246" class="l">246: </a>
 <a href="#247" id="247" class="l">247: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">class_exists</span>(<span class="php-var">$class_name</span>)) {
 <a href="#248" id="248" class="l">248: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminClassPlugionNotFoundException(
-<a href="#249" id="249" class="l">249: </a>                <span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Класс для обработки %s средствами joosAutoadmin в файле %s не найден'</span>), <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>)
+<a href="#249" id="249" class="l">249: </a>                <span class="php-keyword2">sprintf</span>(<span class="php-quote">'Класс для обработки %s средствами joosAutoadmin в файле %s не найден'</span>, <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>)
 <a href="#250" id="250" class="l">250: </a>            );
 <a href="#251" id="251" class="l">251: </a>        }
 <a href="#252" id="252" class="l">252: </a>
@@ -777,16 +767,16 @@
 <a href="#389" id="389" class="l">389: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_edit_html_element(<span class="php-var">$element_param</span>, <span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-var">$obj_data</span>, <span class="php-var">$params</span>, <span class="php-var">$tabs</span>) {
 <a href="#390" id="390" class="l">390: </a>
 <a href="#391" id="391" class="l">391: </a>        <span class="php-var">$class_file</span> = JPATH_BASE . <span class="php-quote">'/app/plugins/autoadmin/edit.'</span> . <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element'</span>] . <span class="php-quote">'.php'</span>;
-<a href="#392" id="392" class="l">392: </a>        <span class="php-var">$class_name</span> = <span class="php-quote">'autoadminEdit'</span> . self::get_plugin_name(<span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element'</span>]);
+<a href="#392" id="392" class="l">392: </a>        <span class="php-var">$class_name</span> = <span class="php-quote">'pluginAutoadminEdit'</span> . self::get_plugin_name(<span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element'</span>]);
 <a href="#393" id="393" class="l">393: </a>
 <a href="#394" id="394" class="l">394: </a>        <span class="php-keyword1">if</span> (! joosFile::exists(<span class="php-var">$class_file</span>)) {
-<a href="#395" id="395" class="l">395: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminFilePluginNotFoundException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Файл плагина joosAutoadmin %s  для редактирования элемента %s не найден'</span>), <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>));
+<a href="#395" id="395" class="l">395: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminFilePluginNotFoundException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Файл плагина joosAutoadmin %s  для редактирования элемента %s не найден'</span>, <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>));
 <a href="#396" id="396" class="l">396: </a>        }
 <a href="#397" id="397" class="l">397: </a>
 <a href="#398" id="398" class="l">398: </a>        <span class="php-keyword1">require_once</span> <span class="php-var">$class_file</span>;
 <a href="#399" id="399" class="l">399: </a>
 <a href="#400" id="400" class="l">400: </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">class_exists</span>(<span class="php-var">$class_name</span>)) {
-<a href="#401" id="401" class="l">401: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminClassPlugionNotFoundException(<span class="php-keyword2">sprintf</span>(__(<span class="php-quote">'Класс для обработки %s средствами joosAutoadmin в файле %s не найден'</span>), <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>));
+<a href="#401" id="401" class="l">401: </a>            <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> joosAutoadminClassPlugionNotFoundException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Класс для обработки %s средствами joosAutoadmin в файле %s не найден'</span>, <span class="php-var">$class_file</span>, <span class="php-var">$class_name</span>));
 <a href="#402" id="402" class="l">402: </a>        }
 <a href="#403" id="403" class="l">403: </a>
 <a href="#404" id="404" class="l">404: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">call_user_func_array</span>(<span class="php-var">$class_name</span> . <span class="php-quote">'::render'</span>, <span class="php-keyword1">array</span>(<span class="php-var">$element_param</span>, <span class="php-var">$key</span>, <span class="php-var">$value</span>, <span class="php-var">$obj_data</span>, <span class="php-var">$params</span>, <span class="php-var">$tabs</span>));
@@ -907,8 +897,8 @@
 <a href="#519" id="519" class="l">519: </a>                        <span class="php-var">$fields_info</span>[<span class="php-var">$obj_key</span>], <span class="php-keyword1">array</span>(
 <a href="#520" id="520" class="l">520: </a>                        <span class="php-quote">'html_table_element_param'</span> =&gt; <span class="php-keyword1">array</span>(
 <a href="#521" id="521" class="l">521: </a>                            <span class="php-quote">'statuses'</span> =&gt; <span class="php-keyword1">array</span>(
-<a href="#522" id="522" class="l">522: </a>                                <span class="php-num">0</span> =&gt; __(<span class="php-quote">'Скрыто'</span>),
-<a href="#523" id="523" class="l">523: </a>                                <span class="php-num">1</span> =&gt; __(<span class="php-quote">'Опубликовано'</span>)
+<a href="#522" id="522" class="l">522: </a>                                <span class="php-num">0</span> =&gt; <span class="php-quote">'Скрыто'</span>,
+<a href="#523" id="523" class="l">523: </a>                                <span class="php-num">1</span> =&gt; <span class="php-quote">'Опубликовано'</span>
 <a href="#524" id="524" class="l">524: </a>                            ),
 <a href="#525" id="525" class="l">525: </a>                            <span class="php-quote">'images'</span> =&gt; <span class="php-keyword1">array</span>(
 <a href="#526" id="526" class="l">526: </a>                                <span class="php-num">0</span> =&gt; <span class="php-quote">'publish_x.png'</span>,
@@ -951,12 +941,12 @@
 <a href="#563" id="563" class="l">563: </a>
 <a href="#564" id="564" class="l">564: </a>
 <a href="#565" id="565" class="l">565: </a>                    <span class="php-keyword1">case</span> <span class="php-quote">'search'</span>:
-<a href="#566" id="566" class="l">566: </a>                        <span class="php-var">$results</span>[] = forms::label(<span class="php-keyword1">array</span>(<span class="php-quote">'for'</span> =&gt; <span class="php-quote">'search_elements'</span>), <span class="php-quote">'Поиск'</span>);
+<a href="#566" id="566" class="l">566: </a>                        <span class="php-var">$results</span>[] = joosHtml::label(<span class="php-keyword1">array</span>(<span class="php-quote">'for'</span> =&gt; <span class="php-quote">'search_elements'</span>), <span class="php-quote">'Поиск'</span>);
 <a href="#567" id="567" class="l">567: </a>
 <a href="#568" id="568" class="l">568: </a>                        <span class="php-var">$search_value</span> = joosSession::get_user_state_from_request(<span class="php-quote">&quot;search-&quot;</span> . <span class="php-var">$obj</span>-&gt;get_class_name(), <span class="php-quote">'search'</span>, <span class="php-keyword1">false</span>);
 <a href="#569" id="569" class="l">569: </a>
-<a href="#570" id="570" class="l">570: </a>                        <span class="php-var">$results</span>[] = forms::input(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'search_elements'</span>,<span class="php-quote">'id'</span> =&gt; <span class="php-quote">'search_elements'</span>), <span class="php-var">$search_value</span>);
-<a href="#571" id="571" class="l">571: </a>                        <span class="php-var">$hidden_elements</span>[] = forms::hidden(<span class="php-quote">'search'</span>, <span class="php-var">$search_value</span>);
+<a href="#570" id="570" class="l">570: </a>                        <span class="php-var">$results</span>[] = joosHtml::input(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'search_elements'</span>,<span class="php-quote">'id'</span> =&gt; <span class="php-quote">'search_elements'</span>), <span class="php-var">$search_value</span>);
+<a href="#571" id="571" class="l">571: </a>                        <span class="php-var">$hidden_elements</span>[] = joosHtml::hidden(<span class="php-quote">'search'</span>, <span class="php-var">$search_value</span>);
 <a href="#572" id="572" class="l">572: </a>
 <a href="#573" id="573" class="l">573: </a>                        <span class="php-keyword1">if</span> (<span class="php-var">$search_value</span> !== <span class="php-keyword1">false</span> &amp;&amp; joosString::<span class="php-keyword2">trim</span>(<span class="php-var">$search_value</span>) != <span class="php-quote">''</span>) {
 <a href="#574" id="574" class="l">574: </a>                            <span class="php-keyword1">foreach</span> (<span class="php-var">$value</span> <span class="php-keyword1">as</span> <span class="php-var">$selected_value</span>) {
@@ -972,19 +962,19 @@
 <a href="#584" id="584" class="l">584: </a>                            <span class="php-var">$field_name</span> = <span class="php-var">$params_key</span>;
 <a href="#585" id="585" class="l">585: </a>                            <span class="php-var">$field_title</span> = <span class="php-var">$value</span>[<span class="php-var">$field_name</span>][<span class="php-quote">'name'</span>];
 <a href="#586" id="586" class="l">586: </a>
-<a href="#587" id="587" class="l">587: </a>                            <span class="php-var">$results</span>[] = forms::label(<span class="php-keyword1">array</span>(
+<a href="#587" id="587" class="l">587: </a>                            <span class="php-var">$results</span>[] = joosHtml::label(<span class="php-keyword1">array</span>(
 <a href="#588" id="588" class="l">588: </a>                                <span class="php-quote">'for'</span> =&gt; <span class="php-quote">'filter_'</span> . <span class="php-var">$field_name</span>
 <a href="#589" id="589" class="l">589: </a>                            ), <span class="php-var">$field_title</span>);
 <a href="#590" id="590" class="l">590: </a>
 <a href="#591" id="591" class="l">591: </a>                            <span class="php-var">$datas_for_select</span> = <span class="php-keyword1">array</span>(
-<a href="#592" id="592" class="l">592: </a>                                -<span class="php-num">1</span> =&gt; __(<span class="php-quote">'Всё сразу'</span>)
+<a href="#592" id="592" class="l">592: </a>                                -<span class="php-num">1</span> =&gt; <span class="php-quote">'Всё сразу'</span>
 <a href="#593" id="593" class="l">593: </a>                            );
 <a href="#594" id="594" class="l">594: </a>                            <span class="php-var">$datas_for_select</span> += ( <span class="php-keyword1">isset</span>(<span class="php-var">$value</span>[<span class="php-var">$field_name</span>][<span class="php-quote">'call_from'</span>]) &amp;&amp; <span class="php-keyword2">is_callable</span>(<span class="php-var">$value</span>[<span class="php-var">$field_name</span>][<span class="php-quote">'call_from'</span>]) ) ? <span class="php-keyword2">call_user_func</span>(<span class="php-var">$value</span>[<span class="php-var">$field_name</span>][<span class="php-quote">'call_from'</span>], <span class="php-var">$obj</span>, <span class="php-var">$params_key</span>) : <span class="php-keyword1">array</span>();
 <a href="#595" id="595" class="l">595: </a>
 <a href="#596" id="596" class="l">596: </a>                            <span class="php-var">$selected_value</span> = joosSession::get_user_state_from_request(<span class="php-quote">'filter-'</span> . <span class="php-quote">'-'</span> . <span class="php-var">$field_name</span> . <span class="php-quote">'-'</span> . <span class="php-var">$obj</span>-&gt;get_class_name(), <span class="php-var">$field_name</span>, -<span class="php-num">1</span>);
 <a href="#597" id="597" class="l">597: </a>                            <span class="php-var">$selected_value</span> = <span class="php-var">$selected_value</span> === <span class="php-quote">'0'</span> ? <span class="php-quote">'0'</span> : <span class="php-var">$selected_value</span>;
 <a href="#598" id="598" class="l">598: </a>
-<a href="#599" id="599" class="l">599: </a>                            <span class="php-var">$results</span>[] = forms::dropdown(
+<a href="#599" id="599" class="l">599: </a>                            <span class="php-var">$results</span>[] = joosHtml::dropdown(
 <a href="#600" id="600" class="l">600: </a>                                <span class="php-keyword1">array</span>(
 <a href="#601" id="601" class="l">601: </a>                                    <span class="php-quote">'name'</span> =&gt; <span class="php-quote">'filter_'</span> . <span class="php-var">$field_name</span>,
 <a href="#602" id="602" class="l">602: </a>                                    <span class="php-quote">'data-obj-name'</span> =&gt; <span class="php-var">$field_name</span>,
@@ -994,7 +984,7 @@
 <a href="#606" id="606" class="l">606: </a>                                )
 <a href="#607" id="607" class="l">607: </a>                            );
 <a href="#608" id="608" class="l">608: </a>
-<a href="#609" id="609" class="l">609: </a>                            <span class="php-var">$hidden_elements</span>[] = forms::hidden(<span class="php-var">$field_name</span>, <span class="php-var">$selected_value</span>);
+<a href="#609" id="609" class="l">609: </a>                            <span class="php-var">$hidden_elements</span>[] = joosHtml::hidden(<span class="php-var">$field_name</span>, <span class="php-var">$selected_value</span>);
 <a href="#610" id="610" class="l">610: </a>                            <span class="php-keyword1">if</span> (( <span class="php-var">$selected_value</span> &amp;&amp; <span class="php-var">$selected_value</span> != -<span class="php-num">1</span> ) <span class="php-keyword1">OR</span> <span class="php-var">$selected_value</span> === <span class="php-quote">'0'</span>) {
 <a href="#611" id="611" class="l">611: </a>                                <span class="php-var">$wheres_filter</span>[] = <span class="php-keyword2">sprintf</span>(<span class="php-quote">'%s=%s'</span>, joosDatabase::instance()-&gt;get_name_quote(<span class="php-var">$field_name</span>), joosDatabase::instance()-&gt;get_quoted(<span class="php-var">$selected_value</span>));
 <a href="#612" id="612" class="l">612: </a>                            }
@@ -1012,12 +1002,12 @@
 <a href="#624" id="624" class="l">624: </a>
 <a href="#625" id="625" class="l">625: </a>                        <span class="php-var">$selected_value</span> = joosSession::get_user_state_from_request(<span class="php-quote">&quot;extrafilter-&quot;</span> . <span class="php-var">$obj</span>-&gt;get_class_name(), <span class="php-quote">'filter_extrafilter'</span>, -<span class="php-num">1</span>);
 <a href="#626" id="626" class="l">626: </a>
-<a href="#627" id="627" class="l">627: </a>                        <span class="php-var">$results</span>[] = forms::label(<span class="php-keyword1">array</span>(<span class="php-quote">'for'</span> =&gt; <span class="php-quote">'filter_extrafilter'</span>), <span class="php-quote">'Фильтр'</span>);
-<a href="#628" id="628" class="l">628: </a>                        <span class="php-var">$results</span>[] = forms::dropdown(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'filter_extrafilter_selector'</span>,
+<a href="#627" id="627" class="l">627: </a>                        <span class="php-var">$results</span>[] = joosHtml::label(<span class="php-keyword1">array</span>(<span class="php-quote">'for'</span> =&gt; <span class="php-quote">'filter_extrafilter'</span>), <span class="php-quote">'Фильтр'</span>);
+<a href="#628" id="628" class="l">628: </a>                        <span class="php-var">$results</span>[] = joosHtml::dropdown(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-quote">'filter_extrafilter_selector'</span>,
 <a href="#629" id="629" class="l">629: </a>                            <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'extrafilter_elements'</span>,
 <a href="#630" id="630" class="l">630: </a>                            <span class="php-quote">'options'</span> =&gt; <span class="php-var">$datas_for_select</span>,
 <a href="#631" id="631" class="l">631: </a>                            <span class="php-quote">'selected'</span> =&gt; <span class="php-var">$selected_value</span>));
-<a href="#632" id="632" class="l">632: </a>                        <span class="php-var">$hidden_elements</span>[] = forms::hidden(<span class="php-quote">'filter_extrafilter'</span>, <span class="php-var">$selected_value</span>);
+<a href="#632" id="632" class="l">632: </a>                        <span class="php-var">$hidden_elements</span>[] = joosHtml::hidden(<span class="php-quote">'filter_extrafilter'</span>, <span class="php-var">$selected_value</span>);
 <a href="#633" id="633" class="l">633: </a>
 <a href="#634" id="634" class="l">634: </a>                        <span class="php-comment">//self::$data_overload = ( $selected_value &amp;&amp; isset($value[$selected_value]['call_from']) &amp;&amp; is_callable($value[$selected_value]['call_from']) ) ? call_user_func($value[$selected_value]['call_from'], $obj) : array();</span>
 <a href="#635" id="635" class="l">635: </a>                        self::<span class="php-var">$data_overload</span> = ( <span class="php-var">$selected_value</span> &amp;&amp; <span class="php-keyword1">isset</span>(<span class="php-var">$value</span>[<span class="php-var">$selected_value</span>][<span class="php-quote">'call_from'</span>]) &amp;&amp; <span class="php-keyword2">is_callable</span>(<span class="php-var">$value</span>[<span class="php-var">$selected_value</span>][<span class="php-quote">'call_from'</span>]) ) ? <span class="php-var">$value</span>[<span class="php-var">$selected_value</span>][<span class="php-quote">'call_from'</span>] : <span class="php-keyword1">array</span>();

@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -28,7 +28,7 @@
 						<li class="divider-vertical"></li>
 
 						<li>
-							<a href="package-Joostina.html" title="Summary of Joostina"><span>Package</span></a>
+							<a href="package-Plugins.Editor.html" title="Summary of Plugins\Editor"><span>Package</span></a>
 						</li>
 						<li class="active">
 							<a href="class-noneEditor.html" title="Summary of noneEditor"><span>Class</span></a>
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -293,7 +295,7 @@
 				<li><a href="package-Core.Libraries.Validate.html">Validate</a>
 						</li>
 							</ul></li></ul></li>
-				<li class="active"><a href="package-Joostina.html">Joostina<span></span></a>
+				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Controller.html">Controller</a>
 						</li>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
-				<li><a href="package-Plugins.html">Plugins<span></span></a>
+				<li class="active"><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li class="active"><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -326,9 +326,10 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-joosAdminPagenator.html">joosAdminPagenator</a></li>
-				<li><a href="class-joosModuleAdmin.html">joosModuleAdmin</a></li>
 				<li class="active"><a href="class-noneEditor.html">noneEditor</a></li>
+				<li><a href="class-pluginEditorElrte.html">pluginEditorElrte</a></li>
+				<li><a href="class-pluginEditorJwysiwyg.html">pluginEditorJwysiwyg</a></li>
+				<li><a href="class-pluginEditorRedactor.html">pluginEditorRedactor</a></li>
 			</ul>
 
 
@@ -346,6 +347,11 @@
 <div id="content" class="class">
 	<h1>Class noneEditor</h1>
 
+	<div class="description">
+	
+<p>Для вывода пустого поля без редактора</p>
+
+	</div>
 
 
 
@@ -360,12 +366,15 @@
 		
 
 				<b>Copyright:</b>
-				Авторские права (C) 2007-2010 Joostina team. Все права
-защищены.<br />
+				(C) 2007-2012 Joostina Team<br />
 				<b>License:</b>
-				<a href="Лицензия">http://www.gnu.org/licenses/gpl-2.0.htm GNU/GPL, или help/license.php
-Joostina! - свободное программное обеспечение распространяемое по условиям лицензии GNU/GPL
-Для получения информации о используемых расширениях и замечаний об авторском праве, смотрите файл help/copyright.php.</a><br />
+				<a href="MIT">License http://www.opensource.org/licenses/mit-license.php
+Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights</a><br />
+				<b>Author:</b>
+				Joostina Team &lt;<a
+href="mailto:info&#64;joostina.ru">info&#64;<!---->joostina.ru</a>&gt;<br />
+				<b>Version:</b>
+				1.0<br />
 		<b>Located at:</b> <a href="source-class-noneEditor.html#13" title="Go to source code">app/plugins/editors/none/none.php</a><br />
 	</div>
 
@@ -384,7 +393,7 @@ Joostina! - свободное программное обеспечение р�
 
 			<td class="name"><div>
 			<a class="anchor" href="#_init">#</a>
-			<code><a href="source-class-noneEditor.html#15" title="Go to source code">init</a>( )</code>
+			<code><a href="source-class-noneEditor.html#27" title="Go to source code">init</a>( )</code>
 
 			<div class="description short">
 				
@@ -413,7 +422,7 @@ Joostina! - свободное программное обеспечение р�
 
 			<td class="name"><div>
 			<a class="anchor" href="#_display">#</a>
-			<code><a href="source-class-noneEditor.html#22" title="Go to source code">display</a>( <span>string <var>$name</var></span>, <span>string <var>$content</var></span>, <span>string <var>$hiddenField</var></span>, <span>string <var>$width</var></span>, <span>string <var>$height</var></span>, <span>integer <var>$col</var></span>, <span>integer <var>$row</var></span> )</code>
+			<code><a href="source-class-noneEditor.html#34" title="Go to source code">display</a>( <span>string <var>$name</var></span>, <span>string <var>$content</var></span>, <span>string <var>$hiddenField</var></span>, <span>string <var>$width</var></span>, <span>string <var>$height</var></span>, <span>integer <var>$col</var></span>, <span>integer <var>$row</var></span> )</code>
 
 			<div class="description short">
 				
@@ -465,7 +474,7 @@ Joostina! - свободное программное обеспечение р�
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_content">#</a>
-			<code><a href="source-class-noneEditor.html#37" title="Go to source code">get_content</a>( <span>string <var>$name</var></span>, <span>string <var>$hiddenField</var></span> )</code>
+			<code><a href="source-class-noneEditor.html#49" title="Go to source code">get_content</a>( <span>string <var>$name</var></span>, <span>string <var>$hiddenField</var></span> )</code>
 
 			<div class="description short">
 				
@@ -507,7 +516,7 @@ Joostina! - свободное программное обеспечение р�
 
 			<td class="name"><div>
 			<a class="anchor" href="#_insert_content">#</a>
-			<code><a href="source-class-noneEditor.html#47" title="Go to source code">insert_content</a>( <span> <var>$field_name</var></span>, <span> <var>$content</var></span> )</code>
+			<code><a href="source-class-noneEditor.html#59" title="Go to source code">insert_content</a>( <span> <var>$field_name</var></span>, <span> <var>$content</var></span> )</code>
 
 			<div class="description short">
 				

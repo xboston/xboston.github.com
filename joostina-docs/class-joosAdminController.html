@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -390,7 +390,7 @@
 		
 		
 
-		<b>Located at:</b> <a href="source-class-joosAdminController.html#364" title="Go to source code">core/admin.root.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosAdminController.html#365" title="Go to source code">core/admin.root.php</a><br />
 	</div>
 
 
@@ -408,7 +408,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_get_submenu">#</a>
-			<code><a href="source-class-joosAdminController.html#389" title="Go to source code">get_submenu</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#390" title="Go to source code">get_submenu</a>( )</code>
 
 			<div class="description short">
 				
@@ -437,7 +437,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_action_before">#</a>
-			<code><a href="source-class-joosAdminController.html#394" title="Go to source code">action_before</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#395" title="Go to source code">action_before</a>( )</code>
 
 			<div class="description short">
 				
@@ -466,7 +466,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_index">#</a>
-			<code><a href="source-class-joosAdminController.html#415" title="Go to source code">index</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#416" title="Go to source code">index</a>( )</code>
 
 			<div class="description short">
 				
@@ -495,7 +495,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_create">#</a>
-			<code><a href="source-class-joosAdminController.html#437" title="Go to source code">create</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#438" title="Go to source code">create</a>( )</code>
 
 			<div class="description short">
 				
@@ -524,7 +524,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_edit">#</a>
-			<code><a href="source-class-joosAdminController.html#441" title="Go to source code">edit</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#442" title="Go to source code">edit</a>( )</code>
 
 			<div class="description short">
 				
@@ -553,7 +553,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save">#</a>
-			<code><a href="source-class-joosAdminController.html#451" title="Go to source code">save</a>( <span> <var>$redirect</var> = <span class="php-num">0</span> </span> )</code>
+			<code><a href="source-class-joosAdminController.html#452" title="Go to source code">save</a>( <span> <var>$redirect</var> = <span class="php-num">0</span> </span> )</code>
 
 			<div class="description short">
 				
@@ -582,7 +582,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_apply">#</a>
-			<code><a href="source-class-joosAdminController.html#482" title="Go to source code">apply</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#483" title="Go to source code">apply</a>( )</code>
 
 			<div class="description short">
 				
@@ -611,7 +611,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_save_and_new">#</a>
-			<code><a href="source-class-joosAdminController.html#487" title="Go to source code">save_and_new</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#488" title="Go to source code">save_and_new</a>( )</code>
 
 			<div class="description short">
 				
@@ -640,7 +640,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_remove">#</a>
-			<code><a href="source-class-joosAdminController.html#492" title="Go to source code">remove</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#493" title="Go to source code">remove</a>( )</code>
 
 			<div class="description short">
 				
@@ -669,7 +669,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_publish">#</a>
-			<code><a href="source-class-joosAdminController.html#504" title="Go to source code">publish</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#505" title="Go to source code">publish</a>( )</code>
 
 			<div class="description short">
 				
@@ -698,7 +698,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_unpublish">#</a>
-			<code><a href="source-class-joosAdminController.html#508" title="Go to source code">unpublish</a>( )</code>
+			<code><a href="source-class-joosAdminController.html#509" title="Go to source code">unpublish</a>( )</code>
 
 			<div class="description short">
 				
@@ -727,7 +727,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_publish_unpublish">#</a>
-			<code><a href="source-class-joosAdminController.html#512" title="Go to source code">publish_unpublish</a>( <span> <var>$state</var> = <span class="php-num">1</span></span> )</code>
+			<code><a href="source-class-joosAdminController.html#513" title="Go to source code">publish_unpublish</a>( <span> <var>$state</var> = <span class="php-num">1</span></span> )</code>
 
 			<div class="description short">
 				
@@ -764,7 +764,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosAdminController.html#374" title="Go to source code"><var>$submenu</var></a>
+					<a href="source-class-joosAdminController.html#375" title="Go to source code"><var>$submenu</var></a>
 			</td>
 			<td class="value"><code><span class="php-keyword1">array</span>()</code></td>
 			<td class="description"><div>
@@ -793,7 +793,7 @@
 			</code></td>
 
 			<td class="name">
-					<a href="source-class-joosAdminController.html#381" title="Go to source code"><var>$active_menu</var></a>
+					<a href="source-class-joosAdminController.html#382" title="Go to source code"><var>$active_menu</var></a>
 			</td>
 			<td class="value"><code><span class="php-quote">'default'</span></code></td>
 			<td class="description"><div>

@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -467,6 +467,104 @@ ENT_NOQUOTES</dd>
 					<h4>Returns</h4>
 					<div class="list">
 						<code>string</code><br>преобразованная строка<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="make_safe" id="_make_safe">
+
+			<td class="attributes"><code>
+				
+				 public static
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_make_safe">#</a>
+			<code><a href="source-class-joosFilter.html#43" title="Go to source code">make_safe</a>( <span>mixed <var>&amp; $mixed</var></span>, <span>const <var>$quote_style</var> = ENT_QUOTES</span>, <span>mixed <var>$exclude_keys</var> = <span class="php-quote">''</span></span> )</code>
+
+			<div class="description short">
+				
+<p>"Обезопасивание" сущностей. Защищает
+данные от вывода их в прямом HTML формате.
+Варианты использования - в формах или
+небезопасных выводах</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>"Обезопасивание" сущностей. Защищает
+данные от вывода их в прямом HTML формате.
+Варианты использования - в формах или
+небезопасных выводах</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$mixed</var></dt>
+						<dd><code>mixed</code><br> строка массив или объект для
+обезопасивания</dd>
+						<dt><var>$quote_style</var></dt>
+						<dd><code>const</code><br> тип зашиты - ENT_COMPAT, ENT_QUOTES или ENT_NOQUOTES</dd>
+						<dt><var>$exclude_keys</var></dt>
+						<dd><code>mixed</code><br> массив или название ключа массива или поля
+объекта которые обезопасивать не стоит</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>mixed</code><br>обезопасенная сущность<br />
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="specialurlencode" id="_specialurlencode">
+
+			<td class="attributes"><code>
+				
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_specialurlencode">#</a>
+			<code><a href="source-class-joosFilter.html#71" title="Go to source code">specialurlencode</a>( <span>string <var>$str</var></span>, <span>boolean <var>$double_encode</var> = <span class="php-keyword1">TRUE</span></span> )</code>
+
+			<div class="description short">
+				
+<p>Perform a joosHtml::specialchars() with additional URL specific encoding.</p>
+
+			</div>
+
+			<div class="description detailed hidden">
+				
+<p>Perform a joosHtml::specialchars() with additional URL specific encoding.</p>
+
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$str</var></dt>
+						<dd><code>string</code><br>string to convert</dd>
+						<dt><var>$double_encode</var></dt>
+						<dd><code>boolean</code><br>encode existing entities</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code>string</code><br />
 					</div>
 
 

@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -211,6 +211,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -227,7 +229,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -306,13 +308,11 @@
 							</ul></li>
 				<li class="active"><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -326,7 +326,6 @@
 		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
-				<li><a href="class-forms.html">forms</a></li>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
 				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
 				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
@@ -334,10 +333,6 @@
 				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
 				<li><a href="class-joosAdminViewToolbarListing.html">joosAdminViewToolbarListing</a></li>
 				<li><a href="class-joosAutoadminHTML.html">joosAutoadminHTML</a></li>
-				<li><a href="class-joosAutoloader.html">joosAutoloader</a></li>
-				<li><a href="class-joosCoreAdmin.html">joosCoreAdmin</a></li>
-				<li><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></li>
-				<li><a href="class-joosUpload.html">joosUpload</a></li>
 				<li><a href="class-joosValidateHelper.html">joosValidateHelper</a></li>
 				<li><a href="class-modelAdminCoder_Faker.html">modelAdminCoder_Faker</a></li>
 				<li><a href="class-Route.html">Route</a></li>
@@ -372,11 +367,6 @@
 			</ul>
 
 
-			<h3>Functions</h3>
-			<ul>
-				<li><a href="function-__.html">__</a></li>
-				<li><a href="function-sig_handler.html">sig_handler</a></li>
-			</ul>
 		</div>
 	</div>
 </div>
@@ -395,15 +385,15 @@
 	<div>
 		<h4>Direct known implementers</h4>
 		<div class="well">
-			<a href="class-autoadminTableDateFormat.html">autoadminTableDateFormat</a>, 
-			<a href="class-autoadminTableEditlink.html">autoadminTableEditlink</a>, 
-			<a href="class-autoadminTableExtra.html">autoadminTableExtra</a>, 
-			<a href="class-autoadminTableOneFromArray.html">autoadminTableOneFromArray</a>, 
-			<a href="class-autoadminTableOrdering.html">autoadminTableOrdering</a>, 
-			<a href="class-autoadminTableStatusChange.html">autoadminTableStatusChange</a>, 
-			<a href="class-autoadminTableValue.html">autoadminTableValue</a>, 
-			<a href="class-autoadminTableValuesMulti.html">autoadminTableValuesMulti</a>, 
-			<a href="class-autoadminTableValuesMultiHref.html">autoadminTableValuesMultiHref</a>
+			<a href="class-pluginAutoadminTableDateFormat.html">pluginAutoadminTableDateFormat</a>, 
+			<a href="class-pluginAutoadminTableEditlink.html">pluginAutoadminTableEditlink</a>, 
+			<a href="class-pluginAutoadminTableExtra.html">pluginAutoadminTableExtra</a>, 
+			<a href="class-pluginAutoadminTableOneFromArray.html">pluginAutoadminTableOneFromArray</a>, 
+			<a href="class-pluginAutoadminTableOrdering.html">pluginAutoadminTableOrdering</a>, 
+			<a href="class-pluginAutoadminTableStatusChange.html">pluginAutoadminTableStatusChange</a>, 
+			<a href="class-pluginAutoadminTableValue.html">pluginAutoadminTableValue</a>, 
+			<a href="class-pluginAutoadminTableValuesMulti.html">pluginAutoadminTableValuesMulti</a>, 
+			<a href="class-pluginAutoadminTableValuesMultiHref.html">pluginAutoadminTableValuesMultiHref</a>
 		</div>
 	</div>
 
@@ -433,7 +423,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-joosAutoadminPluginsTable.html#846" title="Go to source code">render</a>( <span><a href="class-joosModel.html">joosModel</a> <var>$obj</var></span>, <span>array <var>$element_param</var></span>, <span> <var>$key</var></span>, <span> <var>$value</var></span>, <span><a href="class-stdClass.html">stdClass</a> <var>$values</var></span>, <span> <var>$option</var></span> )</code>
+			<code><a href="source-class-joosAutoadminPluginsTable.html#846" title="Go to source code">render</a>( <span><a href="class-joosModel.html">joosModel</a> <var>$obj</var></span>, <span>array <var>$element_param</var></span>, <span> <var>$key</var></span>, <span> <var>$value</var></span>, <span>stdClass <var>$values</var></span>, <span> <var>$option</var></span> )</code>
 
 			<div class="description short">
 				

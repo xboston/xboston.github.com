@@ -208,6 +208,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -224,7 +226,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -303,13 +305,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -549,17 +549,17 @@ Mysqli Системная библиотека</td>
 <tr>
 	<td class="name"><a href="class-joosDatabaseMysqliUtils.html">joosDatabaseMysqliUtils</a></td>
 	<td>Библиотека утилитарных функций работы с
-базой данных</td>
+базой данных через расширение mysqli</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosDatabasePDO.html">joosDatabasePDO</a></td>
-	<td>joosDatabase - Библиотека работы с базой данных
-MySQL через PDO Системная библиотека</td>
+	<td>Библиотека работы с базой данных MySQL через
+PDO Системная библиотека</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosDatabaseUtilsPDO.html">joosDatabaseUtilsPDO</a></td>
-	<td>Класс, содержащий мелкие функции для работы
-с базой данных</td>
+	<td>Библиотека утилитарных функций работы с
+базой данных через расширение PDO</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosDateTime.html">joosDateTime</a></td>
@@ -707,7 +707,7 @@ MySQL через PDO Системная библиотека</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosUpload.html">joosUpload</a></td>
-	<td></td>
+	<td>Работа с загрузкой файлов</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosValidate.html">joosValidate</a></td>
@@ -746,11 +746,11 @@ MySQL через PDO Системная библиотека</td>
 <table class="summary table table-bordered table-striped" id="exceptions">
 <tr>
 	<td class="name"><a href="class-joosAutoadminClassPlugionNotFoundException.html">joosAutoadminClassPlugionNotFoundException</a></td>
-	<td></td>
+	<td>Обработка всех уровней ошибок</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosAutoadminFilePluginNotFoundException.html">joosAutoadminFilePluginNotFoundException</a></td>
-	<td></td>
+	<td>Обработка всех уровней ошибок</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosAutoloaderClassNotFoundException.html">joosAutoloaderClassNotFoundException</a></td>
@@ -773,15 +773,15 @@ MySQL через PDO Системная библиотека</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosCoreException.html">joosCoreException</a></td>
-	<td></td>
+	<td>Обработка исключение уровня ядра</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosDatabaseException.html">joosDatabaseException</a></td>
-	<td></td>
+	<td>Обработка ошибок работы с базой данных</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosException.html">joosException</a></td>
-	<td></td>
+	<td>Обработка всех уровней ошибок</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosFileLibrariesException.html">joosFileLibrariesException</a></td>
@@ -793,11 +793,12 @@ MySQL через PDO Системная библиотека</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosImageLibrariesException.html">joosImageLibrariesException</a></td>
-	<td></td>
+	<td>Обработка исключений работы с
+изображениями</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosModulesException.html">joosModulesException</a></td>
-	<td></td>
+	<td>Обработка исключение работы с модулями</td>
 </tr>
 <tr>
 	<td class="name"><a href="class-joosUploadLibrariesException.html">joosUploadLibrariesException</a></td>

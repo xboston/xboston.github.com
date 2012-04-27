@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -421,7 +421,7 @@
 <a href="#77" id="77" class="l"> 77: </a>                <span class="php-quote">'html_edit_element_param'</span> =&gt; <span class="php-keyword1">array</span>(
 <a href="#78" id="78" class="l"> 78: </a>                    <span class="php-quote">'call_from'</span> =&gt; <span class="php-keyword1">function</span> (<span class="php-var">$user</span>) {
 <a href="#79" id="79" class="l"> 79: </a>                        <span class="php-var">$name</span> = <span class="php-var">$user</span>-&gt;id ? <span class="php-quote">'new_password'</span> : <span class="php-quote">'password'</span>;
-<a href="#80" id="80" class="l"> 80: </a>                        <span class="php-keyword1">return</span> forms::input(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-var">$name</span>, <span class="php-quote">'value'</span> =&gt; <span class="php-quote">''</span>, <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'text_area'</span>));
+<a href="#80" id="80" class="l"> 80: </a>                        <span class="php-keyword1">return</span> joosHtml::input(<span class="php-keyword1">array</span>(<span class="php-quote">'name'</span> =&gt; <span class="php-var">$name</span>, <span class="php-quote">'value'</span> =&gt; <span class="php-quote">''</span>, <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'text_area'</span>));
 <a href="#81" id="81" class="l"> 81: </a>                    }
 <a href="#82" id="82" class="l"> 82: </a>                ),
 <a href="#83" id="83" class="l"> 83: </a>                <span class="php-quote">'html_table_element'</span> =&gt; <span class="php-quote">'value'</span>,

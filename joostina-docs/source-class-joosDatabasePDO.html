@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?4189424930"></script>
+	<script type="text/javascript" src="elementlist.js?3201490049"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -212,6 +212,8 @@
 						</li>
 				<li><a href="package-Core.Libraries.Autoadmin.html">Autoadmin</a>
 						</li>
+				<li><a href="package-Core.Libraries.Autoloader.html">Autoloader</a>
+						</li>
 				<li><a href="package-Core.Libraries.Benchmark.html">Benchmark</a>
 						</li>
 				<li><a href="package-Core.Libraries.Breadcrumbs.html">Breadcrumbs</a>
@@ -228,7 +230,7 @@
 						<ul>
 				<li class="active"><a href="package-Core.Libraries.Database.Drivers.html">Drivers<span></span></a>
 						<ul>
-				<li><a href="package-Core.Libraries.Database.Drivers.Interfac.html">Interfac</a>
+				<li><a href="package-Core.Libraries.Database.Drivers.Interfaces.html">Interfaces</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Core.Libraries.Datetime.html">Datetime</a>
@@ -307,13 +309,11 @@
 							</ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
-				<li><a href="package-PHP.html">PHP</a>
-						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
 						<ul>
-				<li><a href="package-Plugins.joosAutoadmin.html">joosAutoadmin</a>
+				<li><a href="package-Plugins.Autoadmin.html">Autoadmin</a>
 						</li>
-				<li><a href="package-Plugins.joosEditor.html">joosEditor</a>
+				<li><a href="package-Plugins.Editor.html">Editor</a>
 						</li>
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
@@ -347,7 +347,7 @@
 <pre><code><a href="#1" id="1" class="l">  1: </a><span class="xlang">&lt;?php</span> <span class="php-keyword2">defined</span>(<span class="php-quote">'_JOOS_CORE'</span>) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
 <a href="#2" id="2" class="l">  2: </a>
 <a href="#3" id="3" class="l">  3: </a><span class="php-comment">/**
-</span><a href="#4" id="4" class="l">  4: </a><span class="php-comment"> * joosDatabase - Библиотека работы с базой данных MySQL через PDO
+</span><a href="#4" id="4" class="l">  4: </a><span class="php-comment"> * Библиотека работы с базой данных MySQL через PDO
 </span><a href="#5" id="5" class="l">  5: </a><span class="php-comment"> * Системная библиотека
 </span><a href="#6" id="6" class="l">  6: </a><span class="php-comment"> *
 </span><a href="#7" id="7" class="l">  7: </a><span class="php-comment"> * @version    1.0
@@ -863,54 +863,64 @@
 <a href="#517" id="517" class="l">517: </a>}
 <a href="#518" id="518" class="l">518: </a>
 <a href="#519" id="519" class="l">519: </a><span class="php-comment">/**
-</span><a href="#520" id="520" class="l">520: </a><span class="php-comment"> * Класс, содержащий мелкие функции для работы с базой данных
-</span><a href="#521" id="521" class="l">521: </a><span class="php-comment"> */</span>
-<a href="#522" id="522" class="l">522: </a><span class="php-keyword1">class</span> joosDatabaseUtilsPDO <span class="php-keyword1">extends</span> joosDatabasePDO <span class="php-keyword1">implements</span> joosInterfaceDatabaseUtils{
-<a href="#523" id="523" class="l">523: </a>    
-<a href="#524" id="524" class="l">524: </a>    <span class="php-comment">/**
-</span><a href="#525" id="525" class="l">525: </a><span class="php-comment">     * @var joosDatabasePDO Объект базы данных
-</span><a href="#526" id="526" class="l">526: </a><span class="php-comment">     */</span>
-<a href="#527" id="527" class="l">527: </a>    <span class="php-keyword1">private</span> <span class="php-var">$_db</span>;
-<a href="#528" id="528" class="l">528: </a>
-<a href="#529" id="529" class="l">529: </a>    <span class="php-comment">/**
-</span><a href="#530" id="530" class="l">530: </a><span class="php-comment">     * @param joosDatabase $db Уже существующий объект работы с базой данных
-</span><a href="#531" id="531" class="l">531: </a><span class="php-comment">     */</span>
-<a href="#532" id="532" class="l">532: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(joosDatabasePDO <span class="php-var">$db</span>) {
-<a href="#533" id="533" class="l">533: </a>        
-<a href="#534" id="534" class="l">534: </a>        <span class="php-var">$this</span>-&gt;_db = <span class="php-var">$db</span>;
-<a href="#535" id="535" class="l">535: </a>    }
-<a href="#536" id="536" class="l">536: </a>    
-<a href="#537" id="537" class="l">537: </a>    <span class="php-comment">/**
-</span><a href="#538" id="538" class="l">538: </a><span class="php-comment">     * Возвращает список таблиц активной базы
-</span><a href="#539" id="539" class="l">539: </a><span class="php-comment">     *
-</span><a href="#540" id="540" class="l">540: </a><span class="php-comment">     * @param bool $only_joostina флаг позволяющий оставить в результирующем наборе только таблицы текущего сайта
-</span><a href="#541" id="541" class="l">541: </a><span class="php-comment">     * @return array массив таблиц текущей базы данных
-</span><a href="#542" id="542" class="l">542: </a><span class="php-comment">     */</span>
-<a href="#543" id="543" class="l">543: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_table_list(<span class="php-var">$only_joostina</span> = <span class="php-keyword1">true</span>) {
-<a href="#544" id="544" class="l">544: </a>        
-<a href="#545" id="545" class="l">545: </a>        <span class="php-var">$only_joostina</span> = <span class="php-var">$only_joostina</span> ? <span class="php-quote">&quot; LIKE '&quot;</span> . <span class="php-var">$this</span>-&gt;_db-&gt;_table_prefix . <span class="php-quote">&quot;%' &quot;</span> : <span class="php-quote">''</span>;
-<a href="#546" id="546" class="l">546: </a>        
-<a href="#547" id="547" class="l">547: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-quote">'SHOW TABLES '</span> . <span class="php-var">$only_joostina</span>)-&gt;load_result_array();
-<a href="#548" id="548" class="l">548: </a>    }
-<a href="#549" id="549" class="l">549: </a>    
-<a href="#550" id="550" class="l">550: </a>    <span class="php-comment">/**
-</span><a href="#551" id="551" class="l">551: </a><span class="php-comment">     * Возвращает ассоциативный массив свойств столбцов таблицы
-</span><a href="#552" id="552" class="l">552: </a><span class="php-comment">     *
-</span><a href="#553" id="553" class="l">553: </a><span class="php-comment">     * @param string $tables название таблицы
-</span><a href="#554" id="554" class="l">554: </a><span class="php-comment">     * @return array ассоциативный массив, ключами которого являются названия полей, а значения - свойства полей
-</span><a href="#555" id="555" class="l">555: </a><span class="php-comment">     */</span>
-<a href="#556" id="556" class="l">556: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_table_fields(<span class="php-var">$tables</span>) {
-<a href="#557" id="557" class="l">557: </a>        <span class="php-var">$fields</span> = <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-quote">'SHOW FIELDS FROM '</span> . <span class="php-var">$tables</span>)-&gt;load_object_list();
-<a href="#558" id="558" class="l">558: </a>
-<a href="#559" id="559" class="l">559: </a>        <span class="php-var">$result</span> = <span class="php-keyword1">array</span>();
-<a href="#560" id="560" class="l">560: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$fields</span> <span class="php-keyword1">as</span> <span class="php-var">$field</span>) {
-<a href="#561" id="561" class="l">561: </a>            <span class="php-var">$result</span>[<span class="php-var">$field</span>-&gt;Field] = <span class="php-var">$field</span>-&gt;Type;
-<a href="#562" id="562" class="l">562: </a>        }
-<a href="#563" id="563" class="l">563: </a>
-<a href="#564" id="564" class="l">564: </a>        <span class="php-keyword1">return</span> <span class="php-var">$result</span>;
-<a href="#565" id="565" class="l">565: </a>    }
-<a href="#566" id="566" class="l">566: </a>}
-<a href="#567" id="567" class="l">567: </a></code></pre>
+</span><a href="#520" id="520" class="l">520: </a><span class="php-comment"> * Библиотека утилитарных функций работы с базой данных через расширение PDO
+</span><a href="#521" id="521" class="l">521: </a><span class="php-comment"> *
+</span><a href="#522" id="522" class="l">522: </a><span class="php-comment"> * @version    1.0
+</span><a href="#523" id="523" class="l">523: </a><span class="php-comment"> * @package    Core\Libraries
+</span><a href="#524" id="524" class="l">524: </a><span class="php-comment"> * @subpackage Libraries
+</span><a href="#525" id="525" class="l">525: </a><span class="php-comment"> * @subpackage joosDatabase
+</span><a href="#526" id="526" class="l">526: </a><span class="php-comment"> * @author     Joostina Team &lt;info@joostina.ru&gt;
+</span><a href="#527" id="527" class="l">527: </a><span class="php-comment"> * @copyright  (C) 2007-2012 Joostina Team
+</span><a href="#528" id="528" class="l">528: </a><span class="php-comment"> * @license    MIT License http://www.opensource.org/licenses/mit-license.php
+</span><a href="#529" id="529" class="l">529: </a><span class="php-comment"> * Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights
+</span><a href="#530" id="530" class="l">530: </a><span class="php-comment"> *
+</span><a href="#531" id="531" class="l">531: </a><span class="php-comment"> * */</span>
+<a href="#532" id="532" class="l">532: </a><span class="php-keyword1">class</span> joosDatabaseUtilsPDO <span class="php-keyword1">extends</span> joosDatabasePDO <span class="php-keyword1">implements</span> joosInterfaceDatabaseUtils{
+<a href="#533" id="533" class="l">533: </a>    
+<a href="#534" id="534" class="l">534: </a>    <span class="php-comment">/**
+</span><a href="#535" id="535" class="l">535: </a><span class="php-comment">     * @var joosDatabasePDO Объект базы данных
+</span><a href="#536" id="536" class="l">536: </a><span class="php-comment">     */</span>
+<a href="#537" id="537" class="l">537: </a>    <span class="php-keyword1">private</span> <span class="php-var">$_db</span>;
+<a href="#538" id="538" class="l">538: </a>
+<a href="#539" id="539" class="l">539: </a>    <span class="php-comment">/**
+</span><a href="#540" id="540" class="l">540: </a><span class="php-comment">     * @param joosDatabase $db Уже существующий объект работы с базой данных
+</span><a href="#541" id="541" class="l">541: </a><span class="php-comment">     */</span>
+<a href="#542" id="542" class="l">542: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(joosDatabasePDO <span class="php-var">$db</span>) {
+<a href="#543" id="543" class="l">543: </a>        
+<a href="#544" id="544" class="l">544: </a>        <span class="php-var">$this</span>-&gt;_db = <span class="php-var">$db</span>;
+<a href="#545" id="545" class="l">545: </a>    }
+<a href="#546" id="546" class="l">546: </a>    
+<a href="#547" id="547" class="l">547: </a>    <span class="php-comment">/**
+</span><a href="#548" id="548" class="l">548: </a><span class="php-comment">     * Возвращает список таблиц активной базы
+</span><a href="#549" id="549" class="l">549: </a><span class="php-comment">     *
+</span><a href="#550" id="550" class="l">550: </a><span class="php-comment">     * @param bool $only_joostina флаг позволяющий оставить в результирующем наборе только таблицы текущего сайта
+</span><a href="#551" id="551" class="l">551: </a><span class="php-comment">     * @return array массив таблиц текущей базы данных
+</span><a href="#552" id="552" class="l">552: </a><span class="php-comment">     */</span>
+<a href="#553" id="553" class="l">553: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_table_list(<span class="php-var">$only_joostina</span> = <span class="php-keyword1">true</span>) {
+<a href="#554" id="554" class="l">554: </a>        
+<a href="#555" id="555" class="l">555: </a>        <span class="php-var">$only_joostina</span> = <span class="php-var">$only_joostina</span> ? <span class="php-quote">&quot; LIKE '&quot;</span> . <span class="php-var">$this</span>-&gt;_db-&gt;_table_prefix . <span class="php-quote">&quot;%' &quot;</span> : <span class="php-quote">''</span>;
+<a href="#556" id="556" class="l">556: </a>        
+<a href="#557" id="557" class="l">557: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-quote">'SHOW TABLES '</span> . <span class="php-var">$only_joostina</span>)-&gt;load_result_array();
+<a href="#558" id="558" class="l">558: </a>    }
+<a href="#559" id="559" class="l">559: </a>    
+<a href="#560" id="560" class="l">560: </a>    <span class="php-comment">/**
+</span><a href="#561" id="561" class="l">561: </a><span class="php-comment">     * Возвращает ассоциативный массив свойств столбцов таблицы
+</span><a href="#562" id="562" class="l">562: </a><span class="php-comment">     *
+</span><a href="#563" id="563" class="l">563: </a><span class="php-comment">     * @param string $tables название таблицы
+</span><a href="#564" id="564" class="l">564: </a><span class="php-comment">     * @return array ассоциативный массив, ключами которого являются названия полей, а значения - свойства полей
+</span><a href="#565" id="565" class="l">565: </a><span class="php-comment">     */</span>
+<a href="#566" id="566" class="l">566: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_table_fields(<span class="php-var">$tables</span>) {
+<a href="#567" id="567" class="l">567: </a>        <span class="php-var">$fields</span> = <span class="php-var">$this</span>-&gt;_db-&gt;set_query(<span class="php-quote">'SHOW FIELDS FROM '</span> . <span class="php-var">$tables</span>)-&gt;load_object_list();
+<a href="#568" id="568" class="l">568: </a>
+<a href="#569" id="569" class="l">569: </a>        <span class="php-var">$result</span> = <span class="php-keyword1">array</span>();
+<a href="#570" id="570" class="l">570: </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$fields</span> <span class="php-keyword1">as</span> <span class="php-var">$field</span>) {
+<a href="#571" id="571" class="l">571: </a>            <span class="php-var">$result</span>[<span class="php-var">$field</span>-&gt;Field] = <span class="php-var">$field</span>-&gt;Type;
+<a href="#572" id="572" class="l">572: </a>        }
+<a href="#573" id="573" class="l">573: </a>
+<a href="#574" id="574" class="l">574: </a>        <span class="php-keyword1">return</span> <span class="php-var">$result</span>;
+<a href="#575" id="575" class="l">575: </a>    }
+<a href="#576" id="576" class="l">576: </a>}
+<a href="#577" id="577" class="l">577: </a></code></pre>
 	</div>
 
 	<div id="footer">
