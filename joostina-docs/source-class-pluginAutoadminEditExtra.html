@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3201490049"></script>
+	<script type="text/javascript" src="elementlist.js?3507506996"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -200,6 +200,8 @@
 				<li><a href="package-Components.Users.Models.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li></ul></li>
+				<li><a href="package-Compression.html">Compression</a>
+						</li>
 				<li><a href="package-Core.html">Core<span></span></a>
 						<ul>
 				<li><a href="package-Core.Libraries.html">Libraries<span></span></a>
@@ -296,6 +298,8 @@
 				<li><a href="package-Core.Libraries.Validate.html">Validate</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Email.html">Email</a>
+						</li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Controller.html">Controller</a>
@@ -318,6 +322,15 @@
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
 							</ul></li>
+				<li><a href="package-SimpleMail.html">SimpleMail</a>
+						</li>
+				<li><a href="package-Vendors.html">Vendors<span></span></a>
+						<ul>
+				<li><a href="package-Vendors.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Vendors.Libraries.Email.html">Email</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -330,8 +343,6 @@
 				<li><a href="class-pluginAutoadminEditCheckbox.html">pluginAutoadminEditCheckbox</a></li>
 				<li><a href="class-pluginAutoadminEditCurrentUserId.html">pluginAutoadminEditCurrentUserId</a></li>
 				<li><a href="class-pluginAutoadminEditEdit.html">pluginAutoadminEditEdit</a></li>
-				<li><a href="class-pluginAutoadminEditEndPane.html">pluginAutoadminEditEndPane</a></li>
-				<li><a href="class-pluginAutoadminEditEndTab.html">pluginAutoadminEditEndTab</a></li>
 				<li class="active"><a href="class-pluginAutoadminEditExtra.html">pluginAutoadminEditExtra</a></li>
 				<li><a href="class-pluginAutoadminEditExtraFields.html">pluginAutoadminEditExtraFields</a></li>
 				<li><a href="class-pluginAutoadminEditH3.html">pluginAutoadminEditH3</a></li>
@@ -339,8 +350,6 @@
 				<li><a href="class-pluginAutoadminEditJson.html">pluginAutoadminEditJson</a></li>
 				<li><a href="class-pluginAutoadminEditOption.html">pluginAutoadminEditOption</a></li>
 				<li><a href="class-pluginAutoadminEditParams.html">pluginAutoadminEditParams</a></li>
-				<li><a href="class-pluginAutoadminEditStartPane.html">pluginAutoadminEditStartPane</a></li>
-				<li><a href="class-pluginAutoadminEditStartTab.html">pluginAutoadminEditStartTab</a></li>
 				<li><a href="class-pluginAutoadminEditTextArea.html">pluginAutoadminEditTextArea</a></li>
 				<li><a href="class-pluginAutoadminEditValue.html">pluginAutoadminEditValue</a></li>
 				<li><a href="class-pluginAutoadminEditWysiwyg.html">pluginAutoadminEditWysiwyg</a></li>
@@ -370,7 +379,7 @@
 <pre><code><a href="#1" id="1" class="l"> 1: </a><span class="xlang">&lt;?php</span>
 <a href="#2" id="2" class="l"> 2: </a>
 <a href="#3" id="3" class="l"> 3: </a><span class="php-comment">// запрет прямого доступа</span>
-<a href="#4" id="4" class="l"> 4: </a><span class="php-keyword2">defined</span>( <span class="php-quote">'_JOOS_CORE'</span> ) <span class="php-keyword1">or</span> <span class="php-keyword1">die</span>();
+<a href="#4" id="4" class="l"> 4: </a><span class="php-keyword2">defined</span>( <span class="php-quote">'_JOOS_CORE'</span> ) <span class="php-keyword1">or</span> <span class="php-keyword1">exit</span>();
 <a href="#5" id="5" class="l"> 5: </a>
 <a href="#6" id="6" class="l"> 6: </a><span class="php-comment">/**
 </span><a href="#7" id="7" class="l"> 7: </a><span class="php-comment"> * Для вывода данных сформированных произвольной функцией
@@ -386,7 +395,7 @@
 </span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> * */</span>
 <a href="#18" id="18" class="l">18: </a><span class="php-keyword1">class</span> pluginAutoadminEditExtra <span class="php-keyword1">implements</span> joosAutoadminPluginsEdit{
 <a href="#19" id="19" class="l">19: </a>
-<a href="#20" id="20" class="l">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render( <span class="php-var">$element_param</span> , <span class="php-var">$key</span> , <span class="php-var">$value</span> , <span class="php-var">$obj_data</span> , <span class="php-var">$params</span> , <span class="php-var">$tabs</span> ) {
+<a href="#20" id="20" class="l">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render( <span class="php-var">$element_param</span> , <span class="php-var">$key</span> , <span class="php-var">$value</span> , <span class="php-var">$obj_data</span> , <span class="php-var">$params</span> ) {
 <a href="#21" id="21" class="l">21: </a>        <span class="php-var">$element</span> = <span class="php-keyword1">array</span> ();
 <a href="#22" id="22" class="l">22: </a>
 <a href="#23" id="23" class="l">23: </a>        <span class="php-comment">// скрываем левую колонку с названием поля</span>

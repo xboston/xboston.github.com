@@ -8,7 +8,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3201490049"></script>
+	<script type="text/javascript" src="elementlist.js?3507506996"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -199,6 +199,8 @@
 				<li><a href="package-Components.Users.Models.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li></ul></li>
+				<li><a href="package-Compression.html">Compression</a>
+						</li>
 				<li><a href="package-Core.html">Core<span></span></a>
 						<ul>
 				<li><a href="package-Core.Libraries.html">Libraries<span></span></a>
@@ -295,6 +297,8 @@
 				<li><a href="package-Core.Libraries.Validate.html">Validate</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Email.html">Email</a>
+						</li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Controller.html">Controller</a>
@@ -317,6 +321,15 @@
 				<li><a href="package-Plugins.Sitemap.html">Sitemap</a>
 						</li>
 							</ul></li>
+				<li><a href="package-SimpleMail.html">SimpleMail</a>
+						</li>
+				<li><a href="package-Vendors.html">Vendors<span></span></a>
+						<ul>
+				<li><a href="package-Vendors.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Vendors.Libraries.Email.html">Email</a>
+						</li>
+							</ul></li></ul></li>
 			</ul>
 		</div>
 
@@ -327,7 +340,6 @@
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-helperAcl.html">helperAcl</a></li>
-				<li><a href="class-htmlTabs.html">htmlTabs</a></li>
 				<li><a href="class-joosAdminToolbarButtons.html">joosAdminToolbarButtons</a></li>
 				<li><a href="class-joosAdminView.html">joosAdminView</a></li>
 				<li><a href="class-joosAdminViewToolbarEdit.html">joosAdminViewToolbarEdit</a></li>
@@ -362,11 +374,16 @@
 				<li><a href="class-joosFolderLibrariesException.html">joosFolderLibrariesException</a></li>
 				<li><a href="class-joosImageLibrariesException.html">joosImageLibrariesException</a></li>
 				<li><a href="class-joosModulesException.html">joosModulesException</a></li>
+				<li><a href="class-joosSimpleMailException.html">joosSimpleMailException</a></li>
 				<li><a href="class-joosUploadLibrariesException.html">joosUploadLibrariesException</a></li>
 				<li><a href="class-joosUserException.html">joosUserException</a></li>
 			</ul>
 
 
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-quoted_printable_encode.html">quoted_printable_encode</a></li>
+			</ul>
 		</div>
 	</div>
 </div>
@@ -387,21 +404,17 @@
 		<div class="well">
 			<a href="class-pluginAutoadminEditCheckbox.html">pluginAutoadminEditCheckbox</a>, 
 			<a href="class-pluginAutoadminEditCurrentUserId.html">pluginAutoadminEditCurrentUserId</a>, 
-			<a href="class-pluginAutoadminEditOption.html">pluginAutoadminEditOption</a>, 
-			<a href="class-pluginAutoadminEditParams.html">pluginAutoadminEditParams</a>, 
-			<a href="class-pluginAutoadminEditStartPane.html">pluginAutoadminEditStartPane</a>, 
-			<a href="class-pluginAutoadminEditStartTab.html">pluginAutoadminEditStartTab</a>, 
 			<a href="class-pluginAutoadminEditTextArea.html">pluginAutoadminEditTextArea</a>, 
 			<a href="class-pluginAutoadminEditValue.html">pluginAutoadminEditValue</a>, 
 			<a href="class-pluginAutoadminEditWysiwyg.html">pluginAutoadminEditWysiwyg</a>, 
 			<a href="class-pluginAutoadminEditEdit.html">pluginAutoadminEditEdit</a>, 
-			<a href="class-pluginAutoadminEditEndPane.html">pluginAutoadminEditEndPane</a>, 
-			<a href="class-pluginAutoadminEditEndTab.html">pluginAutoadminEditEndTab</a>, 
 			<a href="class-pluginAutoadminEditExtra.html">pluginAutoadminEditExtra</a>, 
 			<a href="class-pluginAutoadminEditExtraFields.html">pluginAutoadminEditExtraFields</a>, 
 			<a href="class-pluginAutoadminEditH3.html">pluginAutoadminEditH3</a>, 
 			<a href="class-pluginAutoadminEditHidden.html">pluginAutoadminEditHidden</a>, 
-			<a href="class-pluginAutoadminEditJson.html">pluginAutoadminEditJson</a>
+			<a href="class-pluginAutoadminEditJson.html">pluginAutoadminEditJson</a>, 
+			<a href="class-pluginAutoadminEditOption.html">pluginAutoadminEditOption</a>, 
+			<a href="class-pluginAutoadminEditParams.html">pluginAutoadminEditParams</a>
 		</div>
 	</div>
 
@@ -413,7 +426,7 @@
 		
 		
 
-		<b>Located at:</b> <a href="source-class-joosAutoadminPluginsEdit.html#850" title="Go to source code">core/libraries/autoadmin.php</a><br />
+		<b>Located at:</b> <a href="source-class-joosAutoadminPluginsEdit.html#861" title="Go to source code">core/libraries/autoadmin.php</a><br />
 	</div>
 
 
@@ -431,7 +444,7 @@
 
 			<td class="name"><div>
 			<a class="anchor" href="#_render">#</a>
-			<code><a href="source-class-joosAutoadminPluginsEdit.html#852" title="Go to source code">render</a>( <span> <var>$element_param</var></span>, <span> <var>$key</var></span>, <span> <var>$value</var></span>, <span> <var>$obj_data</var></span>, <span> <var>$params</var></span>, <span> <var>$tabs</var></span> )</code>
+			<code><a href="source-class-joosAutoadminPluginsEdit.html#863" title="Go to source code">render</a>( <span> <var>$element_param</var></span>, <span> <var>$key</var></span>, <span> <var>$value</var></span>, <span> <var>$obj_data</var></span>, <span> <var>$params</var></span> )</code>
 
 			<div class="description short">
 				

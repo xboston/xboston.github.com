@@ -194,6 +194,9 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.Models.Site.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Compression.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Core.html</loc>
 </url>
 <url>
@@ -335,6 +338,9 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Core.Libraries.Validate.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Email.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.html</loc>
 </url>
 <url>
@@ -363,6 +369,18 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Plugins.Sitemap.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-SimpleMail.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Vendors.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Vendors.Libraries.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Vendors.Libraries.Email.html</loc>
 </url>
 
 
@@ -538,6 +556,9 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosSession.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosSimpleMail.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosStatic.html</loc>
 </url>
 <url>
@@ -608,6 +629,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosModulesException.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosSimpleMailException.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosUploadLibrariesException.html</loc>
