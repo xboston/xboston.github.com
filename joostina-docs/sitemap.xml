@@ -80,6 +80,42 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Coder.Models.Admin.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Controllers.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Helpers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Comments.Models.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.CommentsCounter.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.CommentsCounter.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.CommentsCounter.Models.Admin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.CommentsCounter.Models.Site.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Mainpage.html</loc>
 </url>
 <url>
@@ -131,6 +167,15 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Pages.Models.Site.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Search.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Search.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Search.Controllers.Site.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Site.html</loc>
 </url>
 <url>
@@ -171,6 +216,15 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Test.Controllers.Site.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Torrents.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Torrents.Controllers.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Components.Torrents.Controllers.Site.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-Components.Users.html</loc>
@@ -341,6 +395,15 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Email.html</loc>
 </url>
 <url>
+	<loc>http://xboston.github.com/joostina-docs/package-Extra.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Extra.Libraries.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Extra.Libraries.Basket.html</loc>
+</url>
+<url>
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.html</loc>
 </url>
 <url>
@@ -353,7 +416,22 @@
 	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Document.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/package-Joostina.Loader.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/package-JSMin.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Libraries.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Libraries.Extra.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Libraries.Extra.Basket.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Libraries.Extra.Basket.Models.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/package-Libraries.Extra.Basket.Models.Site.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/package-None.html</loc>
@@ -422,6 +500,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosAutoloader.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosBasket.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosBenchmark.html</loc>
@@ -511,7 +592,7 @@
 	<loc>http://xboston.github.com/joostina-docs/class-joosInputFilter.html</loc>
 </url>
 <url>
-	<loc>http://xboston.github.com/joostina-docs/class-joosLoader.html</loc>
+	<loc>http://xboston.github.com/joostina-docs/class-joosJSOptimizer.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosMail.html</loc>
@@ -563,6 +644,9 @@
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosString.html</loc>
+</url>
+<url>
+	<loc>http://xboston.github.com/joostina-docs/class-joosTemplater.html</loc>
 </url>
 <url>
 	<loc>http://xboston.github.com/joostina-docs/class-joosText.html</loc>

@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3507506996"></script>
+	<script type="text/javascript" src="elementlist.js?2731444492"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -113,6 +113,33 @@
 				<li><a href="package-Components.Coder.Models.Admin.html">Admin</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Components.Comments.html">Comments<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Controllers.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Comments.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Components.Comments.Helpers.html">Helpers</a>
+						</li>
+				<li><a href="package-Components.Comments.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Comments.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.CommentsCounter.html">CommentsCounter<span></span></a>
+						<ul>
+				<li><a href="package-Components.CommentsCounter.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.CommentsCounter.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.CommentsCounter.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Components.Mainpage.html">Mainpage<span></span></a>
 						<ul>
 				<li><a href="package-Components.Mainpage.Controllers.html">Controllers<span></span></a>
@@ -152,6 +179,13 @@
 				<li><a href="package-Components.Pages.Models.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Components.Search.html">Search<span></span></a>
+						<ul>
+				<li><a href="package-Components.Search.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Search.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Components.Site.html">Site<span></span></a>
 						<ul>
 				<li><a href="package-Components.Site.Controllers.html">Controllers<span></span></a>
@@ -182,6 +216,13 @@
 				<li><a href="package-Components.Test.Controllers.html">Controllers<span></span></a>
 						<ul>
 				<li><a href="package-Components.Test.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.Torrents.html">Torrents<span></span></a>
+						<ul>
+				<li><a href="package-Components.Torrents.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Torrents.Controllers.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Components.Users.html">Users<span></span></a>
@@ -300,6 +341,13 @@
 							</ul></li></ul></li>
 				<li><a href="package-Email.html">Email</a>
 						</li>
+				<li><a href="package-Extra.html">Extra<span></span></a>
+						<ul>
+				<li><a href="package-Extra.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Extra.Libraries.Basket.html">Basket</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Controller.html">Controller</a>
@@ -308,9 +356,20 @@
 						</li>
 				<li><a href="package-Joostina.Document.html">Document</a>
 						</li>
-				<li><a href="package-Joostina.Loader.html">Loader</a>
-						</li>
 							</ul></li>
+				<li><a href="package-JSMin.html">JSMin</a>
+						</li>
+				<li><a href="package-Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.html">Extra<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.html">Basket<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
 				<li class="active"><a href="package-Plugins.html">Plugins<span></span></a>
@@ -393,25 +452,27 @@
 </span><a href="#15" id="15" class="l">15: </a><span class="php-comment"> * Информация об авторах и лицензиях стороннего кода в составе Joostina CMS: docs/copyrights
 </span><a href="#16" id="16" class="l">16: </a><span class="php-comment"> *
 </span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> * */</span>
-<a href="#18" id="18" class="l">18: </a><span class="php-keyword1">class</span> pluginAutoadminEditCheckbox <span class="php-keyword1">implements</span> joosAutoadminPluginsEdit{
-<a href="#19" id="19" class="l">19: </a>
-<a href="#20" id="20" class="l">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render( <span class="php-var">$element_param</span> , <span class="php-var">$key</span> , <span class="php-var">$value</span> , <span class="php-var">$obj_data</span> , <span class="php-var">$params</span> ) {
-<a href="#21" id="21" class="l">21: </a>        
+<a href="#18" id="18" class="l">18: </a><span class="php-keyword1">class</span> pluginAutoadminEditCheckbox <span class="php-keyword1">implements</span> joosAutoadminPluginsEdit
+<a href="#19" id="19" class="l">19: </a>{
+<a href="#20" id="20" class="l">20: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> render( <span class="php-var">$element_param</span> , <span class="php-var">$key</span> , <span class="php-var">$value</span> , <span class="php-var">$obj_data</span> , <span class="php-var">$params</span> )
+<a href="#21" id="21" class="l">21: </a>    {
 <a href="#22" id="22" class="l">22: </a>        <span class="php-var">$element</span>   = <span class="php-keyword1">array</span> ();
 <a href="#23" id="23" class="l">23: </a>
 <a href="#24" id="24" class="l">24: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'label_begin'</span>];
-<a href="#25" id="25" class="l">25: </a>        <span class="php-var">$element</span>[] = joosHtml::label( <span class="php-keyword1">array</span> ( <span class="php-quote">'for'</span> =&gt; <span class="php-var">$key</span> ) , ( <span class="php-keyword1">isset</span>( <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'text'</span>] ) ? <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'text'</span>] : <span class="php-var">$element_param</span>[<span class="php-quote">'name'</span>] ) );
-<a href="#26" id="26" class="l">26: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'label_end'</span>];
-<a href="#27" id="27" class="l">27: </a>        <span class="php-var">$element</span>[] = joosHtml::hidden( <span class="php-var">$key</span> , <span class="php-num">0</span> );
-<a href="#28" id="28" class="l">28: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'el_begin'</span>];
-<a href="#29" id="29" class="l">29: </a>        <span class="php-var">$element</span>[] = joosHtml::checkbox( <span class="php-keyword1">array</span> ( <span class="php-quote">'name'</span>  =&gt; <span class="php-var">$key</span> ,
-<a href="#30" id="30" class="l">30: </a>                                              <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'text_area'</span> , ) , <span class="php-num">1</span> , <span class="php-var">$value</span> );
-<a href="#31" id="31" class="l">31: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'el_end'</span>];
-<a href="#32" id="32" class="l">32: </a>
-<a href="#33" id="33" class="l">33: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">implode</span>( <span class="php-quote">&quot;\n&quot;</span> , <span class="php-var">$element</span> );
-<a href="#34" id="34" class="l">34: </a>    }
-<a href="#35" id="35" class="l">35: </a>
-<a href="#36" id="36" class="l">36: </a>}</code></pre>
+<a href="#25" id="25" class="l">25: </a>                <span class="php-var">$desc</span> = ( <span class="php-keyword1">isset</span> ( <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'tooltip'</span>] ) ) ? <span class="php-quote">' &lt;a class=&quot;js-tooltip&quot; href=&quot;#&quot; data-original-title=&quot;'</span> . <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'tooltip'</span>] . <span class="php-quote">'&quot;&gt;&lt;i class=&quot;icon-question-sign&quot;&gt;&lt;/i&gt;&lt;/a&gt;'</span> : <span class="php-quote">''</span>;
+<a href="#26" id="26" class="l">26: </a>        <span class="php-var">$element</span>[] = joosHtml::label( <span class="php-keyword1">array</span> ( <span class="php-quote">'for'</span> =&gt; <span class="php-var">$key</span> ) , ( <span class="php-keyword1">isset</span>( <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'text'</span>] ) ? <span class="php-var">$element_param</span>[<span class="php-quote">'html_edit_element_param'</span>][<span class="php-quote">'text'</span>] : <span class="php-var">$element_param</span>[<span class="php-quote">'name'</span>] ) . <span class="php-var">$desc</span> );
+<a href="#27" id="27" class="l">27: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'label_end'</span>];
+<a href="#28" id="28" class="l">28: </a>        <span class="php-var">$element</span>[] = joosHtml::hidden( <span class="php-var">$key</span> , <span class="php-num">0</span> );
+<a href="#29" id="29" class="l">29: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'el_begin'</span>];
+<a href="#30" id="30" class="l">30: </a>        <span class="php-var">$element</span>[] = joosHtml::checkbox( <span class="php-keyword1">array</span> ( <span class="php-quote">'name'</span>  =&gt; <span class="php-var">$key</span> ,
+<a href="#31" id="31" class="l">31: </a>                                              <span class="php-quote">'class'</span> =&gt; <span class="php-quote">'text_area'</span> , ) , <span class="php-num">1</span> , <span class="php-var">$value</span> );
+<a href="#32" id="32" class="l">32: </a>        <span class="php-var">$element</span>[] = <span class="php-var">$params</span>[<span class="php-quote">'el_end'</span>];
+<a href="#33" id="33" class="l">33: </a>
+<a href="#34" id="34" class="l">34: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">implode</span>( <span class="php-quote">&quot;\n&quot;</span> , <span class="php-var">$element</span> );
+<a href="#35" id="35" class="l">35: </a>    }
+<a href="#36" id="36" class="l">36: </a>
+<a href="#37" id="37" class="l">37: </a>}
+<a href="#38" id="38" class="l">38: </a></code></pre>
 	</div>
 
 	<div id="footer">

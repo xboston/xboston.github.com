@@ -9,7 +9,7 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script type="text/javascript" src="resources/combined.js?230654036"></script>
-	<script type="text/javascript" src="elementlist.js?3507506996"></script>
+	<script type="text/javascript" src="elementlist.js?2731444492"></script>
 	<link rel="stylesheet" type="text/css" media="all" href="resources/bootstrap.css?2162781696" />
 	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1558744179" />
 
@@ -113,6 +113,33 @@
 				<li><a href="package-Components.Coder.Models.Admin.html">Admin</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Components.Comments.html">Comments<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Controllers.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Comments.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li>
+				<li><a href="package-Components.Comments.Helpers.html">Helpers</a>
+						</li>
+				<li><a href="package-Components.Comments.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.Comments.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.Comments.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.CommentsCounter.html">CommentsCounter<span></span></a>
+						<ul>
+				<li><a href="package-Components.CommentsCounter.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Components.CommentsCounter.Models.Admin.html">Admin</a>
+						</li>
+				<li><a href="package-Components.CommentsCounter.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Components.Mainpage.html">Mainpage<span></span></a>
 						<ul>
 				<li><a href="package-Components.Mainpage.Controllers.html">Controllers<span></span></a>
@@ -152,6 +179,13 @@
 				<li><a href="package-Components.Pages.Models.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li>
+				<li><a href="package-Components.Search.html">Search<span></span></a>
+						<ul>
+				<li><a href="package-Components.Search.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Search.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Components.Site.html">Site<span></span></a>
 						<ul>
 				<li><a href="package-Components.Site.Controllers.html">Controllers<span></span></a>
@@ -182,6 +216,13 @@
 				<li><a href="package-Components.Test.Controllers.html">Controllers<span></span></a>
 						<ul>
 				<li><a href="package-Components.Test.Controllers.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li>
+				<li><a href="package-Components.Torrents.html">Torrents<span></span></a>
+						<ul>
+				<li><a href="package-Components.Torrents.Controllers.html">Controllers<span></span></a>
+						<ul>
+				<li><a href="package-Components.Torrents.Controllers.Site.html">Site</a>
 						</li>
 							</ul></li></ul></li>
 				<li><a href="package-Components.Users.html">Users<span></span></a>
@@ -300,6 +341,13 @@
 							</ul></li></ul></li>
 				<li><a href="package-Email.html">Email</a>
 						</li>
+				<li><a href="package-Extra.html">Extra<span></span></a>
+						<ul>
+				<li><a href="package-Extra.Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Extra.Libraries.Basket.html">Basket</a>
+						</li>
+							</ul></li></ul></li>
 				<li><a href="package-Joostina.html">Joostina<span></span></a>
 						<ul>
 				<li><a href="package-Joostina.Controller.html">Controller</a>
@@ -308,9 +356,20 @@
 						</li>
 				<li><a href="package-Joostina.Document.html">Document</a>
 						</li>
-				<li><a href="package-Joostina.Loader.html">Loader</a>
-						</li>
 							</ul></li>
+				<li><a href="package-JSMin.html">JSMin</a>
+						</li>
+				<li><a href="package-Libraries.html">Libraries<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.html">Extra<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.html">Basket<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.Models.html">Models<span></span></a>
+						<ul>
+				<li><a href="package-Libraries.Extra.Basket.Models.Site.html">Site</a>
+						</li>
+							</ul></li></ul></li></ul></li></ul></li>
 				<li><a href="package-None.html">None</a>
 						</li>
 				<li><a href="package-Plugins.html">Plugins<span></span></a>
@@ -373,10 +432,10 @@
 </span><a href="#16" id="16" class="l">16: </a><span class="php-comment"> *
 </span><a href="#17" id="17" class="l">17: </a><span class="php-comment"> * Оригинальная идея базируется на разработках Nette FW https://github.com/nette/nette/blob/master/Nette/Loaders/RobotLoader.php
 </span><a href="#18" id="18" class="l">18: </a><span class="php-comment"> * */</span>
-<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> joosRobotLoader {
-<a href="#20" id="20" class="l">20: </a>
-<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_classes(<span class="php-var">$location</span>) {
-<a href="#22" id="22" class="l">22: </a>
+<a href="#19" id="19" class="l">19: </a><span class="php-keyword1">class</span> joosRobotLoader
+<a href="#20" id="20" class="l">20: </a>{
+<a href="#21" id="21" class="l">21: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> get_classes(<span class="php-var">$location</span>)
+<a href="#22" id="22" class="l">22: </a>    {
 <a href="#23" id="23" class="l">23: </a>        <span class="php-var">$directory</span> = <span class="php-keyword1">new</span> RecursiveDirectoryIterator(<span class="php-var">$location</span>);
 <a href="#24" id="24" class="l">24: </a>        <span class="php-var">$iterator</span> = <span class="php-keyword1">new</span> RecursiveIteratorIterator(<span class="php-var">$directory</span>);
 <a href="#25" id="25" class="l">25: </a>        <span class="php-var">$regex</span> = <span class="php-keyword1">new</span> RegexIterator(<span class="php-var">$iterator</span>, <span class="php-quote">'/^.+\.php$/i'</span>, RecursiveRegexIterator::GET_MATCH);
@@ -414,46 +473,45 @@
 <a href="#57" id="57" class="l">57: </a>                            }
 <a href="#58" id="58" class="l">58: </a>                            <span class="php-keyword1">continue</span> <span class="php-num">2</span>;
 <a href="#59" id="59" class="l">59: </a>
-<a href="#60" id="60" class="l">60: </a>
-<a href="#61" id="61" class="l">61: </a>                        <span class="php-keyword1">case</span> T_CLASS:
-<a href="#62" id="62" class="l">62: </a>                        <span class="php-keyword1">case</span> T_INTERFACE:
-<a href="#63" id="63" class="l">63: </a>                            <span class="php-var">$expected</span> = <span class="php-var">$token</span>[<span class="php-num">0</span>];
-<a href="#64" id="64" class="l">64: </a>                            <span class="php-var">$name</span> = <span class="php-quote">''</span>;
-<a href="#65" id="65" class="l">65: </a>                            <span class="php-keyword1">continue</span> <span class="php-num">2</span>;
-<a href="#66" id="66" class="l">66: </a>                        <span class="php-keyword1">case</span> T_CURLY_OPEN:
-<a href="#67" id="67" class="l">67: </a>                        <span class="php-keyword1">case</span> T_DOLLAR_OPEN_CURLY_BRACES:
-<a href="#68" id="68" class="l">68: </a>                            <span class="php-var">$level</span>++;
-<a href="#69" id="69" class="l">69: </a>                    }
-<a href="#70" id="70" class="l">70: </a>                }
-<a href="#71" id="71" class="l">71: </a>
-<a href="#72" id="72" class="l">72: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$expected</span>) {
-<a href="#73" id="73" class="l">73: </a>                    <span class="php-keyword1">switch</span> (<span class="php-var">$expected</span>) {
-<a href="#74" id="74" class="l">74: </a>                        <span class="php-keyword1">case</span> T_CLASS:
-<a href="#75" id="75" class="l">75: </a>                        <span class="php-keyword1">case</span> T_INTERFACE:
-<a href="#76" id="76" class="l">76: </a>                            <span class="php-keyword1">if</span> (<span class="php-var">$level</span> === <span class="php-var">$minLevel</span>) {
-<a href="#77" id="77" class="l">77: </a>                                <span class="php-var">$classes</span>[<span class="php-var">$name</span>] = <span class="php-var">$class_location</span>;
-<a href="#78" id="78" class="l">78: </a>                            }
-<a href="#79" id="79" class="l">79: </a>                            <span class="php-keyword1">break</span>;
-<a href="#80" id="80" class="l">80: </a>                    }
-<a href="#81" id="81" class="l">81: </a>
-<a href="#82" id="82" class="l">82: </a>                    <span class="php-var">$expected</span> = <span class="php-keyword1">NULL</span>;
-<a href="#83" id="83" class="l">83: </a>                }
-<a href="#84" id="84" class="l">84: </a>
-<a href="#85" id="85" class="l">85: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$token</span> === <span class="php-quote">'{'</span>) {
-<a href="#86" id="86" class="l">86: </a>                    <span class="php-var">$level</span>++;
-<a href="#87" id="87" class="l">87: </a>                } <span class="php-keyword1">elseif</span> (<span class="php-var">$token</span> === <span class="php-quote">'}'</span>) {
-<a href="#88" id="88" class="l">88: </a>                    <span class="php-var">$level</span>--;
-<a href="#89" id="89" class="l">89: </a>                }
-<a href="#90" id="90" class="l">90: </a>            }
-<a href="#91" id="91" class="l">91: </a>        }
-<a href="#92" id="92" class="l">92: </a>
-<a href="#93" id="93" class="l">93: </a>        <span class="php-keyword2">ksort</span>(<span class="php-var">$classes</span>);
-<a href="#94" id="94" class="l">94: </a>
-<a href="#95" id="95" class="l">95: </a>        <span class="php-keyword1">return</span> <span class="php-var">$classes</span>;
-<a href="#96" id="96" class="l">96: </a>    }
-<a href="#97" id="97" class="l">97: </a>
-<a href="#98" id="98" class="l">98: </a>}
-<a href="#99" id="99" class="l">99: </a></code></pre>
+<a href="#60" id="60" class="l">60: </a>                        <span class="php-keyword1">case</span> T_CLASS:
+<a href="#61" id="61" class="l">61: </a>                        <span class="php-keyword1">case</span> T_INTERFACE:
+<a href="#62" id="62" class="l">62: </a>                            <span class="php-var">$expected</span> = <span class="php-var">$token</span>[<span class="php-num">0</span>];
+<a href="#63" id="63" class="l">63: </a>                            <span class="php-var">$name</span> = <span class="php-quote">''</span>;
+<a href="#64" id="64" class="l">64: </a>                            <span class="php-keyword1">continue</span> <span class="php-num">2</span>;
+<a href="#65" id="65" class="l">65: </a>                        <span class="php-keyword1">case</span> T_CURLY_OPEN:
+<a href="#66" id="66" class="l">66: </a>                        <span class="php-keyword1">case</span> T_DOLLAR_OPEN_CURLY_BRACES:
+<a href="#67" id="67" class="l">67: </a>                            <span class="php-var">$level</span>++;
+<a href="#68" id="68" class="l">68: </a>                    }
+<a href="#69" id="69" class="l">69: </a>                }
+<a href="#70" id="70" class="l">70: </a>
+<a href="#71" id="71" class="l">71: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$expected</span>) {
+<a href="#72" id="72" class="l">72: </a>                    <span class="php-keyword1">switch</span> (<span class="php-var">$expected</span>) {
+<a href="#73" id="73" class="l">73: </a>                        <span class="php-keyword1">case</span> T_CLASS:
+<a href="#74" id="74" class="l">74: </a>                        <span class="php-keyword1">case</span> T_INTERFACE:
+<a href="#75" id="75" class="l">75: </a>                            <span class="php-keyword1">if</span> (<span class="php-var">$level</span> === <span class="php-var">$minLevel</span>) {
+<a href="#76" id="76" class="l">76: </a>                                <span class="php-var">$classes</span>[<span class="php-var">$name</span>] = <span class="php-var">$class_location</span>;
+<a href="#77" id="77" class="l">77: </a>                            }
+<a href="#78" id="78" class="l">78: </a>                            <span class="php-keyword1">break</span>;
+<a href="#79" id="79" class="l">79: </a>                    }
+<a href="#80" id="80" class="l">80: </a>
+<a href="#81" id="81" class="l">81: </a>                    <span class="php-var">$expected</span> = <span class="php-keyword1">NULL</span>;
+<a href="#82" id="82" class="l">82: </a>                }
+<a href="#83" id="83" class="l">83: </a>
+<a href="#84" id="84" class="l">84: </a>                <span class="php-keyword1">if</span> (<span class="php-var">$token</span> === <span class="php-quote">'{'</span>) {
+<a href="#85" id="85" class="l">85: </a>                    <span class="php-var">$level</span>++;
+<a href="#86" id="86" class="l">86: </a>                } <span class="php-keyword1">elseif</span> (<span class="php-var">$token</span> === <span class="php-quote">'}'</span>) {
+<a href="#87" id="87" class="l">87: </a>                    <span class="php-var">$level</span>--;
+<a href="#88" id="88" class="l">88: </a>                }
+<a href="#89" id="89" class="l">89: </a>            }
+<a href="#90" id="90" class="l">90: </a>        }
+<a href="#91" id="91" class="l">91: </a>
+<a href="#92" id="92" class="l">92: </a>        <span class="php-keyword2">ksort</span>(<span class="php-var">$classes</span>);
+<a href="#93" id="93" class="l">93: </a>
+<a href="#94" id="94" class="l">94: </a>        <span class="php-keyword1">return</span> <span class="php-var">$classes</span>;
+<a href="#95" id="95" class="l">95: </a>    }
+<a href="#96" id="96" class="l">96: </a>
+<a href="#97" id="97" class="l">97: </a>}
+<a href="#98" id="98" class="l">98: </a></code></pre>
 	</div>
 
 	<div id="footer">
